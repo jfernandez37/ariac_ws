@@ -1,5 +1,0 @@
-  File "/home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/newGui.py", line 7
-    from ariac_gui/Functions.checkCancel import *
-                  ^
-SyntaxError: invalid syntax
-

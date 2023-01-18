@@ -1,6 +1,0 @@
-Invoking command in '/home/ubuntu/ariac_ws/build/ariac_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ariac_ws/install/ariac_msgs
-Invoked command in '/home/ubuntu/ariac_ws/build/ariac_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ariac_ws/install/ariac_msgs
-Invoking command in '/home/ubuntu/ariac_ws/build/ariac_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ubuntu/ariac_ws/build/ariac_msgs -- -j12 -l12
-Invoked command in '/home/ubuntu/ariac_ws/build/ariac_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ubuntu/ariac_ws/build/ariac_msgs -- -j12 -l12
-Invoking command in '/home/ubuntu/ariac_ws/build/ariac_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ubuntu/ariac_ws/build/ariac_msgs
-Invoked command in '/home/ubuntu/ariac_ws/build/ariac_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/ubuntu/ariac_ws/build/ariac_msgs

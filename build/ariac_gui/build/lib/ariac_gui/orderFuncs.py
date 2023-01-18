@@ -124,7 +124,7 @@ def addKittingProduct(orderKittingParts, currentOrderID):
     cancelNewKitProdButton.pack(pady=20)
     kitProdWind.mainloop()
     if kitProdCancelFlag.get()=="0":
-        newKittingPart=KittingPart()
+        '''newKittingPart=KittingPart()
         newPart=Part()
         if prodType.get()=="sensor":
             newPart.type=newPart.SENSOR
@@ -145,7 +145,7 @@ def addKittingProduct(orderKittingParts, currentOrderID):
         else:
             newPart.color=newPart.PURPLE
         newKittingPart.part=newPart
-        newKittingPart.quadrant=int(prodQuad.get())
+        newKittingPart.quadrant=int(prodQuad.get())'''
         orderKittingParts.append(KittingProds(currentOrderID,prodType.get(),prodColor.get(), prodQuad.get()))
 
 def addAssembProduct(orderAssembParts, currentOrderID):
@@ -233,7 +233,7 @@ def addAssembProduct(orderAssembParts, currentOrderID):
     cancelNewAssembProdButton.pack(pady=20)
     assembProdWind.mainloop()
     if assembProdCancelFlag.get()=="0":
-        newAssembPart=KittingPart()
+        '''newAssembPart=KittingPart()
         newPart=Part()
         if prodType.get()=="sensor":
             newPart.type=newPart.SENSOR
@@ -258,6 +258,12 @@ def addAssembProduct(orderAssembParts, currentOrderID):
         newDirection.x =float(x_dir.get())
         newDirection.y=float(y_dir.get())
         newDirection.z=float(z_dir.get())
+        newAssembPart.install_direction=newDirection
+        newPoint=Point()
+        newPoint.x=float(x_val.get())
+        newPoint.y=float(y_val.get())
+        newPoint.z=float(z_val.get())'''
+
         orderAssembParts.append(AssemblyProds(currentOrderID, prodType.get(), prodColor.get(), str("["+x_val.get()+", "+y_val.get()+", "+z_val.get()+"]"),
                                     str("["+r_val.get()+", "+p_val.get()+", "+y_rpy_val.get()+"]"), str("["+x_dir.get()+", "+y_dir.get()+", "+z_dir.get()+"]")))
 
