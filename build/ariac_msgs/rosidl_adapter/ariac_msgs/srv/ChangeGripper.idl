@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ariac_msgs/srv/ChangeGripper.srv
+// generated code does not contain a copyright notice
+
+
+module ariac_msgs {
+  module srv {
+    module ChangeGripper_Request_Constants {
+      const uint8 PART_GRIPPER = 1;
+      const uint8 TRAY_GRIPPER = 2;
+    };
+    struct ChangeGripper_Request {
+      uint8 gripper_type;
+    };
+    struct ChangeGripper_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/BreakBeamStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module ariac_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      " Single reading from a break beam sensor that detects the presence of" "\n"
+      " objects within its sensing range.")
+    struct BreakBeamStatus {
+      @verbatim (language="comment", text=
+        " timestamp and name of tf frame")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        " is there something in the proximity of the sensor?")
+      boolean object_detected;
+    };
+  };
+};

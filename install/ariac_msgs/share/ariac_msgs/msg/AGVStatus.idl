@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/AGVStatus.msg
+// generated code does not contain a copyright notice
+
+
+module ariac_msgs {
+  module msg {
+    module AGVStatus_Constants {
+      const int8 KITTING = 0;
+      const int8 ASSEMBLY_FRONT = 1;
+      const int8 ASSEMBLY_BACK = 2;
+      const int8 UNKNOWN = 99;
+    };
+    struct AGVStatus {
+      int8 location;
+
+      double position;
+
+      double velocity;
+    };
+  };
+};

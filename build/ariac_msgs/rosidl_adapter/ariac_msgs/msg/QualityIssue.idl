@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/QualityIssue.msg
+// generated code does not contain a copyright notice
+
+
+module ariac_msgs {
+  module msg {
+    struct QualityIssue {
+      boolean all_passed;
+
+      boolean missing_part;
+
+      boolean flipped_part;
+
+      boolean faulty_part;
+
+      boolean incorrect_part_type;
+
+      boolean incorrect_part_color;
+    };
+  };
+};

@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ariac_msgs/srv/ScoreTask.srv
+// generated code does not contain a copyright notice
+
+
+module ariac_msgs {
+  module srv {
+    struct ScoreTask_Request {
+      string order_id;
+    };
+    struct ScoreTask_Response {
+      double score;
+    };
+  };
+};

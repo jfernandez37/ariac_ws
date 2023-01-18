@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/FaultyPartChallenge.msg
+// generated code does not contain a copyright notice
+
+
+module ariac_msgs {
+  module msg {
+    struct FaultyPartChallenge {
+      string order_id;
+
+      boolean quandrant1;
+
+      boolean quandrant2;
+
+      boolean quandrant3;
+
+      boolean quandrant4;
+    };
+  };
+};

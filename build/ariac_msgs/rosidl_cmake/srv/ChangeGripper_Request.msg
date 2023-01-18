@@ -1,0 +1,5 @@
+uint8 PART_GRIPPER=1
+uint8 TRAY_GRIPPER=2
+
+uint8 gripper_type
+

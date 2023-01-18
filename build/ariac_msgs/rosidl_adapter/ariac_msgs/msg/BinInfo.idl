@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/BinInfo.msg
+// generated code does not contain a copyright notice
+
+#include "ariac_msgs/msg/PartLot.idl"
+
+module ariac_msgs {
+  module msg {
+    module BinInfo_Constants {
+      const uint8 BIN1 = 1;
+      const uint8 BIN2 = 2;
+      const uint8 BIN3 = 3;
+      const uint8 BIN4 = 4;
+      const uint8 BIN5 = 5;
+      const uint8 BIN6 = 6;
+      const uint8 BIN7 = 7;
+      const uint8 BIN8 = 8;
+    };
+    struct BinInfo {
+      uint8 bin_number;
+
+      sequence<ariac_msgs::msg::PartLot> parts;
+    };
+  };
+};

@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ariac_msgs/srv/VacuumGripperControl.srv
+// generated code does not contain a copyright notice
+
+
+module ariac_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      " Vacuum gripper control")
+    struct VacuumGripperControl_Request {
+      @verbatim (language="comment", text=
+        " Enable/Disable gripper suction")
+      boolean enable;
+    };
+    struct VacuumGripperControl_Response {
+      boolean success;
+    };
+  };
+};

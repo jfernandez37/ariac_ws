@@ -1,0 +1,36 @@
+# Trial Name: test.yaml
+# ARIAC2023
+# 2023-01-18 15:52:16
+
+# ENVIRONMENT SETUP
+time_limit: 0 # options: -1 (no time limit) or number of seconds
+
+kitting_trays: # Which kitting trays will be spawned
+  tray_ids: [6]
+  slots: [4]
+
+parts:
+  agvs:
+
+  bins: # bin params - 8 total bins each bin has nine total slots (1-9)
+
+  conveyor_belt: #population params for conveyor belt
+    active: false
+    spawn_rate: 0 # seconds between spawn
+    order: random # random or sequential
+
+# ORDER SETUP
+orders:
+  - order_category: 0
+    id: 'XG2XKV6N'
+    type: 'kitting'
+    announcement:
+    priority: false
+    kitting_task:
+      agv: 1
+      tray_id: 0
+      destination: 'warehouse'
+      products:
+
+# GLOBAL CHALLENGES
+challenges:

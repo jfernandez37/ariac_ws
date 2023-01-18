@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ariac_msgs/srv/MoveAGV.srv
+// generated code does not contain a copyright notice
+
+
+module ariac_msgs {
+  module srv {
+    module MoveAGV_Request_Constants {
+      const int8 KITTING = 0;
+      const int8 ASSEMBLY_FRONT = 1;
+      const int8 ASSEMBLY_BACK = 2;
+      const int8 WAREHOUSE = 3;
+    };
+    struct MoveAGV_Request {
+      int8 location;
+    };
+    struct MoveAGV_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

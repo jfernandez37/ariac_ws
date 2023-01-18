@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/AssemblyStationState.msg
+// generated code does not contain a copyright notice
+
+
+module ariac_msgs {
+  module msg {
+    struct AssemblyStationState {
+      boolean battery_attached;
+
+      boolean sensor_attached;
+
+      boolean regulator_attached;
+
+      boolean pump_attached;
+    };
+  };
+};

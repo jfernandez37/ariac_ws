@@ -1,0 +1,8 @@
+
+bool valid_id
+bool all_passed
+bool incorrect_tray
+ariac_msgs/QualityIssue quadrant1
+ariac_msgs/QualityIssue quadrant2
+ariac_msgs/QualityIssue quadrant3
+ariac_msgs/QualityIssue quadrant4

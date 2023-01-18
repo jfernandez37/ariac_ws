@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/AdvancedLogicalCameraImage.msg
+// generated code does not contain a copyright notice
+
+#include "ariac_msgs/msg/KitTrayPose.idl"
+#include "ariac_msgs/msg/PartPose.idl"
+#include "geometry_msgs/msg/Pose.idl"
+
+module ariac_msgs {
+  module msg {
+    struct AdvancedLogicalCameraImage {
+      sequence<ariac_msgs::msg::PartPose> part_poses;
+
+      sequence<ariac_msgs::msg::KitTrayPose> tray_poses;
+
+      geometry_msgs::msg::Pose sensor_pose;
+    };
+  };
+};

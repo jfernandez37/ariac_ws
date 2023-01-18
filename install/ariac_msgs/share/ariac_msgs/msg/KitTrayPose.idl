@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/KitTrayPose.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+
+module ariac_msgs {
+  module msg {
+    struct KitTrayPose {
+      int8 id;
+
+      geometry_msgs::msg::Pose pose;
+    };
+  };
+};

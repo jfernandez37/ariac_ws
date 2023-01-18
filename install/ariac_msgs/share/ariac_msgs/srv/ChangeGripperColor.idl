@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ariac_msgs/srv/ChangeGripperColor.srv
+// generated code does not contain a copyright notice
+
+
+module ariac_msgs {
+  module srv {
+    struct ChangeGripperColor_Request {
+      double r;
+
+      double g;
+
+      double b;
+
+      double alpha;
+    };
+    struct ChangeGripperColor_Response {
+      boolean success;
+    };
+  };
+};

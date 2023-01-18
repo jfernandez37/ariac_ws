@@ -1,0 +1,1293 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found builtin_interfaces: 1.0.3 (/opt/ros/galactic/share/builtin_interfaces/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/galactic/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found std_msgs: 2.2.4 (/opt/ros/galactic/share/std_msgs/cmake)
+-- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found ament_cmake_cppcheck: 0.10.7 (/opt/ros/galactic/share/ament_cmake_cppcheck/cmake)
+-- Found ament_cmake_cpplint: 0.10.7 (/opt/ros/galactic/share/ament_cmake_cpplint/cmake)
+-- Found ament_cmake_uncrustify: 0.10.7 (/opt/ros/galactic/share/ament_cmake_uncrustify/cmake)
+-- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+-- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+-- Found PythonExtra: .so  
+-- Found ament_cmake_flake8: 0.10.7 (/opt/ros/galactic/share/ament_cmake_flake8/cmake)
+-- Found ament_cmake_pep257: 0.10.7 (/opt/ros/galactic/share/ament_cmake_pep257/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/ariac_ws/build/ariac_msgs
+[  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[35m[1mScanning dependencies of target ariac_msgs__cpp[0m
+[  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  0%] Built target ariac_msgs__cpp
+[  1%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[  1%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  1%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[35m[1mScanning dependencies of target ariac_msgs__rosidl_generator_c[0m
+[  2%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/advanced_logical_camera_image__functions.c.o[0m
+[  2%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/agv_status__functions.c.o[0m
+[  2%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/assembly_part__functions.c.o[0m
+[  2%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/basic_logical_camera_image__functions.c.o[0m
+[  2%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/bin_info__functions.c.o[0m
+[  3%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/assembly_task__functions.c.o[0m
+[  4%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/bin_parts__functions.c.o[0m
+[  4%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/assembly_station_state__functions.c.o[0m
+[  4%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__functions.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/faulty_part_challenge__functions.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_parts__functions.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__functions.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_part__functions.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__functions.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kit_tray_pose__functions.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_pose__functions.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/parts__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/quality_issue__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robots__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/vacuum_gripper_state__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper_color__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/conveyor_belt_control__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/move_agv__functions.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/perform_quality_check__functions.c.o[0m
+[ 13%] [32m[1mLinking C shared library libariac_msgs__rosidl_generator_c.so[0m
+[ 13%] Built target ariac_msgs__rosidl_generator_c
+[ 15%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 15%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[35m[1mScanning dependencies of target ariac_msgs__rosidl_typesupport_cpp[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/advanced_logical_camera_image__type_support.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/bin_info__type_support.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/assembly_part__type_support.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/basic_logical_camera_image__type_support.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/assembly_task__type_support.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/assembly_station_state__type_support.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/agv_status__type_support.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/bin_parts__type_support.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/break_beam_status__type_support.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/challenge__type_support.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/combined_task__type_support.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/conveyor_belt_state__type_support.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/conveyor_parts__type_support.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/dropped_part_challenge__type_support.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/faulty_part_challenge__type_support.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/kitting_part__type_support.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/kitting_task__type_support.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/kit_tray_pose__type_support.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/order__type_support.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/part_lot__type_support.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/part__type_support.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/part_place_condition__type_support.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/part_pose__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target ariac_msgs__rosidl_typesupport_introspection_cpp[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/advanced_logical_camera_image__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target ariac_msgs__rosidl_typesupport_c[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/advanced_logical_camera_image__type_support.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/agv_status__type_support.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/agv_status__type_support.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/quality_issue__type_support.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/parts__type_support.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/robot_malfunction_challenge__type_support.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/assembly_part__type_support.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/robots__type_support.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/sensor_blackout_challenge__type_support.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/sensors__type_support.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/time_condition__type_support.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/assembly_station_state__type_support.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/assembly_task__type_support.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/basic_logical_camera_image__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/bin_info__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/bin_parts__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/break_beam_status__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/assembly_part__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/assembly_station_state__type_support.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/challenge__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/trial__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/combined_task__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/vacuum_gripper_state__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/conveyor_belt_state__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/srv/change_gripper__type_support.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/srv/change_gripper_color__type_support.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/srv/conveyor_belt_control__type_support.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/srv/move_agv__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/conveyor_parts__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/dropped_part_challenge__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/faulty_part_challenge__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/kitting_part__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/kitting_task__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/kit_tray_pose__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/order__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/part_lot__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/part__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target ariac_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/part_place_condition__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/srv/score_task__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/part_pose__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/assembly_task__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/basic_logical_camera_image__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/parts__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/advanced_logical_camera_image__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/srv/vacuum_gripper_control__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/quality_issue__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/robot_malfunction_challenge__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/srv/perform_quality_check__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/robots__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/agv_status__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/sensor_blackout_challenge__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/assembly_part__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/sensors__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/bin_info__type_support.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/time_condition__type_support.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/trial__type_support.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/vacuum_gripper_state__type_support.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/srv/change_gripper__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/srv/change_gripper_color__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/srv/conveyor_belt_control__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target ariac_msgs__rosidl_typesupport_introspection_c[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/srv/move_agv__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/srv/score_task__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/srv/vacuum_gripper_control__type_support.cpp.o[0m
+[ 41%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/agv_status__type_support.c.o[0m
+[ 41%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/advanced_logical_camera_image__type_support.c.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/srv/perform_quality_check__type_support.cpp.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/assembly_part__type_support.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/assembly_station_state__type_support.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/assembly_task__type_support.c.o[0m
+[ 43%] [32m[1mLinking CXX shared library libariac_msgs__rosidl_typesupport_c.so[0m
+[ 43%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/basic_logical_camera_image__type_support.c.o[0m
+[ 43%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/bin_parts__type_support.c.o[0m
+[ 44%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/bin_info__type_support.c.o[0m
+[ 44%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/break_beam_status__type_support.c.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/bin_parts__type_support.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/break_beam_status__type_support.cpp.o[0m
+[ 44%] [32m[1mLinking CXX shared library libariac_msgs__rosidl_typesupport_cpp.so[0m
+[ 44%] Built target ariac_msgs__rosidl_typesupport_c
+[ 45%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.c.o[0m
+[ 45%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge__type_support.c.o[0m
+[ 45%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/combined_task__type_support.c.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support.c.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/conveyor_parts__type_support.c.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/dropped_part_challenge__type_support.c.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/faulty_part_challenge__type_support.c.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp.o[0m
+[ 46%] Built target ariac_msgs__rosidl_typesupport_cpp
+[ 47%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/kitting_part__type_support.c.o[0m
+[ 47%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/kitting_task__type_support.c.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge__type_support.cpp.o[0m
+[ 48%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/kit_tray_pose__type_support.c.o[0m
+[ 49%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order__type_support.c.o[0m
+[ 49%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/part_lot__type_support.c.o[0m
+[ 49%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/part__type_support.c.o[0m
+[ 49%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/combined_task__type_support.cpp.o[0m
+[ 49%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/part_place_condition__type_support.c.o[0m
+[ 50%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/part_pose__type_support.c.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/conveyor_belt_state__type_support.cpp.o[0m
+[ 50%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/parts__type_support.c.o[0m
+[ 50%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/quality_issue__type_support.c.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/assembly_station_state__type_support.cpp.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/robot_malfunction_challenge__type_support.c.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/assembly_task__type_support.cpp.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/robots__type_support.c.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support.c.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/sensors__type_support.c.o[0m
+[ 53%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/time_condition__type_support.c.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/basic_logical_camera_image__type_support.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/conveyor_parts__type_support.cpp.o[0m
+[ 54%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/trial__type_support.c.o[0m
+[ 54%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/vacuum_gripper_state__type_support.c.o[0m
+[ 55%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/change_gripper__type_support.c.o[0m
+[ 55%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/change_gripper_color__type_support.c.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/dropped_part_challenge__type_support.cpp.o[0m
+[ 55%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/conveyor_belt_control__type_support.c.o[0m
+[ 56%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/move_agv__type_support.c.o[0m
+[ 56%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/score_task__type_support.c.o[0m
+[ 56%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.c.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/faulty_part_challenge__type_support.cpp.o[0m
+[ 56%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/perform_quality_check__type_support.c.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/kitting_part__type_support.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/kitting_task__type_support.cpp.o[0m
+[ 58%] [32m[1mLinking C shared library libariac_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/kit_tray_pose__type_support.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order__type_support.cpp.o[0m
+[ 58%] Built target ariac_msgs__rosidl_typesupport_introspection_c
+[ 59%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/part_lot__type_support.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/part__type_support.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/bin_info__type_support.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/part_place_condition__type_support.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/bin_parts__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/part_pose__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/parts__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/break_beam_status__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/quality_issue__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/robot_malfunction_challenge__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/robots__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/sensors__type_support.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/time_condition__type_support.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/trial__type_support.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/vacuum_gripper_state__type_support.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/change_gripper__type_support.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/change_gripper_color__type_support.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge__type_support.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/conveyor_belt_control__type_support.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/move_agv__type_support.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/score_task__type_support.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/combined_task__type_support.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/conveyor_belt_state__type_support.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/conveyor_parts__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/perform_quality_check__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/dropped_part_challenge__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/faulty_part_challenge__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/kitting_part__type_support.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/kitting_task__type_support.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/kit_tray_pose__type_support.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order__type_support.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/part_lot__type_support.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/part__type_support.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/part_place_condition__type_support.cpp.o[0m
+[ 70%] [32m[1mLinking CXX shared library libariac_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/part_pose__type_support.cpp.o[0m
+[ 70%] Built target ariac_msgs__rosidl_typesupport_introspection_cpp
+[ 71%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/parts__type_support.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/quality_issue__type_support.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/robot_malfunction_challenge__type_support.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/robots__type_support.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/sensor_blackout_challenge__type_support.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/sensors__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/time_condition__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/trial__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/vacuum_gripper_state__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/change_gripper__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/change_gripper_color__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/conveyor_belt_control__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/move_agv__type_support.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/score_task__type_support.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/vacuum_gripper_control__type_support.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/perform_quality_check__type_support.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library libariac_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 75%] Built target ariac_msgs__rosidl_typesupport_fastrtps_cpp
+[ 76%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[35m[1mScanning dependencies of target ariac_msgs__rosidl_typesupport_fastrtps_c[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__type_support_c.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/agv_status__type_support_c.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/assembly_station_state__type_support_c.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/assembly_part__type_support_c.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/assembly_task__type_support_c.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/bin_info__type_support_c.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/basic_logical_camera_image__type_support_c.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/break_beam_status__type_support_c.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__type_support_c.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/bin_parts__type_support_c.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/dropped_part_challenge__type_support_c.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_parts__type_support_c.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/faulty_part_challenge__type_support_c.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_part__type_support_c.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_task__type_support_c.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kit_tray_pose__type_support_c.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__type_support_c.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_place_condition__type_support_c.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_pose__type_support_c.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/parts__type_support_c.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robot_malfunction_challenge__type_support_c.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/quality_issue__type_support_c.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robots__type_support_c.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support_c.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/trial__type_support_c.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/vacuum_gripper_state__type_support_c.cpp.o[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper__type_support_c.cpp.o[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper_color__type_support_c.cpp.o[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/conveyor_belt_control__type_support_c.cpp.o[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/move_agv__type_support_c.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/perform_quality_check__type_support_c.cpp.o[0m
+[ 88%] [32m[1mLinking CXX shared library libariac_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 88%] Built target ariac_msgs__rosidl_typesupport_fastrtps_c
+[35m[1mScanning dependencies of target ariac_msgs[0m
+[ 88%] Built target ariac_msgs
+[35m[1mScanning dependencies of target ariac_msgs__py[0m
+[ 88%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 88%] Built target ariac_msgs__py
+[35m[1mScanning dependencies of target ariac_msgs__python[0m
+[ 89%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_advanced_logical_camera_image_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_agv_status_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_assembly_part_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_assembly_station_state_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_assembly_task_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_bin_info_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_bin_parts_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_basic_logical_camera_image_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_combined_task_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_s.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge_s.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_parts_s.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_faulty_part_challenge_s.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_part_s.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c.o[0m
+[ 94%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_place_condition_s.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose_s.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_s.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_s.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_pose_s.c.o[0m
+[ 96%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_parts_s.c.o[0m
+[ 96%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_quality_issue_s.c.o[0m
+[ 96%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robot_malfunction_challenge_s.c.o[0m
+[ 97%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robots_s.c.o[0m
+[ 97%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge_s.c.o[0m
+[ 97%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensors_s.c.o[0m
+[ 97%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c.o[0m
+[ 97%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_trial_s.c.o[0m
+[ 98%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state_s.c.o[0m
+[ 98%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gripper_s.c.o[0m
+[ 98%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gripper_color_s.c.o[0m
+[ 99%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control_s.c.o[0m
+[ 99%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_move_agv_s.c.o[0m
+[ 99%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_score_task_s.c.o[0m
+[ 99%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c.o[0m
+[100%] [32mBuilding C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_perform_quality_check_s.c.o[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/ariac_msgs/libariac_msgs__python.so[0m
+[100%] Built target ariac_msgs__python
+[35m[1mScanning dependencies of target ariac_msgs__rosidl_typesupport_c__pyext[0m
+[35m[1mScanning dependencies of target ariac_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mScanning dependencies of target ariac_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[100%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[100%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[100%] [32mBuilding C object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/ariac_msgs/ariac_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/ariac_msgs/ariac_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking CXX shared library rosidl_generator_py/ariac_msgs/ariac_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[100%] Built target ariac_msgs__rosidl_typesupport_c__pyext
+[100%] Built target ariac_msgs__rosidl_typesupport_introspection_c__pyext
+[100%] Built target ariac_msgs__rosidl_typesupport_fastrtps_c__pyext
+-- Install configuration: ""
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ament_index/resource_index/rosidl_interfaces/ariac_msgs
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/move_agv.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/conveyor_belt_control.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/score_task.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/change_gripper.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/perform_quality_check.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/vacuum_gripper_control__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/perform_quality_check__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper_color__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/perform_quality_check__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/conveyor_belt_control__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/move_agv__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper_color__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/conveyor_belt_control__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/perform_quality_check__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/score_task__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/move_agv__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/vacuum_gripper_control__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper_color__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/score_task__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/move_agv__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/conveyor_belt_control__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/move_agv__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper_color__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/score_task__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/conveyor_belt_control__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/score_task__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/perform_quality_check__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/vacuum_gripper_control.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/change_gripper_color.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/advanced_logical_camera_image.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/part_lot.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/time_condition.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/challenge.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/kit_tray_pose.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/part.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/assembly_part.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/combined_task.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/break_beam_status.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/part_pose.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/faulty_part_challenge.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/assembly_station_state.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/kitting_task.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/sensors.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/vacuum_gripper_state.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/conveyor_parts.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/trial.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/assembly_task.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/agv_status.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/robot_malfunction_challenge.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/dropped_part_challenge.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/sensor_blackout_challenge.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/conveyor_belt_state.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/challenge_condition.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/quality_issue.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/part_place_condition.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/bin_parts.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/order.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/robots.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/kitting_part.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robot_malfunction_challenge__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/parts__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robots__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_task__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/time_condition__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_parts__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_part__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/faulty_part_challenge__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/order__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/dropped_part_challenge__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/order__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/trial__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/basic_logical_camera_image__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_belt_state__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/break_beam_status__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_task__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/basic_logical_camera_image__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_pose__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/quality_issue__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_task__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_pose__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/parts__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_parts__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_pose__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensors__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kit_tray_pose__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/vacuum_gripper_state__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robots__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/agv_status__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_station_state__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robots__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_station_state__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_parts__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/dropped_part_challenge__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_task__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robots__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_lot__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_parts__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/quality_issue__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/order__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/order__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/advanced_logical_camera_image__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/advanced_logical_camera_image__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_lot__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/vacuum_gripper_state__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_lot__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_pose__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_parts__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/break_beam_status__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/combined_task__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_task__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensor_blackout_challenge__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_part__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_part__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_task__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_info__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/agv_status__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_place_condition__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_part__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_station_state__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robot_malfunction_challenge__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/quality_issue__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/quality_issue__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_belt_state__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge_condition__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge_condition__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensors__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/break_beam_status__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/time_condition__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_lot__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/parts__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_part__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/advanced_logical_camera_image__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kit_tray_pose__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_task__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_parts__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/vacuum_gripper_state__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/dropped_part_challenge__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/combined_task__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge_condition__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/trial__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensors__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/trial__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/combined_task__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_station_state__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_part__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_parts__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/faulty_part_challenge__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_place_condition__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/dropped_part_challenge__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_place_condition__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_info__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/time_condition__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/time_condition__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_place_condition__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/agv_status__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_part__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge_condition__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/agv_status__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/basic_logical_camera_image__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_parts__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/vacuum_gripper_state__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/advanced_logical_camera_image__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/basic_logical_camera_image__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_part__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_belt_state__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/faulty_part_challenge__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_task__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/faulty_part_challenge__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/break_beam_status__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/parts__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/combined_task__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kit_tray_pose__type_support.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/trial__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_info__functions.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kit_tray_pose__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_info__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_belt_state__functions.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensors__struct.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/bin_info.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/basic_logical_camera_image.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/parts.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/environment/library_path.sh
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/environment/library_path.dsv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__rosidl_generator_c.so
+-- Set runtime path of "/home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/perform_quality_check__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/move_agv__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/conveyor_belt_control__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper_color__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/vacuum_gripper_control__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/score_task__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robot_malfunction_challenge__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/faulty_part_challenge__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_belt_state__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_parts__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensors__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kit_tray_pose__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge_condition__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/agv_status__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_parts__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_station_state__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_part__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_part__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensor_blackout_challenge__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robots__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/quality_issue__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_info__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_task__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/trial__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_pose__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/break_beam_status__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/time_condition__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/vacuum_gripper_state__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/combined_task__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_place_condition__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_task__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/order__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_lot__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/dropped_part_challenge__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/parts__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/basic_logical_camera_image__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/conveyor_belt_control__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/vacuum_gripper_control__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper_color__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/perform_quality_check__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/dds_fastrtps
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/score_task__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/move_agv__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_info__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_pose__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_part__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_place_condition__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/quality_issue__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/agv_status__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/dropped_part_challenge__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_task__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_station_state__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensors__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_lot__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/time_condition__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_parts__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robots__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_parts__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/faulty_part_challenge__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge_condition__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/combined_task__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/break_beam_status__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kit_tray_pose__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/parts__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/dds_fastrtps
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/order__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/vacuum_gripper_state__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensor_blackout_challenge__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_part__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_belt_state__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/trial__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robot_malfunction_challenge__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_task__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/basic_logical_camera_image__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/vacuum_gripper_control__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/move_agv__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/score_task__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/conveyor_belt_control__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/perform_quality_check__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/move_agv__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/conveyor_belt_control__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/perform_quality_check__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper_color__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/score_task__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper_color__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_parts__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_parts__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_parts__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robots__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/order__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/basic_logical_camera_image__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensors__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/agv_status__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/dropped_part_challenge__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_parts__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/faulty_part_challenge__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_belt_state__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_info__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/trial__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensors__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_lot__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_info__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robot_malfunction_challenge__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_part__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/break_beam_status__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_part__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kit_tray_pose__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge_condition__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/order__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/combined_task__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensor_blackout_challenge__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_part__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/quality_issue__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_task__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_place_condition__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/basic_logical_camera_image__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robot_malfunction_challenge__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_task__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/time_condition__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/vacuum_gripper_state__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/dropped_part_challenge__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_part__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_belt_state__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/quality_issue__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/advanced_logical_camera_image__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_station_state__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/vacuum_gripper_state__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robots__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/combined_task__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/time_condition__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kit_tray_pose__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_task__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_pose__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_task__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/parts__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/faulty_part_challenge__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge_condition__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_pose__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/agv_status__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_place_condition__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/trial__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_station_state__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/break_beam_status__type_support.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/parts__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_lot__rosidl_typesupport_introspection_c.h
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__rosidl_typesupport_c.so
+-- Set runtime path of "/home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/change_gripper_color.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/score_task.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/move_agv.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/perform_quality_check.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/change_gripper.hpp
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/conveyor_belt_control__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/perform_quality_check__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/conveyor_belt_control__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/vacuum_gripper_control__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/conveyor_belt_control__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/perform_quality_check__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper_color__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/move_agv__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper_color__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/score_task__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/score_task__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/vacuum_gripper_control__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper_color__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/score_task__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/vacuum_gripper_control__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/perform_quality_check__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/move_agv__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/move_agv__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/conveyor_belt_control.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/vacuum_gripper_control.hpp
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/part_place_condition.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/advanced_logical_camera_image.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/kit_tray_pose.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/conveyor_belt_state.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/part_lot.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/challenge.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/challenge_condition.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/part_pose.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/dropped_part_challenge.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/assembly_task.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/assembly_part.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/robots.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/faulty_part_challenge.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/bin_info.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/parts.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/part.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/kitting_part.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/combined_task.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/order.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/time_condition.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/quality_issue.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/basic_logical_camera_image.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/conveyor_parts.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/break_beam_status.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/trial.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/vacuum_gripper_state.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/robot_malfunction_challenge.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/assembly_station_state.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/kitting_task.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/sensors.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/bin_parts.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/sensor_blackout_challenge.hpp
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/time_condition__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_parts__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_lot__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_task__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/quality_issue__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge_condition__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge_condition__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_parts__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_place_condition__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/trial__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/order__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensor_blackout_challenge__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_part__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/combined_task__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robot_malfunction_challenge__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/quality_issue__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kit_tray_pose__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/advanced_logical_camera_image__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/parts__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/agv_status__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/quality_issue__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/combined_task__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/trial__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_task__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_belt_state__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensors__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_lot__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_part__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/order__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/trial__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_pose__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_belt_state__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_info__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/break_beam_status__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/faulty_part_challenge__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/faulty_part_challenge__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/time_condition__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/break_beam_status__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_part__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/vacuum_gripper_state__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robots__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_place_condition__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/advanced_logical_camera_image__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge_condition__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/break_beam_status__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/agv_status__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_info__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_info__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_part__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/dropped_part_challenge__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_parts__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robots__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/time_condition__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/combined_task__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robot_malfunction_challenge__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/basic_logical_camera_image__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robot_malfunction_challenge__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_parts__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/parts__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/advanced_logical_camera_image__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/order__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_pose__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_place_condition__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_task__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_task__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kit_tray_pose__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/vacuum_gripper_state__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/faulty_part_challenge__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/dropped_part_challenge__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_station_state__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kit_tray_pose__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/basic_logical_camera_image__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_task__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_belt_state__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/vacuum_gripper_state__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_part__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_pose__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_lot__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_station_state__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensor_blackout_challenge__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_task__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/parts__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_part__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_parts__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_parts__struct.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensor_blackout_challenge__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/basic_logical_camera_image__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/dropped_part_challenge__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robots__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensors__traits.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensors__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/agv_status__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_station_state__builder.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/agv_status.hpp
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/perform_quality_check__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/vacuum_gripper_control__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/move_agv__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/perform_quality_check__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/score_task__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/move_agv__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/conveyor_belt_control__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper_color__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper_color__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/conveyor_belt_control__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/score_task__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/change_gripper__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.cpp
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg
+-- Up-to-date: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robot_malfunction_challenge__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/basic_logical_camera_image__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kit_tray_pose__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_lot__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_station_state__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/vacuum_gripper_state__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kit_tray_pose__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_place_condition__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/parts__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_info__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_task__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_parts__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/combined_task__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensors__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_lot__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensors__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/trial__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/parts__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_belt_state__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_task__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge_condition__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/faulty_part_challenge__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/agv_status__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/dropped_part_challenge__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robot_malfunction_challenge__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_place_condition__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_task__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/quality_issue__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/faulty_part_challenge__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/quality_issue__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/break_beam_status__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/break_beam_status__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/order__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_part__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_pose__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_parts__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/time_condition__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_belt_state__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/trial__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge_condition__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robots__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/robots__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_info__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/advanced_logical_camera_image__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/part_pose__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/challenge__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/time_condition__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensor_blackout_challenge__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/basic_logical_camera_image__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/bin_parts__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/combined_task__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_station_state__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/assembly_part__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/order__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/conveyor_parts__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_part__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/agv_status__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_part__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/vacuum_gripper_state__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/dropped_part_challenge__type_support.cpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/include/ariac_msgs/msg/detail/kitting_task__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/environment/pythonpath.sh
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/environment/pythonpath.dsv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/__init__.py
+Compiling '/home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/__init__.py'...
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_assembly_station_state.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_trial_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_kit_tray_pose_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_faulty_part_challenge_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_part_pose.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_parts.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_basic_logical_camera_image.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_conveyor_belt_state_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_order_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_dropped_part_challenge.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_assembly_task.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_faulty_part_challenge.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_challenge_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_break_beam_status_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_advanced_logical_camera_image.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_assembly_task_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_part_lot.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_kitting_part.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_kitting_part_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_robots.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_sensors.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_agv_status_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_part_pose_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_quality_issue_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_challenge_condition_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_part_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_combined_task.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_conveyor_parts_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_part_lot_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_challenge.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_advanced_logical_camera_image_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_robots_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_robot_malfunction_challenge.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_assembly_part.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_conveyor_belt_state.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_quality_issue.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_break_beam_status.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_sensors_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_agv_status.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_sensor_blackout_challenge_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_robot_malfunction_challenge_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_kitting_task.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_conveyor_parts.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_part_place_condition.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_time_condition_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_vacuum_gripper_state.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_bin_info_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_assembly_station_state_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_dropped_part_challenge_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_bin_info.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_part_place_condition_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_kit_tray_pose.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_order.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_combined_task_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_time_condition.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_parts_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_kitting_task_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_bin_parts.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_trial.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/__init__.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_vacuum_gripper_state_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_sensor_blackout_challenge.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_challenge_condition.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_basic_logical_camera_image_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_assembly_part_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_bin_parts_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/msg/_part.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/_score_task_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/_change_gripper.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/_vacuum_gripper_control_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/_conveyor_belt_control.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/_vacuum_gripper_control.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/_move_agv.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/_move_agv_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/_change_gripper_color.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/_score_task.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/_perform_quality_check.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/_change_gripper_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/_perform_quality_check_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/_change_gripper_color_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/_conveyor_belt_control_s.c
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/srv/__init__.py
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/ariac_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+-- Set runtime path of "/home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/ariac_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/ariac_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+-- Set runtime path of "/home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/ariac_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/ariac_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+-- Set runtime path of "/home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages/ariac_msgs/ariac_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__python.so
+-- Set runtime path of "/home/ubuntu/ariac_ws/install/ariac_msgs/lib/libariac_msgs__python.so" to ""
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/AdvancedLogicalCameraImage.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/AGVStatus.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/AssemblyPart.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/AssemblyStationState.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/AssemblyTask.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/BasicLogicalCameraImage.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/BinInfo.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/BinParts.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/BreakBeamStatus.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/ChallengeCondition.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/Challenge.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/CombinedTask.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/ConveyorBeltState.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/ConveyorParts.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/DroppedPartChallenge.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/FaultyPartChallenge.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/KittingPart.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/KittingTask.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/KitTrayPose.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/Order.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/PartLot.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/Part.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/PartPlaceCondition.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/PartPose.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/Parts.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/QualityIssue.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/RobotMalfunctionChallenge.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/Robots.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/SensorBlackoutChallenge.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/Sensors.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/TimeCondition.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/Trial.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/VacuumGripperState.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ChangeGripper.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ChangeGripperColor.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ConveyorBeltControl.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/MoveAGV.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ScoreTask.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/VacuumGripperControl.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/PerformQualityCheck.idl
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/AdvancedLogicalCameraImage.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/AGVStatus.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/AssemblyPart.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/AssemblyStationState.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/AssemblyTask.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/BasicLogicalCameraImage.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/BinInfo.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/BinParts.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/BreakBeamStatus.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/ChallengeCondition.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/Challenge.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/CombinedTask.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/ConveyorBeltState.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/ConveyorParts.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/DroppedPartChallenge.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/FaultyPartChallenge.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/KittingPart.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/KittingTask.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/KitTrayPose.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/Order.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/PartLot.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/Part.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/PartPlaceCondition.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/PartPose.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/Parts.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/QualityIssue.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/RobotMalfunctionChallenge.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/Robots.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/SensorBlackoutChallenge.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/Sensors.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/TimeCondition.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/Trial.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/msg/VacuumGripperState.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ChangeGripper.srv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ChangeGripper_Request.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ChangeGripper_Response.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ChangeGripperColor.srv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ChangeGripperColor_Request.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ChangeGripperColor_Response.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ConveyorBeltControl.srv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ConveyorBeltControl_Request.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ConveyorBeltControl_Response.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/MoveAGV.srv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/MoveAGV_Request.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/MoveAGV_Response.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ScoreTask.srv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ScoreTask_Request.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/ScoreTask_Response.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/VacuumGripperControl.srv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/VacuumGripperControl_Request.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/VacuumGripperControl_Response.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/PerformQualityCheck.srv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/PerformQualityCheck_Request.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/srv/PerformQualityCheck_Response.msg
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ament_index/resource_index/package_run_dependencies/ariac_msgs
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ament_index/resource_index/parent_prefix_path/ariac_msgs
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/environment/path.sh
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/environment/path.dsv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/local_setup.bash
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/local_setup.sh
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/local_setup.zsh
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/local_setup.dsv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/package.dsv
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ament_index/resource_index/packages/ariac_msgs
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ariac_msgs__rosidl_generator_cExport.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ariac_msgs__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ariac_msgs__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ariac_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ariac_msgs__rosidl_typesupport_cExport.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ariac_msgs__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ariac_msgs__rosidl_generator_cppExport.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ariac_msgs__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ariac_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ariac_msgs__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ariac_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ariac_msgsConfig.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/cmake/ariac_msgsConfig-version.cmake
+-- Installing: /home/ubuntu/ariac_ws/install/ariac_msgs/share/ariac_msgs/package.xml

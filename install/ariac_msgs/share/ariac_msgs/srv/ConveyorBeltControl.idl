@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ariac_msgs/srv/ConveyorBeltControl.srv
+// generated code does not contain a copyright notice
+
+
+module ariac_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      " Conveyor belt control")
+    struct ConveyorBeltControl_Request {
+      @verbatim (language="comment", text=
+        " desired conveyor belt power")
+      double power;
+    };
+    struct ConveyorBeltControl_Response {
+      boolean success;
+    };
+  };
+};

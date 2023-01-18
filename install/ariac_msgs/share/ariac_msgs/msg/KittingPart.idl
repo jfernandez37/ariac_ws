@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/KittingPart.msg
+// generated code does not contain a copyright notice
+
+#include "ariac_msgs/msg/Part.idl"
+
+module ariac_msgs {
+  module msg {
+    module KittingPart_Constants {
+      const uint8 QUADRANT1 = 1;
+      const uint8 QUADRANT2 = 2;
+      const uint8 QUADRANT3 = 3;
+      const uint8 QUADRANT4 = 4;
+    };
+    struct KittingPart {
+      ariac_msgs::msg::Part part;
+
+      uint8 quadrant;
+    };
+  };
+};

@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/BinParts.msg
+// generated code does not contain a copyright notice
+
+#include "ariac_msgs/msg/BinInfo.idl"
+
+module ariac_msgs {
+  module msg {
+    struct BinParts {
+      sequence<ariac_msgs::msg::BinInfo> bins;
+    };
+  };
+};

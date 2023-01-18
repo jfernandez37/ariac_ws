@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/Robots.msg
+// generated code does not contain a copyright notice
+
+
+module ariac_msgs {
+  module msg {
+    struct Robots {
+      boolean floor_robot;
+
+      boolean ceiling_robot;
+    };
+  };
+};

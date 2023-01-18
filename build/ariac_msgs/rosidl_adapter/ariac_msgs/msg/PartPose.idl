@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/PartPose.msg
+// generated code does not contain a copyright notice
+
+#include "ariac_msgs/msg/Part.idl"
+#include "geometry_msgs/msg/Pose.idl"
+
+module ariac_msgs {
+  module msg {
+    struct PartPose {
+      ariac_msgs::msg::Part part;
+
+      geometry_msgs::msg::Pose pose;
+    };
+  };
+};

@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ariac_msgs/srv/PerformQualityCheck.srv
+// generated code does not contain a copyright notice
+
+#include "ariac_msgs/msg/QualityIssue.idl"
+
+module ariac_msgs {
+  module srv {
+    struct PerformQualityCheck_Request {
+      string task_id;
+    };
+    struct PerformQualityCheck_Response {
+      boolean valid_id;
+
+      boolean all_passed;
+
+      boolean incorrect_tray;
+
+      ariac_msgs::msg::QualityIssue quadrant1;
+
+      ariac_msgs::msg::QualityIssue quadrant2;
+
+      ariac_msgs::msg::QualityIssue quadrant3;
+
+      ariac_msgs::msg::QualityIssue quadrant4;
+    };
+  };
+};

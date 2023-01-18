@@ -1,0 +1,24 @@
+[0.505s] Invoking command in '/home/ubuntu/ariac_ws/src/ariac_gui': AMENT_PREFIX_PATH=/home/ubuntu/ariac_ws/install/ariac_msgs CMAKE_PREFIX_PATH=/home/ubuntu/ariac_ws/install/ariac_msgs LD_LIBRARY_PATH=/home/ubuntu/ariac_ws/install/ariac_msgs/lib PYTHONPATH=/home/ubuntu/ariac_ws/build/ariac_gui/prefix_override:/home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages:/home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/ariac_gui build --build-base /home/ubuntu/ariac_ws/build/ariac_gui/build install --record /home/ubuntu/ariac_ws/build/ariac_gui/install.log --single-version-externally-managed
+[0.666s] running egg_info
+[0.666s] writing ../../build/ariac_gui/ariac_gui.egg-info/PKG-INFO
+[0.666s] writing dependency_links to ../../build/ariac_gui/ariac_gui.egg-info/dependency_links.txt
+[0.666s] writing entry points to ../../build/ariac_gui/ariac_gui.egg-info/entry_points.txt
+[0.667s] writing requirements to ../../build/ariac_gui/ariac_gui.egg-info/requires.txt
+[0.667s] writing top-level names to ../../build/ariac_gui/ariac_gui.egg-info/top_level.txt
+[0.700s] reading manifest file '../../build/ariac_gui/ariac_gui.egg-info/SOURCES.txt'
+[0.701s] writing manifest file '../../build/ariac_gui/ariac_gui.egg-info/SOURCES.txt'
+[0.701s] running build
+[0.701s] running build_py
+[0.701s] copying ariac_gui/newGui.py -> /home/ubuntu/ariac_ws/build/ariac_gui/build/lib/ariac_gui
+[0.702s] running install
+[0.703s] running install_lib
+[0.703s] copying /home/ubuntu/ariac_ws/build/ariac_gui/build/lib/ariac_gui/newGui.py -> /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui
+[0.704s] byte-compiling /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/newGui.py to newGui.cpython-38.pyc
+[0.709s] running install_data
+[0.709s] running install_egg_info
+[0.711s] removing '/home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui-0.0.0-py3.8.egg-info' (and everything under it)
+[0.711s] Copying ../../build/ariac_gui/ariac_gui.egg-info to /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui-0.0.0-py3.8.egg-info
+[0.712s] running install_scripts
+[0.727s] Installing gui script to /home/ubuntu/ariac_ws/install/ariac_gui/lib/ariac_gui
+[0.728s] writing list of installed files to '/home/ubuntu/ariac_ws/build/ariac_gui/install.log'
+[0.744s] Invoked command in '/home/ubuntu/ariac_ws/src/ariac_gui' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/ariac_ws/install/ariac_msgs CMAKE_PREFIX_PATH=/home/ubuntu/ariac_ws/install/ariac_msgs LD_LIBRARY_PATH=/home/ubuntu/ariac_ws/install/ariac_msgs/lib PYTHONPATH=/home/ubuntu/ariac_ws/build/ariac_gui/prefix_override:/home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages:/home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/ariac_gui build --build-base /home/ubuntu/ariac_ws/build/ariac_gui/build install --record /home/ubuntu/ariac_ws/build/ariac_gui/install.log --single-version-externally-managed

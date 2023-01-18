@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/AssemblyPart.msg
+// generated code does not contain a copyright notice
+
+#include "ariac_msgs/msg/Part.idl"
+#include "geometry_msgs/msg/PoseStamped.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+
+module ariac_msgs {
+  module msg {
+    struct AssemblyPart {
+      ariac_msgs::msg::Part part;
+
+      geometry_msgs::msg::PoseStamped assembled_pose;
+
+      geometry_msgs::msg::Vector3 install_direction;
+    };
+  };
+};

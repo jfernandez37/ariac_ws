@@ -1,0 +1,24 @@
+[0.640s] Invoking command in '/home/ubuntu/ariac_ws/src/ariac_gui': PYTHONPATH=/home/ubuntu/ariac_ws/build/ariac_gui/prefix_override:/home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages:/home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages:/home/ubuntu/ariac_ws/install/py_pubsub/lib/python3.8/site-packages:/home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/ariac_gui build --build-base /home/ubuntu/ariac_ws/build/ariac_gui/build install --record /home/ubuntu/ariac_ws/build/ariac_gui/install.log --single-version-externally-managed
+[0.847s] running egg_info
+[0.847s] writing ../../build/ariac_gui/ariac_gui.egg-info/PKG-INFO
+[0.848s] writing dependency_links to ../../build/ariac_gui/ariac_gui.egg-info/dependency_links.txt
+[0.848s] writing entry points to ../../build/ariac_gui/ariac_gui.egg-info/entry_points.txt
+[0.848s] writing requirements to ../../build/ariac_gui/ariac_gui.egg-info/requires.txt
+[0.848s] writing top-level names to ../../build/ariac_gui/ariac_gui.egg-info/top_level.txt
+[0.880s] reading manifest file '../../build/ariac_gui/ariac_gui.egg-info/SOURCES.txt'
+[0.881s] writing manifest file '../../build/ariac_gui/ariac_gui.egg-info/SOURCES.txt'
+[0.881s] running build
+[0.882s] running build_py
+[0.882s] copying ariac_gui/gui_node.py -> /home/ubuntu/ariac_ws/build/ariac_gui/build/lib/ariac_gui
+[0.882s] running install
+[0.883s] running install_lib
+[0.883s] copying /home/ubuntu/ariac_ws/build/ariac_gui/build/lib/ariac_gui/gui_node.py -> /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui
+[0.884s] byte-compiling /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/gui_node.py to gui_node.cpython-38.pyc
+[0.885s] running install_data
+[0.886s] running install_egg_info
+[0.887s] removing '/home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui-0.0.0-py3.8.egg-info' (and everything under it)
+[0.888s] Copying ../../build/ariac_gui/ariac_gui.egg-info to /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui-0.0.0-py3.8.egg-info
+[0.889s] running install_scripts
+[0.906s] Installing gui script to /home/ubuntu/ariac_ws/install/ariac_gui/lib/ariac_gui
+[0.906s] writing list of installed files to '/home/ubuntu/ariac_ws/build/ariac_gui/install.log'
+[0.924s] Invoked command in '/home/ubuntu/ariac_ws/src/ariac_gui' returned '0': PYTHONPATH=/home/ubuntu/ariac_ws/build/ariac_gui/prefix_override:/home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages:/home/ubuntu/ariac_ws/install/ariac_msgs/lib/python3.8/site-packages:/home/ubuntu/ariac_ws/install/py_pubsub/lib/python3.8/site-packages:/home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/ariac_gui build --build-base /home/ubuntu/ariac_ws/build/ariac_gui/build install --record /home/ubuntu/ariac_ws/build/ariac_gui/install.log --single-version-externally-managed
