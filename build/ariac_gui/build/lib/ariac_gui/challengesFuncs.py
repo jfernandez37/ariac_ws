@@ -77,6 +77,7 @@ def newRobotMalfunction(robotMalfunctions):
         newRobotMalf=RobotMalfunction()
         newRobotMalf.robots_to_disable=bothRobots
         newRobotMalf.duration=float(duration.get())
+        #newRobotMalf.condition=
         robotsString=""
         if floorRobot.get()=="1" and ceilRobot.get()=="1":
             robotsString="[\'floor_robot\', \'ceiling_robot\']"
@@ -122,6 +123,24 @@ def newFaultyPart(faultyParts, usedIds):
     faultyPartCancel.pack()
     faultyPartWind.mainloop()
     if faultyPartCancelFlag.get()=="0":
+        faultyPartMSG=FaultyPartChallenge()
+        faultyPartMSG.order_id=currentOrderID.get()
+        if q1.get()=="1":
+            faultyPartMSG.quadrant1 = True
+        else:
+            faultyPartMSG.quadrant1 = False
+        if q2.get()=="1":
+            faultyPartMSG.quadrant2 = True
+        else:
+            faultyPartMSG.quadrant2 = False
+        if q3.get()=="1":
+            faultyPartMSG.quadrant3 = True
+        else:
+            faultyPartMSG.quadrant3 = False
+        if q4.get()=="1":
+            faultyPartMSG.quadrant4 = True
+        else:
+            faultyPartMSG.quadrant4 = False
         quadrants=[]
         if q1.get()=="1":
             quadrants.append("1")
@@ -185,6 +204,30 @@ def newDroppedPart(droppedParts):
     delayVal.trace('w', validate_delay)
     dropPartWind.mainloop()
     if dropPartCancelFlag.get()=="0":
+        droppedPartMSG=DroppedPartChallenge()
+        droppedPartMSG.robot=robotType.get()
+        partToDrop=Part()
+        if partType.get()=="sensor":
+            partToDrop.type=partToDrop.SENSOR
+        elif partType.get()=="pump":
+            partToDrop.type=partToDrop.PUMP
+        elif partType.get()=="battery":
+            partToDrop.type=partToDrop.BATTERY
+        else:
+            partToDrop.type=partToDrop.REGULATOR
+        if partColor.get()=="red":
+            partToDrop.color=partToDrop.RED
+        elif partColor.get()=="green":
+            partToDrop.color=partToDrop.GREEN
+        elif partColor.get()=="blue":
+            partToDrop.color=partToDrop.BLUE
+        elif partColor.get()=="orange":
+            partToDrop.color=partToDrop.ORANGE
+        else:
+            partToDrop.color=partToDrop.PURPLE
+        droppedPartMSG.part_to_drop=partToDrop
+        droppedPartMSG.drop_after_num=int(dropAfter.get())
+        droppedPartMSG.drop_after_time=float(delayVal.get())
         droppedParts.append(DroppedPart(robotType.get(), partType.get(), partColor.get(), dropAfter.get(), delayVal.get()))
 
 def showAGVMenu(agvShow,agvShowCB, agvMenu, agvLabel, agv, a,b,c):
