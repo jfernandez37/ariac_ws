@@ -518,5 +518,5 @@ def addNewOrder(allOrders, orderCounter, allOrderChallenges, orderKittingParts,o
         if orderPriority.get()=="0":
             ordP="false"
         else:
-            ordP="true"
+            ordP="true" ``
         allOrders.append(Orders(str(orderCategories.index(orderCategory.get())),orderID,orderType.get(),ordP, taskAGV.get(), kitTrayId.get(), kittingDestination.get(), assemblyStation.get(), time.get(), agv.get(), quadrant.get(), announcementID, partType.get(), partColor.get()))
