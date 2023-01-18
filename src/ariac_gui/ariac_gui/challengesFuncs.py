@@ -77,7 +77,7 @@ def newRobotMalfunction(robotMalfunctions):
         newRobotMalf=RobotMalfunction()
         newRobotMalf.robots_to_disable=bothRobots
         newRobotMalf.duration=float(duration.get())
-        newRobotMalf.condition=
+        #newRobotMalf.condition=
         robotsString=""
         if floorRobot.get()=="1" and ceilRobot.get()=="1":
             robotsString="[\'floor_robot\', \'ceiling_robot\']"
