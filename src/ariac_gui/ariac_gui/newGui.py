@@ -34,7 +34,6 @@ def runGUI():
     agv3Parts=[]
     agv4Parts=[]
     agvTrayIds=["","0","1","2","3","4","5","6"] # all options for tray ids for agvs
-    trayIds=["0","1","2","3","4","5","6"] # all options for tray ids
     agv1Quadrants=["1","2","3","4"] # available quadrants for agv1
     agv2Quadrants=["1","2","3","4"] # available quadrants for agv2
     agv3Quadrants=["1","2","3","4"] # available quadrants for agv3
@@ -511,48 +510,10 @@ def runGUI():
                 o.write("\n        offset: "+part.offset+" # between -1 and 1")
                 o.write("\n        rotation: "+ part.rotation)
                 o.write("\n        # time_before_next_part: 2 # seconds\n")
+        
+        #Beginning of order writing to file
         o.write("\n# ORDER SETUP\n")
         o.write("orders:\n")
-        '''for order in allOrders:
-            o.write("  - order_category: "+order.category)
-            o.write("\n    id: \'"+order.id+"\'\n")
-            o.write("    type: \'"+order.type+"\'\n")
-            o.write("    announcement:\n")
-            if order.time!="":
-                o.write("      time: "+order.time+"\n")
-            if order.agv!="" and order.quadrant!="":
-                o.write("      agv: "+order.agv+"\n")
-                o.write("      quadrant: "+order.quadrant+"\n")
-            if order.annID!="":
-                o.write("      order_id: \""+order.annID+"\"\n")
-            if order.pType!="" and order.pColor!="":
-                o.write("      part_type: \'"+order.pType+"\'\n")
-                o.write("      part_color: \'"+order.pColor+"\'\n")
-            o.write("    priority: "+order.priority+"\n")
-            if order.type=="kitting":
-                o.write("    kitting_task:\n")
-                o.write("      agv: "+order.agvNumber+"\n")
-                o.write("      tray_id: "+order.trayId+"\n")
-                o.write("      destination: \'"+order.destination+"\'\n")
-                o.write("      products:\n")
-                for prod in orderKittingParts:
-                    if prod.orderId==order.id:
-                        o.write("        - type: \'"+prod.type+"\'\n")
-                        o.write("          color: \'"+prod.color+"\'\n")
-                        o.write("          quadrant: "+prod.quadrant+"\n")
-            else:
-                o.write("    assembly_task:\n")
-                o.write("      agv: ["+order.agvNumber+"]\n")
-                o.write("      station: \'"+order.station+"\'\n")
-                o.write("      products:\n")
-                for prod in orderAssembParts:
-                    if prod.orderId==order.id:
-                        o.write("        - type: \'"+prod.type+"\'\n")
-                        o.write("          color: \'"+prod.color+"\'\n")
-                        o.write("          assembled_pose: # relative to briefcase frame\n")
-                        o.write("            xyz: "+prod.xyz+"\n")
-                        o.write("            rpy: "+prod.rpy+"\n")
-                        o.write("          assembly_direction: "+prod.direction+"\n")'''
         for order in orderMSGS:
             o.write("    id: \'"+order.id+"\'\n")
             o.write("    type: \'"+getOrderType(order.type)+"\'\n")
@@ -590,6 +551,8 @@ def runGUI():
                     o.write("            xyz: "+prod.xyz+"\n")
                     o.write("            rpy: "+prod.rpy+"\n")'''
                     o.write("          assembly_direction: ["+str(combinedPart.install_direction.x)+", "+str(combinedPart.install_direction.y)+", "+str(combinedPart.install_direction.z)+"]\n")
+        #end of order writing to file
+        
         o.write("\n# GLOBAL CHALLENGES\n")
         o.write("challenges:\n")
         for malf in robotMalfunctions:
