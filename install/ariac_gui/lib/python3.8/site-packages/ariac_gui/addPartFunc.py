@@ -76,30 +76,11 @@ def addAGVPart(agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Qua
     agvSelection.trace('w', agv_update_menu)
     newPartWind.mainloop()
     if newPartCancelFlag.get()=="0":
-        '''newPart=Part()
-        if partType.get()=="sensor":
-            newPart.type=newPart.SENSOR
-        elif partType.get()=="pump":
-            newPart.type=newPart.PUMP
-        elif partType.get()=="battery":
-            newPart.type=newPart.BATTERY
-        else:
-            newPart.type=newPart.REGULATOR
-        if partColor.get()=="red":
-            newPart.color=newPart.RED
-        elif partColor.get()=="green":
-            newPart.color=newPart.GREEN
-        elif partColor.get()=="blue":
-            newPart.color=newPart.BLUE
-        elif partColor.get()=="orange":
-            newPart.color=newPart.ORANGE
-        else:
-            newPart.color=newPart.PURPLE'''
         add_quotes(partType)
         add_quotes(partColor)
         if 'pi' in partRotation.get():
             add_quotes(partRotation)
-        if agvSelection.get()=='agv1':
+        if agvSelection.get()=='agv1': # saves the part to the correct agv
             agv1Parts.append(PartsClass(partType.get(), partColor.get(), partQuadrant.get(), partRotation.get()))
         elif agvSelection.get()=='agv2':
             agv2Parts.append(PartsClass(partType.get(), partColor.get(), partQuadrant.get(), partRotation.get()))
@@ -108,13 +89,13 @@ def addAGVPart(agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Qua
         else:
             agv4Parts.append(PartsClass(partType.get(), partColor.get(), partQuadrant.get(), partRotation.get()))      
 
-def savePart(wind, saveFlag):
+def savePart(wind, saveFlag): # allows the while loop in main to stop so the parts window stops when the user saves
     saveFlag.set('1')
     wind.destroy()
 
 def addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, spawnRate,convActive,convParts, cancelFlag, pathIncrement,fileName,createdDir, convOrder,saveFlag):
     partsWind=tk.Tk()
-    #partsWind.geometry("850x600")
+    #agv settings
     partsWind.attributes('-fullscreen', True)
     agv1TrayLabel=tk.Label(partsWind, text="Select the tray Id for agv1")
     agv1TrayLabel.grid(column=leftColumn,padx=20)
@@ -132,12 +113,14 @@ def addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts
     agv4TrayLabel.grid(column=leftColumn)
     agv4TrayIdSelect=tk.OptionMenu(partsWind, agv4TrayId, *agvTrayIds)
     agv4TrayIdSelect.grid(column=leftColumn)
+    #agv parts
     add_new_part=partial(addAGVPart,agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Quadrants,agv3Quadrants,agv4Quadrants, partsWind)
     addPartsButton=tk.Button(partsWind, text="Add part", command=add_new_part)
     addPartsButton.grid(column=leftColumn)
     leftSpaceLabel=tk.Label(partsWind, text="")
     leftSpaceLabel.grid(column=leftColumn, pady=30)
     update_agv_ids=partial(updateTrayIds,agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1TrayIdSelect, agv2TrayIdSelect, agv3TrayIdSelect, agv4TrayIdSelect,agvTrayIds)
+    #ensures that agvs can not hav ethe same tray ids
     agv1TrayId.trace('w', update_agv_ids)
     agv2TrayId.trace('w', update_agv_ids)
     agv3TrayId.trace('w', update_agv_ids)
@@ -216,7 +199,7 @@ def addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts
     partsWind.mainloop()
     check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
 
-def writePartsToFile(name, id, partsList, saveFileName):
+def writePartsToFile(name, id, partsList, saveFileName): # writes the part information to the file for a given agv
     '''Writes agv info and parts on the agv to the file'''
     with open(saveFileName, "a") as o:
         o.write("    "+name+":\n")

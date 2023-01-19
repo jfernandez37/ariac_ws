@@ -156,27 +156,20 @@ def runGUI():
     timeWind.title("Time limit")
     #timeWind.geometry("850x600")
     timeWind.attributes('-fullscreen', True)
-    #margin=tk.Label(timeWind, text=" "*middleColumnWidth)
-    #margin.grid(column=leftColumn)
     timeInstructions=tk.Label(timeWind, text="Enter the time limit you would like for the simulation")
-    #timeInstructions.grid(column=middleColumn, pady=100)
     timeInstructions.pack(pady=100)
     timeVal=tk.StringVar()
     timeVal.set("0")
     noTimeVal=tk.StringVar()
     noTimeVal.set("0")
     noTimeLim=tk.Checkbutton(timeWind, text="No time limit", variable=noTimeVal, onvalue="1", offvalue="0", height=CHECKBOXHEIGHT, width=20)
-    #noTimeLim.grid(column=middleColumn)
     noTimeLim.pack()
     getTime=tk.Entry(timeWind, textvariable=timeVal)
-    #getTime.grid(column=middleColumn)
     getTime.pack()
     saveTimeButton=tk.Button(timeWind, text="Save and Continue", command=timeWind.destroy)
-    #saveTimeButton.grid(column=middleColumn,pady=20)
     saveTimeButton.pack(pady=20)
     cancel_time_command=partial(cancel_wind, timeWind, cancelFlag)
     cancelTimeButton=tk.Button(timeWind, text="Cancel and Exit", command=cancel_time_command)
-    #cancelTimeButton.grid(column=middleColumn,pady=20)
     cancelTimeButton.pack(pady=20)
     updateGetTime=partial(updateTimeInputBox, noTimeVal, getTime)
     validateTimeInput=partial(validateTime, timeVal)
@@ -303,7 +296,7 @@ def runGUI():
     # ----------------------------------------------------------------------------------------------
     # START OF PARTS
     #parts variables
-    while(saveFlag.get()=="0"):
+    while(saveFlag.get()=="0"): #Runs until the user saves and exits or quits
         addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts, agv3Parts, agv4Parts, 
         agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,
         bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, 
@@ -318,6 +311,7 @@ def runGUI():
     new_order_func=partial(addNewOrder, orderMSGS, allOrders, orderCounter, allOrderChallenges,orderKittingParts,orderAssembParts, usedIDs)
     newOrderButton=tk.Button(ordersWind, text="New Order", command=new_order_func)
     newOrderButton.pack()
+    #save and cancel buttons
     saveOrdersButton=tk.Button(ordersWind, text="Save and Continue", command=ordersWind.destroy)
     saveOrdersButton.pack(pady=20)
     cancel_orders_command=partial(cancel_wind, ordersWind, cancelFlag)
@@ -336,18 +330,23 @@ def runGUI():
     challengeWind.title("Challenges")
     #challengeWind.geometry("850x600")
     challengeWind.attributes('-fullscreen', True)
+    #robot malfunciton
     new_robot_malfunction=partial(newRobotMalfunction, robotMalfunctions, usedIDs)
     robotMalfunctionButton=tk.Button(challengeWind, text="Add robot malfunction", command=new_robot_malfunction)
     robotMalfunctionButton.pack(pady=10)
+    #faluty part
     new_faulty_part=partial(newFaultyPart, faultyParts, usedIDs)
     faultyPartButton=tk.Button(challengeWind, text="Add faulty part", command=new_faulty_part)
     faultyPartButton.pack(pady=10)
+    #dropped part
     new_dropped_part=partial(newDroppedPart, droppedParts)
     droppedPartButton=tk.Button(challengeWind, text="Add dropped part", command=new_dropped_part)
     droppedPartButton.pack(pady=10)
+    #sensor blackout
     new_sensor_blackout=partial(newSensorBlackout, sensorBlackouts, usedIDs)
     sensorBlackoutButton=tk.Button(challengeWind, text="Add sensor blackout", command=new_sensor_blackout)
     sensorBlackoutButton.pack(pady=10)
+    #save and cancel buttons
     saveChallengeButton=tk.Button(challengeWind, text="Save and Continue", command=challengeWind.destroy)
     saveChallengeButton.pack(pady=20)
     cancel_challenge_command=partial(cancel_wind, challengeWind, cancelFlag)
@@ -381,10 +380,10 @@ def runGUI():
         o.write("# Trial Name: "+saveFileName+"\n")
         o.write("# ARIAC2023\n")
         o.write("# "+datetime.now().strftime("%Y-%m-%d %H:%M:%S")+"\n\n") #writes the time and date
-        o.write("# ENVIRONMENT SETUP\n") #writes the time limit
-        if noTimeVal.get()=="1":
+        o.write("# ENVIRONMENT SETUP\n") 
+        if noTimeVal.get()=="1": # runs if the user selects no time limit
             o.write("time_limit: -1")
-        else:
+        else: #writes the time limit
             o.write("time_limit: "+timeVal.get())
         o.write(" # options: -1 (no time limit) or number of seconds\n")
         o.write("\nkitting_trays: # Which kitting trays will be spawned\n")
@@ -534,6 +533,7 @@ def runGUI():
         for blackout in sensorBlackouts:
             o.write("  - sensor_blackout:\n")
             o.write("    duration: "+str(blackout.duration)+"\n")
+            #gets the list of sensors to disable
             if blackout.sensors_to_disable.break_beam:
                 sensorsToDisable.append("break_beam")
             if blackout.sensors_to_disable.proximity:
