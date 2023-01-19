@@ -10,8 +10,12 @@
 
 
 // Include directives for member types
+// Member `trial_name`
+#include "rosidl_runtime_c/string_functions.h"
 // Member `orders`
 #include "ariac_msgs/msg/detail/order__functions.h"
+// Member `order_conditions`
+#include "ariac_msgs/msg/detail/order_condition__functions.h"
 // Member `challenges`
 #include "ariac_msgs/msg/detail/challenge__functions.h"
 
@@ -21,8 +25,19 @@ ariac_msgs__msg__Trial__init(ariac_msgs__msg__Trial * msg)
   if (!msg) {
     return false;
   }
+  // time_limit
+  // trial_name
+  if (!rosidl_runtime_c__String__init(&msg->trial_name)) {
+    ariac_msgs__msg__Trial__fini(msg);
+    return false;
+  }
   // orders
   if (!ariac_msgs__msg__Order__Sequence__init(&msg->orders, 0)) {
+    ariac_msgs__msg__Trial__fini(msg);
+    return false;
+  }
+  // order_conditions
+  if (!ariac_msgs__msg__OrderCondition__Sequence__init(&msg->order_conditions, 0)) {
     ariac_msgs__msg__Trial__fini(msg);
     return false;
   }
@@ -40,8 +55,13 @@ ariac_msgs__msg__Trial__fini(ariac_msgs__msg__Trial * msg)
   if (!msg) {
     return;
   }
+  // time_limit
+  // trial_name
+  rosidl_runtime_c__String__fini(&msg->trial_name);
   // orders
   ariac_msgs__msg__Order__Sequence__fini(&msg->orders);
+  // order_conditions
+  ariac_msgs__msg__OrderCondition__Sequence__fini(&msg->order_conditions);
   // challenges
   ariac_msgs__msg__Challenge__Sequence__fini(&msg->challenges);
 }
@@ -52,9 +72,25 @@ ariac_msgs__msg__Trial__are_equal(const ariac_msgs__msg__Trial * lhs, const aria
   if (!lhs || !rhs) {
     return false;
   }
+  // time_limit
+  if (lhs->time_limit != rhs->time_limit) {
+    return false;
+  }
+  // trial_name
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->trial_name), &(rhs->trial_name)))
+  {
+    return false;
+  }
   // orders
   if (!ariac_msgs__msg__Order__Sequence__are_equal(
       &(lhs->orders), &(rhs->orders)))
+  {
+    return false;
+  }
+  // order_conditions
+  if (!ariac_msgs__msg__OrderCondition__Sequence__are_equal(
+      &(lhs->order_conditions), &(rhs->order_conditions)))
   {
     return false;
   }
@@ -75,9 +111,23 @@ ariac_msgs__msg__Trial__copy(
   if (!input || !output) {
     return false;
   }
+  // time_limit
+  output->time_limit = input->time_limit;
+  // trial_name
+  if (!rosidl_runtime_c__String__copy(
+      &(input->trial_name), &(output->trial_name)))
+  {
+    return false;
+  }
   // orders
   if (!ariac_msgs__msg__Order__Sequence__copy(
       &(input->orders), &(output->orders)))
+  {
+    return false;
+  }
+  // order_conditions
+  if (!ariac_msgs__msg__OrderCondition__Sequence__copy(
+      &(input->order_conditions), &(output->order_conditions)))
   {
     return false;
   }

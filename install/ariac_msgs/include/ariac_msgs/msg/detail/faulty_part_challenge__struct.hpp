@@ -38,10 +38,10 @@ struct FaultyPartChallenge_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->order_id = "";
-      this->quandrant1 = false;
-      this->quandrant2 = false;
-      this->quandrant3 = false;
-      this->quandrant4 = false;
+      this->quadrant1 = false;
+      this->quadrant2 = false;
+      this->quadrant3 = false;
+      this->quadrant4 = false;
     }
   }
 
@@ -52,10 +52,10 @@ struct FaultyPartChallenge_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->order_id = "";
-      this->quandrant1 = false;
-      this->quandrant2 = false;
-      this->quandrant3 = false;
-      this->quandrant4 = false;
+      this->quadrant1 = false;
+      this->quadrant2 = false;
+      this->quadrant3 = false;
+      this->quadrant4 = false;
     }
   }
 
@@ -63,18 +63,18 @@ struct FaultyPartChallenge_
   using _order_id_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _order_id_type order_id;
-  using _quandrant1_type =
+  using _quadrant1_type =
     bool;
-  _quandrant1_type quandrant1;
-  using _quandrant2_type =
+  _quadrant1_type quadrant1;
+  using _quadrant2_type =
     bool;
-  _quandrant2_type quandrant2;
-  using _quandrant3_type =
+  _quadrant2_type quadrant2;
+  using _quadrant3_type =
     bool;
-  _quandrant3_type quandrant3;
-  using _quandrant4_type =
+  _quadrant3_type quadrant3;
+  using _quadrant4_type =
     bool;
-  _quandrant4_type quandrant4;
+  _quadrant4_type quadrant4;
 
   // setters for named parameter idiom
   Type & set__order_id(
@@ -83,28 +83,28 @@ struct FaultyPartChallenge_
     this->order_id = _arg;
     return *this;
   }
-  Type & set__quandrant1(
+  Type & set__quadrant1(
     const bool & _arg)
   {
-    this->quandrant1 = _arg;
+    this->quadrant1 = _arg;
     return *this;
   }
-  Type & set__quandrant2(
+  Type & set__quadrant2(
     const bool & _arg)
   {
-    this->quandrant2 = _arg;
+    this->quadrant2 = _arg;
     return *this;
   }
-  Type & set__quandrant3(
+  Type & set__quadrant3(
     const bool & _arg)
   {
-    this->quandrant3 = _arg;
+    this->quadrant3 = _arg;
     return *this;
   }
-  Type & set__quandrant4(
+  Type & set__quadrant4(
     const bool & _arg)
   {
-    this->quandrant4 = _arg;
+    this->quadrant4 = _arg;
     return *this;
   }
 
@@ -153,16 +153,16 @@ struct FaultyPartChallenge_
     if (this->order_id != other.order_id) {
       return false;
     }
-    if (this->quandrant1 != other.quandrant1) {
+    if (this->quadrant1 != other.quadrant1) {
       return false;
     }
-    if (this->quandrant2 != other.quandrant2) {
+    if (this->quadrant2 != other.quadrant2) {
       return false;
     }
-    if (this->quandrant3 != other.quandrant3) {
+    if (this->quadrant3 != other.quadrant3) {
       return false;
     }
-    if (this->quandrant4 != other.quandrant4) {
+    if (this->quadrant4 != other.quadrant4) {
       return false;
     }
     return true;

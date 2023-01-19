@@ -13,7 +13,7 @@ module ariac_msgs {
       const uint8 AS4 = 4;
     };
     struct AssemblyTask {
-      uint8 agv_number;
+      sequence<uint8> agv_numbers;
 
       uint8 station;
 

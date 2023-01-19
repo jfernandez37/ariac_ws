@@ -31,7 +31,8 @@ ariac_msgs__msg__DroppedPartChallenge__init(ariac_msgs__msg__DroppedPartChalleng
     ariac_msgs__msg__DroppedPartChallenge__fini(msg);
     return false;
   }
-  // bin_num
+  // drop_after_num
+  // drop_after_time
   return true;
 }
 
@@ -45,7 +46,8 @@ ariac_msgs__msg__DroppedPartChallenge__fini(ariac_msgs__msg__DroppedPartChalleng
   rosidl_runtime_c__String__fini(&msg->robot);
   // part_to_drop
   ariac_msgs__msg__Part__fini(&msg->part_to_drop);
-  // bin_num
+  // drop_after_num
+  // drop_after_time
 }
 
 bool
@@ -66,8 +68,12 @@ ariac_msgs__msg__DroppedPartChallenge__are_equal(const ariac_msgs__msg__DroppedP
   {
     return false;
   }
-  // bin_num
-  if (lhs->bin_num != rhs->bin_num) {
+  // drop_after_num
+  if (lhs->drop_after_num != rhs->drop_after_num) {
+    return false;
+  }
+  // drop_after_time
+  if (lhs->drop_after_time != rhs->drop_after_time) {
     return false;
   }
   return true;
@@ -93,8 +99,10 @@ ariac_msgs__msg__DroppedPartChallenge__copy(
   {
     return false;
   }
-  // bin_num
-  output->bin_num = input->bin_num;
+  // drop_after_num
+  output->drop_after_num = input->drop_after_num;
+  // drop_after_time
+  output->drop_after_time = input->drop_after_time;
   return true;
 }
 

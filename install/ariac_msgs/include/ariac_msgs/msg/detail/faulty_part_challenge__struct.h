@@ -25,10 +25,10 @@ extern "C"
 typedef struct ariac_msgs__msg__FaultyPartChallenge
 {
   rosidl_runtime_c__String order_id;
-  bool quandrant1;
-  bool quandrant2;
-  bool quandrant3;
-  bool quandrant4;
+  bool quadrant1;
+  bool quadrant2;
+  bool quadrant3;
+  bool quadrant4;
 } ariac_msgs__msg__FaultyPartChallenge;
 
 // Struct for a sequence of ariac_msgs__msg__FaultyPartChallenge.

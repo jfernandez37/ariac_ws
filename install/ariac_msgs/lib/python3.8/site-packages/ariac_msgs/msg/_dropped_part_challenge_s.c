@@ -81,13 +81,22 @@ bool ariac_msgs__msg__dropped_part_challenge__convert_from_py(PyObject * _pymsg,
     }
     Py_DECREF(field);
   }
-  {  // bin_num
-    PyObject * field = PyObject_GetAttrString(_pymsg, "bin_num");
+  {  // drop_after_num
+    PyObject * field = PyObject_GetAttrString(_pymsg, "drop_after_num");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->bin_num = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->drop_after_num = (uint8_t)PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
+  {  // drop_after_time
+    PyObject * field = PyObject_GetAttrString(_pymsg, "drop_after_time");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->drop_after_time = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -143,11 +152,22 @@ PyObject * ariac_msgs__msg__dropped_part_challenge__convert_to_py(void * raw_ros
       }
     }
   }
-  {  // bin_num
+  {  // drop_after_num
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->bin_num);
+    field = PyLong_FromUnsignedLong(ros_message->drop_after_num);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "bin_num", field);
+      int rc = PyObject_SetAttrString(_pymessage, "drop_after_num", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // drop_after_time
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->drop_after_time);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "drop_after_time", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

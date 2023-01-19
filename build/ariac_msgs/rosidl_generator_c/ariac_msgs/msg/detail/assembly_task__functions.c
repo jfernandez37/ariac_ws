@@ -10,6 +10,8 @@
 
 
 // Include directives for member types
+// Member `agv_numbers`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
 // Member `parts`
 #include "ariac_msgs/msg/detail/assembly_part__functions.h"
 
@@ -19,7 +21,11 @@ ariac_msgs__msg__AssemblyTask__init(ariac_msgs__msg__AssemblyTask * msg)
   if (!msg) {
     return false;
   }
-  // agv_number
+  // agv_numbers
+  if (!rosidl_runtime_c__uint8__Sequence__init(&msg->agv_numbers, 0)) {
+    ariac_msgs__msg__AssemblyTask__fini(msg);
+    return false;
+  }
   // station
   // parts
   if (!ariac_msgs__msg__AssemblyPart__Sequence__init(&msg->parts, 0)) {
@@ -35,7 +41,8 @@ ariac_msgs__msg__AssemblyTask__fini(ariac_msgs__msg__AssemblyTask * msg)
   if (!msg) {
     return;
   }
-  // agv_number
+  // agv_numbers
+  rosidl_runtime_c__uint8__Sequence__fini(&msg->agv_numbers);
   // station
   // parts
   ariac_msgs__msg__AssemblyPart__Sequence__fini(&msg->parts);
@@ -47,8 +54,10 @@ ariac_msgs__msg__AssemblyTask__are_equal(const ariac_msgs__msg__AssemblyTask * l
   if (!lhs || !rhs) {
     return false;
   }
-  // agv_number
-  if (lhs->agv_number != rhs->agv_number) {
+  // agv_numbers
+  if (!rosidl_runtime_c__uint8__Sequence__are_equal(
+      &(lhs->agv_numbers), &(rhs->agv_numbers)))
+  {
     return false;
   }
   // station
@@ -72,8 +81,12 @@ ariac_msgs__msg__AssemblyTask__copy(
   if (!input || !output) {
     return false;
   }
-  // agv_number
-  output->agv_number = input->agv_number;
+  // agv_numbers
+  if (!rosidl_runtime_c__uint8__Sequence__copy(
+      &(input->agv_numbers), &(output->agv_numbers)))
+  {
+    return false;
+  }
   // station
   output->station = input->station;
   // parts

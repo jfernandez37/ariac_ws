@@ -48,6 +48,10 @@ class Metaclass_Trial(type):
             if Order.__class__._TYPE_SUPPORT is None:
                 Order.__class__.__import_type_support__()
 
+            from ariac_msgs.msg import OrderCondition
+            if OrderCondition.__class__._TYPE_SUPPORT is None:
+                OrderCondition.__class__.__import_type_support__()
+
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -61,17 +65,26 @@ class Trial(metaclass=Metaclass_Trial):
     """Message class 'Trial'."""
 
     __slots__ = [
+        '_time_limit',
+        '_trial_name',
         '_orders',
+        '_order_conditions',
         '_challenges',
     ]
 
     _fields_and_field_types = {
+        'time_limit': 'float',
+        'trial_name': 'string',
         'orders': 'sequence<ariac_msgs/Order>',
+        'order_conditions': 'sequence<ariac_msgs/OrderCondition>',
         'challenges': 'sequence<ariac_msgs/Challenge>',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['ariac_msgs', 'msg'], 'Order')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['ariac_msgs', 'msg'], 'OrderCondition')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['ariac_msgs', 'msg'], 'Challenge')),  # noqa: E501
     )
 
@@ -79,7 +92,10 @@ class Trial(metaclass=Metaclass_Trial):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.time_limit = kwargs.get('time_limit', float())
+        self.trial_name = kwargs.get('trial_name', str())
         self.orders = kwargs.get('orders', [])
+        self.order_conditions = kwargs.get('order_conditions', [])
         self.challenges = kwargs.get('challenges', [])
 
     def __repr__(self):
@@ -111,7 +127,13 @@ class Trial(metaclass=Metaclass_Trial):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.time_limit != other.time_limit:
+            return False
+        if self.trial_name != other.trial_name:
+            return False
         if self.orders != other.orders:
+            return False
+        if self.order_conditions != other.order_conditions:
             return False
         if self.challenges != other.challenges:
             return False
@@ -121,6 +143,32 @@ class Trial(metaclass=Metaclass_Trial):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
+
+    @property
+    def time_limit(self):
+        """Message field 'time_limit'."""
+        return self._time_limit
+
+    @time_limit.setter
+    def time_limit(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'time_limit' field must be of type 'float'"
+        self._time_limit = value
+
+    @property
+    def trial_name(self):
+        """Message field 'trial_name'."""
+        return self._trial_name
+
+    @trial_name.setter
+    def trial_name(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'trial_name' field must be of type 'str'"
+        self._trial_name = value
 
     @property
     def orders(self):
@@ -145,6 +193,30 @@ class Trial(metaclass=Metaclass_Trial):
                  True), \
                 "The 'orders' field must be a set or sequence and each value of type 'Order'"
         self._orders = value
+
+    @property
+    def order_conditions(self):
+        """Message field 'order_conditions'."""
+        return self._order_conditions
+
+    @order_conditions.setter
+    def order_conditions(self, value):
+        if __debug__:
+            from ariac_msgs.msg import OrderCondition
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, OrderCondition) for v in value) and
+                 True), \
+                "The 'order_conditions' field must be a set or sequence and each value of type 'OrderCondition'"
+        self._order_conditions = value
 
     @property
     def challenges(self):

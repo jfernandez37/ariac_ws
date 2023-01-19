@@ -34,14 +34,14 @@ cdr_serialize(
 {
   // Member: order_id
   cdr << ros_message.order_id;
-  // Member: quandrant1
-  cdr << (ros_message.quandrant1 ? true : false);
-  // Member: quandrant2
-  cdr << (ros_message.quandrant2 ? true : false);
-  // Member: quandrant3
-  cdr << (ros_message.quandrant3 ? true : false);
-  // Member: quandrant4
-  cdr << (ros_message.quandrant4 ? true : false);
+  // Member: quadrant1
+  cdr << (ros_message.quadrant1 ? true : false);
+  // Member: quadrant2
+  cdr << (ros_message.quadrant2 ? true : false);
+  // Member: quadrant3
+  cdr << (ros_message.quadrant3 ? true : false);
+  // Member: quadrant4
+  cdr << (ros_message.quadrant4 ? true : false);
   return true;
 }
 
@@ -54,32 +54,32 @@ cdr_deserialize(
   // Member: order_id
   cdr >> ros_message.order_id;
 
-  // Member: quandrant1
+  // Member: quadrant1
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message.quandrant1 = tmp ? true : false;
+    ros_message.quadrant1 = tmp ? true : false;
   }
 
-  // Member: quandrant2
+  // Member: quadrant2
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message.quandrant2 = tmp ? true : false;
+    ros_message.quadrant2 = tmp ? true : false;
   }
 
-  // Member: quandrant3
+  // Member: quadrant3
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message.quandrant3 = tmp ? true : false;
+    ros_message.quadrant3 = tmp ? true : false;
   }
 
-  // Member: quandrant4
+  // Member: quadrant4
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message.quandrant4 = tmp ? true : false;
+    ros_message.quadrant4 = tmp ? true : false;
   }
 
   return true;
@@ -102,27 +102,27 @@ get_serialized_size(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message.order_id.size() + 1);
-  // Member: quandrant1
+  // Member: quadrant1
   {
-    size_t item_size = sizeof(ros_message.quandrant1);
+    size_t item_size = sizeof(ros_message.quadrant1);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: quandrant2
+  // Member: quadrant2
   {
-    size_t item_size = sizeof(ros_message.quandrant2);
+    size_t item_size = sizeof(ros_message.quadrant2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: quandrant3
+  // Member: quadrant3
   {
-    size_t item_size = sizeof(ros_message.quandrant3);
+    size_t item_size = sizeof(ros_message.quadrant3);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: quandrant4
+  // Member: quadrant4
   {
-    size_t item_size = sizeof(ros_message.quandrant4);
+    size_t item_size = sizeof(ros_message.quadrant4);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -157,28 +157,28 @@ max_serialized_size_FaultyPartChallenge(
     }
   }
 
-  // Member: quandrant1
+  // Member: quadrant1
   {
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint8_t);
   }
 
-  // Member: quandrant2
+  // Member: quadrant2
   {
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint8_t);
   }
 
-  // Member: quandrant3
+  // Member: quadrant3
   {
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint8_t);
   }
 
-  // Member: quandrant4
+  // Member: quadrant4
   {
     size_t array_size = 1;
 

@@ -645,33 +645,6 @@ rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.s
 .PHONY : rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.s
 
-rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o
-
-.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.o
-
-# target to build an object file
-rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o
-.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o
-
-rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.i: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.i
-
-.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.i:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.i
-.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.i
-
-rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.s: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.s
-
-.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.s:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.s
-.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.s
-
 rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.o: rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c.o
 
 .PHONY : rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.o
@@ -698,6 +671,60 @@ rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.s: rosidl_gene
 rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c.s
 .PHONY : rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c.s
+
+rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.o: rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o
+
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.o
+
+# target to build an object file
+rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o
+
+rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.i: rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.i
+
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.i
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.i
+
+rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.s: rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.s
+
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.s
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.s
+
+rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.o: rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o
+
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.o
+
+# target to build an object file
+rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o
+
+rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.i: rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.i
+
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.i
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.i
+
+rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.s: rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.s
+
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.s
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.s
 
 rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.o: rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c.o
 
@@ -914,6 +941,33 @@ rosidl_generator_c/ariac_msgs/msg/detail/order__functions.s: rosidl_generator_c/
 rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.s
 .PHONY : rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.s
+
+rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.o: rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o
+
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.o
+
+# target to build an object file
+rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o
+
+rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.i: rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.i
+
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.i
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.i
+
+rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.s: rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.s
+
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.s
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.s
 
 rosidl_generator_c/ariac_msgs/msg/detail/part__functions.o: rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c.o
 
@@ -1185,6 +1239,33 @@ rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.s
 .PHONY : rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.s
 
+rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.o: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o
+
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.o
+
+# target to build an object file
+rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o
+
+rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.i: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.i
+
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.i
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.i
+
+rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.s: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.s
+
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.s
+.PHONY : rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.s
+
 rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.o: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c.o
 
 .PHONY : rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.o
@@ -1427,6 +1508,33 @@ rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.s: rosidl_generat
 rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.s
 .PHONY : rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.s
+
+rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.o: rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o
+
+.PHONY : rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.o
+
+# target to build an object file
+rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o
+.PHONY : rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o
+
+rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.i: rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.i
+
+.PHONY : rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.i
+.PHONY : rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.i
+
+rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.s: rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.s
+
+.PHONY : rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.s
+.PHONY : rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.s
 
 rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.o: rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c.o
 
@@ -1779,33 +1887,6 @@ rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.c.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.c.s
 .PHONY : rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.c.s
 
-rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.o: rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.o
-
-.PHONY : rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.o
-
-# target to build an object file
-rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.o:
-	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.o
-.PHONY : rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.o
-
-rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.i: rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.i
-
-.PHONY : rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.i
-
-# target to preprocess a source file
-rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.i:
-	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.i
-.PHONY : rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.i
-
-rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.s: rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.s
-
-.PHONY : rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.s
-
-# target to generate assembly for a file
-rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.s:
-	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.s
-.PHONY : rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.s
-
 rosidl_generator_py/ariac_msgs/msg/_challenge_s.o: rosidl_generator_py/ariac_msgs/msg/_challenge_s.c.o
 
 .PHONY : rosidl_generator_py/ariac_msgs/msg/_challenge_s.o
@@ -1859,6 +1940,60 @@ rosidl_generator_py/ariac_msgs/msg/_combined_task_s.s: rosidl_generator_py/ariac
 rosidl_generator_py/ariac_msgs/msg/_combined_task_s.c.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_combined_task_s.c.s
 .PHONY : rosidl_generator_py/ariac_msgs/msg/_combined_task_s.c.s
+
+rosidl_generator_py/ariac_msgs/msg/_competition_state_s.o: rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.o
+
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_competition_state_s.o
+
+# target to build an object file
+rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.o
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.o
+
+rosidl_generator_py/ariac_msgs/msg/_competition_state_s.i: rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.i
+
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_competition_state_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.i
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.i
+
+rosidl_generator_py/ariac_msgs/msg/_competition_state_s.s: rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.s
+
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_competition_state_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.s
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.s
+
+rosidl_generator_py/ariac_msgs/msg/_condition_s.o: rosidl_generator_py/ariac_msgs/msg/_condition_s.c.o
+
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_condition_s.o
+
+# target to build an object file
+rosidl_generator_py/ariac_msgs/msg/_condition_s.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.o
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_condition_s.c.o
+
+rosidl_generator_py/ariac_msgs/msg/_condition_s.i: rosidl_generator_py/ariac_msgs/msg/_condition_s.c.i
+
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_condition_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/ariac_msgs/msg/_condition_s.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.i
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_condition_s.c.i
+
+rosidl_generator_py/ariac_msgs/msg/_condition_s.s: rosidl_generator_py/ariac_msgs/msg/_condition_s.c.s
+
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_condition_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/ariac_msgs/msg/_condition_s.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.s
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_condition_s.c.s
 
 rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.o: rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c.o
 
@@ -2048,6 +2183,33 @@ rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.s: rosidl_generator_py/ariac_
 rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c.s
 .PHONY : rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c.s
+
+rosidl_generator_py/ariac_msgs/msg/_order_condition_s.o: rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.o
+
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_order_condition_s.o
+
+# target to build an object file
+rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.o
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.o
+
+rosidl_generator_py/ariac_msgs/msg/_order_condition_s.i: rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.i
+
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_order_condition_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.i
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.i
+
+rosidl_generator_py/ariac_msgs/msg/_order_condition_s.s: rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.s
+
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_order_condition_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.s
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.s
 
 rosidl_generator_py/ariac_msgs/msg/_order_s.o: rosidl_generator_py/ariac_msgs/msg/_order_s.c.o
 
@@ -2346,6 +2508,33 @@ rosidl_generator_py/ariac_msgs/msg/_sensors_s.c.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensors_s.c.s
 .PHONY : rosidl_generator_py/ariac_msgs/msg/_sensors_s.c.s
 
+rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.o: rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.o
+
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.o
+
+# target to build an object file
+rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.o
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.o
+
+rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.i: rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.i
+
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.i
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.i
+
+rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.s: rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.s
+
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.s
+.PHONY : rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.s
+
 rosidl_generator_py/ariac_msgs/msg/_time_condition_s.o: rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c.o
 
 .PHONY : rosidl_generator_py/ariac_msgs/msg/_time_condition_s.o
@@ -2588,6 +2777,33 @@ rosidl_generator_py/ariac_msgs/srv/_score_task_s.s: rosidl_generator_py/ariac_ms
 rosidl_generator_py/ariac_msgs/srv/_score_task_s.c.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_score_task_s.c.s
 .PHONY : rosidl_generator_py/ariac_msgs/srv/_score_task_s.c.s
+
+rosidl_generator_py/ariac_msgs/srv/_submit_order_s.o: rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.o
+
+.PHONY : rosidl_generator_py/ariac_msgs/srv/_submit_order_s.o
+
+# target to build an object file
+rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.o
+.PHONY : rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.o
+
+rosidl_generator_py/ariac_msgs/srv/_submit_order_s.i: rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.i
+
+.PHONY : rosidl_generator_py/ariac_msgs/srv/_submit_order_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.i
+.PHONY : rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.i
+
+rosidl_generator_py/ariac_msgs/srv/_submit_order_s.s: rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.s
+
+.PHONY : rosidl_generator_py/ariac_msgs/srv/_submit_order_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__python.dir/build.make CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.s
+.PHONY : rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.s
 
 rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.o: rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c.o
 
@@ -2886,33 +3102,6 @@ rosidl_typesupport_c/ariac_msgs/msg/challenge__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/challenge__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/ariac_msgs/msg/challenge__type_support.cpp.s
 
-rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.o: rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.cpp.o
-
-.PHONY : rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.cpp.o
-
-rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.i: rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.cpp.i
-
-.PHONY : rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.cpp.i
-
-rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.s: rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.cpp.s
-
-.PHONY : rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.cpp.s
-
 rosidl_typesupport_c/ariac_msgs/msg/combined_task__type_support.o: rosidl_typesupport_c/ariac_msgs/msg/combined_task__type_support.cpp.o
 
 .PHONY : rosidl_typesupport_c/ariac_msgs/msg/combined_task__type_support.o
@@ -2939,6 +3128,60 @@ rosidl_typesupport_c/ariac_msgs/msg/combined_task__type_support.s: rosidl_typesu
 rosidl_typesupport_c/ariac_msgs/msg/combined_task__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/combined_task__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/ariac_msgs/msg/combined_task__type_support.cpp.s
+
+rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.o: rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.cpp.o
+
+rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.i: rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.cpp.i
+
+rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.s: rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.cpp.s
+
+rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.o: rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.cpp.o
+
+rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.i: rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.cpp.i
+
+rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.s: rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.cpp.s
 
 rosidl_typesupport_c/ariac_msgs/msg/conveyor_belt_state__type_support.o: rosidl_typesupport_c/ariac_msgs/msg/conveyor_belt_state__type_support.cpp.o
 
@@ -3155,6 +3398,33 @@ rosidl_typesupport_c/ariac_msgs/msg/order__type_support.s: rosidl_typesupport_c/
 rosidl_typesupport_c/ariac_msgs/msg/order__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/order__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/ariac_msgs/msg/order__type_support.cpp.s
+
+rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.o: rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.cpp.o
+
+rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.i: rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.cpp.i
+
+rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.s: rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.cpp.s
 
 rosidl_typesupport_c/ariac_msgs/msg/part__type_support.o: rosidl_typesupport_c/ariac_msgs/msg/part__type_support.cpp.o
 
@@ -3426,6 +3696,33 @@ rosidl_typesupport_c/ariac_msgs/msg/sensors__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/sensors__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/ariac_msgs/msg/sensors__type_support.cpp.s
 
+rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.o: rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.cpp.o
+
+rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.i: rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.cpp.i
+
+rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.s: rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.cpp.s
+
 rosidl_typesupport_c/ariac_msgs/msg/time_condition__type_support.o: rosidl_typesupport_c/ariac_msgs/msg/time_condition__type_support.cpp.o
 
 .PHONY : rosidl_typesupport_c/ariac_msgs/msg/time_condition__type_support.o
@@ -3668,6 +3965,33 @@ rosidl_typesupport_c/ariac_msgs/srv/score_task__type_support.s: rosidl_typesuppo
 rosidl_typesupport_c/ariac_msgs/srv/score_task__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/srv/score_task__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/ariac_msgs/srv/score_task__type_support.cpp.s
+
+rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.o: rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.cpp.o
+
+rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.i: rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.cpp.i
+
+rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.s: rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.cpp.s
 
 rosidl_typesupport_c/ariac_msgs/srv/vacuum_gripper_control__type_support.o: rosidl_typesupport_c/ariac_msgs/srv/vacuum_gripper_control__type_support.cpp.o
 
@@ -3966,33 +4290,6 @@ rosidl_typesupport_cpp/ariac_msgs/msg/challenge__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/challenge__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/challenge__type_support.cpp.s
 
-rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.o: rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.cpp.o
-
-.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.cpp.o
-
-rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.i: rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.cpp.i
-
-.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.cpp.i
-
-rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.s: rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.cpp.s
-
-.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.cpp.s
-
 rosidl_typesupport_cpp/ariac_msgs/msg/combined_task__type_support.o: rosidl_typesupport_cpp/ariac_msgs/msg/combined_task__type_support.cpp.o
 
 .PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/combined_task__type_support.o
@@ -4019,6 +4316,60 @@ rosidl_typesupport_cpp/ariac_msgs/msg/combined_task__type_support.s: rosidl_type
 rosidl_typesupport_cpp/ariac_msgs/msg/combined_task__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/combined_task__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/combined_task__type_support.cpp.s
+
+rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.o: rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.cpp.o
+
+rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.i: rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.cpp.i
+
+rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.s: rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.cpp.s
+
+rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.o: rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.cpp.o
+
+rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.i: rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.cpp.i
+
+rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.s: rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.cpp.s
 
 rosidl_typesupport_cpp/ariac_msgs/msg/conveyor_belt_state__type_support.o: rosidl_typesupport_cpp/ariac_msgs/msg/conveyor_belt_state__type_support.cpp.o
 
@@ -4235,6 +4586,33 @@ rosidl_typesupport_cpp/ariac_msgs/msg/order__type_support.s: rosidl_typesupport_
 rosidl_typesupport_cpp/ariac_msgs/msg/order__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/order__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/order__type_support.cpp.s
+
+rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.o: rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.cpp.o
+
+rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.i: rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.cpp.i
+
+rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.s: rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.cpp.s
 
 rosidl_typesupport_cpp/ariac_msgs/msg/part__type_support.o: rosidl_typesupport_cpp/ariac_msgs/msg/part__type_support.cpp.o
 
@@ -4506,6 +4884,33 @@ rosidl_typesupport_cpp/ariac_msgs/msg/sensors__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/sensors__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/sensors__type_support.cpp.s
 
+rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.o: rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.cpp.o
+
+rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.i: rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.cpp.i
+
+rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.s: rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.cpp.s
+
 rosidl_typesupport_cpp/ariac_msgs/msg/time_condition__type_support.o: rosidl_typesupport_cpp/ariac_msgs/msg/time_condition__type_support.cpp.o
 
 .PHONY : rosidl_typesupport_cpp/ariac_msgs/msg/time_condition__type_support.o
@@ -4748,6 +5153,33 @@ rosidl_typesupport_cpp/ariac_msgs/srv/score_task__type_support.s: rosidl_typesup
 rosidl_typesupport_cpp/ariac_msgs/srv/score_task__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/srv/score_task__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/ariac_msgs/srv/score_task__type_support.cpp.s
+
+rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.o: rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.cpp.o
+
+rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.i: rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.cpp.i
+
+rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.s: rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.cpp.s
 
 rosidl_typesupport_cpp/ariac_msgs/srv/vacuum_gripper_control__type_support.o: rosidl_typesupport_cpp/ariac_msgs/srv/vacuum_gripper_control__type_support.cpp.o
 
@@ -5046,33 +5478,6 @@ rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__type_support_c.cp
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__type_support_c.cpp.s
 
-rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.o
-
-.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.o:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.i: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.i
-
-.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.i:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.s: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.s
-
-.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.s:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.s
-
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.cpp.o
 
 .PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.o
@@ -5099,6 +5504,60 @@ rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.i: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.s: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.i: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.s: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.cpp.o
 
@@ -5315,6 +5774,33 @@ rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.s: ros
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.i: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.s: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.cpp.o
 
@@ -5586,6 +6072,33 @@ rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp.
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.i: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.s: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.s
+
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.cpp.o
 
 .PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.o
@@ -5828,6 +6341,33 @@ rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.s
 rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.o: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.i: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.s: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.o: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.cpp.o
 
@@ -6126,33 +6666,6 @@ rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge__ty
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge__type_support.cpp.s
 
-rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.o: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.cpp.o
-
-.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.i: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.cpp.i
-
-.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.s: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.cpp.s
-
-.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.cpp.s
-
 rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/combined_task__type_support.o: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/combined_task__type_support.cpp.o
 
 .PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/combined_task__type_support.o
@@ -6179,6 +6692,60 @@ rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/combined_task
 rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/combined_task__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/combined_task__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/combined_task__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.o: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.i: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.s: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.o: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.i: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.s: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/conveyor_belt_state__type_support.o: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/conveyor_belt_state__type_support.cpp.o
 
@@ -6395,6 +6962,33 @@ rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order__type_s
 rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.o: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.i: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.s: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/part__type_support.o: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/part__type_support.cpp.o
 
@@ -6666,6 +7260,33 @@ rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/sensors__type
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/sensors__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/sensors__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.o: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.i: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.s: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/time_condition__type_support.o: rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/time_condition__type_support.cpp.o
 
 .PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/time_condition__type_support.o
@@ -6908,6 +7529,33 @@ rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/score_task__t
 rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/score_task__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/score_task__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/score_task__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.o: rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.i: rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.s: rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/vacuum_gripper_control__type_support.o: rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/vacuum_gripper_control__type_support.cpp.o
 
@@ -7206,33 +7854,6 @@ rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge__type_support
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge__type_support.c.s
 
-rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.o: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.c.o
-
-.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.c.o:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.c.o
-
-rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.i: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.c.i
-
-.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.c.i:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.c.i
-
-rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.s: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.c.s
-
-.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.c.s:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.c.s
-
 rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/combined_task__type_support.o: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/combined_task__type_support.c.o
 
 .PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/combined_task__type_support.o
@@ -7259,6 +7880,60 @@ rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/combined_task__type_sup
 rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/combined_task__type_support.c.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/combined_task__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/combined_task__type_support.c.s
+
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.o: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.c.o
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.c.o
+
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.i: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.c.i
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.c.i
+
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.s: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.c.s
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.c.s
+
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.o: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.c.o
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.c.o
+
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.i: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.c.i
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.c.i
+
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.s: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.c.s
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.c.s
 
 rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support.o: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support.c.o
 
@@ -7475,6 +8150,33 @@ rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order__type_support.s: 
 rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order__type_support.c.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order__type_support.c.s
+
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.o: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.c.o
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.c.o
+
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.i: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.c.i
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.c.i
+
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.s: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.c.s
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.c.s
 
 rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/part__type_support.o: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/part__type_support.c.o
 
@@ -7746,6 +8448,33 @@ rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/sensors__type_support.c
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/sensors__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/sensors__type_support.c.s
 
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.o: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.c.o
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.c.o
+
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.i: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.c.i
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.c.i
+
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.s: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.c.s
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.c.s
+
 rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/time_condition__type_support.o: rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/time_condition__type_support.c.o
 
 .PHONY : rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/time_condition__type_support.o
@@ -7988,6 +8717,33 @@ rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/score_task__type_suppor
 rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/score_task__type_support.c.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/score_task__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/score_task__type_support.c.s
+
+rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.o: rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.c.o
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.c.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.c.o
+
+rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.i: rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.c.i
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.c.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.c.i
+
+rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.s: rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.c.s
+
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.c.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.c.s
 
 rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.o: rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.c.o
 
@@ -8286,33 +9042,6 @@ rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge__type_suppo
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge__type_support.cpp.s
 
-rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.o: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp.o
-
-.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.i: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp.i
-
-.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.s: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp.s
-
-.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp.s
-
 rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/combined_task__type_support.o: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/combined_task__type_support.cpp.o
 
 .PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/combined_task__type_support.o
@@ -8339,6 +9068,60 @@ rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/combined_task__type_s
 rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/combined_task__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/combined_task__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/combined_task__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.o: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.i: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.s: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.o: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.i: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.s: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/conveyor_belt_state__type_support.o: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/conveyor_belt_state__type_support.cpp.o
 
@@ -8555,6 +9338,33 @@ rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order__type_support.s
 rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.o: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.i: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.s: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/part__type_support.o: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/part__type_support.cpp.o
 
@@ -8826,6 +9636,33 @@ rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/sensors__type_support
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/sensors__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/sensors__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.o: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.i: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.s: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.cpp.s
+
 rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/time_condition__type_support.o: rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/time_condition__type_support.cpp.o
 
 .PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/time_condition__type_support.o
@@ -9069,6 +9906,33 @@ rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/score_task__type_supp
 	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/score_task__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/score_task__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.o: rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.i: rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.s: rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.cpp.s
+
 rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.o: rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.cpp.o
 
 .PHONY : rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.o
@@ -9155,12 +10019,15 @@ help:
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.o"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.i"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.s"
-	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.o"
-	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.i"
-	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.s"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.o"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.i"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.s"
+	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.o"
+	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.i"
+	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.s"
+	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.o"
+	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.i"
+	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.s"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.o"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.i"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.s"
@@ -9185,6 +10052,9 @@ help:
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/order__functions.o"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/order__functions.i"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/order__functions.s"
+	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.o"
+	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.i"
+	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.s"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/part__functions.o"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/part__functions.i"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/part__functions.s"
@@ -9215,6 +10085,9 @@ help:
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.o"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.i"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.s"
+	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.o"
+	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.i"
+	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.s"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.o"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.i"
 	@echo "... rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.s"
@@ -9242,6 +10115,9 @@ help:
 	@echo "... rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.o"
 	@echo "... rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.i"
 	@echo "... rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.s"
+	@echo "... rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.o"
+	@echo "... rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.i"
+	@echo "... rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.s"
 	@echo "... rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.o"
 	@echo "... rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.i"
 	@echo "... rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.s"
@@ -9281,15 +10157,18 @@ help:
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.o"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.i"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.s"
-	@echo "... rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.o"
-	@echo "... rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.i"
-	@echo "... rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.s"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_challenge_s.o"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_challenge_s.i"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_challenge_s.s"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_combined_task_s.o"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_combined_task_s.i"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_combined_task_s.s"
+	@echo "... rosidl_generator_py/ariac_msgs/msg/_competition_state_s.o"
+	@echo "... rosidl_generator_py/ariac_msgs/msg/_competition_state_s.i"
+	@echo "... rosidl_generator_py/ariac_msgs/msg/_competition_state_s.s"
+	@echo "... rosidl_generator_py/ariac_msgs/msg/_condition_s.o"
+	@echo "... rosidl_generator_py/ariac_msgs/msg/_condition_s.i"
+	@echo "... rosidl_generator_py/ariac_msgs/msg/_condition_s.s"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.o"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.i"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.s"
@@ -9311,6 +10190,9 @@ help:
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.o"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.i"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.s"
+	@echo "... rosidl_generator_py/ariac_msgs/msg/_order_condition_s.o"
+	@echo "... rosidl_generator_py/ariac_msgs/msg/_order_condition_s.i"
+	@echo "... rosidl_generator_py/ariac_msgs/msg/_order_condition_s.s"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_order_s.o"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_order_s.i"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_order_s.s"
@@ -9344,6 +10226,9 @@ help:
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_sensors_s.o"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_sensors_s.i"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_sensors_s.s"
+	@echo "... rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.o"
+	@echo "... rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.i"
+	@echo "... rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.s"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_time_condition_s.o"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_time_condition_s.i"
 	@echo "... rosidl_generator_py/ariac_msgs/msg/_time_condition_s.s"
@@ -9371,6 +10256,9 @@ help:
 	@echo "... rosidl_generator_py/ariac_msgs/srv/_score_task_s.o"
 	@echo "... rosidl_generator_py/ariac_msgs/srv/_score_task_s.i"
 	@echo "... rosidl_generator_py/ariac_msgs/srv/_score_task_s.s"
+	@echo "... rosidl_generator_py/ariac_msgs/srv/_submit_order_s.o"
+	@echo "... rosidl_generator_py/ariac_msgs/srv/_submit_order_s.i"
+	@echo "... rosidl_generator_py/ariac_msgs/srv/_submit_order_s.s"
 	@echo "... rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.o"
 	@echo "... rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.i"
 	@echo "... rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.s"
@@ -9404,12 +10292,15 @@ help:
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/challenge__type_support.o"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/challenge__type_support.i"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/challenge__type_support.s"
-	@echo "... rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.o"
-	@echo "... rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.i"
-	@echo "... rosidl_typesupport_c/ariac_msgs/msg/challenge_condition__type_support.s"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/combined_task__type_support.o"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/combined_task__type_support.i"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/combined_task__type_support.s"
+	@echo "... rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.o"
+	@echo "... rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.i"
+	@echo "... rosidl_typesupport_c/ariac_msgs/msg/competition_state__type_support.s"
+	@echo "... rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.o"
+	@echo "... rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.i"
+	@echo "... rosidl_typesupport_c/ariac_msgs/msg/condition__type_support.s"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/conveyor_belt_state__type_support.o"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/conveyor_belt_state__type_support.i"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/conveyor_belt_state__type_support.s"
@@ -9434,6 +10325,9 @@ help:
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/order__type_support.o"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/order__type_support.i"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/order__type_support.s"
+	@echo "... rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.o"
+	@echo "... rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.i"
+	@echo "... rosidl_typesupport_c/ariac_msgs/msg/order_condition__type_support.s"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/part__type_support.o"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/part__type_support.i"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/part__type_support.s"
@@ -9464,6 +10358,9 @@ help:
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/sensors__type_support.o"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/sensors__type_support.i"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/sensors__type_support.s"
+	@echo "... rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.o"
+	@echo "... rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.i"
+	@echo "... rosidl_typesupport_c/ariac_msgs/msg/submission_condition__type_support.s"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/time_condition__type_support.o"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/time_condition__type_support.i"
 	@echo "... rosidl_typesupport_c/ariac_msgs/msg/time_condition__type_support.s"
@@ -9491,6 +10388,9 @@ help:
 	@echo "... rosidl_typesupport_c/ariac_msgs/srv/score_task__type_support.o"
 	@echo "... rosidl_typesupport_c/ariac_msgs/srv/score_task__type_support.i"
 	@echo "... rosidl_typesupport_c/ariac_msgs/srv/score_task__type_support.s"
+	@echo "... rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.o"
+	@echo "... rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.i"
+	@echo "... rosidl_typesupport_c/ariac_msgs/srv/submit_order__type_support.s"
 	@echo "... rosidl_typesupport_c/ariac_msgs/srv/vacuum_gripper_control__type_support.o"
 	@echo "... rosidl_typesupport_c/ariac_msgs/srv/vacuum_gripper_control__type_support.i"
 	@echo "... rosidl_typesupport_c/ariac_msgs/srv/vacuum_gripper_control__type_support.s"
@@ -9524,12 +10424,15 @@ help:
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/challenge__type_support.o"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/challenge__type_support.i"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/challenge__type_support.s"
-	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.o"
-	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.i"
-	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/challenge_condition__type_support.s"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/combined_task__type_support.o"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/combined_task__type_support.i"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/combined_task__type_support.s"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.o"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.i"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/competition_state__type_support.s"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.o"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.i"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/condition__type_support.s"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/conveyor_belt_state__type_support.o"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/conveyor_belt_state__type_support.i"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/conveyor_belt_state__type_support.s"
@@ -9554,6 +10457,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/order__type_support.o"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/order__type_support.i"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/order__type_support.s"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.o"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.i"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/order_condition__type_support.s"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/part__type_support.o"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/part__type_support.i"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/part__type_support.s"
@@ -9584,6 +10490,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/sensors__type_support.o"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/sensors__type_support.i"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/sensors__type_support.s"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.o"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.i"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/submission_condition__type_support.s"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/time_condition__type_support.o"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/time_condition__type_support.i"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/msg/time_condition__type_support.s"
@@ -9611,6 +10520,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/srv/score_task__type_support.o"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/srv/score_task__type_support.i"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/srv/score_task__type_support.s"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.o"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.i"
+	@echo "... rosidl_typesupport_cpp/ariac_msgs/srv/submit_order__type_support.s"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/srv/vacuum_gripper_control__type_support.o"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/srv/vacuum_gripper_control__type_support.i"
 	@echo "... rosidl_typesupport_cpp/ariac_msgs/srv/vacuum_gripper_control__type_support.s"
@@ -9644,12 +10556,15 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.s"
@@ -9674,6 +10589,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.s"
@@ -9704,6 +10622,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.s"
@@ -9731,6 +10652,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.s"
@@ -9764,12 +10688,15 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/challenge_condition__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/combined_task__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/combined_task__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/combined_task__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/competition_state__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/condition__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/conveyor_belt_state__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/conveyor_belt_state__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/conveyor_belt_state__type_support.s"
@@ -9794,6 +10721,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/order_condition__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/part__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/part__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/part__type_support.s"
@@ -9824,6 +10754,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/sensors__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/sensors__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/sensors__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/submission_condition__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/time_condition__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/time_condition__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/msg/detail/dds_fastrtps/time_condition__type_support.s"
@@ -9851,6 +10784,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/score_task__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/score_task__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/score_task__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/submit_order__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/vacuum_gripper_control__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/vacuum_gripper_control__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/ariac_msgs/srv/detail/dds_fastrtps/vacuum_gripper_control__type_support.s"
@@ -9884,12 +10820,15 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/challenge_condition__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/combined_task__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/combined_task__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/combined_task__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/competition_state__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/condition__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support.s"
@@ -9914,6 +10853,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/order_condition__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/part__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/part__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/part__type_support.s"
@@ -9944,6 +10886,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/sensors__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/sensors__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/sensors__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/submission_condition__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/time_condition__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/time_condition__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/msg/detail/time_condition__type_support.s"
@@ -9971,6 +10916,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/score_task__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/score_task__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/score_task__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/submit_order__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.s"
@@ -10004,12 +10952,15 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/combined_task__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/combined_task__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/combined_task__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/conveyor_belt_state__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/conveyor_belt_state__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/conveyor_belt_state__type_support.s"
@@ -10034,6 +10985,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/part__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/part__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/part__type_support.s"
@@ -10064,6 +11018,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/sensors__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/sensors__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/sensors__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/time_condition__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/time_condition__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/time_condition__type_support.s"
@@ -10091,6 +11048,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/score_task__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/score_task__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/score_task__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.s"

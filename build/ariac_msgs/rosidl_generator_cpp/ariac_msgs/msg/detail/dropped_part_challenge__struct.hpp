@@ -43,7 +43,8 @@ struct DroppedPartChallenge_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->robot = "";
-      this->bin_num = 0;
+      this->drop_after_num = 0;
+      this->drop_after_time = 0.0f;
     }
   }
 
@@ -55,7 +56,8 @@ struct DroppedPartChallenge_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->robot = "";
-      this->bin_num = 0;
+      this->drop_after_num = 0;
+      this->drop_after_time = 0.0f;
     }
   }
 
@@ -66,9 +68,12 @@ struct DroppedPartChallenge_
   using _part_to_drop_type =
     ariac_msgs::msg::Part_<ContainerAllocator>;
   _part_to_drop_type part_to_drop;
-  using _bin_num_type =
+  using _drop_after_num_type =
     uint8_t;
-  _bin_num_type bin_num;
+  _drop_after_num_type drop_after_num;
+  using _drop_after_time_type =
+    float;
+  _drop_after_time_type drop_after_time;
 
   // setters for named parameter idiom
   Type & set__robot(
@@ -83,10 +88,16 @@ struct DroppedPartChallenge_
     this->part_to_drop = _arg;
     return *this;
   }
-  Type & set__bin_num(
+  Type & set__drop_after_num(
     const uint8_t & _arg)
   {
-    this->bin_num = _arg;
+    this->drop_after_num = _arg;
+    return *this;
+  }
+  Type & set__drop_after_time(
+    const float & _arg)
+  {
+    this->drop_after_time = _arg;
     return *this;
   }
 
@@ -138,7 +149,10 @@ struct DroppedPartChallenge_
     if (this->part_to_drop != other.part_to_drop) {
       return false;
     }
-    if (this->bin_num != other.bin_num) {
+    if (this->drop_after_num != other.drop_after_num) {
+      return false;
+    }
+    if (this->drop_after_time != other.drop_after_time) {
       return false;
     }
     return true;

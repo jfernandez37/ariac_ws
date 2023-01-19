@@ -52,14 +52,14 @@ static rosidl_typesupport_introspection_c__MessageMember FaultyPartChallenge__ro
     NULL  // resize(index) function pointer
   },
   {
-    "quandrant1",  // name
+    "quadrant1",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(ariac_msgs__msg__FaultyPartChallenge, quandrant1),  // bytes offset in struct
+    offsetof(ariac_msgs__msg__FaultyPartChallenge, quadrant1),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -67,14 +67,14 @@ static rosidl_typesupport_introspection_c__MessageMember FaultyPartChallenge__ro
     NULL  // resize(index) function pointer
   },
   {
-    "quandrant2",  // name
+    "quadrant2",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(ariac_msgs__msg__FaultyPartChallenge, quandrant2),  // bytes offset in struct
+    offsetof(ariac_msgs__msg__FaultyPartChallenge, quadrant2),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -82,14 +82,14 @@ static rosidl_typesupport_introspection_c__MessageMember FaultyPartChallenge__ro
     NULL  // resize(index) function pointer
   },
   {
-    "quandrant3",  // name
+    "quadrant3",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(ariac_msgs__msg__FaultyPartChallenge, quandrant3),  // bytes offset in struct
+    offsetof(ariac_msgs__msg__FaultyPartChallenge, quadrant3),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -97,14 +97,14 @@ static rosidl_typesupport_introspection_c__MessageMember FaultyPartChallenge__ro
     NULL  // resize(index) function pointer
   },
   {
-    "quandrant4",  // name
+    "quadrant4",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(ariac_msgs__msg__FaultyPartChallenge, quandrant4),  // bytes offset in struct
+    offsetof(ariac_msgs__msg__FaultyPartChallenge, quadrant4),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

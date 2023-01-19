@@ -2,7 +2,7 @@
 // with input from ariac_msgs/msg/SensorBlackoutChallenge.msg
 // generated code does not contain a copyright notice
 
-#include "ariac_msgs/msg/ChallengeCondition.idl"
+#include "ariac_msgs/msg/Condition.idl"
 #include "ariac_msgs/msg/Sensors.idl"
 
 module ariac_msgs {
@@ -10,7 +10,7 @@ module ariac_msgs {
     struct SensorBlackoutChallenge {
       double duration;
 
-      ariac_msgs::msg::ChallengeCondition condition;
+      ariac_msgs::msg::Condition condition;
 
       ariac_msgs::msg::Sensors sensors_to_disable;
     };

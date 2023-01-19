@@ -40,9 +40,9 @@ class Metaclass_SensorBlackoutChallenge(type):
             cls._TYPE_SUPPORT = module.type_support_msg__msg__sensor_blackout_challenge
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__msg__sensor_blackout_challenge
 
-            from ariac_msgs.msg import ChallengeCondition
-            if ChallengeCondition.__class__._TYPE_SUPPORT is None:
-                ChallengeCondition.__class__.__import_type_support__()
+            from ariac_msgs.msg import Condition
+            if Condition.__class__._TYPE_SUPPORT is None:
+                Condition.__class__.__import_type_support__()
 
             from ariac_msgs.msg import Sensors
             if Sensors.__class__._TYPE_SUPPORT is None:
@@ -68,13 +68,13 @@ class SensorBlackoutChallenge(metaclass=Metaclass_SensorBlackoutChallenge):
 
     _fields_and_field_types = {
         'duration': 'double',
-        'condition': 'ariac_msgs/ChallengeCondition',
+        'condition': 'ariac_msgs/Condition',
         'sensors_to_disable': 'ariac_msgs/Sensors',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.NamespacedType(['ariac_msgs', 'msg'], 'ChallengeCondition'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['ariac_msgs', 'msg'], 'Condition'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['ariac_msgs', 'msg'], 'Sensors'),  # noqa: E501
     )
 
@@ -83,8 +83,8 @@ class SensorBlackoutChallenge(metaclass=Metaclass_SensorBlackoutChallenge):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.duration = kwargs.get('duration', float())
-        from ariac_msgs.msg import ChallengeCondition
-        self.condition = kwargs.get('condition', ChallengeCondition())
+        from ariac_msgs.msg import Condition
+        self.condition = kwargs.get('condition', Condition())
         from ariac_msgs.msg import Sensors
         self.sensors_to_disable = kwargs.get('sensors_to_disable', Sensors())
 
@@ -151,10 +151,10 @@ class SensorBlackoutChallenge(metaclass=Metaclass_SensorBlackoutChallenge):
     @condition.setter
     def condition(self, value):
         if __debug__:
-            from ariac_msgs.msg import ChallengeCondition
+            from ariac_msgs.msg import Condition
             assert \
-                isinstance(value, ChallengeCondition), \
-                "The 'condition' field must be a sub message of type 'ChallengeCondition'"
+                isinstance(value, Condition), \
+                "The 'condition' field must be a sub message of type 'Condition'"
         self._condition = value
 
     @property

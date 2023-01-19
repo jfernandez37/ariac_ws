@@ -20,14 +20,12 @@ extern "C"
 // Include directives for member types
 // Member 'part'
 #include "ariac_msgs/msg/detail/part__struct.h"
-// Member 'agv'
-#include "rosidl_runtime_c/string.h"
 
 // Struct defined in msg/PartPlaceCondition in the package ariac_msgs.
 typedef struct ariac_msgs__msg__PartPlaceCondition
 {
   ariac_msgs__msg__Part part;
-  rosidl_runtime_c__String agv;
+  uint8_t agv;
 } ariac_msgs__msg__PartPlaceCondition;
 
 // Struct for a sequence of ariac_msgs__msg__PartPlaceCondition.

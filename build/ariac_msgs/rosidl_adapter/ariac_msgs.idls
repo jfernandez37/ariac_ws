@@ -7,9 +7,10 @@
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/BinInfo.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/BinParts.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/BreakBeamStatus.idl
-/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/ChallengeCondition.idl
+/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/Condition.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/Challenge.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/CombinedTask.idl
+/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/CompetitionState.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/ConveyorBeltState.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/ConveyorParts.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/DroppedPartChallenge.idl
@@ -18,6 +19,7 @@
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/KittingTask.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/KitTrayPose.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/Order.idl
+/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/OrderCondition.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/PartLot.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/Part.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/PartPlaceCondition.idl
@@ -28,6 +30,7 @@
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/Robots.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/SensorBlackoutChallenge.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/Sensors.idl
+/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/SubmissionCondition.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/TimeCondition.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/Trial.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:msg/VacuumGripperState.idl
@@ -36,5 +39,6 @@
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:srv/ConveyorBeltControl.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:srv/MoveAGV.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:srv/ScoreTask.idl
+/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:srv/SubmitOrder.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:srv/VacuumGripperControl.idl
 /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs:srv/PerformQualityCheck.idl

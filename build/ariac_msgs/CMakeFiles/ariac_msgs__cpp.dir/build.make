@@ -89,10 +89,10 @@ CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/break_beam_statu
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/break_beam_status__builder.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/break_beam_status__struct.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/break_beam_status__traits.hpp
-CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/challenge_condition.hpp
-CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__builder.hpp
-CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__struct.hpp
-CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__traits.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/condition.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/condition__builder.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/condition__struct.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/condition__traits.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/challenge.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/challenge__builder.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/challenge__struct.hpp
@@ -101,6 +101,10 @@ CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/combined_task.hp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/combined_task__builder.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/combined_task__struct.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/combined_task__traits.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/competition_state.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/competition_state__builder.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/competition_state__struct.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/competition_state__traits.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/conveyor_belt_state.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/conveyor_belt_state__builder.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/conveyor_belt_state__struct.hpp
@@ -133,6 +137,10 @@ CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/order.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/order__builder.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/order__struct.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/order__traits.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/order_condition.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/order_condition__builder.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/order_condition__struct.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/order_condition__traits.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/part_lot.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/part_lot__builder.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/part_lot__struct.hpp
@@ -173,6 +181,10 @@ CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/sensors.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/sensors__builder.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/sensors__struct.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/sensors__traits.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/submission_condition.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__builder.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__struct.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__traits.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/time_condition.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/time_condition__builder.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/time_condition__struct.hpp
@@ -205,6 +217,10 @@ CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/score_task.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/score_task__builder.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/score_task__struct.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/score_task__traits.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/submit_order.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/submit_order__builder.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/submit_order__struct.hpp
+CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/submit_order__traits.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/vacuum_gripper_control.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/vacuum_gripper_control__builder.hpp
 CMakeFiles/ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/vacuum_gripper_control__struct.hpp
@@ -239,9 +255,10 @@ rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_ad
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/BinInfo.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/BinParts.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/BreakBeamStatus.idl
-rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/ChallengeCondition.idl
+rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/Condition.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/Challenge.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/CombinedTask.idl
+rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/CompetitionState.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/ConveyorBeltState.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/ConveyorParts.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/DroppedPartChallenge.idl
@@ -250,6 +267,7 @@ rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_ad
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/KittingTask.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/KitTrayPose.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/Order.idl
+rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/OrderCondition.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/PartLot.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/Part.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/PartPlaceCondition.idl
@@ -260,6 +278,7 @@ rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_ad
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/Robots.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/SensorBlackoutChallenge.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/Sensors.idl
+rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/SubmissionCondition.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/TimeCondition.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/Trial.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/msg/VacuumGripperState.idl
@@ -268,6 +287,7 @@ rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_ad
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/srv/ConveyorBeltControl.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/srv/MoveAGV.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/srv/ScoreTask.idl
+rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/srv/SubmitOrder.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/srv/VacuumGripperControl.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: rosidl_adapter/ariac_msgs/srv/PerformQualityCheck.idl
 rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp: /opt/ros/galactic/share/builtin_interfaces/msg/Duration.idl
@@ -439,17 +459,17 @@ rosidl_generator_cpp/ariac_msgs/msg/detail/break_beam_status__struct.hpp: rosidl
 rosidl_generator_cpp/ariac_msgs/msg/detail/break_beam_status__traits.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/break_beam_status__traits.hpp
 
-rosidl_generator_cpp/ariac_msgs/msg/challenge_condition.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/challenge_condition.hpp
+rosidl_generator_cpp/ariac_msgs/msg/condition.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/condition.hpp
 
-rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__builder.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__builder.hpp
+rosidl_generator_cpp/ariac_msgs/msg/detail/condition__builder.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/condition__builder.hpp
 
-rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__struct.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__struct.hpp
+rosidl_generator_cpp/ariac_msgs/msg/detail/condition__struct.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/condition__struct.hpp
 
-rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__traits.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__traits.hpp
+rosidl_generator_cpp/ariac_msgs/msg/detail/condition__traits.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/condition__traits.hpp
 
 rosidl_generator_cpp/ariac_msgs/msg/challenge.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/challenge.hpp
@@ -474,6 +494,18 @@ rosidl_generator_cpp/ariac_msgs/msg/detail/combined_task__struct.hpp: rosidl_gen
 
 rosidl_generator_cpp/ariac_msgs/msg/detail/combined_task__traits.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/combined_task__traits.hpp
+
+rosidl_generator_cpp/ariac_msgs/msg/competition_state.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/competition_state.hpp
+
+rosidl_generator_cpp/ariac_msgs/msg/detail/competition_state__builder.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/competition_state__builder.hpp
+
+rosidl_generator_cpp/ariac_msgs/msg/detail/competition_state__struct.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/competition_state__struct.hpp
+
+rosidl_generator_cpp/ariac_msgs/msg/detail/competition_state__traits.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/competition_state__traits.hpp
 
 rosidl_generator_cpp/ariac_msgs/msg/conveyor_belt_state.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/conveyor_belt_state.hpp
@@ -570,6 +602,18 @@ rosidl_generator_cpp/ariac_msgs/msg/detail/order__struct.hpp: rosidl_generator_c
 
 rosidl_generator_cpp/ariac_msgs/msg/detail/order__traits.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/order__traits.hpp
+
+rosidl_generator_cpp/ariac_msgs/msg/order_condition.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/order_condition.hpp
+
+rosidl_generator_cpp/ariac_msgs/msg/detail/order_condition__builder.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/order_condition__builder.hpp
+
+rosidl_generator_cpp/ariac_msgs/msg/detail/order_condition__struct.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/order_condition__struct.hpp
+
+rosidl_generator_cpp/ariac_msgs/msg/detail/order_condition__traits.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/order_condition__traits.hpp
 
 rosidl_generator_cpp/ariac_msgs/msg/part_lot.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/part_lot.hpp
@@ -691,6 +735,18 @@ rosidl_generator_cpp/ariac_msgs/msg/detail/sensors__struct.hpp: rosidl_generator
 rosidl_generator_cpp/ariac_msgs/msg/detail/sensors__traits.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/sensors__traits.hpp
 
+rosidl_generator_cpp/ariac_msgs/msg/submission_condition.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/submission_condition.hpp
+
+rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__builder.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__builder.hpp
+
+rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__struct.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__struct.hpp
+
+rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__traits.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__traits.hpp
+
 rosidl_generator_cpp/ariac_msgs/msg/time_condition.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/msg/time_condition.hpp
 
@@ -787,6 +843,18 @@ rosidl_generator_cpp/ariac_msgs/srv/detail/score_task__struct.hpp: rosidl_genera
 rosidl_generator_cpp/ariac_msgs/srv/detail/score_task__traits.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/srv/detail/score_task__traits.hpp
 
+rosidl_generator_cpp/ariac_msgs/srv/submit_order.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/srv/submit_order.hpp
+
+rosidl_generator_cpp/ariac_msgs/srv/detail/submit_order__builder.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/srv/detail/submit_order__builder.hpp
+
+rosidl_generator_cpp/ariac_msgs/srv/detail/submit_order__struct.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/srv/detail/submit_order__struct.hpp
+
+rosidl_generator_cpp/ariac_msgs/srv/detail/submit_order__traits.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/srv/detail/submit_order__traits.hpp
+
 rosidl_generator_cpp/ariac_msgs/srv/vacuum_gripper_control.hpp: rosidl_generator_cpp/ariac_msgs/msg/advanced_logical_camera_image.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ariac_msgs/srv/vacuum_gripper_control.hpp
 
@@ -848,10 +916,10 @@ ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/break_beam_status.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/break_beam_status__builder.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/break_beam_status__struct.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/break_beam_status__traits.hpp
-ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/challenge_condition.hpp
-ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__builder.hpp
-ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__struct.hpp
-ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__traits.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/condition.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/condition__builder.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/condition__struct.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/condition__traits.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/challenge.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/challenge__builder.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/challenge__struct.hpp
@@ -860,6 +928,10 @@ ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/combined_task.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/combined_task__builder.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/combined_task__struct.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/combined_task__traits.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/competition_state.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/competition_state__builder.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/competition_state__struct.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/competition_state__traits.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/conveyor_belt_state.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/conveyor_belt_state__builder.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/conveyor_belt_state__struct.hpp
@@ -892,6 +964,10 @@ ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/order.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/order__builder.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/order__struct.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/order__traits.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/order_condition.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/order_condition__builder.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/order_condition__struct.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/order_condition__traits.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/part_lot.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/part_lot__builder.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/part_lot__struct.hpp
@@ -932,6 +1008,10 @@ ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/sensors.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/sensors__builder.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/sensors__struct.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/sensors__traits.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/submission_condition.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__builder.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__struct.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__traits.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/time_condition.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/time_condition__builder.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/msg/detail/time_condition__struct.hpp
@@ -964,6 +1044,10 @@ ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/score_task.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/score_task__builder.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/score_task__struct.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/score_task__traits.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/submit_order.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/submit_order__builder.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/submit_order__struct.hpp
+ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/submit_order__traits.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/vacuum_gripper_control.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/vacuum_gripper_control__builder.hpp
 ariac_msgs__cpp: rosidl_generator_cpp/ariac_msgs/srv/detail/vacuum_gripper_control__struct.hpp

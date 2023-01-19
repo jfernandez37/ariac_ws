@@ -5,6 +5,9 @@
 
 # Import statements for member types
 
+# Member 'agv_numbers'
+import array  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -93,19 +96,19 @@ class AssemblyTask(metaclass=Metaclass_AssemblyTask):
     """
 
     __slots__ = [
-        '_agv_number',
+        '_agv_numbers',
         '_station',
         '_parts',
     ]
 
     _fields_and_field_types = {
-        'agv_number': 'uint8',
+        'agv_numbers': 'sequence<uint8>',
         'station': 'uint8',
         'parts': 'sequence<ariac_msgs/AssemblyPart>',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('uint8')),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['ariac_msgs', 'msg'], 'AssemblyPart')),  # noqa: E501
     )
@@ -114,7 +117,7 @@ class AssemblyTask(metaclass=Metaclass_AssemblyTask):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.agv_number = kwargs.get('agv_number', int())
+        self.agv_numbers = array.array('B', kwargs.get('agv_numbers', []))
         self.station = kwargs.get('station', int())
         self.parts = kwargs.get('parts', [])
 
@@ -147,7 +150,7 @@ class AssemblyTask(metaclass=Metaclass_AssemblyTask):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.agv_number != other.agv_number:
+        if self.agv_numbers != other.agv_numbers:
             return False
         if self.station != other.station:
             return False
@@ -161,19 +164,32 @@ class AssemblyTask(metaclass=Metaclass_AssemblyTask):
         return copy(cls._fields_and_field_types)
 
     @property
-    def agv_number(self):
-        """Message field 'agv_number'."""
-        return self._agv_number
+    def agv_numbers(self):
+        """Message field 'agv_numbers'."""
+        return self._agv_numbers
 
-    @agv_number.setter
-    def agv_number(self, value):
+    @agv_numbers.setter
+    def agv_numbers(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'B', \
+                "The 'agv_numbers' array.array() must have the type code of 'B'"
+            self._agv_numbers = value
+            return
         if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
             assert \
-                isinstance(value, int), \
-                "The 'agv_number' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'agv_number' field must be an unsigned integer in [0, 255]"
-        self._agv_number = value
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, int) for v in value) and
+                 all(val >= 0 and val < 256 for val in value)), \
+                "The 'agv_numbers' field must be a set or sequence and each value of type 'int' and each unsigned integer in [0, 255]"
+        self._agv_numbers = array.array('B', value)
 
     @property
     def station(self):

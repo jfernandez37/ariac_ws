@@ -20,15 +20,15 @@ namespace msg
 namespace builder
 {
 
-class Init_FaultyPartChallenge_quandrant4
+class Init_FaultyPartChallenge_quadrant4
 {
 public:
-  explicit Init_FaultyPartChallenge_quandrant4(::ariac_msgs::msg::FaultyPartChallenge & msg)
+  explicit Init_FaultyPartChallenge_quadrant4(::ariac_msgs::msg::FaultyPartChallenge & msg)
   : msg_(msg)
   {}
-  ::ariac_msgs::msg::FaultyPartChallenge quandrant4(::ariac_msgs::msg::FaultyPartChallenge::_quandrant4_type arg)
+  ::ariac_msgs::msg::FaultyPartChallenge quadrant4(::ariac_msgs::msg::FaultyPartChallenge::_quadrant4_type arg)
   {
-    msg_.quandrant4 = std::move(arg);
+    msg_.quadrant4 = std::move(arg);
     return std::move(msg_);
   }
 
@@ -36,48 +36,48 @@ private:
   ::ariac_msgs::msg::FaultyPartChallenge msg_;
 };
 
-class Init_FaultyPartChallenge_quandrant3
+class Init_FaultyPartChallenge_quadrant3
 {
 public:
-  explicit Init_FaultyPartChallenge_quandrant3(::ariac_msgs::msg::FaultyPartChallenge & msg)
+  explicit Init_FaultyPartChallenge_quadrant3(::ariac_msgs::msg::FaultyPartChallenge & msg)
   : msg_(msg)
   {}
-  Init_FaultyPartChallenge_quandrant4 quandrant3(::ariac_msgs::msg::FaultyPartChallenge::_quandrant3_type arg)
+  Init_FaultyPartChallenge_quadrant4 quadrant3(::ariac_msgs::msg::FaultyPartChallenge::_quadrant3_type arg)
   {
-    msg_.quandrant3 = std::move(arg);
-    return Init_FaultyPartChallenge_quandrant4(msg_);
+    msg_.quadrant3 = std::move(arg);
+    return Init_FaultyPartChallenge_quadrant4(msg_);
   }
 
 private:
   ::ariac_msgs::msg::FaultyPartChallenge msg_;
 };
 
-class Init_FaultyPartChallenge_quandrant2
+class Init_FaultyPartChallenge_quadrant2
 {
 public:
-  explicit Init_FaultyPartChallenge_quandrant2(::ariac_msgs::msg::FaultyPartChallenge & msg)
+  explicit Init_FaultyPartChallenge_quadrant2(::ariac_msgs::msg::FaultyPartChallenge & msg)
   : msg_(msg)
   {}
-  Init_FaultyPartChallenge_quandrant3 quandrant2(::ariac_msgs::msg::FaultyPartChallenge::_quandrant2_type arg)
+  Init_FaultyPartChallenge_quadrant3 quadrant2(::ariac_msgs::msg::FaultyPartChallenge::_quadrant2_type arg)
   {
-    msg_.quandrant2 = std::move(arg);
-    return Init_FaultyPartChallenge_quandrant3(msg_);
+    msg_.quadrant2 = std::move(arg);
+    return Init_FaultyPartChallenge_quadrant3(msg_);
   }
 
 private:
   ::ariac_msgs::msg::FaultyPartChallenge msg_;
 };
 
-class Init_FaultyPartChallenge_quandrant1
+class Init_FaultyPartChallenge_quadrant1
 {
 public:
-  explicit Init_FaultyPartChallenge_quandrant1(::ariac_msgs::msg::FaultyPartChallenge & msg)
+  explicit Init_FaultyPartChallenge_quadrant1(::ariac_msgs::msg::FaultyPartChallenge & msg)
   : msg_(msg)
   {}
-  Init_FaultyPartChallenge_quandrant2 quandrant1(::ariac_msgs::msg::FaultyPartChallenge::_quandrant1_type arg)
+  Init_FaultyPartChallenge_quadrant2 quadrant1(::ariac_msgs::msg::FaultyPartChallenge::_quadrant1_type arg)
   {
-    msg_.quandrant1 = std::move(arg);
-    return Init_FaultyPartChallenge_quandrant2(msg_);
+    msg_.quadrant1 = std::move(arg);
+    return Init_FaultyPartChallenge_quadrant2(msg_);
   }
 
 private:
@@ -90,10 +90,10 @@ public:
   Init_FaultyPartChallenge_order_id()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_FaultyPartChallenge_quandrant1 order_id(::ariac_msgs::msg::FaultyPartChallenge::_order_id_type arg)
+  Init_FaultyPartChallenge_quadrant1 order_id(::ariac_msgs::msg::FaultyPartChallenge::_order_id_type arg)
   {
     msg_.order_id = std::move(arg);
-    return Init_FaultyPartChallenge_quandrant1(msg_);
+    return Init_FaultyPartChallenge_quadrant1(msg_);
   }
 
 private:

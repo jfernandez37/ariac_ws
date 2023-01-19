@@ -13,6 +13,8 @@
 
 
 // Include directives for member types
+// Member `agv_numbers`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
 // Member `parts`
 #include "ariac_msgs/msg/assembly_part.h"
 // Member `parts`
@@ -72,14 +74,14 @@ bool AssemblyTask__rosidl_typesupport_introspection_c__resize_function__Assembly
 
 static rosidl_typesupport_introspection_c__MessageMember AssemblyTask__rosidl_typesupport_introspection_c__AssemblyTask_message_member_array[3] = {
   {
-    "agv_number",  // name
+    "agv_numbers",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is array
+    true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(ariac_msgs__msg__AssemblyTask, agv_number),  // bytes offset in struct
+    offsetof(ariac_msgs__msg__AssemblyTask, agv_numbers),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

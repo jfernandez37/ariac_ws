@@ -62,9 +62,10 @@ CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/Basic
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/BinInfo.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/BinParts.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/BreakBeamStatus.msg
-CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/ChallengeCondition.msg
+CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/Condition.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/Challenge.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/CombinedTask.msg
+CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/CompetitionState.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/ConveyorBeltState.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/ConveyorParts.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/DroppedPartChallenge.msg
@@ -73,6 +74,7 @@ CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/Kitti
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/KittingTask.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/KitTrayPose.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/Order.msg
+CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/OrderCondition.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/PartLot.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/Part.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/PartPlaceCondition.msg
@@ -83,6 +85,7 @@ CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/Robot
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/Robots.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/SensorBlackoutChallenge.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/Sensors.msg
+CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/SubmissionCondition.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/TimeCondition.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/Trial.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/VacuumGripperState.msg
@@ -101,6 +104,9 @@ CMakeFiles/ariac_msgs: rosidl_cmake/srv/MoveAGV_Response.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/srv/ScoreTask.srv
 CMakeFiles/ariac_msgs: rosidl_cmake/srv/ScoreTask_Request.msg
 CMakeFiles/ariac_msgs: rosidl_cmake/srv/ScoreTask_Response.msg
+CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/srv/SubmitOrder.srv
+CMakeFiles/ariac_msgs: rosidl_cmake/srv/SubmitOrder_Request.msg
+CMakeFiles/ariac_msgs: rosidl_cmake/srv/SubmitOrder_Response.msg
 CMakeFiles/ariac_msgs: /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/srv/VacuumGripperControl.srv
 CMakeFiles/ariac_msgs: rosidl_cmake/srv/VacuumGripperControl_Request.msg
 CMakeFiles/ariac_msgs: rosidl_cmake/srv/VacuumGripperControl_Response.msg

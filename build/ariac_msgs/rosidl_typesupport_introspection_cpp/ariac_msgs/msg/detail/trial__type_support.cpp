@@ -64,6 +64,33 @@ void resize_function__Trial__orders(void * untyped_member, size_t size)
   member->resize(size);
 }
 
+size_t size_function__Trial__order_conditions(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<ariac_msgs::msg::OrderCondition> *>(untyped_member);
+  return member->size();
+}
+
+const void * get_const_function__Trial__order_conditions(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::vector<ariac_msgs::msg::OrderCondition> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__Trial__order_conditions(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::vector<ariac_msgs::msg::OrderCondition> *>(untyped_member);
+  return &member[index];
+}
+
+void resize_function__Trial__order_conditions(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<ariac_msgs::msg::OrderCondition> *>(untyped_member);
+  member->resize(size);
+}
+
 size_t size_function__Trial__challenges(const void * untyped_member)
 {
   const auto * member = reinterpret_cast<const std::vector<ariac_msgs::msg::Challenge> *>(untyped_member);
@@ -91,7 +118,37 @@ void resize_function__Trial__challenges(void * untyped_member, size_t size)
   member->resize(size);
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Trial_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Trial_message_member_array[5] = {
+  {
+    "time_limit",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(ariac_msgs::msg::Trial, time_limit),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "trial_name",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(ariac_msgs::msg::Trial, trial_name),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
   {
     "orders",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
@@ -106,6 +163,21 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Trial_message
     get_const_function__Trial__orders,  // get_const(index) function pointer
     get_function__Trial__orders,  // get(index) function pointer
     resize_function__Trial__orders  // resize(index) function pointer
+  },
+  {
+    "order_conditions",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<ariac_msgs::msg::OrderCondition>(),  // members of sub message
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(ariac_msgs::msg::Trial, order_conditions),  // bytes offset in struct
+    nullptr,  // default value
+    size_function__Trial__order_conditions,  // size() function pointer
+    get_const_function__Trial__order_conditions,  // get_const(index) function pointer
+    get_function__Trial__order_conditions,  // get(index) function pointer
+    resize_function__Trial__order_conditions  // resize(index) function pointer
   },
   {
     "challenges",  // name
@@ -127,7 +199,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Trial_message
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Trial_message_members = {
   "ariac_msgs::msg",  // message namespace
   "Trial",  // message name
-  2,  // number of fields
+  5,  // number of fields
   sizeof(ariac_msgs::msg::Trial),
   Trial_message_member_array,  // message members
   Trial_init_function,  // function to initialize message memory (memory has to be allocated)

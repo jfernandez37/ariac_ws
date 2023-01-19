@@ -28,7 +28,8 @@ typedef struct ariac_msgs__msg__DroppedPartChallenge
 {
   rosidl_runtime_c__String robot;
   ariac_msgs__msg__Part part_to_drop;
-  uint8_t bin_num;
+  uint8_t drop_after_num;
+  float drop_after_time;
 } ariac_msgs__msg__DroppedPartChallenge;
 
 // Struct for a sequence of ariac_msgs__msg__DroppedPartChallenge.

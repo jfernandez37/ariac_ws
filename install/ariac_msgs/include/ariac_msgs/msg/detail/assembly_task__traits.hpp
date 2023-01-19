@@ -23,14 +23,24 @@ inline void to_yaml(
   const ariac_msgs::msg::AssemblyTask & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: agv_number
+  // member: agv_numbers
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "agv_number: ";
-    value_to_yaml(msg.agv_number, out);
-    out << "\n";
+    if (msg.agv_numbers.size() == 0) {
+      out << "agv_numbers: []\n";
+    } else {
+      out << "agv_numbers:\n";
+      for (auto item : msg.agv_numbers) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
   }
 
   // member: station

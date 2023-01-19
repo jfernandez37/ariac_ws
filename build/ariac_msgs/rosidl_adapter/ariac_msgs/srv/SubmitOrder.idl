@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ariac_msgs/srv/SubmitOrder.srv
+// generated code does not contain a copyright notice
+
+
+module ariac_msgs {
+  module srv {
+    struct SubmitOrder_Request {
+      string order_id;
+    };
+    struct SubmitOrder_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

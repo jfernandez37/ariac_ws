@@ -174,18 +174,18 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_break_beam
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.c -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.c.s
 
-CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
-CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.o: rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.o: rosidl_generator_py/ariac_msgs/msg/_condition_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_condition_s.c
 
-CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c > CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.i
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_condition_s.c > CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.i
 
-CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.s
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_condition_s.c -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.s
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_s.c.o: rosidl_generator_py/ariac_msgs/msg/_challenge_s.c
@@ -213,9 +213,22 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_combined_t
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_combined_task_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_combined_task_s.c -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_combined_task_s.c.s
 
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.o: rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c
+
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c > CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.i
+
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.s
+
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c.o: rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c.i: cmake_force
@@ -228,7 +241,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_b
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_parts_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_parts_s.c.o: rosidl_generator_py/ariac_msgs/msg/_conveyor_parts_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_parts_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_parts_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_parts_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_conveyor_parts_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_parts_s.c.i: cmake_force
@@ -241,7 +254,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_p
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge_s.c.o: rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge_s.c.i: cmake_force
@@ -254,7 +267,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_dropped_pa
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_faulty_part_challenge_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_faulty_part_challenge_s.c.o: rosidl_generator_py/ariac_msgs/msg/_faulty_part_challenge_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_faulty_part_challenge_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_faulty_part_challenge_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_faulty_part_challenge_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_faulty_part_challenge_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_faulty_part_challenge_s.c.i: cmake_force
@@ -267,7 +280,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_faulty_par
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_part_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_part_s.c.o: rosidl_generator_py/ariac_msgs/msg/_kitting_part_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_part_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_part_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_part_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_kitting_part_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_part_s.c.i: cmake_force
@@ -280,7 +293,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_pa
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c.o: rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c.i: cmake_force
@@ -293,7 +306,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_ta
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose_s.c.o: rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose_s.c.i: cmake_force
@@ -306,7 +319,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kit_tray_p
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_s.c.o: rosidl_generator_py/ariac_msgs/msg/_order_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_order_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_s.c.i: cmake_force
@@ -317,9 +330,22 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_s.c.
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_order_s.c -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_s.c.s
 
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.o: rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c
+
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c > CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.i
+
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.s
+
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c.o: rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c.i: cmake_force
@@ -332,7 +358,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_lot_s
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_s.c.o: rosidl_generator_py/ariac_msgs/msg/_part_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_part_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_s.c.i: cmake_force
@@ -345,7 +371,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_s.c.s
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_place_condition_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_place_condition_s.c.o: rosidl_generator_py/ariac_msgs/msg/_part_place_condition_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_place_condition_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_place_condition_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_place_condition_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_part_place_condition_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_place_condition_s.c.i: cmake_force
@@ -358,7 +384,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_place
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_pose_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_pose_s.c.o: rosidl_generator_py/ariac_msgs/msg/_part_pose_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_pose_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_pose_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_pose_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_part_pose_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_pose_s.c.i: cmake_force
@@ -371,7 +397,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_pose_
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_parts_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_parts_s.c.o: rosidl_generator_py/ariac_msgs/msg/_parts_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_parts_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_parts_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_parts_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_parts_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_parts_s.c.i: cmake_force
@@ -384,7 +410,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_parts_s.c.
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_quality_issue_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_quality_issue_s.c.o: rosidl_generator_py/ariac_msgs/msg/_quality_issue_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_quality_issue_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_quality_issue_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_quality_issue_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_quality_issue_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_quality_issue_s.c.i: cmake_force
@@ -397,7 +423,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_quality_is
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robot_malfunction_challenge_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robot_malfunction_challenge_s.c.o: rosidl_generator_py/ariac_msgs/msg/_robot_malfunction_challenge_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robot_malfunction_challenge_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robot_malfunction_challenge_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robot_malfunction_challenge_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_robot_malfunction_challenge_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robot_malfunction_challenge_s.c.i: cmake_force
@@ -410,7 +436,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robot_malf
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robots_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robots_s.c.o: rosidl_generator_py/ariac_msgs/msg/_robots_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robots_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robots_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robots_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_robots_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robots_s.c.i: cmake_force
@@ -423,7 +449,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robots_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge_s.c.o: rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge_s.c.i: cmake_force
@@ -436,7 +462,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensor_bla
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensors_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensors_s.c.o: rosidl_generator_py/ariac_msgs/msg/_sensors_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensors_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensors_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensors_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_sensors_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensors_s.c.i: cmake_force
@@ -447,9 +473,22 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensors_s.
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensors_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_sensors_s.c -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensors_s.c.s
 
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.o: rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c
+
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c > CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.i
+
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.s
+
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c.o: rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c.i: cmake_force
@@ -462,7 +501,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_time_condi
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_trial_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_trial_s.c.o: rosidl_generator_py/ariac_msgs/msg/_trial_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_trial_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_trial_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_trial_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_trial_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_trial_s.c.i: cmake_force
@@ -475,7 +514,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_trial_s.c.
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state_s.c.o: rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state_s.c.i: cmake_force
@@ -488,7 +527,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_vacuum_gri
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gripper_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gripper_s.c.o: rosidl_generator_py/ariac_msgs/srv/_change_gripper_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gripper_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gripper_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gripper_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/srv/_change_gripper_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gripper_s.c.i: cmake_force
@@ -501,7 +540,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gri
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gripper_color_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gripper_color_s.c.o: rosidl_generator_py/ariac_msgs/srv/_change_gripper_color_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gripper_color_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gripper_color_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gripper_color_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/srv/_change_gripper_color_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gripper_color_s.c.i: cmake_force
@@ -514,7 +553,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_change_gri
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control_s.c.o: rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control_s.c.i: cmake_force
@@ -527,7 +566,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_conveyor_b
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_move_agv_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_move_agv_s.c.o: rosidl_generator_py/ariac_msgs/srv/_move_agv_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_move_agv_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_move_agv_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_move_agv_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/srv/_move_agv_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_move_agv_s.c.i: cmake_force
@@ -540,7 +579,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_move_agv_s
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_score_task_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_score_task_s.c.o: rosidl_generator_py/ariac_msgs/srv/_score_task_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_score_task_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_score_task_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_score_task_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/srv/_score_task_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_score_task_s.c.i: cmake_force
@@ -551,9 +590,22 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_score_task
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_score_task_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/srv/_score_task_s.c -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_score_task_s.c.s
 
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.o: rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c
+
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c > CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.i
+
+CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.s
+
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c.o: rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c.i: cmake_force
@@ -566,7 +618,7 @@ CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_vacuum_gri
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_perform_quality_check_s.c.o: CMakeFiles/ariac_msgs__python.dir/flags.make
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_perform_quality_check_s.c.o: rosidl_generator_py/ariac_msgs/srv/_perform_quality_check_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_perform_quality_check_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_perform_quality_check_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_perform_quality_check_s.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_py/ariac_msgs/srv/_perform_quality_check_s.c
 
 CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_perform_quality_check_s.c.i: cmake_force
@@ -588,9 +640,10 @@ ariac_msgs__python_OBJECTS = \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_bin_info_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_bin_parts_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.c.o" \
-"CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.o" \
+"CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_combined_task_s.c.o" \
+"CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_parts_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge_s.c.o" \
@@ -599,6 +652,7 @@ ariac_msgs__python_OBJECTS = \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_s.c.o" \
+"CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_place_condition_s.c.o" \
@@ -609,6 +663,7 @@ ariac_msgs__python_OBJECTS = \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robots_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensors_s.c.o" \
+"CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_trial_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state_s.c.o" \
@@ -617,6 +672,7 @@ ariac_msgs__python_OBJECTS = \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_move_agv_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_score_task_s.c.o" \
+"CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c.o" \
 "CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_perform_quality_check_s.c.o"
 
@@ -632,9 +688,10 @@ rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_bin_info_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_bin_parts_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.c.o
-rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c.o
+rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_condition_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_challenge_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_combined_task_s.c.o
+rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_conveyor_parts_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge_s.c.o
@@ -643,6 +700,7 @@ rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_s.c.o
+rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_part_place_condition_s.c.o
@@ -653,6 +711,7 @@ rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_robots_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_sensors_s.c.o
+rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_trial_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state_s.c.o
@@ -661,6 +720,7 @@ rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_move_agv_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_score_task_s.c.o
+rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/rosidl_generator_py/ariac_msgs/srv/_perform_quality_check_s.c.o
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/build.make
@@ -693,7 +753,7 @@ rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: /opt/ros/galactic/lib/l
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: /opt/ros/galactic/lib/librcpputils.so
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: /opt/ros/galactic/lib/librcutils.so
 rosidl_generator_py/ariac_msgs/libariac_msgs__python.so: CMakeFiles/ariac_msgs__python.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Linking C shared library rosidl_generator_py/ariac_msgs/libariac_msgs__python.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Linking C shared library rosidl_generator_py/ariac_msgs/libariac_msgs__python.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ariac_msgs__python.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

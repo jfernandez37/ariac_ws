@@ -38,9 +38,9 @@ class MinimalPublisher(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    runGUI()
     print("started_node")
-    print("Test")
+    runGUI()
+    print("finished_node")
     # minimal_publisher = MinimalPublisher()
 
     # rclpy.spin(minimal_publisher)

@@ -23,16 +23,16 @@ namespace msg
 namespace typesupport_fastrtps_cpp
 {
 bool cdr_serialize(
-  const ariac_msgs::msg::ChallengeCondition &,
+  const ariac_msgs::msg::Condition &,
   eprosima::fastcdr::Cdr &);
 bool cdr_deserialize(
   eprosima::fastcdr::Cdr &,
-  ariac_msgs::msg::ChallengeCondition &);
+  ariac_msgs::msg::Condition &);
 size_t get_serialized_size(
-  const ariac_msgs::msg::ChallengeCondition &,
+  const ariac_msgs::msg::Condition &,
   size_t current_alignment);
 size_t
-max_serialized_size_ChallengeCondition(
+max_serialized_size_Condition(
   bool & full_bounded,
   size_t current_alignment);
 }  // namespace typesupport_fastrtps_cpp
@@ -174,7 +174,7 @@ max_serialized_size_SensorBlackoutChallenge(
 
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment +=
-        ariac_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_ChallengeCondition(
+        ariac_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Condition(
         full_bounded, current_alignment);
     }
   }

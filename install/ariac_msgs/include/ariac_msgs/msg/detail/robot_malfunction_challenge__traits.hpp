@@ -14,7 +14,7 @@
 
 // Include directives for member types
 // Member 'condition'
-#include "ariac_msgs/msg/detail/challenge_condition__traits.hpp"
+#include "ariac_msgs/msg/detail/condition__traits.hpp"
 // Member 'robots_to_disable'
 #include "ariac_msgs/msg/detail/robots__traits.hpp"
 
@@ -75,11 +75,11 @@ inline const char * name<ariac_msgs::msg::RobotMalfunctionChallenge>()
 
 template<>
 struct has_fixed_size<ariac_msgs::msg::RobotMalfunctionChallenge>
-  : std::integral_constant<bool, has_fixed_size<ariac_msgs::msg::ChallengeCondition>::value && has_fixed_size<ariac_msgs::msg::Robots>::value> {};
+  : std::integral_constant<bool, has_fixed_size<ariac_msgs::msg::Condition>::value && has_fixed_size<ariac_msgs::msg::Robots>::value> {};
 
 template<>
 struct has_bounded_size<ariac_msgs::msg::RobotMalfunctionChallenge>
-  : std::integral_constant<bool, has_bounded_size<ariac_msgs::msg::ChallengeCondition>::value && has_bounded_size<ariac_msgs::msg::Robots>::value> {};
+  : std::integral_constant<bool, has_bounded_size<ariac_msgs::msg::Condition>::value && has_bounded_size<ariac_msgs::msg::Robots>::value> {};
 
 template<>
 struct is_message<ariac_msgs::msg::RobotMalfunctionChallenge>

@@ -14,9 +14,9 @@
 
 // Include directives for member types
 // Member `condition`
-#include "ariac_msgs/msg/challenge_condition.h"
+#include "ariac_msgs/msg/condition.h"
 // Member `condition`
-#include "ariac_msgs/msg/detail/challenge_condition__rosidl_typesupport_introspection_c.h"
+#include "ariac_msgs/msg/detail/condition__rosidl_typesupport_introspection_c.h"
 // Member `sensors_to_disable`
 #include "ariac_msgs/msg/sensors.h"
 // Member `sensors_to_disable`
@@ -111,7 +111,7 @@ ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_ariac_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ariac_msgs, msg, SensorBlackoutChallenge)() {
   SensorBlackoutChallenge__rosidl_typesupport_introspection_c__SensorBlackoutChallenge_message_member_array[1].members_ =
-    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ariac_msgs, msg, ChallengeCondition)();
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ariac_msgs, msg, Condition)();
   SensorBlackoutChallenge__rosidl_typesupport_introspection_c__SensorBlackoutChallenge_message_member_array[2].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ariac_msgs, msg, Sensors)();
   if (!SensorBlackoutChallenge__rosidl_typesupport_introspection_c__SensorBlackoutChallenge_message_type_support_handle.typesupport_identifier) {

@@ -77,7 +77,8 @@ def newRobotMalfunction(robotMalfunctions):
         newRobotMalf=RobotMalfunction()
         newRobotMalf.robots_to_disable=bothRobots
         newRobotMalf.duration=float(duration.get())
-        #newRobotMalf.condition=
+        newRobotMalfCondition=Condition()
+        newRobotMalf.condition=newRobotMalfCondition
         robotsString=""
         if floorRobot.get()=="1" and ceilRobot.get()=="1":
             robotsString="[\'floor_robot\', \'ceiling_robot\']"
@@ -303,20 +304,6 @@ def newSensorBlackout(sensorBlackouts):
     durationLabel.pack()
     durationEntry=tk.Entry(sensBOWind, textvariable=duration)
     durationEntry.pack()
-    #part type
-    partType=tk.StringVar()
-    partType.set(allPartTypes[0])
-    partTypeLabel=tk.Label(sensBOWind, text="Select the type of part")
-    partTypeLabel.pack()
-    partTypeMenu=tk.OptionMenu(sensBOWind, partType, *allPartTypes)
-    partTypeMenu.pack()
-    #part color
-    partColor=tk.StringVar()
-    partColor.set(allPartColors[0])
-    partColorLabel=tk.Label(sensBOWind, text="Select the color of the part")
-    partColorLabel.pack()
-    partColorMenu=tk.OptionMenu(sensBOWind, partColor, *allPartColors)
-    partColorMenu.pack()
     #sensors to disable
     sensor1=tk.StringVar()
     sensor2=tk.StringVar()
@@ -426,6 +413,8 @@ def newSensorBlackout(sensorBlackouts):
     duration.trace('w', validate_duration)
     sensBOWind.mainloop()
     if sensBOCancelFlag.get()=="0": # name of sensor
+        newSensorBO=SensorBlackoutChallenge()
+        newSensorBO.duration=float(duration.get())
         if sensor1.get()=="1":
             selectedSensors.append("break_beam")
         if sensor2.get()=="1":

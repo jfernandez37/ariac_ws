@@ -42,13 +42,15 @@ enum
 };
 
 // Include directives for member types
+// Member 'agv_numbers'
+#include "rosidl_runtime_c/primitives_sequence.h"
 // Member 'parts'
 #include "ariac_msgs/msg/detail/assembly_part__struct.h"
 
 // Struct defined in msg/AssemblyTask in the package ariac_msgs.
 typedef struct ariac_msgs__msg__AssemblyTask
 {
-  uint8_t agv_number;
+  rosidl_runtime_c__uint8__Sequence agv_numbers;
   uint8_t station;
   ariac_msgs__msg__AssemblyPart__Sequence parts;
 } ariac_msgs__msg__AssemblyTask;

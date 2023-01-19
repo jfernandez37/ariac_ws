@@ -65,9 +65,10 @@ ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_ba
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_bin_info.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_bin_parts.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_break_beam_status.py
-ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_challenge_condition.py
+ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_condition.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_challenge.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_combined_task.py
+ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_competition_state.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_conveyor_parts.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge.py
@@ -76,6 +77,7 @@ ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_ki
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_kitting_task.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_order.py
+ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_order_condition.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_part_lot.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_part.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_part_place_condition.py
@@ -86,6 +88,7 @@ ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_ro
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_robots.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_sensors.py
+ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_submission_condition.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_time_condition.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_trial.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state.py
@@ -94,6 +97,7 @@ ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_ch
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_move_agv.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_score_task.py
+ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_submit_order.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_perform_quality_check.py
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/__init__.py
@@ -107,9 +111,10 @@ ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_ba
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_bin_info_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_bin_parts_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.c
-ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c
+ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_condition_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_challenge_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_combined_task_s.c
+ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_conveyor_parts_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge_s.c
@@ -118,6 +123,7 @@ ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_ki
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_order_s.c
+ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_part_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_part_place_condition_s.c
@@ -128,6 +134,7 @@ ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_ro
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_robots_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_sensors_s.c
+ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_trial_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state_s.c
@@ -136,6 +143,7 @@ ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_ch
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_move_agv_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_score_task_s.c
+ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c
 ariac_msgs__py/CMakeFiles/ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_perform_quality_check_s.c
 
@@ -162,9 +170,10 @@ rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c:
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/BinInfo.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/BinParts.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/BreakBeamStatus.idl
-rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/ChallengeCondition.idl
+rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/Condition.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/Challenge.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/CombinedTask.idl
+rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/CompetitionState.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/ConveyorBeltState.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/ConveyorParts.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/DroppedPartChallenge.idl
@@ -173,6 +182,7 @@ rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c:
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/KittingTask.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/KitTrayPose.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/Order.idl
+rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/OrderCondition.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/PartLot.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/Part.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/PartPlaceCondition.idl
@@ -183,6 +193,7 @@ rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c:
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/Robots.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/SensorBlackoutChallenge.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/Sensors.idl
+rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/SubmissionCondition.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/TimeCondition.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/Trial.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/msg/VacuumGripperState.idl
@@ -191,6 +202,7 @@ rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c:
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/srv/ConveyorBeltControl.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/srv/MoveAGV.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/srv/ScoreTask.idl
+rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/srv/SubmitOrder.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/srv/VacuumGripperControl.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/ariac_msgs/srv/PerformQualityCheck.idl
 rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/galactic/share/builtin_interfaces/msg/Duration.idl
@@ -290,14 +302,17 @@ rosidl_generator_py/ariac_msgs/msg/_bin_parts.py: rosidl_generator_py/ariac_msgs
 rosidl_generator_py/ariac_msgs/msg/_break_beam_status.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_break_beam_status.py
 
-rosidl_generator_py/ariac_msgs/msg/_challenge_condition.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_challenge_condition.py
+rosidl_generator_py/ariac_msgs/msg/_condition.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_condition.py
 
 rosidl_generator_py/ariac_msgs/msg/_challenge.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_challenge.py
 
 rosidl_generator_py/ariac_msgs/msg/_combined_task.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_combined_task.py
+
+rosidl_generator_py/ariac_msgs/msg/_competition_state.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_competition_state.py
 
 rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state.py
@@ -322,6 +337,9 @@ rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose.py: rosidl_generator_py/ariac_
 
 rosidl_generator_py/ariac_msgs/msg/_order.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_order.py
+
+rosidl_generator_py/ariac_msgs/msg/_order_condition.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_order_condition.py
 
 rosidl_generator_py/ariac_msgs/msg/_part_lot.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_part_lot.py
@@ -353,6 +371,9 @@ rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge.py: rosidl_generat
 rosidl_generator_py/ariac_msgs/msg/_sensors.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_sensors.py
 
+rosidl_generator_py/ariac_msgs/msg/_submission_condition.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_submission_condition.py
+
 rosidl_generator_py/ariac_msgs/msg/_time_condition.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_time_condition.py
 
@@ -376,6 +397,9 @@ rosidl_generator_py/ariac_msgs/srv/_move_agv.py: rosidl_generator_py/ariac_msgs/
 
 rosidl_generator_py/ariac_msgs/srv/_score_task.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/srv/_score_task.py
+
+rosidl_generator_py/ariac_msgs/srv/_submit_order.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/srv/_submit_order.py
 
 rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control.py: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control.py
@@ -416,14 +440,17 @@ rosidl_generator_py/ariac_msgs/msg/_bin_parts_s.c: rosidl_generator_py/ariac_msg
 rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.c
 
-rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c
+rosidl_generator_py/ariac_msgs/msg/_condition_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_condition_s.c
 
 rosidl_generator_py/ariac_msgs/msg/_challenge_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_challenge_s.c
 
 rosidl_generator_py/ariac_msgs/msg/_combined_task_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_combined_task_s.c
+
+rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c
 
 rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c
@@ -448,6 +475,9 @@ rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose_s.c: rosidl_generator_py/ariac
 
 rosidl_generator_py/ariac_msgs/msg/_order_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_order_s.c
+
+rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c
 
 rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c
@@ -479,6 +509,9 @@ rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge_s.c: rosidl_genera
 rosidl_generator_py/ariac_msgs/msg/_sensors_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_sensors_s.c
 
+rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c
+
 rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c
 
@@ -503,6 +536,9 @@ rosidl_generator_py/ariac_msgs/srv/_move_agv_s.c: rosidl_generator_py/ariac_msgs
 rosidl_generator_py/ariac_msgs/srv/_score_task_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/srv/_score_task_s.c
 
+rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c
+
 rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c: rosidl_generator_py/ariac_msgs/_ariac_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c
 
@@ -522,9 +558,10 @@ ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_basic_logical_camera_image.p
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_bin_info.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_bin_parts.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_break_beam_status.py
-ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_challenge_condition.py
+ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_condition.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_challenge.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_combined_task.py
+ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_competition_state.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_conveyor_parts.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge.py
@@ -533,6 +570,7 @@ ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_kitting_part.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_kitting_task.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_order.py
+ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_order_condition.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_part_lot.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_part.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_part_place_condition.py
@@ -543,6 +581,7 @@ ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_robot_malfunction_challenge.
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_robots.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_sensors.py
+ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_submission_condition.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_time_condition.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_trial.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state.py
@@ -551,6 +590,7 @@ ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_change_gripper_color.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_move_agv.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_score_task.py
+ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_submit_order.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_perform_quality_check.py
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/__init__.py
@@ -564,9 +604,10 @@ ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_basic_logical_camera_image_s
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_bin_info_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_bin_parts_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_break_beam_status_s.c
-ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_challenge_condition_s.c
+ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_condition_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_challenge_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_combined_task_s.c
+ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_competition_state_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_conveyor_belt_state_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_conveyor_parts_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_dropped_part_challenge_s.c
@@ -575,6 +616,7 @@ ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_kitting_part_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_kitting_task_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_kit_tray_pose_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_order_s.c
+ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_order_condition_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_part_lot_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_part_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_part_place_condition_s.c
@@ -585,6 +627,7 @@ ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_robot_malfunction_challenge_
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_robots_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_sensor_blackout_challenge_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_sensors_s.c
+ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_submission_condition_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_time_condition_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_trial_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/msg/_vacuum_gripper_state_s.c
@@ -593,6 +636,7 @@ ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_change_gripper_color_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_conveyor_belt_control_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_move_agv_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_score_task_s.c
+ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_submit_order_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_vacuum_gripper_control_s.c
 ariac_msgs__py: rosidl_generator_py/ariac_msgs/srv/_perform_quality_check_s.c
 ariac_msgs__py: ariac_msgs__py/CMakeFiles/ariac_msgs__py.dir/build.make

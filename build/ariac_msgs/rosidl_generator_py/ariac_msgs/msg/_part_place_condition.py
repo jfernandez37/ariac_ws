@@ -63,12 +63,12 @@ class PartPlaceCondition(metaclass=Metaclass_PartPlaceCondition):
 
     _fields_and_field_types = {
         'part': 'ariac_msgs/Part',
-        'agv': 'string',
+        'agv': 'uint8',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['ariac_msgs', 'msg'], 'Part'),  # noqa: E501
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -77,7 +77,7 @@ class PartPlaceCondition(metaclass=Metaclass_PartPlaceCondition):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         from ariac_msgs.msg import Part
         self.part = kwargs.get('part', Part())
-        self.agv = kwargs.get('agv', str())
+        self.agv = kwargs.get('agv', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -142,6 +142,8 @@ class PartPlaceCondition(metaclass=Metaclass_PartPlaceCondition):
     def agv(self, value):
         if __debug__:
             assert \
-                isinstance(value, str), \
-                "The 'agv' field must be of type 'str'"
+                isinstance(value, int), \
+                "The 'agv' field must be of type 'int'"
+            assert value >= 0 and value < 256, \
+                "The 'agv' field must be an unsigned integer in [0, 255]"
         self._agv = value

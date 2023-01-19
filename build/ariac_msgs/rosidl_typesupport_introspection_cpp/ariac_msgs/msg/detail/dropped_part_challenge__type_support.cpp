@@ -37,7 +37,7 @@ void DroppedPartChallenge_fini_function(void * message_memory)
   typed_message->~DroppedPartChallenge();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember DroppedPartChallenge_message_member_array[3] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember DroppedPartChallenge_message_member_array[4] = {
   {
     "robot",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
@@ -69,14 +69,29 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember DroppedPartCh
     nullptr  // resize(index) function pointer
   },
   {
-    "bin_num",  // name
+    "drop_after_num",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(ariac_msgs::msg::DroppedPartChallenge, bin_num),  // bytes offset in struct
+    offsetof(ariac_msgs::msg::DroppedPartChallenge, drop_after_num),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "drop_after_time",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(ariac_msgs::msg::DroppedPartChallenge, drop_after_time),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -88,7 +103,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember DroppedPartCh
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers DroppedPartChallenge_message_members = {
   "ariac_msgs::msg",  // message namespace
   "DroppedPartChallenge",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(ariac_msgs::msg::DroppedPartChallenge),
   DroppedPartChallenge_message_member_array,  // message members
   DroppedPartChallenge_init_function,  // function to initialize message memory (memory has to be allocated)

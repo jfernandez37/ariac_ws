@@ -34,20 +34,20 @@ extern "C"
 {
 #endif
 
-#include "ariac_msgs/msg/detail/challenge_condition__functions.h"  // condition
+#include "ariac_msgs/msg/detail/condition__functions.h"  // condition
 #include "ariac_msgs/msg/detail/robots__functions.h"  // robots_to_disable
 
 // forward declare type support functions
-size_t get_serialized_size_ariac_msgs__msg__ChallengeCondition(
+size_t get_serialized_size_ariac_msgs__msg__Condition(
   const void * untyped_ros_message,
   size_t current_alignment);
 
-size_t max_serialized_size_ariac_msgs__msg__ChallengeCondition(
+size_t max_serialized_size_ariac_msgs__msg__Condition(
   bool & full_bounded,
   size_t current_alignment);
 
 const rosidl_message_type_support_t *
-  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, ariac_msgs, msg, ChallengeCondition)();
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, ariac_msgs, msg, Condition)();
 size_t get_serialized_size_ariac_msgs__msg__Robots(
   const void * untyped_ros_message,
   size_t current_alignment);
@@ -81,7 +81,7 @@ static bool _RobotMalfunctionChallenge__cdr_serialize(
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, ariac_msgs, msg, ChallengeCondition
+        rosidl_typesupport_fastrtps_c, ariac_msgs, msg, Condition
       )()->data);
     if (!callbacks->cdr_serialize(
         &ros_message->condition, cdr))
@@ -126,7 +126,7 @@ static bool _RobotMalfunctionChallenge__cdr_deserialize(
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, ariac_msgs, msg, ChallengeCondition
+        rosidl_typesupport_fastrtps_c, ariac_msgs, msg, Condition
       )()->data);
     if (!callbacks->cdr_deserialize(
         cdr, &ros_message->condition))
@@ -174,7 +174,7 @@ size_t get_serialized_size_ariac_msgs__msg__RobotMalfunctionChallenge(
   }
   // field.name condition
 
-  current_alignment += get_serialized_size_ariac_msgs__msg__ChallengeCondition(
+  current_alignment += get_serialized_size_ariac_msgs__msg__Condition(
     &(ros_message->condition), current_alignment);
   // field.name robots_to_disable
 
@@ -218,7 +218,7 @@ size_t max_serialized_size_ariac_msgs__msg__RobotMalfunctionChallenge(
 
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment +=
-        max_serialized_size_ariac_msgs__msg__ChallengeCondition(
+        max_serialized_size_ariac_msgs__msg__Condition(
         full_bounded, current_alignment);
     }
   }

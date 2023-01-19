@@ -12,8 +12,6 @@
 // Include directives for member types
 // Member `part`
 #include "ariac_msgs/msg/detail/part__functions.h"
-// Member `agv`
-#include "rosidl_runtime_c/string_functions.h"
 
 bool
 ariac_msgs__msg__PartPlaceCondition__init(ariac_msgs__msg__PartPlaceCondition * msg)
@@ -27,10 +25,6 @@ ariac_msgs__msg__PartPlaceCondition__init(ariac_msgs__msg__PartPlaceCondition * 
     return false;
   }
   // agv
-  if (!rosidl_runtime_c__String__init(&msg->agv)) {
-    ariac_msgs__msg__PartPlaceCondition__fini(msg);
-    return false;
-  }
   return true;
 }
 
@@ -43,7 +37,6 @@ ariac_msgs__msg__PartPlaceCondition__fini(ariac_msgs__msg__PartPlaceCondition * 
   // part
   ariac_msgs__msg__Part__fini(&msg->part);
   // agv
-  rosidl_runtime_c__String__fini(&msg->agv);
 }
 
 bool
@@ -59,9 +52,7 @@ ariac_msgs__msg__PartPlaceCondition__are_equal(const ariac_msgs__msg__PartPlaceC
     return false;
   }
   // agv
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->agv), &(rhs->agv)))
-  {
+  if (lhs->agv != rhs->agv) {
     return false;
   }
   return true;
@@ -82,11 +73,7 @@ ariac_msgs__msg__PartPlaceCondition__copy(
     return false;
   }
   // agv
-  if (!rosidl_runtime_c__String__copy(
-      &(input->agv), &(output->agv)))
-  {
-    return false;
-  }
+  output->agv = input->agv;
   return true;
 }
 

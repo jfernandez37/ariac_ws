@@ -99,9 +99,11 @@ get_serialized_size(
     ariac_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.part, current_alignment);
   // Member: agv
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.agv.size() + 1);
+  {
+    size_t item_size = sizeof(ros_message.agv);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -137,12 +139,7 @@ max_serialized_size_PartPlaceCondition(
   {
     size_t array_size = 1;
 
-    full_bounded = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   return current_alignment - initial_alignment;

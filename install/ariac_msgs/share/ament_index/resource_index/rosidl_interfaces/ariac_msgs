@@ -18,10 +18,12 @@ msg/BreakBeamStatus.idl
 msg/BreakBeamStatus.msg
 msg/Challenge.idl
 msg/Challenge.msg
-msg/ChallengeCondition.idl
-msg/ChallengeCondition.msg
 msg/CombinedTask.idl
 msg/CombinedTask.msg
+msg/CompetitionState.idl
+msg/CompetitionState.msg
+msg/Condition.idl
+msg/Condition.msg
 msg/ConveyorBeltState.idl
 msg/ConveyorBeltState.msg
 msg/ConveyorParts.idl
@@ -38,6 +40,8 @@ msg/KittingTask.idl
 msg/KittingTask.msg
 msg/Order.idl
 msg/Order.msg
+msg/OrderCondition.idl
+msg/OrderCondition.msg
 msg/Part.idl
 msg/Part.msg
 msg/PartLot.idl
@@ -58,6 +62,8 @@ msg/SensorBlackoutChallenge.idl
 msg/SensorBlackoutChallenge.msg
 msg/Sensors.idl
 msg/Sensors.msg
+msg/SubmissionCondition.idl
+msg/SubmissionCondition.msg
 msg/TimeCondition.idl
 msg/TimeCondition.msg
 msg/Trial.idl
@@ -88,6 +94,10 @@ srv/ScoreTask.idl
 srv/ScoreTask.srv
 srv/ScoreTask_Request.msg
 srv/ScoreTask_Response.msg
+srv/SubmitOrder.idl
+srv/SubmitOrder.srv
+srv/SubmitOrder_Request.msg
+srv/SubmitOrder_Response.msg
 srv/VacuumGripperControl.idl
 srv/VacuumGripperControl.srv
 srv/VacuumGripperControl_Request.msg

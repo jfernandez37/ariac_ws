@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/Condition.msg
+// generated code does not contain a copyright notice
+
+#include "ariac_msgs/msg/PartPlaceCondition.idl"
+#include "ariac_msgs/msg/SubmissionCondition.idl"
+#include "ariac_msgs/msg/TimeCondition.idl"
+
+module ariac_msgs {
+  module msg {
+    module Condition_Constants {
+      const uint8 TIME = 0;
+      const uint8 PART_PLACE = 1;
+      const uint8 SUBMISSION = 2;
+    };
+    struct Condition {
+      @verbatim (language="comment", text=
+        " TIME, PART_PLACE, SUBMISSION")
+      uint8 type;
+
+      ariac_msgs::msg::TimeCondition time_condition;
+
+      ariac_msgs::msg::PartPlaceCondition part_place_condition;
+
+      ariac_msgs::msg::SubmissionCondition submission_condition;
+    };
+  };
+};

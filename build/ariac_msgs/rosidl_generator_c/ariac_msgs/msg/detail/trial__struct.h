@@ -18,15 +18,22 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
+// Member 'trial_name'
+#include "rosidl_runtime_c/string.h"
 // Member 'orders'
 #include "ariac_msgs/msg/detail/order__struct.h"
+// Member 'order_conditions'
+#include "ariac_msgs/msg/detail/order_condition__struct.h"
 // Member 'challenges'
 #include "ariac_msgs/msg/detail/challenge__struct.h"
 
 // Struct defined in msg/Trial in the package ariac_msgs.
 typedef struct ariac_msgs__msg__Trial
 {
+  float time_limit;
+  rosidl_runtime_c__String trial_name;
   ariac_msgs__msg__Order__Sequence orders;
+  ariac_msgs__msg__OrderCondition__Sequence order_conditions;
   ariac_msgs__msg__Challenge__Sequence challenges;
 } ariac_msgs__msg__Trial;
 

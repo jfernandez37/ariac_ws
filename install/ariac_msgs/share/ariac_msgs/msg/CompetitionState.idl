@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/CompetitionState.msg
+// generated code does not contain a copyright notice
+
+
+module ariac_msgs {
+  module msg {
+    module CompetitionState_Constants {
+      const uint8 IDLE = 0;
+      const uint8 READY = 1;
+      const uint8 STARTED = 2;
+      const uint8 ORDER_ANNOUNCEMENTS_DONE = 3;
+      const uint8 ENDED = 4;
+    };
+    struct CompetitionState {
+      uint8 competition_state;
+    };
+  };
+};

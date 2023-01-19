@@ -59,19 +59,22 @@ class DroppedPartChallenge(metaclass=Metaclass_DroppedPartChallenge):
     __slots__ = [
         '_robot',
         '_part_to_drop',
-        '_bin_num',
+        '_drop_after_num',
+        '_drop_after_time',
     ]
 
     _fields_and_field_types = {
         'robot': 'string',
         'part_to_drop': 'ariac_msgs/Part',
-        'bin_num': 'uint8',
+        'drop_after_num': 'uint8',
+        'drop_after_time': 'float',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['ariac_msgs', 'msg'], 'Part'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -81,7 +84,8 @@ class DroppedPartChallenge(metaclass=Metaclass_DroppedPartChallenge):
         self.robot = kwargs.get('robot', str())
         from ariac_msgs.msg import Part
         self.part_to_drop = kwargs.get('part_to_drop', Part())
-        self.bin_num = kwargs.get('bin_num', int())
+        self.drop_after_num = kwargs.get('drop_after_num', int())
+        self.drop_after_time = kwargs.get('drop_after_time', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -116,7 +120,9 @@ class DroppedPartChallenge(metaclass=Metaclass_DroppedPartChallenge):
             return False
         if self.part_to_drop != other.part_to_drop:
             return False
-        if self.bin_num != other.bin_num:
+        if self.drop_after_num != other.drop_after_num:
+            return False
+        if self.drop_after_time != other.drop_after_time:
             return False
         return True
 
@@ -153,16 +159,29 @@ class DroppedPartChallenge(metaclass=Metaclass_DroppedPartChallenge):
         self._part_to_drop = value
 
     @property
-    def bin_num(self):
-        """Message field 'bin_num'."""
-        return self._bin_num
+    def drop_after_num(self):
+        """Message field 'drop_after_num'."""
+        return self._drop_after_num
 
-    @bin_num.setter
-    def bin_num(self, value):
+    @drop_after_num.setter
+    def drop_after_num(self, value):
         if __debug__:
             assert \
                 isinstance(value, int), \
-                "The 'bin_num' field must be of type 'int'"
+                "The 'drop_after_num' field must be of type 'int'"
             assert value >= 0 and value < 256, \
-                "The 'bin_num' field must be an unsigned integer in [0, 255]"
-        self._bin_num = value
+                "The 'drop_after_num' field must be an unsigned integer in [0, 255]"
+        self._drop_after_num = value
+
+    @property
+    def drop_after_time(self):
+        """Message field 'drop_after_time'."""
+        return self._drop_after_time
+
+    @drop_after_time.setter
+    def drop_after_time(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'drop_after_time' field must be of type 'float'"
+        self._drop_after_time = value

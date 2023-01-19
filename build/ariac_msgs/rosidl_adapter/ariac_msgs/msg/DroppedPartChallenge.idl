@@ -11,7 +11,9 @@ module ariac_msgs {
 
       ariac_msgs::msg::Part part_to_drop;
 
-      uint8 bin_num;
+      uint8 drop_after_num;
+
+      float drop_after_time;
     };
   };
 };

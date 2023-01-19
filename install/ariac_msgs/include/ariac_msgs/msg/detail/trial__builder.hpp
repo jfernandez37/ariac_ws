@@ -36,16 +36,64 @@ private:
   ::ariac_msgs::msg::Trial msg_;
 };
 
+class Init_Trial_order_conditions
+{
+public:
+  explicit Init_Trial_order_conditions(::ariac_msgs::msg::Trial & msg)
+  : msg_(msg)
+  {}
+  Init_Trial_challenges order_conditions(::ariac_msgs::msg::Trial::_order_conditions_type arg)
+  {
+    msg_.order_conditions = std::move(arg);
+    return Init_Trial_challenges(msg_);
+  }
+
+private:
+  ::ariac_msgs::msg::Trial msg_;
+};
+
 class Init_Trial_orders
 {
 public:
-  Init_Trial_orders()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_Trial_orders(::ariac_msgs::msg::Trial & msg)
+  : msg_(msg)
   {}
-  Init_Trial_challenges orders(::ariac_msgs::msg::Trial::_orders_type arg)
+  Init_Trial_order_conditions orders(::ariac_msgs::msg::Trial::_orders_type arg)
   {
     msg_.orders = std::move(arg);
-    return Init_Trial_challenges(msg_);
+    return Init_Trial_order_conditions(msg_);
+  }
+
+private:
+  ::ariac_msgs::msg::Trial msg_;
+};
+
+class Init_Trial_trial_name
+{
+public:
+  explicit Init_Trial_trial_name(::ariac_msgs::msg::Trial & msg)
+  : msg_(msg)
+  {}
+  Init_Trial_orders trial_name(::ariac_msgs::msg::Trial::_trial_name_type arg)
+  {
+    msg_.trial_name = std::move(arg);
+    return Init_Trial_orders(msg_);
+  }
+
+private:
+  ::ariac_msgs::msg::Trial msg_;
+};
+
+class Init_Trial_time_limit
+{
+public:
+  Init_Trial_time_limit()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_Trial_trial_name time_limit(::ariac_msgs::msg::Trial::_time_limit_type arg)
+  {
+    msg_.time_limit = std::move(arg);
+    return Init_Trial_trial_name(msg_);
   }
 
 private:
@@ -63,7 +111,7 @@ template<>
 inline
 auto build<::ariac_msgs::msg::Trial>()
 {
-  return ariac_msgs::msg::builder::Init_Trial_orders();
+  return ariac_msgs::msg::builder::Init_Trial_time_limit();
 }
 
 }  // namespace ariac_msgs

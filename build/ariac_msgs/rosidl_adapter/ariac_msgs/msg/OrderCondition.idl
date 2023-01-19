@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ariac_msgs/msg/OrderCondition.msg
+// generated code does not contain a copyright notice
+
+#include "ariac_msgs/msg/AssemblyTask.idl"
+#include "ariac_msgs/msg/CombinedTask.idl"
+#include "ariac_msgs/msg/Condition.idl"
+#include "ariac_msgs/msg/KittingTask.idl"
+
+module ariac_msgs {
+  module msg {
+    module OrderCondition_Constants {
+      const uint8 KITTING = 0;
+      const uint8 ASSEMBLY = 1;
+      const uint8 COMBINED = 2;
+    };
+    struct OrderCondition {
+      string id;
+
+      uint8 type;
+
+      boolean priority;
+
+      ariac_msgs::msg::KittingTask kitting_task;
+
+      ariac_msgs::msg::AssemblyTask assembly_task;
+
+      ariac_msgs::msg::CombinedTask combined_task;
+
+      ariac_msgs::msg::Condition condition;
+    };
+  };
+};

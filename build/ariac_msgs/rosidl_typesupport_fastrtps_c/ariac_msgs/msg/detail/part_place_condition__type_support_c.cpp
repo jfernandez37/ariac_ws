@@ -35,8 +35,6 @@ extern "C"
 #endif
 
 #include "ariac_msgs/msg/detail/part__functions.h"  // part
-#include "rosidl_runtime_c/string.h"  // agv
-#include "rosidl_runtime_c/string_functions.h"  // agv
 
 // forward declare type support functions
 size_t get_serialized_size_ariac_msgs__msg__Part(
@@ -78,16 +76,7 @@ static bool _PartPlaceCondition__cdr_serialize(
 
   // Field name: agv
   {
-    const rosidl_runtime_c__String * str = &ros_message->agv;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
+    cdr << ros_message->agv;
   }
 
   return true;
@@ -118,18 +107,7 @@ static bool _PartPlaceCondition__cdr_deserialize(
 
   // Field name: agv
   {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->agv.data) {
-      rosidl_runtime_c__String__init(&ros_message->agv);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->agv,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'agv'\n");
-      return false;
-    }
+    cdr >> ros_message->agv;
   }
 
   return true;
@@ -154,9 +132,11 @@ size_t get_serialized_size_ariac_msgs__msg__PartPlaceCondition(
   current_alignment += get_serialized_size_ariac_msgs__msg__Part(
     &(ros_message->part), current_alignment);
   // field.name agv
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->agv.size + 1);
+  {
+    size_t item_size = sizeof(ros_message->agv);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -196,12 +176,7 @@ size_t max_serialized_size_ariac_msgs__msg__PartPlaceCondition(
   {
     size_t array_size = 1;
 
-    full_bounded = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   return current_alignment - initial_alignment;

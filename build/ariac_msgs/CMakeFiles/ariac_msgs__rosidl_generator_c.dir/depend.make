@@ -57,6 +57,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/assembly_task__functions.c.o: /opt/ros/galactic/include/geometry_msgs/msg/detail/quaternion__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/assembly_task__functions.c.o: /opt/ros/galactic/include/geometry_msgs/msg/detail/vector3__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/assembly_task__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/assembly_task__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence_functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/assembly_task__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/assembly_task__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/assembly_task__functions.c.o: /opt/ros/galactic/include/std_msgs/msg/detail/header__struct.h
@@ -116,7 +117,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge__struct.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/faulty_part_challenge__functions.h
@@ -129,22 +130,9 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/sensors__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
-
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string_functions.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__struct.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part__struct.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__struct.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__struct.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c.o: /opt/ros/galactic/include/builtin_interfaces/msg/detail/time__struct.h
@@ -163,6 +151,27 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/combined_task__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c.o: rosidl_generator_c/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
+
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/competition_state__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o: rosidl_generator_c/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
+
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
@@ -252,6 +261,36 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.o: rosidl_generator_c/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
 
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: /opt/ros/galactic/include/builtin_interfaces/msg/detail/time__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: /opt/ros/galactic/include/geometry_msgs/msg/detail/point__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: /opt/ros/galactic/include/geometry_msgs/msg/detail/pose__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: /opt/ros/galactic/include/geometry_msgs/msg/detail/pose_stamped__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: /opt/ros/galactic/include/geometry_msgs/msg/detail/quaternion__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: /opt/ros/galactic/include/geometry_msgs/msg/detail/vector3__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string_functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: /opt/ros/galactic/include/std_msgs/msg/detail/header__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/assembly_part__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/assembly_task__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/assembly_task__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/combined_task__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/kitting_part__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/order_condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
+
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part__functions.h
@@ -267,9 +306,6 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c.o: rosidl_generator_c/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string_functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part__struct.h
@@ -308,14 +344,15 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/robots__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/robots__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
 
@@ -329,14 +366,15 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/sensors__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
 
@@ -345,6 +383,15 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/sensors__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.o: rosidl_generator_c/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
+
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string_functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
@@ -361,26 +408,30 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: /opt/ros/galactic/include/geometry_msgs/msg/detail/vector3__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string_functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: /opt/ros/galactic/include/std_msgs/msg/detail/header__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/assembly_part__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/assembly_task__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge__struct.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/combined_task__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/faulty_part_challenge__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/kitting_part__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/order__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/order__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/order_condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/robots__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/sensors__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/trial__struct.h
@@ -444,6 +495,15 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.o: rosidl_generator_c/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.o: rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.o: rosidl_generator_c/ariac_msgs/srv/detail/score_task__struct.h
+
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o: rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/string_functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o: rosidl_generator_c/ariac_msgs/msg/rosidl_generator_c__visibility_control.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o: rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o: rosidl_generator_c/ariac_msgs/srv/detail/submit_order__struct.h
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c.o: rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c.o: /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h

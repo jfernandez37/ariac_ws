@@ -55,8 +55,10 @@ cdr_serialize(
   const ariac_msgs::msg::AssemblyTask & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: agv_number
-  cdr << ros_message.agv_number;
+  // Member: agv_numbers
+  {
+    cdr << ros_message.agv_numbers;
+  }
   // Member: station
   cdr << ros_message.station;
   // Member: parts
@@ -78,8 +80,10 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   ariac_msgs::msg::AssemblyTask & ros_message)
 {
-  // Member: agv_number
-  cdr >> ros_message.agv_number;
+  // Member: agv_numbers
+  {
+    cdr >> ros_message.agv_numbers;
+  }
 
   // Member: station
   cdr >> ros_message.station;
@@ -112,10 +116,14 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: agv_number
+  // Member: agv_numbers
   {
-    size_t item_size = sizeof(ros_message.agv_number);
-    current_alignment += item_size +
+    size_t array_size = ros_message.agv_numbers.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.agv_numbers[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
   // Member: station
@@ -156,9 +164,12 @@ max_serialized_size_AssemblyTask(
   (void)full_bounded;
 
 
-  // Member: agv_number
+  // Member: agv_numbers
   {
-    size_t array_size = 1;
+    size_t array_size = 0;
+    full_bounded = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     current_alignment += array_size * sizeof(uint8_t);
   }

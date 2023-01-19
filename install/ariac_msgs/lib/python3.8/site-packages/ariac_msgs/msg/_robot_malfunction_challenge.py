@@ -40,9 +40,9 @@ class Metaclass_RobotMalfunctionChallenge(type):
             cls._TYPE_SUPPORT = module.type_support_msg__msg__robot_malfunction_challenge
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__msg__robot_malfunction_challenge
 
-            from ariac_msgs.msg import ChallengeCondition
-            if ChallengeCondition.__class__._TYPE_SUPPORT is None:
-                ChallengeCondition.__class__.__import_type_support__()
+            from ariac_msgs.msg import Condition
+            if Condition.__class__._TYPE_SUPPORT is None:
+                Condition.__class__.__import_type_support__()
 
             from ariac_msgs.msg import Robots
             if Robots.__class__._TYPE_SUPPORT is None:
@@ -68,13 +68,13 @@ class RobotMalfunctionChallenge(metaclass=Metaclass_RobotMalfunctionChallenge):
 
     _fields_and_field_types = {
         'duration': 'double',
-        'condition': 'ariac_msgs/ChallengeCondition',
+        'condition': 'ariac_msgs/Condition',
         'robots_to_disable': 'ariac_msgs/Robots',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.NamespacedType(['ariac_msgs', 'msg'], 'ChallengeCondition'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['ariac_msgs', 'msg'], 'Condition'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['ariac_msgs', 'msg'], 'Robots'),  # noqa: E501
     )
 
@@ -83,8 +83,8 @@ class RobotMalfunctionChallenge(metaclass=Metaclass_RobotMalfunctionChallenge):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.duration = kwargs.get('duration', float())
-        from ariac_msgs.msg import ChallengeCondition
-        self.condition = kwargs.get('condition', ChallengeCondition())
+        from ariac_msgs.msg import Condition
+        self.condition = kwargs.get('condition', Condition())
         from ariac_msgs.msg import Robots
         self.robots_to_disable = kwargs.get('robots_to_disable', Robots())
 
@@ -151,10 +151,10 @@ class RobotMalfunctionChallenge(metaclass=Metaclass_RobotMalfunctionChallenge):
     @condition.setter
     def condition(self, value):
         if __debug__:
-            from ariac_msgs.msg import ChallengeCondition
+            from ariac_msgs.msg import Condition
             assert \
-                isinstance(value, ChallengeCondition), \
-                "The 'condition' field must be a sub message of type 'ChallengeCondition'"
+                isinstance(value, Condition), \
+                "The 'condition' field must be a sub message of type 'Condition'"
         self._condition = value
 
     @property

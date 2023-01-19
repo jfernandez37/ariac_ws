@@ -17,6 +17,8 @@
 // Include directives for member types
 // Member 'orders'
 #include "ariac_msgs/msg/detail/order__struct.hpp"
+// Member 'order_conditions'
+#include "ariac_msgs/msg/detail/order_condition__struct.hpp"
 // Member 'challenges'
 #include "ariac_msgs/msg/detail/challenge__struct.hpp"
 
@@ -40,28 +42,65 @@ struct Trial_
 
   explicit Trial_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   {
-    (void)_init;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->time_limit = 0.0f;
+      this->trial_name = "";
+    }
   }
 
   explicit Trial_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : trial_name(_alloc)
   {
-    (void)_init;
-    (void)_alloc;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->time_limit = 0.0f;
+      this->trial_name = "";
+    }
   }
 
   // field types and members
+  using _time_limit_type =
+    float;
+  _time_limit_type time_limit;
+  using _trial_name_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _trial_name_type trial_name;
   using _orders_type =
     std::vector<ariac_msgs::msg::Order_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<ariac_msgs::msg::Order_<ContainerAllocator>>>;
   _orders_type orders;
+  using _order_conditions_type =
+    std::vector<ariac_msgs::msg::OrderCondition_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<ariac_msgs::msg::OrderCondition_<ContainerAllocator>>>;
+  _order_conditions_type order_conditions;
   using _challenges_type =
     std::vector<ariac_msgs::msg::Challenge_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<ariac_msgs::msg::Challenge_<ContainerAllocator>>>;
   _challenges_type challenges;
 
   // setters for named parameter idiom
+  Type & set__time_limit(
+    const float & _arg)
+  {
+    this->time_limit = _arg;
+    return *this;
+  }
+  Type & set__trial_name(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->trial_name = _arg;
+    return *this;
+  }
   Type & set__orders(
     const std::vector<ariac_msgs::msg::Order_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<ariac_msgs::msg::Order_<ContainerAllocator>>> & _arg)
   {
     this->orders = _arg;
+    return *this;
+  }
+  Type & set__order_conditions(
+    const std::vector<ariac_msgs::msg::OrderCondition_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<ariac_msgs::msg::OrderCondition_<ContainerAllocator>>> & _arg)
+  {
+    this->order_conditions = _arg;
     return *this;
   }
   Type & set__challenges(
@@ -113,7 +152,16 @@ struct Trial_
   // comparison operators
   bool operator==(const Trial_ & other) const
   {
+    if (this->time_limit != other.time_limit) {
+      return false;
+    }
+    if (this->trial_name != other.trial_name) {
+      return false;
+    }
     if (this->orders != other.orders) {
+      return false;
+    }
+    if (this->order_conditions != other.order_conditions) {
       return false;
     }
     if (this->challenges != other.challenges) {

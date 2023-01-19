@@ -19,7 +19,7 @@ extern "C"
 
 // Include directives for member types
 // Member 'condition'
-#include "ariac_msgs/msg/detail/challenge_condition__struct.h"
+#include "ariac_msgs/msg/detail/condition__struct.h"
 // Member 'sensors_to_disable'
 #include "ariac_msgs/msg/detail/sensors__struct.h"
 
@@ -27,7 +27,7 @@ extern "C"
 typedef struct ariac_msgs__msg__SensorBlackoutChallenge
 {
   double duration;
-  ariac_msgs__msg__ChallengeCondition condition;
+  ariac_msgs__msg__Condition condition;
   ariac_msgs__msg__Sensors sensors_to_disable;
 } ariac_msgs__msg__SensorBlackoutChallenge;
 

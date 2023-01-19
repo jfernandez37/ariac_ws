@@ -15,6 +15,8 @@
 // Include directives for member types
 // Member 'orders'
 #include "ariac_msgs/msg/detail/order__traits.hpp"
+// Member 'order_conditions'
+#include "ariac_msgs/msg/detail/order_condition__traits.hpp"
 // Member 'challenges'
 #include "ariac_msgs/msg/detail/challenge__traits.hpp"
 
@@ -25,6 +27,26 @@ inline void to_yaml(
   const ariac_msgs::msg::Trial & msg,
   std::ostream & out, size_t indentation = 0)
 {
+  // member: time_limit
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "time_limit: ";
+    value_to_yaml(msg.time_limit, out);
+    out << "\n";
+  }
+
+  // member: trial_name
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "trial_name: ";
+    value_to_yaml(msg.trial_name, out);
+    out << "\n";
+  }
+
   // member: orders
   {
     if (indentation > 0) {
@@ -35,6 +57,25 @@ inline void to_yaml(
     } else {
       out << "orders:\n";
       for (auto item : msg.orders) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_yaml(item, out, indentation + 2);
+      }
+    }
+  }
+
+  // member: order_conditions
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.order_conditions.size() == 0) {
+      out << "order_conditions: []\n";
+    } else {
+      out << "order_conditions:\n";
+      for (auto item : msg.order_conditions) {
         if (indentation > 0) {
           out << std::string(indentation, ' ');
         }

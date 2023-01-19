@@ -16,9 +16,6 @@
 #include "ariac_msgs/msg/detail/part_place_condition__struct.h"
 #include "ariac_msgs/msg/detail/part_place_condition__functions.h"
 
-#include "rosidl_runtime_c/string.h"
-#include "rosidl_runtime_c/string_functions.h"
-
 bool ariac_msgs__msg__part__convert_from_py(PyObject * _pymsg, void * _ros_message);
 PyObject * ariac_msgs__msg__part__convert_to_py(void * raw_ros_message);
 
@@ -71,14 +68,8 @@ bool ariac_msgs__msg__part_place_condition__convert_from_py(PyObject * _pymsg, v
     if (!field) {
       return false;
     }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
-      return false;
-    }
-    rosidl_runtime_c__String__assign(&ros_message->agv, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
+    assert(PyLong_Check(field));
+    ros_message->agv = (uint8_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
 
@@ -119,13 +110,7 @@ PyObject * ariac_msgs__msg__part_place_condition__convert_to_py(void * raw_ros_m
   }
   {  // agv
     PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->agv.data,
-      strlen(ros_message->agv.data),
-      "replace");
-    if (!field) {
-      return NULL;
-    }
+    field = PyLong_FromUnsignedLong(ros_message->agv);
     {
       int rc = PyObject_SetAttrString(_pymessage, "agv", field);
       Py_DECREF(field);

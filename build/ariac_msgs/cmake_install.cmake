@@ -391,7 +391,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs/msg/ChallengeCondition.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs/msg/Condition.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -400,6 +400,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs/msg/CombinedTask.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs/msg/CompetitionState.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -432,6 +436,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs/msg/Order.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs/msg/OrderCondition.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -475,6 +483,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs/msg/SubmissionCondition.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs/msg/TimeCondition.idl")
 endif()
 
@@ -504,6 +516,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/srv" TYPE FILE FILES "/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs/srv/ScoreTask.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/srv" TYPE FILE FILES "/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_adapter/ariac_msgs/srv/SubmitOrder.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -551,7 +567,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/ChallengeCondition.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/Condition.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -560,6 +576,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/CombinedTask.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/CompetitionState.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -592,6 +612,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/Order.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/OrderCondition.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -632,6 +656,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/Sensors.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/msg" TYPE FILE FILES "/home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/msg/SubmissionCondition.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -704,6 +732,18 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/srv" TYPE FILE FILES "/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_cmake/srv/ScoreTask_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/srv" TYPE FILE FILES "/home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs/srv/SubmitOrder.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/srv" TYPE FILE FILES "/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_cmake/srv/SubmitOrder_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_msgs/srv" TYPE FILE FILES "/home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_cmake/srv/SubmitOrder_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

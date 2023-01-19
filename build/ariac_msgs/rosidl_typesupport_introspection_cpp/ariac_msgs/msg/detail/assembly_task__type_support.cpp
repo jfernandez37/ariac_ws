@@ -37,6 +37,33 @@ void AssemblyTask_fini_function(void * message_memory)
   typed_message->~AssemblyTask();
 }
 
+size_t size_function__AssemblyTask__agv_numbers(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<uint8_t> *>(untyped_member);
+  return member->size();
+}
+
+const void * get_const_function__AssemblyTask__agv_numbers(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::vector<uint8_t> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__AssemblyTask__agv_numbers(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::vector<uint8_t> *>(untyped_member);
+  return &member[index];
+}
+
+void resize_function__AssemblyTask__agv_numbers(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<uint8_t> *>(untyped_member);
+  member->resize(size);
+}
+
 size_t size_function__AssemblyTask__parts(const void * untyped_member)
 {
   const auto * member = reinterpret_cast<const std::vector<ariac_msgs::msg::AssemblyPart> *>(untyped_member);
@@ -66,19 +93,19 @@ void resize_function__AssemblyTask__parts(void * untyped_member, size_t size)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember AssemblyTask_message_member_array[3] = {
   {
-    "agv_number",  // name
+    "agv_numbers",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
-    false,  // is array
+    true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(ariac_msgs::msg::AssemblyTask, agv_number),  // bytes offset in struct
+    offsetof(ariac_msgs::msg::AssemblyTask, agv_numbers),  // bytes offset in struct
     nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr  // resize(index) function pointer
+    size_function__AssemblyTask__agv_numbers,  // size() function pointer
+    get_const_function__AssemblyTask__agv_numbers,  // get_const(index) function pointer
+    get_function__AssemblyTask__agv_numbers,  // get(index) function pointer
+    resize_function__AssemblyTask__agv_numbers  // resize(index) function pointer
   },
   {
     "station",  // name

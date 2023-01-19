@@ -74,9 +74,10 @@ rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_imag
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/BinInfo.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/BinParts.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/BreakBeamStatus.idl
-rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/ChallengeCondition.idl
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/Condition.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/Challenge.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/CombinedTask.idl
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/CompetitionState.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/ConveyorBeltState.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/ConveyorParts.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/DroppedPartChallenge.idl
@@ -85,6 +86,7 @@ rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_imag
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/KittingTask.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/KitTrayPose.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/Order.idl
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/OrderCondition.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/PartLot.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/Part.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/PartPlaceCondition.idl
@@ -95,6 +97,7 @@ rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_imag
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/Robots.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/SensorBlackoutChallenge.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/Sensors.idl
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/SubmissionCondition.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/TimeCondition.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/Trial.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/msg/VacuumGripperState.idl
@@ -103,6 +106,7 @@ rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_imag
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/srv/ConveyorBeltControl.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/srv/MoveAGV.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/srv/ScoreTask.idl
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/srv/SubmitOrder.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/srv/VacuumGripperControl.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/ariac_msgs/srv/PerformQualityCheck.idl
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h: /opt/ros/galactic/share/builtin_interfaces/msg/Duration.idl
@@ -220,11 +224,11 @@ rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/break_beam_status__rosidl_ty
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/break_beam_status__type_support_c.cpp: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/break_beam_status__type_support_c.cpp
 
-rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__rosidl_typesupport_fastrtps_c.h
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__rosidl_typesupport_fastrtps_c.h
 
-rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp
 
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__rosidl_typesupport_fastrtps_c.h
@@ -237,6 +241,12 @@ rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__rosidl_typesu
 
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.cpp: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp
 
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__rosidl_typesupport_fastrtps_c.h
@@ -285,6 +295,12 @@ rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__rosidl_typesupport_fa
 
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp
 
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__rosidl_typesupport_fastrtps_c.h
@@ -346,6 +362,12 @@ rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__rosidl_typesupport_
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp
 
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp
+
 rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__rosidl_typesupport_fastrtps_c.h
 
@@ -393,6 +415,12 @@ rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__rosidl_typesuppo
 
 rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp
 
 rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/advanced_logical_camera_image__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__rosidl_typesupport_fastrtps_c.h
@@ -523,18 +551,18 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/break_beam_status__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/break_beam_status__type_support_c.cpp -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/break_beam_status__type_support_c.cpp.s
 
-CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
-CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp
 
-CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp > CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.i
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp > CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.i
 
-CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.s
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.s
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__type_support_c.cpp
@@ -562,9 +590,22 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.cpp -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.cpp.s
 
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp
+
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp > CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.i
+
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.s
+
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.cpp.i: cmake_force
@@ -577,7 +618,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_parts__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_parts__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_parts__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_parts__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_parts__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_parts__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_parts__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_parts__type_support_c.cpp.i: cmake_force
@@ -590,7 +631,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/dropped_part_challenge__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/dropped_part_challenge__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/dropped_part_challenge__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/dropped_part_challenge__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/dropped_part_challenge__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/dropped_part_challenge__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/dropped_part_challenge__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/dropped_part_challenge__type_support_c.cpp.i: cmake_force
@@ -603,7 +644,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/faulty_part_challenge__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/faulty_part_challenge__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/faulty_part_challenge__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/faulty_part_challenge__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/faulty_part_challenge__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/faulty_part_challenge__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/faulty_part_challenge__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/faulty_part_challenge__type_support_c.cpp.i: cmake_force
@@ -616,7 +657,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_part__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_part__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_part__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_part__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_part__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_part__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_part__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_part__type_support_c.cpp.i: cmake_force
@@ -629,7 +670,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_task__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_task__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_task__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_task__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_task__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_task__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_task__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_task__type_support_c.cpp.i: cmake_force
@@ -642,7 +683,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kit_tray_pose__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kit_tray_pose__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kit_tray_pose__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kit_tray_pose__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kit_tray_pose__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kit_tray_pose__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kit_tray_pose__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kit_tray_pose__type_support_c.cpp.i: cmake_force
@@ -655,7 +696,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp.i: cmake_force
@@ -666,9 +707,22 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp.s
 
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp
+
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp > CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.i
+
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.s
+
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__type_support_c.cpp.i: cmake_force
@@ -681,7 +735,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.cpp.i: cmake_force
@@ -694,7 +748,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_place_condition__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_place_condition__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_place_condition__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_place_condition__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_place_condition__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_place_condition__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_place_condition__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_place_condition__type_support_c.cpp.i: cmake_force
@@ -707,7 +761,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_pose__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_pose__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_pose__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_pose__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_pose__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_pose__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_pose__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_pose__type_support_c.cpp.i: cmake_force
@@ -720,7 +774,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/parts__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/parts__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/parts__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/parts__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/parts__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/parts__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/parts__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/parts__type_support_c.cpp.i: cmake_force
@@ -733,7 +787,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/quality_issue__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/quality_issue__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/quality_issue__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/quality_issue__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/quality_issue__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/quality_issue__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/quality_issue__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/quality_issue__type_support_c.cpp.i: cmake_force
@@ -746,7 +800,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robot_malfunction_challenge__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robot_malfunction_challenge__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robot_malfunction_challenge__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robot_malfunction_challenge__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robot_malfunction_challenge__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robot_malfunction_challenge__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robot_malfunction_challenge__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robot_malfunction_challenge__type_support_c.cpp.i: cmake_force
@@ -759,7 +813,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robots__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robots__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robots__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robots__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robots__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robots__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robots__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robots__type_support_c.cpp.i: cmake_force
@@ -772,7 +826,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support_c.cpp.i: cmake_force
@@ -785,7 +839,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp.i: cmake_force
@@ -796,9 +850,22 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp.s
 
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp
+
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp > CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.i
+
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.s
+
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.cpp.i: cmake_force
@@ -811,7 +878,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/trial__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/trial__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/trial__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/trial__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/trial__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/trial__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/trial__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/trial__type_support_c.cpp.i: cmake_force
@@ -824,7 +891,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/vacuum_gripper_state__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/vacuum_gripper_state__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/vacuum_gripper_state__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/vacuum_gripper_state__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/vacuum_gripper_state__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/vacuum_gripper_state__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/vacuum_gripper_state__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/vacuum_gripper_state__type_support_c.cpp.i: cmake_force
@@ -837,7 +904,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper__type_support_c.cpp.i: cmake_force
@@ -850,7 +917,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper_color__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper_color__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper_color__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper_color__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper_color__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper_color__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper_color__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/change_gripper_color__type_support_c.cpp.i: cmake_force
@@ -863,7 +930,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/conveyor_belt_control__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/conveyor_belt_control__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/conveyor_belt_control__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/conveyor_belt_control__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/conveyor_belt_control__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/conveyor_belt_control__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/conveyor_belt_control__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/conveyor_belt_control__type_support_c.cpp.i: cmake_force
@@ -876,7 +943,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/move_agv__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/move_agv__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/move_agv__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/move_agv__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/move_agv__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/move_agv__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/move_agv__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/move_agv__type_support_c.cpp.i: cmake_force
@@ -889,7 +956,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp.i: cmake_force
@@ -900,9 +967,22 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp.s
 
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp
+
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp > CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.i
+
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.s
+
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.cpp.i: cmake_force
@@ -915,7 +995,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/perform_quality_check__type_support_c.cpp.o: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/perform_quality_check__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/perform_quality_check__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/perform_quality_check__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/perform_quality_check__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/perform_quality_check__type_support_c.cpp.o -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/perform_quality_check__type_support_c.cpp
 
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/perform_quality_check__type_support_c.cpp.i: cmake_force
@@ -937,9 +1017,10 @@ ariac_msgs__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/bin_info__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/bin_parts__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/break_beam_status__type_support_c.cpp.o" \
-"CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.o" \
+"CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.cpp.o" \
+"CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_parts__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/dropped_part_challenge__type_support_c.cpp.o" \
@@ -948,6 +1029,7 @@ ariac_msgs__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_task__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kit_tray_pose__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp.o" \
+"CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_place_condition__type_support_c.cpp.o" \
@@ -958,6 +1040,7 @@ ariac_msgs__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robots__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp.o" \
+"CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/trial__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/vacuum_gripper_state__type_support_c.cpp.o" \
@@ -966,6 +1049,7 @@ ariac_msgs__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/conveyor_belt_control__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/move_agv__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp.o" \
+"CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.cpp.o" \
 "CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/perform_quality_check__type_support_c.cpp.o"
 
@@ -981,9 +1065,10 @@ libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_t
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/bin_info__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/bin_parts__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/break_beam_status__type_support_c.cpp.o
-libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp.o
+libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.cpp.o
+libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_parts__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/dropped_part_challenge__type_support_c.cpp.o
@@ -992,6 +1077,7 @@ libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_t
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kitting_task__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kit_tray_pose__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp.o
+libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_place_condition__type_support_c.cpp.o
@@ -1002,6 +1088,7 @@ libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_t
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/robots__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp.o
+libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/trial__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/vacuum_gripper_state__type_support_c.cpp.o
@@ -1010,6 +1097,7 @@ libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_t
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/conveyor_belt_control__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/move_agv__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp.o
+libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/perform_quality_check__type_support_c.cpp.o
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/build.make
@@ -1054,7 +1142,7 @@ libariac_msgs__rosidl_typesupport_fastrtps_c.so: /usr/lib/x86_64-linux-gnu/libss
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: /usr/lib/x86_64-linux-gnu/libcrypto.so
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/galactic/lib/libfastcdr.so.1.0.20
 libariac_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Linking CXX shared library libariac_msgs__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Linking CXX shared library libariac_msgs__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1084,12 +1172,14 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/bin_parts__type_support_c.cpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/break_beam_status__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/break_beam_status__type_support_c.cpp
-CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__rosidl_typesupport_fastrtps_c.h
-CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge_condition__type_support_c.cpp
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/condition__type_support_c.cpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/challenge__type_support_c.cpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/combined_task__type_support_c.cpp
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/competition_state__type_support_c.cpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_belt_state__type_support_c.cpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/conveyor_parts__rosidl_typesupport_fastrtps_c.h
@@ -1106,6 +1196,8 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/kit_tray_pose__type_support_c.cpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order__type_support_c.cpp
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/order_condition__type_support_c.cpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part_lot__type_support_c.cpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/part__rosidl_typesupport_fastrtps_c.h
@@ -1126,6 +1218,8 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensor_blackout_challenge__type_support_c.cpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/sensors__type_support_c.cpp
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/submission_condition__type_support_c.cpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/time_condition__type_support_c.cpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/msg/detail/trial__rosidl_typesupport_fastrtps_c.h
@@ -1142,6 +1236,8 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/move_agv__type_support_c.cpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/score_task__type_support_c.cpp
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/submit_order__type_support_c.cpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/vacuum_gripper_control__type_support_c.cpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/ariac_msgs/srv/detail/perform_quality_check__rosidl_typesupport_fastrtps_c.h

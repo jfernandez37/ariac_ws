@@ -79,9 +79,10 @@ rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapte
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/BinInfo.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/BinParts.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/BreakBeamStatus.idl
-rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/ChallengeCondition.idl
+rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/Condition.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/Challenge.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/CombinedTask.idl
+rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/CompetitionState.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/ConveyorBeltState.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/ConveyorParts.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/DroppedPartChallenge.idl
@@ -90,6 +91,7 @@ rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapte
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/KittingTask.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/KitTrayPose.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/Order.idl
+rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/OrderCondition.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/PartLot.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/Part.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/PartPlaceCondition.idl
@@ -100,6 +102,7 @@ rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapte
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/Robots.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/SensorBlackoutChallenge.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/Sensors.idl
+rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/SubmissionCondition.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/TimeCondition.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/Trial.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/msg/VacuumGripperState.idl
@@ -108,6 +111,7 @@ rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapte
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/srv/ConveyorBeltControl.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/srv/MoveAGV.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/srv/ScoreTask.idl
+rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/srv/SubmitOrder.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/srv/VacuumGripperControl.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: rosidl_adapter/ariac_msgs/srv/PerformQualityCheck.idl
 rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h: /opt/ros/galactic/share/builtin_interfaces/msg/Duration.idl
@@ -279,17 +283,17 @@ rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__struct.h: rosidl_gen
 rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__type_support.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__type_support.h
 
-rosidl_generator_c/ariac_msgs/msg/challenge_condition.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/challenge_condition.h
+rosidl_generator_c/ariac_msgs/msg/condition.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/condition.h
 
-rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.h
+rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.h
 
-rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__struct.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__struct.h
+rosidl_generator_c/ariac_msgs/msg/detail/condition__struct.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/condition__struct.h
 
-rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__type_support.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__type_support.h
+rosidl_generator_c/ariac_msgs/msg/detail/condition__type_support.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/condition__type_support.h
 
 rosidl_generator_c/ariac_msgs/msg/challenge.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/challenge.h
@@ -314,6 +318,18 @@ rosidl_generator_c/ariac_msgs/msg/detail/combined_task__struct.h: rosidl_generat
 
 rosidl_generator_c/ariac_msgs/msg/detail/combined_task__type_support.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/combined_task__type_support.h
+
+rosidl_generator_c/ariac_msgs/msg/competition_state.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/competition_state.h
+
+rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.h
+
+rosidl_generator_c/ariac_msgs/msg/detail/competition_state__struct.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/competition_state__struct.h
+
+rosidl_generator_c/ariac_msgs/msg/detail/competition_state__type_support.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/competition_state__type_support.h
 
 rosidl_generator_c/ariac_msgs/msg/conveyor_belt_state.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/conveyor_belt_state.h
@@ -410,6 +426,18 @@ rosidl_generator_c/ariac_msgs/msg/detail/order__struct.h: rosidl_generator_c/ari
 
 rosidl_generator_c/ariac_msgs/msg/detail/order__type_support.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/order__type_support.h
+
+rosidl_generator_c/ariac_msgs/msg/order_condition.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/order_condition.h
+
+rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.h
+
+rosidl_generator_c/ariac_msgs/msg/detail/order_condition__struct.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/order_condition__struct.h
+
+rosidl_generator_c/ariac_msgs/msg/detail/order_condition__type_support.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/order_condition__type_support.h
 
 rosidl_generator_c/ariac_msgs/msg/part_lot.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/part_lot.h
@@ -531,6 +559,18 @@ rosidl_generator_c/ariac_msgs/msg/detail/sensors__struct.h: rosidl_generator_c/a
 rosidl_generator_c/ariac_msgs/msg/detail/sensors__type_support.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/sensors__type_support.h
 
+rosidl_generator_c/ariac_msgs/msg/submission_condition.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/submission_condition.h
+
+rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.h
+
+rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__struct.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__struct.h
+
+rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__type_support.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__type_support.h
+
 rosidl_generator_c/ariac_msgs/msg/time_condition.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/time_condition.h
 
@@ -627,6 +667,18 @@ rosidl_generator_c/ariac_msgs/srv/detail/score_task__struct.h: rosidl_generator_
 rosidl_generator_c/ariac_msgs/srv/detail/score_task__type_support.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/srv/detail/score_task__type_support.h
 
+rosidl_generator_c/ariac_msgs/srv/submit_order.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/srv/submit_order.h
+
+rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.h
+
+rosidl_generator_c/ariac_msgs/srv/detail/submit_order__struct.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/srv/detail/submit_order__struct.h
+
+rosidl_generator_c/ariac_msgs/srv/detail/submit_order__type_support.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/srv/detail/submit_order__type_support.h
+
 rosidl_generator_c/ariac_msgs/srv/vacuum_gripper_control.h: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/srv/vacuum_gripper_control.h
 
@@ -678,14 +730,17 @@ rosidl_generator_c/ariac_msgs/msg/detail/bin_parts__functions.c: rosidl_generato
 rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__functions.c
 
-rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c
+rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c
 
 rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c
 
 rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c
+
+rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c
 
 rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c
@@ -710,6 +765,9 @@ rosidl_generator_c/ariac_msgs/msg/detail/kit_tray_pose__functions.c: rosidl_gene
 
 rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c
+
+rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c
 
 rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c
@@ -741,6 +799,9 @@ rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c:
 rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c
 
+rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c
+
 rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c
 
@@ -764,6 +825,9 @@ rosidl_generator_c/ariac_msgs/srv/detail/move_agv__functions.c: rosidl_generator
 
 rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c
+
+rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c
 
 rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c: rosidl_generator_c/ariac_msgs/msg/advanced_logical_camera_image.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c
@@ -888,18 +952,18 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__functions.c -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__functions.c.s
 
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c
 
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c > CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.i
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c > CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.i
 
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.s
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.s
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c
@@ -927,9 +991,22 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c.s
 
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c
+
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c > CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.i
+
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.s
+
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c.i: cmake_force
@@ -942,7 +1019,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_parts__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_parts__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/conveyor_parts__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_parts__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_parts__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_parts__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_parts__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_parts__functions.c.i: cmake_force
@@ -955,7 +1032,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__functions.c.i: cmake_force
@@ -968,7 +1045,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/faulty_part_challenge__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/faulty_part_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/faulty_part_challenge__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/faulty_part_challenge__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/faulty_part_challenge__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/faulty_part_challenge__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/faulty_part_challenge__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/faulty_part_challenge__functions.c.i: cmake_force
@@ -981,7 +1058,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_part__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_part__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/kitting_part__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_part__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_part__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_part__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/kitting_part__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_part__functions.c.i: cmake_force
@@ -994,7 +1071,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__functions.c.i: cmake_force
@@ -1007,7 +1084,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kit_tray_pose__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kit_tray_pose__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/kit_tray_pose__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kit_tray_pose__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kit_tray_pose__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kit_tray_pose__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/kit_tray_pose__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kit_tray_pose__functions.c.i: cmake_force
@@ -1020,7 +1097,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.i: cmake_force
@@ -1031,9 +1108,22 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.s
 
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c
+
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c > CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.i
+
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.s
+
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c.i: cmake_force
@@ -1046,7 +1136,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c.i: cmake_force
@@ -1059,7 +1149,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.i: cmake_force
@@ -1072,7 +1162,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_pose__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_pose__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/part_pose__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_pose__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_pose__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_pose__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/part_pose__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_pose__functions.c.i: cmake_force
@@ -1085,7 +1175,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/parts__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/parts__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/parts__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/parts__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/parts__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/parts__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/parts__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/parts__functions.c.i: cmake_force
@@ -1098,7 +1188,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/quality_issue__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/quality_issue__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/quality_issue__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/quality_issue__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/quality_issue__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/quality_issue__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/quality_issue__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/quality_issue__functions.c.i: cmake_force
@@ -1111,7 +1201,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robot_malfunction_challenge__functions.c.i: cmake_force
@@ -1124,7 +1214,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robots__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robots__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/robots__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robots__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robots__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robots__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/robots__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robots__functions.c.i: cmake_force
@@ -1137,7 +1227,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.i: cmake_force
@@ -1150,7 +1240,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.i: cmake_force
@@ -1161,9 +1251,22 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.s
 
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c
+
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c > CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.i
+
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.s
+
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c.i: cmake_force
@@ -1176,7 +1279,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.i: cmake_force
@@ -1189,7 +1292,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/vacuum_gripper_state__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/vacuum_gripper_state__functions.c.o: rosidl_generator_c/ariac_msgs/msg/detail/vacuum_gripper_state__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/vacuum_gripper_state__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/vacuum_gripper_state__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/vacuum_gripper_state__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/msg/detail/vacuum_gripper_state__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/vacuum_gripper_state__functions.c.i: cmake_force
@@ -1202,7 +1305,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper__functions.c.o: rosidl_generator_c/ariac_msgs/srv/detail/change_gripper__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper__functions.c.i: cmake_force
@@ -1215,7 +1318,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper_color__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper_color__functions.c.o: rosidl_generator_c/ariac_msgs/srv/detail/change_gripper_color__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper_color__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper_color__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper_color__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper_color__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/change_gripper_color__functions.c.i: cmake_force
@@ -1228,7 +1331,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/conveyor_belt_control__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/conveyor_belt_control__functions.c.o: rosidl_generator_c/ariac_msgs/srv/detail/conveyor_belt_control__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/conveyor_belt_control__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/conveyor_belt_control__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/conveyor_belt_control__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/srv/detail/conveyor_belt_control__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/conveyor_belt_control__functions.c.i: cmake_force
@@ -1241,7 +1344,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/move_agv__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/move_agv__functions.c.o: rosidl_generator_c/ariac_msgs/srv/detail/move_agv__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/move_agv__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/move_agv__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/move_agv__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/srv/detail/move_agv__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/move_agv__functions.c.i: cmake_force
@@ -1254,7 +1357,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.o: rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.i: cmake_force
@@ -1265,9 +1368,22 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.s
 
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o: rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c
+
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c > CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.i
+
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.s
+
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c.o: rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c.i: cmake_force
@@ -1280,7 +1396,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/perform_quality_check__functions.c.o: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/perform_quality_check__functions.c.o: rosidl_generator_c/ariac_msgs/srv/detail/perform_quality_check__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/perform_quality_check__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/perform_quality_check__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/perform_quality_check__functions.c.o   -c /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_generator_c/ariac_msgs/srv/detail/perform_quality_check__functions.c
 
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/perform_quality_check__functions.c.i: cmake_force
@@ -1302,9 +1418,10 @@ ariac_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/bin_info__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/bin_parts__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__functions.c.o" \
-"CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o" \
+"CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c.o" \
+"CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_parts__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__functions.c.o" \
@@ -1313,6 +1430,7 @@ ariac_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kit_tray_pose__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.o" \
+"CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o" \
@@ -1323,6 +1441,7 @@ ariac_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robots__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.o" \
+"CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/vacuum_gripper_state__functions.c.o" \
@@ -1331,6 +1450,7 @@ ariac_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/conveyor_belt_control__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/move_agv__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.o" \
+"CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c.o" \
 "CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/perform_quality_check__functions.c.o"
 
@@ -1346,9 +1466,10 @@ libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/bin_info__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/bin_parts__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__functions.c.o
-libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c.o
+libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c.o
+libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/conveyor_parts__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__functions.c.o
@@ -1357,6 +1478,7 @@ libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/kit_tray_pose__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c.o
+libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c.o
@@ -1367,6 +1489,7 @@ libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/robots__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c.o
+libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/msg/detail/vacuum_gripper_state__functions.c.o
@@ -1375,6 +1498,7 @@ libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/conveyor_belt_control__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/move_agv__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c.o
+libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/rosidl_generator_c/ariac_msgs/srv/detail/perform_quality_check__functions.c.o
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/build.make
@@ -1401,7 +1525,7 @@ libariac_msgs__rosidl_generator_c.so: /opt/ros/galactic/lib/librosidl_runtime_c.
 libariac_msgs__rosidl_generator_c.so: /opt/ros/galactic/lib/librcpputils.so
 libariac_msgs__rosidl_generator_c.so: /opt/ros/galactic/lib/librcutils.so
 libariac_msgs__rosidl_generator_c.so: CMakeFiles/ariac_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Linking C shared library libariac_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Linking C shared library libariac_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ariac_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1449,10 +1573,10 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_m
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__type_support.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/challenge_condition.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__struct.h
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__type_support.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/condition.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/condition__type_support.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/challenge.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/challenge__struct.h
@@ -1461,6 +1585,10 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_m
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/combined_task__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/combined_task__type_support.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/competition_state.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/competition_state__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/competition_state__type_support.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/conveyor_belt_state.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__struct.h
@@ -1493,6 +1621,10 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_m
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/order__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/order__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/order__type_support.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/order_condition.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/order_condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/order_condition__type_support.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/part_lot.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/part_lot__struct.h
@@ -1533,6 +1665,10 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_m
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/sensors__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/sensors__type_support.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/submission_condition.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__type_support.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/time_condition.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__struct.h
@@ -1565,6 +1701,10 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_m
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/detail/score_task__struct.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/detail/score_task__type_support.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/submit_order.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/detail/submit_order__struct.h
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/detail/submit_order__type_support.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/vacuum_gripper_control.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.h
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__struct.h
@@ -1582,9 +1722,10 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_m
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/bin_info__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/bin_parts__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/break_beam_status__functions.c
-CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/challenge_condition__functions.c
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/condition__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/challenge__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/combined_task__functions.c
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/competition_state__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/conveyor_belt_state__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/conveyor_parts__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/dropped_part_challenge__functions.c
@@ -1593,6 +1734,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_m
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/kitting_task__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/kit_tray_pose__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/order__functions.c
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/order_condition__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/part_lot__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/part__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/part_place_condition__functions.c
@@ -1603,6 +1745,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_m
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/robots__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/sensor_blackout_challenge__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/sensors__functions.c
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/submission_condition__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/time_condition__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/trial__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/msg/detail/vacuum_gripper_state__functions.c
@@ -1611,6 +1754,7 @@ CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_m
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/detail/conveyor_belt_control__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/detail/move_agv__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/detail/score_task__functions.c
+CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/detail/submit_order__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/detail/vacuum_gripper_control__functions.c
 CMakeFiles/ariac_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/ariac_msgs/srv/detail/perform_quality_check__functions.c
 	cd /home/ubuntu/ariac_ws/build/ariac_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs /home/ubuntu/ariac_ws/src/ariac_ros2/ariac_msgs /home/ubuntu/ariac_ws/build/ariac_msgs /home/ubuntu/ariac_ws/build/ariac_msgs /home/ubuntu/ariac_ws/build/ariac_msgs/CMakeFiles/ariac_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)

@@ -68,40 +68,40 @@ bool ariac_msgs__msg__faulty_part_challenge__convert_from_py(PyObject * _pymsg, 
     Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
-  {  // quandrant1
-    PyObject * field = PyObject_GetAttrString(_pymsg, "quandrant1");
+  {  // quadrant1
+    PyObject * field = PyObject_GetAttrString(_pymsg, "quadrant1");
     if (!field) {
       return false;
     }
     assert(PyBool_Check(field));
-    ros_message->quandrant1 = (Py_True == field);
+    ros_message->quadrant1 = (Py_True == field);
     Py_DECREF(field);
   }
-  {  // quandrant2
-    PyObject * field = PyObject_GetAttrString(_pymsg, "quandrant2");
+  {  // quadrant2
+    PyObject * field = PyObject_GetAttrString(_pymsg, "quadrant2");
     if (!field) {
       return false;
     }
     assert(PyBool_Check(field));
-    ros_message->quandrant2 = (Py_True == field);
+    ros_message->quadrant2 = (Py_True == field);
     Py_DECREF(field);
   }
-  {  // quandrant3
-    PyObject * field = PyObject_GetAttrString(_pymsg, "quandrant3");
+  {  // quadrant3
+    PyObject * field = PyObject_GetAttrString(_pymsg, "quadrant3");
     if (!field) {
       return false;
     }
     assert(PyBool_Check(field));
-    ros_message->quandrant3 = (Py_True == field);
+    ros_message->quadrant3 = (Py_True == field);
     Py_DECREF(field);
   }
-  {  // quandrant4
-    PyObject * field = PyObject_GetAttrString(_pymsg, "quandrant4");
+  {  // quadrant4
+    PyObject * field = PyObject_GetAttrString(_pymsg, "quadrant4");
     if (!field) {
       return false;
     }
     assert(PyBool_Check(field));
-    ros_message->quandrant4 = (Py_True == field);
+    ros_message->quadrant4 = (Py_True == field);
     Py_DECREF(field);
   }
 
@@ -143,44 +143,44 @@ PyObject * ariac_msgs__msg__faulty_part_challenge__convert_to_py(void * raw_ros_
       }
     }
   }
-  {  // quandrant1
+  {  // quadrant1
     PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->quandrant1 ? 1 : 0);
+    field = PyBool_FromLong(ros_message->quadrant1 ? 1 : 0);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "quandrant1", field);
+      int rc = PyObject_SetAttrString(_pymessage, "quadrant1", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // quandrant2
+  {  // quadrant2
     PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->quandrant2 ? 1 : 0);
+    field = PyBool_FromLong(ros_message->quadrant2 ? 1 : 0);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "quandrant2", field);
+      int rc = PyObject_SetAttrString(_pymessage, "quadrant2", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // quandrant3
+  {  // quadrant3
     PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->quandrant3 ? 1 : 0);
+    field = PyBool_FromLong(ros_message->quadrant3 ? 1 : 0);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "quandrant3", field);
+      int rc = PyObject_SetAttrString(_pymessage, "quadrant3", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // quandrant4
+  {  // quadrant4
     PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->quandrant4 ? 1 : 0);
+    field = PyBool_FromLong(ros_message->quadrant4 ? 1 : 0);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "quandrant4", field);
+      int rc = PyObject_SetAttrString(_pymessage, "quadrant4", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -42,18 +42,17 @@ struct PartPlaceCondition_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->agv = "";
+      this->agv = 0;
     }
   }
 
   explicit PartPlaceCondition_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : part(_alloc, _init),
-    agv(_alloc)
+  : part(_alloc, _init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->agv = "";
+      this->agv = 0;
     }
   }
 
@@ -62,7 +61,7 @@ struct PartPlaceCondition_
     ariac_msgs::msg::Part_<ContainerAllocator>;
   _part_type part;
   using _agv_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+    uint8_t;
   _agv_type agv;
 
   // setters for named parameter idiom
@@ -73,7 +72,7 @@ struct PartPlaceCondition_
     return *this;
   }
   Type & set__agv(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+    const uint8_t & _arg)
   {
     this->agv = _arg;
     return *this;

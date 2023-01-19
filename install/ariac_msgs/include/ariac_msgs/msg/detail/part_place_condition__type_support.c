@@ -17,8 +17,6 @@
 #include "ariac_msgs/msg/part.h"
 // Member `part`
 #include "ariac_msgs/msg/detail/part__rosidl_typesupport_introspection_c.h"
-// Member `agv`
-#include "rosidl_runtime_c/string_functions.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -57,7 +55,7 @@ static rosidl_typesupport_introspection_c__MessageMember PartPlaceCondition__ros
   },
   {
     "agv",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

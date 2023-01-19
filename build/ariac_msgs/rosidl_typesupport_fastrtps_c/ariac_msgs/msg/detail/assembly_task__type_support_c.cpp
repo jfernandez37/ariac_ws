@@ -35,6 +35,8 @@ extern "C"
 #endif
 
 #include "ariac_msgs/msg/detail/assembly_part__functions.h"  // parts
+#include "rosidl_runtime_c/primitives_sequence.h"  // agv_numbers
+#include "rosidl_runtime_c/primitives_sequence_functions.h"  // agv_numbers
 
 // forward declare type support functions
 size_t get_serialized_size_ariac_msgs__msg__AssemblyPart(
@@ -60,9 +62,12 @@ static bool _AssemblyTask__cdr_serialize(
     return false;
   }
   const _AssemblyTask__ros_msg_type * ros_message = static_cast<const _AssemblyTask__ros_msg_type *>(untyped_ros_message);
-  // Field name: agv_number
+  // Field name: agv_numbers
   {
-    cdr << ros_message->agv_number;
+    size_t size = ros_message->agv_numbers.size;
+    auto array_ptr = ros_message->agv_numbers.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
   }
 
   // Field name: station
@@ -101,9 +106,20 @@ static bool _AssemblyTask__cdr_deserialize(
     return false;
   }
   _AssemblyTask__ros_msg_type * ros_message = static_cast<_AssemblyTask__ros_msg_type *>(untyped_ros_message);
-  // Field name: agv_number
+  // Field name: agv_numbers
   {
-    cdr >> ros_message->agv_number;
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->agv_numbers.data) {
+      rosidl_runtime_c__uint8__Sequence__fini(&ros_message->agv_numbers);
+    }
+    if (!rosidl_runtime_c__uint8__Sequence__init(&ros_message->agv_numbers, size)) {
+      fprintf(stderr, "failed to create array for field 'agv_numbers'");
+      return false;
+    }
+    auto array_ptr = ros_message->agv_numbers.data;
+    cdr.deserializeArray(array_ptr, size);
   }
 
   // Field name: station
@@ -155,10 +171,15 @@ size_t get_serialized_size_ariac_msgs__msg__AssemblyTask(
   (void)padding;
   (void)wchar_size;
 
-  // field.name agv_number
+  // field.name agv_numbers
   {
-    size_t item_size = sizeof(ros_message->agv_number);
-    current_alignment += item_size +
+    size_t array_size = ros_message->agv_numbers.size;
+    auto array_ptr = ros_message->agv_numbers.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
   // field.name station
@@ -203,9 +224,12 @@ size_t max_serialized_size_ariac_msgs__msg__AssemblyTask(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: agv_number
+  // member: agv_numbers
   {
-    size_t array_size = 1;
+    size_t array_size = 0;
+    full_bounded = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     current_alignment += array_size * sizeof(uint8_t);
   }

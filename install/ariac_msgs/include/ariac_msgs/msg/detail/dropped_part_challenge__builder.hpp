@@ -20,16 +20,32 @@ namespace msg
 namespace builder
 {
 
-class Init_DroppedPartChallenge_bin_num
+class Init_DroppedPartChallenge_drop_after_time
 {
 public:
-  explicit Init_DroppedPartChallenge_bin_num(::ariac_msgs::msg::DroppedPartChallenge & msg)
+  explicit Init_DroppedPartChallenge_drop_after_time(::ariac_msgs::msg::DroppedPartChallenge & msg)
   : msg_(msg)
   {}
-  ::ariac_msgs::msg::DroppedPartChallenge bin_num(::ariac_msgs::msg::DroppedPartChallenge::_bin_num_type arg)
+  ::ariac_msgs::msg::DroppedPartChallenge drop_after_time(::ariac_msgs::msg::DroppedPartChallenge::_drop_after_time_type arg)
   {
-    msg_.bin_num = std::move(arg);
+    msg_.drop_after_time = std::move(arg);
     return std::move(msg_);
+  }
+
+private:
+  ::ariac_msgs::msg::DroppedPartChallenge msg_;
+};
+
+class Init_DroppedPartChallenge_drop_after_num
+{
+public:
+  explicit Init_DroppedPartChallenge_drop_after_num(::ariac_msgs::msg::DroppedPartChallenge & msg)
+  : msg_(msg)
+  {}
+  Init_DroppedPartChallenge_drop_after_time drop_after_num(::ariac_msgs::msg::DroppedPartChallenge::_drop_after_num_type arg)
+  {
+    msg_.drop_after_num = std::move(arg);
+    return Init_DroppedPartChallenge_drop_after_time(msg_);
   }
 
 private:
@@ -42,10 +58,10 @@ public:
   explicit Init_DroppedPartChallenge_part_to_drop(::ariac_msgs::msg::DroppedPartChallenge & msg)
   : msg_(msg)
   {}
-  Init_DroppedPartChallenge_bin_num part_to_drop(::ariac_msgs::msg::DroppedPartChallenge::_part_to_drop_type arg)
+  Init_DroppedPartChallenge_drop_after_num part_to_drop(::ariac_msgs::msg::DroppedPartChallenge::_part_to_drop_type arg)
   {
     msg_.part_to_drop = std::move(arg);
-    return Init_DroppedPartChallenge_bin_num(msg_);
+    return Init_DroppedPartChallenge_drop_after_num(msg_);
   }
 
 private:

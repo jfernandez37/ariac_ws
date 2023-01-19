@@ -54,18 +54,18 @@ class FaultyPartChallenge(metaclass=Metaclass_FaultyPartChallenge):
 
     __slots__ = [
         '_order_id',
-        '_quandrant1',
-        '_quandrant2',
-        '_quandrant3',
-        '_quandrant4',
+        '_quadrant1',
+        '_quadrant2',
+        '_quadrant3',
+        '_quadrant4',
     ]
 
     _fields_and_field_types = {
         'order_id': 'string',
-        'quandrant1': 'boolean',
-        'quandrant2': 'boolean',
-        'quandrant3': 'boolean',
-        'quandrant4': 'boolean',
+        'quadrant1': 'boolean',
+        'quadrant2': 'boolean',
+        'quadrant3': 'boolean',
+        'quadrant4': 'boolean',
     }
 
     SLOT_TYPES = (
@@ -81,10 +81,10 @@ class FaultyPartChallenge(metaclass=Metaclass_FaultyPartChallenge):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.order_id = kwargs.get('order_id', str())
-        self.quandrant1 = kwargs.get('quandrant1', bool())
-        self.quandrant2 = kwargs.get('quandrant2', bool())
-        self.quandrant3 = kwargs.get('quandrant3', bool())
-        self.quandrant4 = kwargs.get('quandrant4', bool())
+        self.quadrant1 = kwargs.get('quadrant1', bool())
+        self.quadrant2 = kwargs.get('quadrant2', bool())
+        self.quadrant3 = kwargs.get('quadrant3', bool())
+        self.quadrant4 = kwargs.get('quadrant4', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -117,13 +117,13 @@ class FaultyPartChallenge(metaclass=Metaclass_FaultyPartChallenge):
             return False
         if self.order_id != other.order_id:
             return False
-        if self.quandrant1 != other.quandrant1:
+        if self.quadrant1 != other.quadrant1:
             return False
-        if self.quandrant2 != other.quandrant2:
+        if self.quadrant2 != other.quadrant2:
             return False
-        if self.quandrant3 != other.quandrant3:
+        if self.quadrant3 != other.quadrant3:
             return False
-        if self.quandrant4 != other.quandrant4:
+        if self.quadrant4 != other.quadrant4:
             return False
         return True
 
@@ -146,53 +146,53 @@ class FaultyPartChallenge(metaclass=Metaclass_FaultyPartChallenge):
         self._order_id = value
 
     @property
-    def quandrant1(self):
-        """Message field 'quandrant1'."""
-        return self._quandrant1
+    def quadrant1(self):
+        """Message field 'quadrant1'."""
+        return self._quadrant1
 
-    @quandrant1.setter
-    def quandrant1(self, value):
+    @quadrant1.setter
+    def quadrant1(self, value):
         if __debug__:
             assert \
                 isinstance(value, bool), \
-                "The 'quandrant1' field must be of type 'bool'"
-        self._quandrant1 = value
+                "The 'quadrant1' field must be of type 'bool'"
+        self._quadrant1 = value
 
     @property
-    def quandrant2(self):
-        """Message field 'quandrant2'."""
-        return self._quandrant2
+    def quadrant2(self):
+        """Message field 'quadrant2'."""
+        return self._quadrant2
 
-    @quandrant2.setter
-    def quandrant2(self, value):
+    @quadrant2.setter
+    def quadrant2(self, value):
         if __debug__:
             assert \
                 isinstance(value, bool), \
-                "The 'quandrant2' field must be of type 'bool'"
-        self._quandrant2 = value
+                "The 'quadrant2' field must be of type 'bool'"
+        self._quadrant2 = value
 
     @property
-    def quandrant3(self):
-        """Message field 'quandrant3'."""
-        return self._quandrant3
+    def quadrant3(self):
+        """Message field 'quadrant3'."""
+        return self._quadrant3
 
-    @quandrant3.setter
-    def quandrant3(self, value):
+    @quadrant3.setter
+    def quadrant3(self, value):
         if __debug__:
             assert \
                 isinstance(value, bool), \
-                "The 'quandrant3' field must be of type 'bool'"
-        self._quandrant3 = value
+                "The 'quadrant3' field must be of type 'bool'"
+        self._quadrant3 = value
 
     @property
-    def quandrant4(self):
-        """Message field 'quandrant4'."""
-        return self._quandrant4
+    def quadrant4(self):
+        """Message field 'quadrant4'."""
+        return self._quadrant4
 
-    @quandrant4.setter
-    def quandrant4(self, value):
+    @quadrant4.setter
+    def quadrant4(self, value):
         if __debug__:
             assert \
                 isinstance(value, bool), \
-                "The 'quandrant4' field must be of type 'bool'"
-        self._quandrant4 = value
+                "The 'quadrant4' field must be of type 'bool'"
+        self._quadrant4 = value

@@ -41,7 +41,6 @@ struct AssemblyTask_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->agv_number = 0;
       this->station = 0;
     }
   }
@@ -52,15 +51,14 @@ struct AssemblyTask_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->agv_number = 0;
       this->station = 0;
     }
   }
 
   // field types and members
-  using _agv_number_type =
-    uint8_t;
-  _agv_number_type agv_number;
+  using _agv_numbers_type =
+    std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>>;
+  _agv_numbers_type agv_numbers;
   using _station_type =
     uint8_t;
   _station_type station;
@@ -69,10 +67,10 @@ struct AssemblyTask_
   _parts_type parts;
 
   // setters for named parameter idiom
-  Type & set__agv_number(
-    const uint8_t & _arg)
+  Type & set__agv_numbers(
+    const std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> & _arg)
   {
-    this->agv_number = _arg;
+    this->agv_numbers = _arg;
     return *this;
   }
   Type & set__station(
@@ -138,7 +136,7 @@ struct AssemblyTask_
   // comparison operators
   bool operator==(const AssemblyTask_ & other) const
   {
-    if (this->agv_number != other.agv_number) {
+    if (this->agv_numbers != other.agv_numbers) {
       return false;
     }
     if (this->station != other.station) {

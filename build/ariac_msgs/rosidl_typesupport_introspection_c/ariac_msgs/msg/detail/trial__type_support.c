@@ -13,10 +13,16 @@
 
 
 // Include directives for member types
+// Member `trial_name`
+#include "rosidl_runtime_c/string_functions.h"
 // Member `orders`
 #include "ariac_msgs/msg/order.h"
 // Member `orders`
 #include "ariac_msgs/msg/detail/order__rosidl_typesupport_introspection_c.h"
+// Member `order_conditions`
+#include "ariac_msgs/msg/order_condition.h"
+// Member `order_conditions`
+#include "ariac_msgs/msg/detail/order_condition__rosidl_typesupport_introspection_c.h"
 // Member `challenges`
 #include "ariac_msgs/msg/challenge.h"
 // Member `challenges`
@@ -74,6 +80,39 @@ bool Trial__rosidl_typesupport_introspection_c__resize_function__Order__orders(
   return ariac_msgs__msg__Order__Sequence__init(member, size);
 }
 
+size_t Trial__rosidl_typesupport_introspection_c__size_function__OrderCondition__order_conditions(
+  const void * untyped_member)
+{
+  const ariac_msgs__msg__OrderCondition__Sequence * member =
+    (const ariac_msgs__msg__OrderCondition__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * Trial__rosidl_typesupport_introspection_c__get_const_function__OrderCondition__order_conditions(
+  const void * untyped_member, size_t index)
+{
+  const ariac_msgs__msg__OrderCondition__Sequence * member =
+    (const ariac_msgs__msg__OrderCondition__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * Trial__rosidl_typesupport_introspection_c__get_function__OrderCondition__order_conditions(
+  void * untyped_member, size_t index)
+{
+  ariac_msgs__msg__OrderCondition__Sequence * member =
+    (ariac_msgs__msg__OrderCondition__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+bool Trial__rosidl_typesupport_introspection_c__resize_function__OrderCondition__order_conditions(
+  void * untyped_member, size_t size)
+{
+  ariac_msgs__msg__OrderCondition__Sequence * member =
+    (ariac_msgs__msg__OrderCondition__Sequence *)(untyped_member);
+  ariac_msgs__msg__OrderCondition__Sequence__fini(member);
+  return ariac_msgs__msg__OrderCondition__Sequence__init(member, size);
+}
+
 size_t Trial__rosidl_typesupport_introspection_c__size_function__Challenge__challenges(
   const void * untyped_member)
 {
@@ -107,7 +146,37 @@ bool Trial__rosidl_typesupport_introspection_c__resize_function__Challenge__chal
   return ariac_msgs__msg__Challenge__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Trial__rosidl_typesupport_introspection_c__Trial_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember Trial__rosidl_typesupport_introspection_c__Trial_message_member_array[5] = {
+  {
+    "time_limit",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(ariac_msgs__msg__Trial, time_limit),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "trial_name",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(ariac_msgs__msg__Trial, trial_name),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
   {
     "orders",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -122,6 +191,21 @@ static rosidl_typesupport_introspection_c__MessageMember Trial__rosidl_typesuppo
     Trial__rosidl_typesupport_introspection_c__get_const_function__Order__orders,  // get_const(index) function pointer
     Trial__rosidl_typesupport_introspection_c__get_function__Order__orders,  // get(index) function pointer
     Trial__rosidl_typesupport_introspection_c__resize_function__Order__orders  // resize(index) function pointer
+  },
+  {
+    "order_conditions",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(ariac_msgs__msg__Trial, order_conditions),  // bytes offset in struct
+    NULL,  // default value
+    Trial__rosidl_typesupport_introspection_c__size_function__OrderCondition__order_conditions,  // size() function pointer
+    Trial__rosidl_typesupport_introspection_c__get_const_function__OrderCondition__order_conditions,  // get_const(index) function pointer
+    Trial__rosidl_typesupport_introspection_c__get_function__OrderCondition__order_conditions,  // get(index) function pointer
+    Trial__rosidl_typesupport_introspection_c__resize_function__OrderCondition__order_conditions  // resize(index) function pointer
   },
   {
     "challenges",  // name
@@ -143,7 +227,7 @@ static rosidl_typesupport_introspection_c__MessageMember Trial__rosidl_typesuppo
 static const rosidl_typesupport_introspection_c__MessageMembers Trial__rosidl_typesupport_introspection_c__Trial_message_members = {
   "ariac_msgs__msg",  // message namespace
   "Trial",  // message name
-  2,  // number of fields
+  5,  // number of fields
   sizeof(ariac_msgs__msg__Trial),
   Trial__rosidl_typesupport_introspection_c__Trial_message_member_array,  // message members
   Trial__rosidl_typesupport_introspection_c__Trial_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -161,9 +245,11 @@ static rosidl_message_type_support_t Trial__rosidl_typesupport_introspection_c__
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_ariac_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ariac_msgs, msg, Trial)() {
-  Trial__rosidl_typesupport_introspection_c__Trial_message_member_array[0].members_ =
+  Trial__rosidl_typesupport_introspection_c__Trial_message_member_array[2].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ariac_msgs, msg, Order)();
-  Trial__rosidl_typesupport_introspection_c__Trial_message_member_array[1].members_ =
+  Trial__rosidl_typesupport_introspection_c__Trial_message_member_array[3].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ariac_msgs, msg, OrderCondition)();
+  Trial__rosidl_typesupport_introspection_c__Trial_message_member_array[4].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ariac_msgs, msg, Challenge)();
   if (!Trial__rosidl_typesupport_introspection_c__Trial_message_type_support_handle.typesupport_identifier) {
     Trial__rosidl_typesupport_introspection_c__Trial_message_type_support_handle.typesupport_identifier =

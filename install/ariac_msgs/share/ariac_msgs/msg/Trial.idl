@@ -4,11 +4,18 @@
 
 #include "ariac_msgs/msg/Challenge.idl"
 #include "ariac_msgs/msg/Order.idl"
+#include "ariac_msgs/msg/OrderCondition.idl"
 
 module ariac_msgs {
   module msg {
     struct Trial {
+      float time_limit;
+
+      string trial_name;
+
       sequence<ariac_msgs::msg::Order> orders;
+
+      sequence<ariac_msgs::msg::OrderCondition> order_conditions;
 
       sequence<ariac_msgs::msg::Challenge> challenges;
     };

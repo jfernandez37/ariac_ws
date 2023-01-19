@@ -39,7 +39,7 @@ void DroppedPartChallenge__rosidl_typesupport_introspection_c__DroppedPartChalle
   ariac_msgs__msg__DroppedPartChallenge__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember DroppedPartChallenge__rosidl_typesupport_introspection_c__DroppedPartChallenge_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember DroppedPartChallenge__rosidl_typesupport_introspection_c__DroppedPartChallenge_message_member_array[4] = {
   {
     "robot",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
@@ -71,14 +71,29 @@ static rosidl_typesupport_introspection_c__MessageMember DroppedPartChallenge__r
     NULL  // resize(index) function pointer
   },
   {
-    "bin_num",  // name
+    "drop_after_num",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(ariac_msgs__msg__DroppedPartChallenge, bin_num),  // bytes offset in struct
+    offsetof(ariac_msgs__msg__DroppedPartChallenge, drop_after_num),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "drop_after_time",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(ariac_msgs__msg__DroppedPartChallenge, drop_after_time),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -90,7 +105,7 @@ static rosidl_typesupport_introspection_c__MessageMember DroppedPartChallenge__r
 static const rosidl_typesupport_introspection_c__MessageMembers DroppedPartChallenge__rosidl_typesupport_introspection_c__DroppedPartChallenge_message_members = {
   "ariac_msgs__msg",  // message namespace
   "DroppedPartChallenge",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(ariac_msgs__msg__DroppedPartChallenge),
   DroppedPartChallenge__rosidl_typesupport_introspection_c__DroppedPartChallenge_message_member_array,  // message members
   DroppedPartChallenge__rosidl_typesupport_introspection_c__DroppedPartChallenge_init_function,  // function to initialize message memory (memory has to be allocated)

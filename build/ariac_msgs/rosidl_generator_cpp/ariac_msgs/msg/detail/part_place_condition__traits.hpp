@@ -64,11 +64,11 @@ inline const char * name<ariac_msgs::msg::PartPlaceCondition>()
 
 template<>
 struct has_fixed_size<ariac_msgs::msg::PartPlaceCondition>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, has_fixed_size<ariac_msgs::msg::Part>::value> {};
 
 template<>
 struct has_bounded_size<ariac_msgs::msg::PartPlaceCondition>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, has_bounded_size<ariac_msgs::msg::Part>::value> {};
 
 template<>
 struct is_message<ariac_msgs::msg::PartPlaceCondition>

@@ -194,7 +194,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesuppo
  /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp
  /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/visibility_control.h
  rosidl_generator_cpp/ariac_msgs/msg/detail/challenge__struct.hpp
- rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/condition__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/dropped_part_challenge__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/faulty_part_challenge__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/part__struct.hpp
@@ -203,25 +203,7 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesuppo
  rosidl_generator_cpp/ariac_msgs/msg/detail/robots__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/sensor_blackout_challenge__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/sensors__struct.hpp
- rosidl_generator_cpp/ariac_msgs/msg/detail/time_condition__struct.hpp
-CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp.o
- /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/challenge_condition__type_support.cpp
- /opt/ros/galactic/include/rosidl_runtime_c/message_initialization.h
- /opt/ros/galactic/include/rosidl_runtime_c/message_type_support_struct.h
- /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
- /opt/ros/galactic/include/rosidl_runtime_cpp/bounded_vector.hpp
- /opt/ros/galactic/include/rosidl_runtime_cpp/message_initialization.hpp
- /opt/ros/galactic/include/rosidl_typesupport_cpp/message_type_support.hpp
- /opt/ros/galactic/include/rosidl_typesupport_interface/macros.h
- /opt/ros/galactic/include/rosidl_typesupport_introspection_c/field_types.h
- /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/field_types.hpp
- /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/identifier.hpp
- /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_introspection.hpp
- /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp
- /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/visibility_control.h
- rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__struct.hpp
- rosidl_generator_cpp/ariac_msgs/msg/detail/part__struct.hpp
- rosidl_generator_cpp/ariac_msgs/msg/detail/part_place_condition__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/time_condition__struct.hpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/combined_task__type_support.cpp.o
  /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/combined_task__type_support.cpp
@@ -248,6 +230,42 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesuppo
  rosidl_generator_cpp/ariac_msgs/msg/detail/assembly_part__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/combined_task__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/part__struct.hpp
+CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.cpp.o
+ /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/competition_state__type_support.cpp
+ /opt/ros/galactic/include/rosidl_runtime_c/message_initialization.h
+ /opt/ros/galactic/include/rosidl_runtime_c/message_type_support_struct.h
+ /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
+ /opt/ros/galactic/include/rosidl_runtime_cpp/bounded_vector.hpp
+ /opt/ros/galactic/include/rosidl_runtime_cpp/message_initialization.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_cpp/message_type_support.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_interface/macros.h
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_c/field_types.h
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/field_types.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/identifier.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_introspection.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/visibility_control.h
+ rosidl_generator_cpp/ariac_msgs/msg/detail/competition_state__struct.hpp
+CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.cpp.o
+ /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/condition__type_support.cpp
+ /opt/ros/galactic/include/rosidl_runtime_c/message_initialization.h
+ /opt/ros/galactic/include/rosidl_runtime_c/message_type_support_struct.h
+ /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
+ /opt/ros/galactic/include/rosidl_runtime_cpp/bounded_vector.hpp
+ /opt/ros/galactic/include/rosidl_runtime_cpp/message_initialization.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_cpp/message_type_support.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_interface/macros.h
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_c/field_types.h
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/field_types.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/identifier.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_introspection.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/visibility_control.h
+ rosidl_generator_cpp/ariac_msgs/msg/detail/condition__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/part__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/part_place_condition__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/time_condition__struct.hpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/conveyor_belt_state__type_support.cpp.o
  /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/conveyor_belt_state__type_support.cpp
  /opt/ros/galactic/include/rosidl_runtime_c/message_initialization.h
@@ -398,6 +416,39 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesuppo
  rosidl_generator_cpp/ariac_msgs/msg/detail/kitting_task__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/order__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/part__struct.hpp
+CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.cpp.o
+ /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/order_condition__type_support.cpp
+ /opt/ros/galactic/include/builtin_interfaces/msg/detail/time__struct.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/point__struct.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/pose__struct.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/quaternion__struct.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/vector3__struct.hpp
+ /opt/ros/galactic/include/rosidl_runtime_c/message_initialization.h
+ /opt/ros/galactic/include/rosidl_runtime_c/message_type_support_struct.h
+ /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
+ /opt/ros/galactic/include/rosidl_runtime_cpp/bounded_vector.hpp
+ /opt/ros/galactic/include/rosidl_runtime_cpp/message_initialization.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_cpp/message_type_support.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_interface/macros.h
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_c/field_types.h
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/field_types.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/identifier.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_introspection.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/visibility_control.h
+ /opt/ros/galactic/include/std_msgs/msg/detail/header__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/assembly_part__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/assembly_task__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/combined_task__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/condition__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/kitting_part__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/kitting_task__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/order_condition__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/part__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/part_place_condition__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/time_condition__struct.hpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/part__type_support.cpp.o
  /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/part__type_support.cpp
  /opt/ros/galactic/include/rosidl_runtime_c/message_initialization.h
@@ -516,11 +567,12 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesuppo
  /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_introspection.hpp
  /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp
  /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/visibility_control.h
- rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/condition__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/part__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/part_place_condition__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/robot_malfunction_challenge__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/robots__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/time_condition__struct.hpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/robots__type_support.cpp.o
  /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/robots__type_support.cpp
@@ -553,11 +605,12 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesuppo
  /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_introspection.hpp
  /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp
  /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/visibility_control.h
- rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/condition__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/part__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/part_place_condition__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/sensor_blackout_challenge__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/sensors__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/time_condition__struct.hpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/sensors__type_support.cpp.o
  /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/sensors__type_support.cpp
@@ -575,6 +628,22 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesuppo
  /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp
  /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/visibility_control.h
  rosidl_generator_cpp/ariac_msgs/msg/detail/sensors__struct.hpp
+CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.cpp.o
+ /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/submission_condition__type_support.cpp
+ /opt/ros/galactic/include/rosidl_runtime_c/message_initialization.h
+ /opt/ros/galactic/include/rosidl_runtime_c/message_type_support_struct.h
+ /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
+ /opt/ros/galactic/include/rosidl_runtime_cpp/bounded_vector.hpp
+ /opt/ros/galactic/include/rosidl_runtime_cpp/message_initialization.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_cpp/message_type_support.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_interface/macros.h
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_c/field_types.h
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/field_types.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/identifier.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_introspection.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/visibility_control.h
+ rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__struct.hpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/time_condition__type_support.cpp.o
  /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/time_condition__type_support.cpp
  /opt/ros/galactic/include/rosidl_runtime_c/message_initialization.h
@@ -616,19 +685,21 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesuppo
  rosidl_generator_cpp/ariac_msgs/msg/detail/assembly_part__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/assembly_task__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/challenge__struct.hpp
- rosidl_generator_cpp/ariac_msgs/msg/detail/challenge_condition__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/combined_task__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/condition__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/dropped_part_challenge__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/faulty_part_challenge__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/kitting_part__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/kitting_task__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/order__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/order_condition__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/part__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/part_place_condition__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/robot_malfunction_challenge__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/robots__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/sensor_blackout_challenge__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/sensors__struct.hpp
+ rosidl_generator_cpp/ariac_msgs/msg/detail/submission_condition__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/time_condition__struct.hpp
  rosidl_generator_cpp/ariac_msgs/msg/detail/trial__struct.hpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/msg/detail/vacuum_gripper_state__type_support.cpp.o
@@ -768,6 +839,26 @@ CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesuppo
  /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/service_type_support_decl.hpp
  /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/visibility_control.h
  rosidl_generator_cpp/ariac_msgs/srv/detail/score_task__struct.hpp
+CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.cpp.o
+ /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/submit_order__type_support.cpp
+ /opt/ros/galactic/include/rosidl_runtime_c/message_initialization.h
+ /opt/ros/galactic/include/rosidl_runtime_c/message_type_support_struct.h
+ /opt/ros/galactic/include/rosidl_runtime_c/service_type_support_struct.h
+ /opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
+ /opt/ros/galactic/include/rosidl_runtime_cpp/bounded_vector.hpp
+ /opt/ros/galactic/include/rosidl_runtime_cpp/message_initialization.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_cpp/message_type_support.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_cpp/service_type_support.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_interface/macros.h
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_c/field_types.h
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/field_types.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/identifier.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_introspection.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/service_introspection.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/service_type_support_decl.hpp
+ /opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/visibility_control.h
+ rosidl_generator_cpp/ariac_msgs/srv/detail/submit_order__struct.hpp
 CMakeFiles/ariac_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.cpp.o
  /home/ubuntu/ariac_ws/build/ariac_msgs/rosidl_typesupport_introspection_cpp/ariac_msgs/srv/detail/vacuum_gripper_control__type_support.cpp
  /opt/ros/galactic/include/rosidl_runtime_c/message_initialization.h

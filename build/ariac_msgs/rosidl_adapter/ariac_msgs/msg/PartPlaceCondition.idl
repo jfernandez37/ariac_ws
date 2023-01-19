@@ -9,7 +9,9 @@ module ariac_msgs {
     struct PartPlaceCondition {
       ariac_msgs::msg::Part part;
 
-      string agv;
+      @verbatim (language="comment", text=
+        " tray content topic")
+      uint8 agv;
     };
   };
 };

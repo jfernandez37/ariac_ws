@@ -52,15 +52,15 @@ private:
   ::ariac_msgs::msg::AssemblyTask msg_;
 };
 
-class Init_AssemblyTask_agv_number
+class Init_AssemblyTask_agv_numbers
 {
 public:
-  Init_AssemblyTask_agv_number()
+  Init_AssemblyTask_agv_numbers()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_AssemblyTask_station agv_number(::ariac_msgs::msg::AssemblyTask::_agv_number_type arg)
+  Init_AssemblyTask_station agv_numbers(::ariac_msgs::msg::AssemblyTask::_agv_numbers_type arg)
   {
-    msg_.agv_number = std::move(arg);
+    msg_.agv_numbers = std::move(arg);
     return Init_AssemblyTask_station(msg_);
   }
 
@@ -79,7 +79,7 @@ template<>
 inline
 auto build<::ariac_msgs::msg::AssemblyTask>()
 {
-  return ariac_msgs::msg::builder::Init_AssemblyTask_agv_number();
+  return ariac_msgs::msg::builder::Init_AssemblyTask_agv_numbers();
 }
 
 }  // namespace ariac_msgs

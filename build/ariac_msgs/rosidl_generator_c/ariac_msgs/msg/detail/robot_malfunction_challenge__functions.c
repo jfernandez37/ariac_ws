@@ -11,7 +11,7 @@
 
 // Include directives for member types
 // Member `condition`
-#include "ariac_msgs/msg/detail/challenge_condition__functions.h"
+#include "ariac_msgs/msg/detail/condition__functions.h"
 // Member `robots_to_disable`
 #include "ariac_msgs/msg/detail/robots__functions.h"
 
@@ -23,7 +23,7 @@ ariac_msgs__msg__RobotMalfunctionChallenge__init(ariac_msgs__msg__RobotMalfuncti
   }
   // duration
   // condition
-  if (!ariac_msgs__msg__ChallengeCondition__init(&msg->condition)) {
+  if (!ariac_msgs__msg__Condition__init(&msg->condition)) {
     ariac_msgs__msg__RobotMalfunctionChallenge__fini(msg);
     return false;
   }
@@ -43,7 +43,7 @@ ariac_msgs__msg__RobotMalfunctionChallenge__fini(ariac_msgs__msg__RobotMalfuncti
   }
   // duration
   // condition
-  ariac_msgs__msg__ChallengeCondition__fini(&msg->condition);
+  ariac_msgs__msg__Condition__fini(&msg->condition);
   // robots_to_disable
   ariac_msgs__msg__Robots__fini(&msg->robots_to_disable);
 }
@@ -59,7 +59,7 @@ ariac_msgs__msg__RobotMalfunctionChallenge__are_equal(const ariac_msgs__msg__Rob
     return false;
   }
   // condition
-  if (!ariac_msgs__msg__ChallengeCondition__are_equal(
+  if (!ariac_msgs__msg__Condition__are_equal(
       &(lhs->condition), &(rhs->condition)))
   {
     return false;
@@ -84,7 +84,7 @@ ariac_msgs__msg__RobotMalfunctionChallenge__copy(
   // duration
   output->duration = input->duration;
   // condition
-  if (!ariac_msgs__msg__ChallengeCondition__copy(
+  if (!ariac_msgs__msg__Condition__copy(
       &(input->condition), &(output->condition)))
   {
     return false;

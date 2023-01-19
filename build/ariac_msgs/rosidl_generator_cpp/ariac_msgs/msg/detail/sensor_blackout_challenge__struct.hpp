@@ -16,7 +16,7 @@
 
 // Include directives for member types
 // Member 'condition'
-#include "ariac_msgs/msg/detail/challenge_condition__struct.hpp"
+#include "ariac_msgs/msg/detail/condition__struct.hpp"
 // Member 'sensors_to_disable'
 #include "ariac_msgs/msg/detail/sensors__struct.hpp"
 
@@ -65,7 +65,7 @@ struct SensorBlackoutChallenge_
     double;
   _duration_type duration;
   using _condition_type =
-    ariac_msgs::msg::ChallengeCondition_<ContainerAllocator>;
+    ariac_msgs::msg::Condition_<ContainerAllocator>;
   _condition_type condition;
   using _sensors_to_disable_type =
     ariac_msgs::msg::Sensors_<ContainerAllocator>;
@@ -79,7 +79,7 @@ struct SensorBlackoutChallenge_
     return *this;
   }
   Type & set__condition(
-    const ariac_msgs::msg::ChallengeCondition_<ContainerAllocator> & _arg)
+    const ariac_msgs::msg::Condition_<ContainerAllocator> & _arg)
   {
     this->condition = _arg;
     return *this;

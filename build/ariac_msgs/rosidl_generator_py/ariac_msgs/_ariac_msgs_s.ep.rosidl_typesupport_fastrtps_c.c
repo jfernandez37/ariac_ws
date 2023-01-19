@@ -1275,39 +1275,39 @@ _register_msg_type__msg__break_beam_status(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "ariac_msgs/msg/detail/challenge_condition__type_support.h"
-#include "ariac_msgs/msg/detail/challenge_condition__struct.h"
-#include "ariac_msgs/msg/detail/challenge_condition__functions.h"
+#include "ariac_msgs/msg/detail/condition__type_support.h"
+#include "ariac_msgs/msg/detail/condition__struct.h"
+#include "ariac_msgs/msg/detail/condition__functions.h"
 
-static void * ariac_msgs__msg__challenge_condition__create_ros_message(void)
+static void * ariac_msgs__msg__condition__create_ros_message(void)
 {
-  return ariac_msgs__msg__ChallengeCondition__create();
+  return ariac_msgs__msg__Condition__create();
 }
 
-static void ariac_msgs__msg__challenge_condition__destroy_ros_message(void * raw_ros_message)
+static void ariac_msgs__msg__condition__destroy_ros_message(void * raw_ros_message)
 {
-  ariac_msgs__msg__ChallengeCondition * ros_message = (ariac_msgs__msg__ChallengeCondition *)raw_ros_message;
-  ariac_msgs__msg__ChallengeCondition__destroy(ros_message);
+  ariac_msgs__msg__Condition * ros_message = (ariac_msgs__msg__Condition *)raw_ros_message;
+  ariac_msgs__msg__Condition__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool ariac_msgs__msg__challenge_condition__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool ariac_msgs__msg__condition__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * ariac_msgs__msg__challenge_condition__convert_to_py(void * raw_ros_message);
+PyObject * ariac_msgs__msg__condition__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(ariac_msgs, msg, ChallengeCondition);
+ROSIDL_GET_MSG_TYPE_SUPPORT(ariac_msgs, msg, Condition);
 
 int8_t
-_register_msg_type__msg__challenge_condition(PyObject * pymodule)
+_register_msg_type__msg__condition(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&ariac_msgs__msg__challenge_condition__create_ros_message,
+    (void *)&ariac_msgs__msg__condition__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -1315,7 +1315,7 @@ _register_msg_type__msg__challenge_condition(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__msg__challenge_condition",
+    "create_ros_message_msg__msg__condition",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -1326,7 +1326,7 @@ _register_msg_type__msg__challenge_condition(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&ariac_msgs__msg__challenge_condition__destroy_ros_message,
+    (void *)&ariac_msgs__msg__condition__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -1334,7 +1334,7 @@ _register_msg_type__msg__challenge_condition(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__msg__challenge_condition",
+    "destroy_ros_message_msg__msg__condition",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -1345,7 +1345,7 @@ _register_msg_type__msg__challenge_condition(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&ariac_msgs__msg__challenge_condition__convert_from_py,
+    (void *)&ariac_msgs__msg__condition__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -1353,7 +1353,7 @@ _register_msg_type__msg__challenge_condition(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__msg__challenge_condition",
+    "convert_from_py_msg__msg__condition",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -1364,7 +1364,7 @@ _register_msg_type__msg__challenge_condition(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&ariac_msgs__msg__challenge_condition__convert_to_py,
+    (void *)&ariac_msgs__msg__condition__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -1372,7 +1372,7 @@ _register_msg_type__msg__challenge_condition(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__msg__challenge_condition",
+    "convert_to_py_msg__msg__condition",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -1383,7 +1383,7 @@ _register_msg_type__msg__challenge_condition(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(ariac_msgs, msg, ChallengeCondition),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(ariac_msgs, msg, Condition),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -1391,7 +1391,7 @@ _register_msg_type__msg__challenge_condition(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__msg__challenge_condition",
+    "type_support_msg__msg__condition",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -1670,6 +1670,145 @@ _register_msg_type__msg__combined_task(PyObject * pymodule)
   err = PyModule_AddObject(
     pymodule,
     "type_support_msg__msg__combined_task",
+    pyobject_type_support);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_type_support);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+  return 0;
+}
+
+// already included above
+// #include <stdbool.h>
+// already included above
+// #include <stdint.h>
+// already included above
+// #include "rosidl_runtime_c/visibility_control.h"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/action_type_support_struct.h"
+#include "ariac_msgs/msg/detail/competition_state__type_support.h"
+#include "ariac_msgs/msg/detail/competition_state__struct.h"
+#include "ariac_msgs/msg/detail/competition_state__functions.h"
+
+static void * ariac_msgs__msg__competition_state__create_ros_message(void)
+{
+  return ariac_msgs__msg__CompetitionState__create();
+}
+
+static void ariac_msgs__msg__competition_state__destroy_ros_message(void * raw_ros_message)
+{
+  ariac_msgs__msg__CompetitionState * ros_message = (ariac_msgs__msg__CompetitionState *)raw_ros_message;
+  ariac_msgs__msg__CompetitionState__destroy(ros_message);
+}
+
+ROSIDL_GENERATOR_C_IMPORT
+bool ariac_msgs__msg__competition_state__convert_from_py(PyObject * _pymsg, void * ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * ariac_msgs__msg__competition_state__convert_to_py(void * raw_ros_message);
+
+
+ROSIDL_GENERATOR_C_IMPORT
+const rosidl_message_type_support_t *
+ROSIDL_GET_MSG_TYPE_SUPPORT(ariac_msgs, msg, CompetitionState);
+
+int8_t
+_register_msg_type__msg__competition_state(PyObject * pymodule)
+{
+  int8_t err;
+
+  PyObject * pyobject_create_ros_message = NULL;
+  pyobject_create_ros_message = PyCapsule_New(
+    (void *)&ariac_msgs__msg__competition_state__create_ros_message,
+    NULL, NULL);
+  if (!pyobject_create_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "create_ros_message_msg__msg__competition_state",
+    pyobject_create_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_create_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_destroy_ros_message = NULL;
+  pyobject_destroy_ros_message = PyCapsule_New(
+    (void *)&ariac_msgs__msg__competition_state__destroy_ros_message,
+    NULL, NULL);
+  if (!pyobject_destroy_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "destroy_ros_message_msg__msg__competition_state",
+    pyobject_destroy_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_destroy_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_from_py = NULL;
+  pyobject_convert_from_py = PyCapsule_New(
+    (void *)&ariac_msgs__msg__competition_state__convert_from_py,
+    NULL, NULL);
+  if (!pyobject_convert_from_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_from_py_msg__msg__competition_state",
+    pyobject_convert_from_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_from_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_to_py = NULL;
+  pyobject_convert_to_py = PyCapsule_New(
+    (void *)&ariac_msgs__msg__competition_state__convert_to_py,
+    NULL, NULL);
+  if (!pyobject_convert_to_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_to_py_msg__msg__competition_state",
+    pyobject_convert_to_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_to_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_type_support = NULL;
+  pyobject_type_support = PyCapsule_New(
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(ariac_msgs, msg, CompetitionState),
+    NULL, NULL);
+  if (!pyobject_type_support) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "type_support_msg__msg__competition_state",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -2782,6 +2921,145 @@ _register_msg_type__msg__order(PyObject * pymodule)
   err = PyModule_AddObject(
     pymodule,
     "type_support_msg__msg__order",
+    pyobject_type_support);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_type_support);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+  return 0;
+}
+
+// already included above
+// #include <stdbool.h>
+// already included above
+// #include <stdint.h>
+// already included above
+// #include "rosidl_runtime_c/visibility_control.h"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/action_type_support_struct.h"
+#include "ariac_msgs/msg/detail/order_condition__type_support.h"
+#include "ariac_msgs/msg/detail/order_condition__struct.h"
+#include "ariac_msgs/msg/detail/order_condition__functions.h"
+
+static void * ariac_msgs__msg__order_condition__create_ros_message(void)
+{
+  return ariac_msgs__msg__OrderCondition__create();
+}
+
+static void ariac_msgs__msg__order_condition__destroy_ros_message(void * raw_ros_message)
+{
+  ariac_msgs__msg__OrderCondition * ros_message = (ariac_msgs__msg__OrderCondition *)raw_ros_message;
+  ariac_msgs__msg__OrderCondition__destroy(ros_message);
+}
+
+ROSIDL_GENERATOR_C_IMPORT
+bool ariac_msgs__msg__order_condition__convert_from_py(PyObject * _pymsg, void * ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * ariac_msgs__msg__order_condition__convert_to_py(void * raw_ros_message);
+
+
+ROSIDL_GENERATOR_C_IMPORT
+const rosidl_message_type_support_t *
+ROSIDL_GET_MSG_TYPE_SUPPORT(ariac_msgs, msg, OrderCondition);
+
+int8_t
+_register_msg_type__msg__order_condition(PyObject * pymodule)
+{
+  int8_t err;
+
+  PyObject * pyobject_create_ros_message = NULL;
+  pyobject_create_ros_message = PyCapsule_New(
+    (void *)&ariac_msgs__msg__order_condition__create_ros_message,
+    NULL, NULL);
+  if (!pyobject_create_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "create_ros_message_msg__msg__order_condition",
+    pyobject_create_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_create_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_destroy_ros_message = NULL;
+  pyobject_destroy_ros_message = PyCapsule_New(
+    (void *)&ariac_msgs__msg__order_condition__destroy_ros_message,
+    NULL, NULL);
+  if (!pyobject_destroy_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "destroy_ros_message_msg__msg__order_condition",
+    pyobject_destroy_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_destroy_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_from_py = NULL;
+  pyobject_convert_from_py = PyCapsule_New(
+    (void *)&ariac_msgs__msg__order_condition__convert_from_py,
+    NULL, NULL);
+  if (!pyobject_convert_from_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_from_py_msg__msg__order_condition",
+    pyobject_convert_from_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_from_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_to_py = NULL;
+  pyobject_convert_to_py = PyCapsule_New(
+    (void *)&ariac_msgs__msg__order_condition__convert_to_py,
+    NULL, NULL);
+  if (!pyobject_convert_to_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_to_py_msg__msg__order_condition",
+    pyobject_convert_to_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_to_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_type_support = NULL;
+  pyobject_type_support = PyCapsule_New(
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(ariac_msgs, msg, OrderCondition),
+    NULL, NULL);
+  if (!pyobject_type_support) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "type_support_msg__msg__order_condition",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -4172,6 +4450,145 @@ _register_msg_type__msg__sensors(PyObject * pymodule)
   err = PyModule_AddObject(
     pymodule,
     "type_support_msg__msg__sensors",
+    pyobject_type_support);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_type_support);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+  return 0;
+}
+
+// already included above
+// #include <stdbool.h>
+// already included above
+// #include <stdint.h>
+// already included above
+// #include "rosidl_runtime_c/visibility_control.h"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/action_type_support_struct.h"
+#include "ariac_msgs/msg/detail/submission_condition__type_support.h"
+#include "ariac_msgs/msg/detail/submission_condition__struct.h"
+#include "ariac_msgs/msg/detail/submission_condition__functions.h"
+
+static void * ariac_msgs__msg__submission_condition__create_ros_message(void)
+{
+  return ariac_msgs__msg__SubmissionCondition__create();
+}
+
+static void ariac_msgs__msg__submission_condition__destroy_ros_message(void * raw_ros_message)
+{
+  ariac_msgs__msg__SubmissionCondition * ros_message = (ariac_msgs__msg__SubmissionCondition *)raw_ros_message;
+  ariac_msgs__msg__SubmissionCondition__destroy(ros_message);
+}
+
+ROSIDL_GENERATOR_C_IMPORT
+bool ariac_msgs__msg__submission_condition__convert_from_py(PyObject * _pymsg, void * ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * ariac_msgs__msg__submission_condition__convert_to_py(void * raw_ros_message);
+
+
+ROSIDL_GENERATOR_C_IMPORT
+const rosidl_message_type_support_t *
+ROSIDL_GET_MSG_TYPE_SUPPORT(ariac_msgs, msg, SubmissionCondition);
+
+int8_t
+_register_msg_type__msg__submission_condition(PyObject * pymodule)
+{
+  int8_t err;
+
+  PyObject * pyobject_create_ros_message = NULL;
+  pyobject_create_ros_message = PyCapsule_New(
+    (void *)&ariac_msgs__msg__submission_condition__create_ros_message,
+    NULL, NULL);
+  if (!pyobject_create_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "create_ros_message_msg__msg__submission_condition",
+    pyobject_create_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_create_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_destroy_ros_message = NULL;
+  pyobject_destroy_ros_message = PyCapsule_New(
+    (void *)&ariac_msgs__msg__submission_condition__destroy_ros_message,
+    NULL, NULL);
+  if (!pyobject_destroy_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "destroy_ros_message_msg__msg__submission_condition",
+    pyobject_destroy_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_destroy_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_from_py = NULL;
+  pyobject_convert_from_py = PyCapsule_New(
+    (void *)&ariac_msgs__msg__submission_condition__convert_from_py,
+    NULL, NULL);
+  if (!pyobject_convert_from_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_from_py_msg__msg__submission_condition",
+    pyobject_convert_from_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_from_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_to_py = NULL;
+  pyobject_convert_to_py = PyCapsule_New(
+    (void *)&ariac_msgs__msg__submission_condition__convert_to_py,
+    NULL, NULL);
+  if (!pyobject_convert_to_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_to_py_msg__msg__submission_condition",
+    pyobject_convert_to_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_to_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_type_support = NULL;
+  pyobject_type_support = PyCapsule_New(
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(ariac_msgs, msg, SubmissionCondition),
+    NULL, NULL);
+  if (!pyobject_type_support) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "type_support_msg__msg__submission_condition",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -6161,6 +6578,316 @@ _register_srv_type__srv__score_task(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
+#include "ariac_msgs/srv/detail/submit_order__type_support.h"
+#include "ariac_msgs/srv/detail/submit_order__struct.h"
+#include "ariac_msgs/srv/detail/submit_order__functions.h"
+
+static void * ariac_msgs__srv__submit_order__request__create_ros_message(void)
+{
+  return ariac_msgs__srv__SubmitOrder_Request__create();
+}
+
+static void ariac_msgs__srv__submit_order__request__destroy_ros_message(void * raw_ros_message)
+{
+  ariac_msgs__srv__SubmitOrder_Request * ros_message = (ariac_msgs__srv__SubmitOrder_Request *)raw_ros_message;
+  ariac_msgs__srv__SubmitOrder_Request__destroy(ros_message);
+}
+
+ROSIDL_GENERATOR_C_IMPORT
+bool ariac_msgs__srv__submit_order__request__convert_from_py(PyObject * _pymsg, void * ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * ariac_msgs__srv__submit_order__request__convert_to_py(void * raw_ros_message);
+
+
+ROSIDL_GENERATOR_C_IMPORT
+const rosidl_message_type_support_t *
+ROSIDL_GET_MSG_TYPE_SUPPORT(ariac_msgs, srv, SubmitOrder_Request);
+
+int8_t
+_register_msg_type__srv__submit_order__request(PyObject * pymodule)
+{
+  int8_t err;
+
+  PyObject * pyobject_create_ros_message = NULL;
+  pyobject_create_ros_message = PyCapsule_New(
+    (void *)&ariac_msgs__srv__submit_order__request__create_ros_message,
+    NULL, NULL);
+  if (!pyobject_create_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "create_ros_message_msg__srv__submit_order__request",
+    pyobject_create_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_create_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_destroy_ros_message = NULL;
+  pyobject_destroy_ros_message = PyCapsule_New(
+    (void *)&ariac_msgs__srv__submit_order__request__destroy_ros_message,
+    NULL, NULL);
+  if (!pyobject_destroy_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "destroy_ros_message_msg__srv__submit_order__request",
+    pyobject_destroy_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_destroy_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_from_py = NULL;
+  pyobject_convert_from_py = PyCapsule_New(
+    (void *)&ariac_msgs__srv__submit_order__request__convert_from_py,
+    NULL, NULL);
+  if (!pyobject_convert_from_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_from_py_msg__srv__submit_order__request",
+    pyobject_convert_from_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_from_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_to_py = NULL;
+  pyobject_convert_to_py = PyCapsule_New(
+    (void *)&ariac_msgs__srv__submit_order__request__convert_to_py,
+    NULL, NULL);
+  if (!pyobject_convert_to_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_to_py_msg__srv__submit_order__request",
+    pyobject_convert_to_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_to_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_type_support = NULL;
+  pyobject_type_support = PyCapsule_New(
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(ariac_msgs, srv, SubmitOrder_Request),
+    NULL, NULL);
+  if (!pyobject_type_support) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "type_support_msg__srv__submit_order__request",
+    pyobject_type_support);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_type_support);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+  return 0;
+}
+
+// already included above
+// #include <stdbool.h>
+// already included above
+// #include <stdint.h>
+// already included above
+// #include "rosidl_runtime_c/visibility_control.h"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/action_type_support_struct.h"
+// already included above
+// #include "ariac_msgs/srv/detail/submit_order__type_support.h"
+// already included above
+// #include "ariac_msgs/srv/detail/submit_order__struct.h"
+// already included above
+// #include "ariac_msgs/srv/detail/submit_order__functions.h"
+
+static void * ariac_msgs__srv__submit_order__response__create_ros_message(void)
+{
+  return ariac_msgs__srv__SubmitOrder_Response__create();
+}
+
+static void ariac_msgs__srv__submit_order__response__destroy_ros_message(void * raw_ros_message)
+{
+  ariac_msgs__srv__SubmitOrder_Response * ros_message = (ariac_msgs__srv__SubmitOrder_Response *)raw_ros_message;
+  ariac_msgs__srv__SubmitOrder_Response__destroy(ros_message);
+}
+
+ROSIDL_GENERATOR_C_IMPORT
+bool ariac_msgs__srv__submit_order__response__convert_from_py(PyObject * _pymsg, void * ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * ariac_msgs__srv__submit_order__response__convert_to_py(void * raw_ros_message);
+
+
+ROSIDL_GENERATOR_C_IMPORT
+const rosidl_message_type_support_t *
+ROSIDL_GET_MSG_TYPE_SUPPORT(ariac_msgs, srv, SubmitOrder_Response);
+
+int8_t
+_register_msg_type__srv__submit_order__response(PyObject * pymodule)
+{
+  int8_t err;
+
+  PyObject * pyobject_create_ros_message = NULL;
+  pyobject_create_ros_message = PyCapsule_New(
+    (void *)&ariac_msgs__srv__submit_order__response__create_ros_message,
+    NULL, NULL);
+  if (!pyobject_create_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "create_ros_message_msg__srv__submit_order__response",
+    pyobject_create_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_create_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_destroy_ros_message = NULL;
+  pyobject_destroy_ros_message = PyCapsule_New(
+    (void *)&ariac_msgs__srv__submit_order__response__destroy_ros_message,
+    NULL, NULL);
+  if (!pyobject_destroy_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "destroy_ros_message_msg__srv__submit_order__response",
+    pyobject_destroy_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_destroy_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_from_py = NULL;
+  pyobject_convert_from_py = PyCapsule_New(
+    (void *)&ariac_msgs__srv__submit_order__response__convert_from_py,
+    NULL, NULL);
+  if (!pyobject_convert_from_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_from_py_msg__srv__submit_order__response",
+    pyobject_convert_from_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_from_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_to_py = NULL;
+  pyobject_convert_to_py = PyCapsule_New(
+    (void *)&ariac_msgs__srv__submit_order__response__convert_to_py,
+    NULL, NULL);
+  if (!pyobject_convert_to_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_to_py_msg__srv__submit_order__response",
+    pyobject_convert_to_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_to_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_type_support = NULL;
+  pyobject_type_support = PyCapsule_New(
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(ariac_msgs, srv, SubmitOrder_Response),
+    NULL, NULL);
+  if (!pyobject_type_support) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "type_support_msg__srv__submit_order__response",
+    pyobject_type_support);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_type_support);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+  return 0;
+}
+
+ROSIDL_GENERATOR_C_IMPORT
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, ariac_msgs, srv, SubmitOrder)();
+
+int8_t
+_register_srv_type__srv__submit_order(PyObject * pymodule)
+{
+  int8_t err;
+  PyObject * pyobject_type_support = NULL;
+  pyobject_type_support = PyCapsule_New(
+    (void *)ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, ariac_msgs, srv, SubmitOrder)(),
+    NULL, NULL);
+  if (!pyobject_type_support) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "type_support_srv__srv__submit_order",
+    pyobject_type_support);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_type_support);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+  return 0;
+}
+
+// already included above
+// #include <stdbool.h>
+// already included above
+// #include <stdint.h>
+// already included above
+// #include "rosidl_runtime_c/visibility_control.h"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/action_type_support_struct.h"
 #include "ariac_msgs/srv/detail/vacuum_gripper_control__type_support.h"
 #include "ariac_msgs/srv/detail/vacuum_gripper_control__struct.h"
 #include "ariac_msgs/srv/detail/vacuum_gripper_control__functions.h"
@@ -6833,7 +7560,7 @@ PyInit_ariac_msgs_s__rosidl_typesupport_fastrtps_c(void)
     return NULL;
   }
 
-  err = _register_msg_type__msg__challenge_condition(pymodule);
+  err = _register_msg_type__msg__condition(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
@@ -6846,6 +7573,12 @@ PyInit_ariac_msgs_s__rosidl_typesupport_fastrtps_c(void)
   }
 
   err = _register_msg_type__msg__combined_task(pymodule);
+  if (err) {
+    Py_XDECREF(pymodule);
+    return NULL;
+  }
+
+  err = _register_msg_type__msg__competition_state(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
@@ -6894,6 +7627,12 @@ PyInit_ariac_msgs_s__rosidl_typesupport_fastrtps_c(void)
   }
 
   err = _register_msg_type__msg__order(pymodule);
+  if (err) {
+    Py_XDECREF(pymodule);
+    return NULL;
+  }
+
+  err = _register_msg_type__msg__order_condition(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
@@ -6954,6 +7693,12 @@ PyInit_ariac_msgs_s__rosidl_typesupport_fastrtps_c(void)
   }
 
   err = _register_msg_type__msg__sensors(pymodule);
+  if (err) {
+    Py_XDECREF(pymodule);
+    return NULL;
+  }
+
+  err = _register_msg_type__msg__submission_condition(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
@@ -7062,6 +7807,24 @@ PyInit_ariac_msgs_s__rosidl_typesupport_fastrtps_c(void)
   }
 
   err = _register_srv_type__srv__score_task(pymodule);
+  if (err) {
+    Py_XDECREF(pymodule);
+    return NULL;
+  }
+
+  err = _register_msg_type__srv__submit_order__request(pymodule);
+  if (err) {
+    Py_XDECREF(pymodule);
+    return NULL;
+  }
+
+  err = _register_msg_type__srv__submit_order__response(pymodule);
+  if (err) {
+    Py_XDECREF(pymodule);
+    return NULL;
+  }
+
+  err = _register_srv_type__srv__submit_order(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;

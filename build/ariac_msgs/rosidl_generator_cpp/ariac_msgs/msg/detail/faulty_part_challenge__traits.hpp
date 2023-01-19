@@ -29,43 +29,43 @@ inline void to_yaml(
     out << "\n";
   }
 
-  // member: quandrant1
+  // member: quadrant1
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "quandrant1: ";
-    value_to_yaml(msg.quandrant1, out);
+    out << "quadrant1: ";
+    value_to_yaml(msg.quadrant1, out);
     out << "\n";
   }
 
-  // member: quandrant2
+  // member: quadrant2
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "quandrant2: ";
-    value_to_yaml(msg.quandrant2, out);
+    out << "quadrant2: ";
+    value_to_yaml(msg.quadrant2, out);
     out << "\n";
   }
 
-  // member: quandrant3
+  // member: quadrant3
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "quandrant3: ";
-    value_to_yaml(msg.quandrant3, out);
+    out << "quadrant3: ";
+    value_to_yaml(msg.quadrant3, out);
     out << "\n";
   }
 
-  // member: quandrant4
+  // member: quadrant4
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "quandrant4: ";
-    value_to_yaml(msg.quandrant4, out);
+    out << "quadrant4: ";
+    value_to_yaml(msg.quadrant4, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

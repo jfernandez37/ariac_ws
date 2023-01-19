@@ -90,9 +90,14 @@ static bool _DroppedPartChallenge__cdr_serialize(
     }
   }
 
-  // Field name: bin_num
+  // Field name: drop_after_num
   {
-    cdr << ros_message->bin_num;
+    cdr << ros_message->drop_after_num;
+  }
+
+  // Field name: drop_after_time
+  {
+    cdr << ros_message->drop_after_time;
   }
 
   return true;
@@ -137,9 +142,14 @@ static bool _DroppedPartChallenge__cdr_deserialize(
     }
   }
 
-  // Field name: bin_num
+  // Field name: drop_after_num
   {
-    cdr >> ros_message->bin_num;
+    cdr >> ros_message->drop_after_num;
+  }
+
+  // Field name: drop_after_time
+  {
+    cdr >> ros_message->drop_after_time;
   }
 
   return true;
@@ -167,9 +177,15 @@ size_t get_serialized_size_ariac_msgs__msg__DroppedPartChallenge(
 
   current_alignment += get_serialized_size_ariac_msgs__msg__Part(
     &(ros_message->part_to_drop), current_alignment);
-  // field.name bin_num
+  // field.name drop_after_num
   {
-    size_t item_size = sizeof(ros_message->bin_num);
+    size_t item_size = sizeof(ros_message->drop_after_num);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name drop_after_time
+  {
+    size_t item_size = sizeof(ros_message->drop_after_time);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -219,11 +235,18 @@ size_t max_serialized_size_ariac_msgs__msg__DroppedPartChallenge(
         full_bounded, current_alignment);
     }
   }
-  // member: bin_num
+  // member: drop_after_num
   {
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: drop_after_time
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   return current_alignment - initial_alignment;

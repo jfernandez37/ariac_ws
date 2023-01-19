@@ -24,10 +24,10 @@ ariac_msgs__msg__FaultyPartChallenge__init(ariac_msgs__msg__FaultyPartChallenge 
     ariac_msgs__msg__FaultyPartChallenge__fini(msg);
     return false;
   }
-  // quandrant1
-  // quandrant2
-  // quandrant3
-  // quandrant4
+  // quadrant1
+  // quadrant2
+  // quadrant3
+  // quadrant4
   return true;
 }
 
@@ -39,10 +39,10 @@ ariac_msgs__msg__FaultyPartChallenge__fini(ariac_msgs__msg__FaultyPartChallenge 
   }
   // order_id
   rosidl_runtime_c__String__fini(&msg->order_id);
-  // quandrant1
-  // quandrant2
-  // quandrant3
-  // quandrant4
+  // quadrant1
+  // quadrant2
+  // quadrant3
+  // quadrant4
 }
 
 bool
@@ -57,20 +57,20 @@ ariac_msgs__msg__FaultyPartChallenge__are_equal(const ariac_msgs__msg__FaultyPar
   {
     return false;
   }
-  // quandrant1
-  if (lhs->quandrant1 != rhs->quandrant1) {
+  // quadrant1
+  if (lhs->quadrant1 != rhs->quadrant1) {
     return false;
   }
-  // quandrant2
-  if (lhs->quandrant2 != rhs->quandrant2) {
+  // quadrant2
+  if (lhs->quadrant2 != rhs->quadrant2) {
     return false;
   }
-  // quandrant3
-  if (lhs->quandrant3 != rhs->quandrant3) {
+  // quadrant3
+  if (lhs->quadrant3 != rhs->quadrant3) {
     return false;
   }
-  // quandrant4
-  if (lhs->quandrant4 != rhs->quandrant4) {
+  // quadrant4
+  if (lhs->quadrant4 != rhs->quadrant4) {
     return false;
   }
   return true;
@@ -90,14 +90,14 @@ ariac_msgs__msg__FaultyPartChallenge__copy(
   {
     return false;
   }
-  // quandrant1
-  output->quandrant1 = input->quandrant1;
-  // quandrant2
-  output->quandrant2 = input->quandrant2;
-  // quandrant3
-  output->quandrant3 = input->quandrant3;
-  // quandrant4
-  output->quandrant4 = input->quandrant4;
+  // quadrant1
+  output->quadrant1 = input->quadrant1;
+  // quadrant2
+  output->quadrant2 = input->quadrant2;
+  // quadrant3
+  output->quadrant3 = input->quadrant3;
+  // quadrant4
+  output->quadrant4 = input->quadrant4;
   return true;
 }
 

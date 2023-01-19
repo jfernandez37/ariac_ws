@@ -42,13 +42,23 @@ inline void to_yaml(
     to_yaml(msg.part_to_drop, out, indentation + 2);
   }
 
-  // member: bin_num
+  // member: drop_after_num
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "bin_num: ";
-    value_to_yaml(msg.bin_num, out);
+    out << "drop_after_num: ";
+    value_to_yaml(msg.drop_after_num, out);
+    out << "\n";
+  }
+
+  // member: drop_after_time
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "drop_after_time: ";
+    value_to_yaml(msg.drop_after_time, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

@@ -16,8 +16,8 @@
 #include "ariac_msgs/msg/detail/sensor_blackout_challenge__struct.h"
 #include "ariac_msgs/msg/detail/sensor_blackout_challenge__functions.h"
 
-bool ariac_msgs__msg__challenge_condition__convert_from_py(PyObject * _pymsg, void * _ros_message);
-PyObject * ariac_msgs__msg__challenge_condition__convert_to_py(void * raw_ros_message);
+bool ariac_msgs__msg__condition__convert_from_py(PyObject * _pymsg, void * _ros_message);
+PyObject * ariac_msgs__msg__condition__convert_to_py(void * raw_ros_message);
 bool ariac_msgs__msg__sensors__convert_from_py(PyObject * _pymsg, void * _ros_message);
 PyObject * ariac_msgs__msg__sensors__convert_to_py(void * raw_ros_message);
 
@@ -68,7 +68,7 @@ bool ariac_msgs__msg__sensor_blackout_challenge__convert_from_py(PyObject * _pym
     if (!field) {
       return false;
     }
-    if (!ariac_msgs__msg__challenge_condition__convert_from_py(field, &ros_message->condition)) {
+    if (!ariac_msgs__msg__condition__convert_from_py(field, &ros_message->condition)) {
       Py_DECREF(field);
       return false;
     }
@@ -120,7 +120,7 @@ PyObject * ariac_msgs__msg__sensor_blackout_challenge__convert_to_py(void * raw_
   }
   {  // condition
     PyObject * field = NULL;
-    field = ariac_msgs__msg__challenge_condition__convert_to_py(&ros_message->condition);
+    field = ariac_msgs__msg__condition__convert_to_py(&ros_message->condition);
     if (!field) {
       return NULL;
     }

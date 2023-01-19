@@ -8,13 +8,13 @@ module ariac_msgs {
     struct FaultyPartChallenge {
       string order_id;
 
-      boolean quandrant1;
+      boolean quadrant1;
 
-      boolean quandrant2;
+      boolean quadrant2;
 
-      boolean quandrant3;
+      boolean quadrant3;
 
-      boolean quandrant4;
+      boolean quadrant4;
     };
   };
 };

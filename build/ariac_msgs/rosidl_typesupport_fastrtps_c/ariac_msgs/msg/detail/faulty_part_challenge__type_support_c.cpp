@@ -65,24 +65,24 @@ static bool _FaultyPartChallenge__cdr_serialize(
     cdr << str->data;
   }
 
-  // Field name: quandrant1
+  // Field name: quadrant1
   {
-    cdr << (ros_message->quandrant1 ? true : false);
+    cdr << (ros_message->quadrant1 ? true : false);
   }
 
-  // Field name: quandrant2
+  // Field name: quadrant2
   {
-    cdr << (ros_message->quandrant2 ? true : false);
+    cdr << (ros_message->quadrant2 ? true : false);
   }
 
-  // Field name: quandrant3
+  // Field name: quadrant3
   {
-    cdr << (ros_message->quandrant3 ? true : false);
+    cdr << (ros_message->quadrant3 ? true : false);
   }
 
-  // Field name: quandrant4
+  // Field name: quadrant4
   {
-    cdr << (ros_message->quandrant4 ? true : false);
+    cdr << (ros_message->quadrant4 ? true : false);
   }
 
   return true;
@@ -113,32 +113,32 @@ static bool _FaultyPartChallenge__cdr_deserialize(
     }
   }
 
-  // Field name: quandrant1
+  // Field name: quadrant1
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message->quandrant1 = tmp ? true : false;
+    ros_message->quadrant1 = tmp ? true : false;
   }
 
-  // Field name: quandrant2
+  // Field name: quadrant2
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message->quandrant2 = tmp ? true : false;
+    ros_message->quadrant2 = tmp ? true : false;
   }
 
-  // Field name: quandrant3
+  // Field name: quadrant3
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message->quandrant3 = tmp ? true : false;
+    ros_message->quadrant3 = tmp ? true : false;
   }
 
-  // Field name: quandrant4
+  // Field name: quadrant4
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message->quandrant4 = tmp ? true : false;
+    ros_message->quadrant4 = tmp ? true : false;
   }
 
   return true;
@@ -162,27 +162,27 @@ size_t get_serialized_size_ariac_msgs__msg__FaultyPartChallenge(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->order_id.size + 1);
-  // field.name quandrant1
+  // field.name quadrant1
   {
-    size_t item_size = sizeof(ros_message->quandrant1);
+    size_t item_size = sizeof(ros_message->quadrant1);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name quandrant2
+  // field.name quadrant2
   {
-    size_t item_size = sizeof(ros_message->quandrant2);
+    size_t item_size = sizeof(ros_message->quadrant2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name quandrant3
+  // field.name quadrant3
   {
-    size_t item_size = sizeof(ros_message->quandrant3);
+    size_t item_size = sizeof(ros_message->quadrant3);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name quandrant4
+  // field.name quadrant4
   {
-    size_t item_size = sizeof(ros_message->quandrant4);
+    size_t item_size = sizeof(ros_message->quadrant4);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -221,25 +221,25 @@ size_t max_serialized_size_ariac_msgs__msg__FaultyPartChallenge(
         1;
     }
   }
-  // member: quandrant1
+  // member: quadrant1
   {
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: quandrant2
+  // member: quadrant2
   {
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: quandrant3
+  // member: quadrant3
   {
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint8_t);
   }
-  // member: quandrant4
+  // member: quadrant4
   {
     size_t array_size = 1;
 
