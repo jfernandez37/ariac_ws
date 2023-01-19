@@ -166,6 +166,7 @@ def updateAvailableSlots(currentBin, bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin
 def addBin(bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots):
     '''Adds a bin'''
     addBinWind=tk.Toplevel()
+    addBinWind.attributes('-fullscreen', True)
     #choose bin
     binID=tk.StringVar()
     binID.set(allBins[0])

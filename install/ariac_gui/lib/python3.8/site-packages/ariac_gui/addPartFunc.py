@@ -12,7 +12,8 @@ partColors=['green', 'red', 'purple','blue','orange']
 def addPart(agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Quadrants,agv3Quadrants,agv4Quadrants, mainWind):
     '''Adds a part to the agv'''
     newPartWind=tk.Toplevel(mainWind)
-    newPartWind.geometry("850x600")
+    #newPartWind.geometry("850x600")
+    newPartWind.attributes('-fullscreen', True)
     #agv selection
     agvSelection=tk.StringVar()
     agvSelection.set(agvList[0])

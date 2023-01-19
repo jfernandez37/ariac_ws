@@ -83,7 +83,8 @@ def showCorrectMenu(condition, conditionMenu, time, timeLabel, timeEntry, agv, a
 
 def newRobotMalfunction(robotMalfunctions, usedIds):
     robotMalfunctionWind=tk.Toplevel()
-    robotMalfunctionWind.geometry("850x600")
+    #robotMalfunctionWind.geometry("850x600")
+    robotMalfunctionWind.attributes('-fullscreen', True)
     #duration
     duration=tk.StringVar()
     duration.set("0")
@@ -196,6 +197,7 @@ def newRobotMalfunction(robotMalfunctions, usedIds):
     
 def newFaultyPart(faultyParts, usedIds):
     faultyPartWind=tk.Toplevel()
+    faultyPartWind.attributes('-fullscreen', True)
     #choose order
     currentOrderID=tk.StringVar()
     currentOrderID.set(usedIds[0])
@@ -252,6 +254,7 @@ def newFaultyPart(faultyParts, usedIds):
 
 def newDroppedPart(droppedParts):
     dropPartWind=tk.Toplevel()
+    dropPartWind.attributes('-fullscreen', True)
     #robot types
     robotType=tk.StringVar()
     robotType.set(robotTypes[0])
@@ -386,8 +389,8 @@ def showPartMenu(partShow, partShowCB, partTypeLabel, partTypeMenu, partColorLab
         partColor.set("")
 
 def newSensorBlackout(sensorBlackouts, usedIds):
-    selectedSensors=[]
     sensBOWind=tk.Toplevel()
+    sensBOWind.attributes('-fullscreen', True)
     #category
     category=tk.StringVar()
     category.set(sensBOCategories[0])

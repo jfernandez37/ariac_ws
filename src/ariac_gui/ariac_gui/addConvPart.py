@@ -41,6 +41,7 @@ def validateOffset(offsetVal, a,b,c):
 def addPartConv(convParts):
     '''Window to add parts to the conveyor belt'''
     partConvWind=tk.Toplevel()
+    partConvWind.attributes('-fullscreen', True)
     #part type
     partType=tk.StringVar()
     partType.set(partTypes[0])

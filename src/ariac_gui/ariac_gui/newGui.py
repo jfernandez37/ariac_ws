@@ -24,10 +24,10 @@ def runGUI():
     CHECKBOXHEIGHT=1
     pathIncrement = []  # gives the full path for recursive deletion
     createdDir = []  # to deleted directories made if canceled
-    leftColumn=0
-    middleColumn=1 
+    leftColumn=1
+    middleColumn=2 
     middleColumnWidth=62  # width of middle margin for live yaml windows
-    rightColumn=2
+    rightColumn=3
     nameLabels = []  # holds temporary flags to be deleted
     agv1Parts=[]
     agv2Parts=[]
@@ -103,7 +103,8 @@ def runGUI():
     assembFlag = tk.StringVar()
     assembFlag.set('0')
     frame = tk.Frame(getFileName)
-    getFileName.geometry("850x600")
+    #getFileName.geometry("850x600")
+    getFileName.attributes('-fullscreen', True)
     frame.pack()
     nistLogo = ImageTk.PhotoImage(Image.open("src/ariac_gui/ariac_gui/GUI_Images/new_NIST_logo.png"))
     logoImgLabel = tk.Label(frame, image=nistLogo)
@@ -154,7 +155,8 @@ def runGUI():
     # START OF GETTING TIME LIMIT
     timeWind=tk.Tk()
     timeWind.title("Time limit")
-    timeWind.geometry("850x600")
+    #timeWind.geometry("850x600")
+    timeWind.attributes('-fullscreen', True)
     #margin=tk.Label(timeWind, text=" "*middleColumnWidth)
     #margin.grid(column=leftColumn)
     timeInstructions=tk.Label(timeWind, text="Enter the time limit you would like for the simulation")
@@ -189,6 +191,7 @@ def runGUI():
     trayWind=tk.Tk()
     trayWind.title("Kitting trays")
     #trayWind.geometry("850x600")
+    trayWind.attributes('-fullscreen', True)
     trayIDLabel=tk.Label(trayWind, text="Select the tray ID's to be spawned")
     trayIDLabel.grid(column=leftColumn)
     tray0=tk.StringVar()
@@ -285,7 +288,8 @@ def runGUI():
     # START OF PARTS
     partsWind=tk.Tk()
     partsWind.title("AGVs and parts")
-    partsWind.geometry("850x600")
+    #partsWind.geometry("850x600")
+    partsWind.attributes('-fullscreen', True)
     agv1TrayId=tk.StringVar()
     agv1TrayId.set(agvTrayIds[0])
     agv2TrayId=tk.StringVar()
@@ -314,17 +318,20 @@ def runGUI():
     addPartsButton=tk.Button(partsWind, text="Add part", command=add_new_part)
     addPartsButton.grid(column=leftColumn)
     leftSpaceLabel=tk.Label(partsWind, text="")
-    leftSpaceLabel.grid(column=leftColumn, pady=20)
+    leftSpaceLabel.grid(column=leftColumn, pady=30)
     update_agv_ids=partial(updateTrayIds,agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1TrayIdSelect, agv2TrayIdSelect, agv3TrayIdSelect, agv4TrayIdSelect,agvTrayIds)
     agv1TrayId.trace('w', update_agv_ids)
     agv2TrayId.trace('w', update_agv_ids)
     agv3TrayId.trace('w', update_agv_ids)
     agv4TrayId.trace('w', update_agv_ids)
+    #bin part button
     add_bin_func=partial(addBin,bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots)
     addBinsButton=tk.Button(partsWind, text="Add Bin", command=add_bin_func)
     addBinsButton.grid(column=leftColumn, pady=20)
+    #middle buffer to split the window
     middleSpaceLabel=tk.Label(partsWind, text="")
-    middleSpaceLabel.grid(column=middleColumn,row=0, padx=20)
+    middleSpaceLabel.grid(column=middleColumn,row=0, padx=30)
+    #conveyor belt settings and add parts
     conveyorBeltLabel=tk.Label(partsWind, text="Conveyor Belt Settings")
     conveyorBeltLabel.grid(column=rightColumn, row=0)
     convActive=tk.StringVar()
@@ -343,15 +350,13 @@ def runGUI():
     convOrderLabel.grid(column=rightColumn, row=4)
     convOrderMenu=tk.OptionMenu(partsWind, convOrder, *convOrders)
     convOrderMenu.grid(column=rightColumn, row=5)
-    '''changeOrder = tk.Button(text="random", command=partial(randOrSeq, changeOrder, convOrder))
-    changeOrder.pack(pady=10)'''
     add_conv_part=partial(addPartConv, convParts)
     addPartConvButton=tk.Button(partsWind, text="Add conveyor belt part", command=add_conv_part)
     addPartConvButton.grid(column=rightColumn, row=6)
     validate_spawn_rate=partial(require_num, spawnRate)
     spawnRate.trace('w', validate_spawn_rate)
     rightSpaceLabel=tk.Label(partsWind, text="")
-    rightSpaceLabel.grid(column=rightColumn, row=8, pady=20)
+    rightSpaceLabel.grid(column=rightColumn, row=8, pady=30)
     savePartsButton=tk.Button(partsWind, text="Save and Continue", command=partsWind.destroy)
     savePartsButton.grid(column=rightColumn, row=10, pady=20)
     cancel_parts_command=partial(cancel_wind, partsWind, cancelFlag)
@@ -364,7 +369,8 @@ def runGUI():
     # START OF ORDERS
     ordersWind=tk.Tk()
     ordersWind.title("Orders")
-    ordersWind.geometry("850x600")
+    #ordersWind.geometry("850x600")
+    ordersWind.attributes('-fullscreen', True)
     new_order_func=partial(addNewOrder, orderMSGS, allOrders, orderCounter, allOrderChallenges,orderKittingParts,orderAssembParts, usedIDs)
     newOrderButton=tk.Button(ordersWind, text="New Order", command=new_order_func)
     newOrderButton.pack()
@@ -384,7 +390,8 @@ def runGUI():
     #START OF CHALLENGES
     challengeWind=tk.Tk()
     challengeWind.title("Challenges")
-    challengeWind.geometry("850x600")
+    #challengeWind.geometry("850x600")
+    challengeWind.attributes('-fullscreen', True)
     new_robot_malfunction=partial(newRobotMalfunction, robotMalfunctions, usedIDs)
     robotMalfunctionButton=tk.Button(challengeWind, text="Add robot malfunction", command=new_robot_malfunction)
     robotMalfunctionButton.pack(pady=10)

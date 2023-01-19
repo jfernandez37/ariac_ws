@@ -67,6 +67,7 @@ def generateOrderId(usedId):
 def addKittingProduct(kittingParts, orderKittingParts, currentOrderID):
     '''Adds a product to a kitting order'''
     kitProdWind=tk.Toplevel()
+    kitProdWind.attributes('-fullscreen', True)
     #type of product
     prodType=tk.StringVar()
     prodType.set(allProdTypes[0])
@@ -126,6 +127,7 @@ def addKittingProduct(kittingParts, orderKittingParts, currentOrderID):
 def addAssembProduct(assemblyParts, orderAssembParts, currentOrderID):
     '''Adds a product to an assembly or combined order'''
     assembProdWind=tk.Toplevel()
+    assembProdWind.attributes('-fullscreen', True)
     #product type
     prodType=tk.StringVar()
     prodType.set(allProdTypes[0])
@@ -385,7 +387,8 @@ def addNewOrder(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKit
     kittingParts=[]
     assemblyParts=[]
     newOrderWind=tk.Toplevel()
-    newOrderWind.geometry("850x800")
+    #newOrderWind.geometry("850x800")
+    newOrderWind.attributes('-fullscreen', True)
     #orderCategory
     orderCategory=tk.StringVar()
     orderCategory.set(orderCategories[0])
