@@ -20,7 +20,7 @@ def updateAgvQudrants(agvSelection, quadrantMenu, currentQuadrant, agv1Quadrants
         for quadrant in agv4Quadrants:
             menu.add_command(label=quadrant, command=lambda quadrant=quadrant: currentQuadrant.set(quadrant))
 
-def saveAndExitParts(agvSelection, currentQuadrant, agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants, window):
+def saveAndExitParts(agvSelection, currentQuadrant, agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants, window, mainWindow):
     if agvSelection.get()=='agv1':
         agv1Quadrants.remove(currentQuadrant.get())
     elif agvSelection.get()=='agv2':
@@ -29,7 +29,8 @@ def saveAndExitParts(agvSelection, currentQuadrant, agv1Quadrants, agv2Quadrants
         agv3Quadrants.remove(currentQuadrant.get())
     else:
         agv4Quadrants.remove(currentQuadrant.get())
-    window.destroy()
+    mainWindow.destroy()
+    #window.destroy()
 
 def updateTrayIds(agv1Val, agv2Val, agv3Val, agv4Val, agv1Menu, agv2Menu, agv3Menu, agv4Menu,agvTrayIds,a,b,c):
     '''Updates the available tray ids for the agvs'''

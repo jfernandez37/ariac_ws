@@ -33,7 +33,6 @@ def runGUI():
     agv2Parts=[]
     agv3Parts=[]
     agv4Parts=[]
-    agvTrayIds=["","0","1","2","3","4","5","6"] # all options for tray ids for agvs
     agv1Quadrants=["1","2","3","4"] # available quadrants for agv1
     agv2Quadrants=["1","2","3","4"] # available quadrants for agv2
     agv3Quadrants=["1","2","3","4"] # available quadrants for agv3
@@ -265,6 +264,23 @@ def runGUI():
     cancel_tray_command=partial(cancel_wind, trayWind, cancelFlag)
     cancelTrayButton=tk.Button(trayWind, text="Cancel and Exit", command=cancel_tray_command)
     cancelTrayButton.grid(column=middleColumn,pady=20)
+    #variables for parts
+    agv1TrayId=tk.StringVar()
+    agv1TrayId.set(agvTrayIds[0])
+    agv2TrayId=tk.StringVar()
+    agv2TrayId.set(agvTrayIds[0])
+    agv3TrayId=tk.StringVar()
+    agv3TrayId.set(agvTrayIds[0])
+    agv4TrayId=tk.StringVar()
+    agv4TrayId.set(agvTrayIds[0])
+    convActive=tk.StringVar()
+    convActive.set('0')
+    spawnRate=tk.StringVar()
+    spawnRate.set('0')
+    convOrder=tk.StringVar()
+    convOrder.set(convOrders[0])
+    saveFlag=tk.StringVar()
+    saveFlag.set('0')
     trayWind.mainloop()
     check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
     kittingTrayIds.append(tray0.get())
@@ -286,84 +302,12 @@ def runGUI():
     # END OF GETTING KITTING TRAYS
     # ----------------------------------------------------------------------------------------------
     # START OF PARTS
-    partsWind=tk.Tk()
-    partsWind.title("AGVs and parts")
-    #partsWind.geometry("850x600")
-    partsWind.attributes('-fullscreen', True)
-    agv1TrayId=tk.StringVar()
-    agv1TrayId.set(agvTrayIds[0])
-    agv2TrayId=tk.StringVar()
-    agv2TrayId.set(agvTrayIds[0])
-    agv3TrayId=tk.StringVar()
-    agv3TrayId.set(agvTrayIds[0])
-    agv4TrayId=tk.StringVar()
-    agv4TrayId.set(agvTrayIds[0])
-    agv1TrayLabel=tk.Label(partsWind, text="Select the tray Id for agv1")
-    agv1TrayLabel.grid(column=leftColumn,padx=20)
-    agv1TrayIdSelect=tk.OptionMenu(partsWind, agv1TrayId, *agvTrayIds)
-    agv1TrayIdSelect.grid(column=leftColumn)
-    agv2TrayLabel=tk.Label(partsWind, text="Select the tray Id for agv2")
-    agv2TrayLabel.grid(column=leftColumn)
-    agv2TrayIdSelect=tk.OptionMenu(partsWind, agv2TrayId, *agvTrayIds)
-    agv2TrayIdSelect.grid(column=leftColumn)
-    agv3TrayLabel=tk.Label(partsWind, text="Select the tray Id for agv3")
-    agv3TrayLabel.grid(column=leftColumn)
-    agv3TrayIdSelect=tk.OptionMenu(partsWind, agv3TrayId, *agvTrayIds)
-    agv3TrayIdSelect.grid(column=leftColumn)
-    agv4TrayLabel=tk.Label(partsWind, text="Select the tray Id for agv4")
-    agv4TrayLabel.grid(column=leftColumn)
-    agv4TrayIdSelect=tk.OptionMenu(partsWind, agv4TrayId, *agvTrayIds)
-    agv4TrayIdSelect.grid(column=leftColumn)
-    add_new_part=partial(addPart,agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Quadrants,agv3Quadrants,agv4Quadrants, partsWind)
-    addPartsButton=tk.Button(partsWind, text="Add part", command=add_new_part)
-    addPartsButton.grid(column=leftColumn)
-    leftSpaceLabel=tk.Label(partsWind, text="")
-    leftSpaceLabel.grid(column=leftColumn, pady=30)
-    update_agv_ids=partial(updateTrayIds,agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1TrayIdSelect, agv2TrayIdSelect, agv3TrayIdSelect, agv4TrayIdSelect,agvTrayIds)
-    agv1TrayId.trace('w', update_agv_ids)
-    agv2TrayId.trace('w', update_agv_ids)
-    agv3TrayId.trace('w', update_agv_ids)
-    agv4TrayId.trace('w', update_agv_ids)
-    #bin part button
-    add_bin_func=partial(addBin,bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots)
-    addBinsButton=tk.Button(partsWind, text="Add Bin", command=add_bin_func)
-    addBinsButton.grid(column=leftColumn, pady=20)
-    #middle buffer to split the window
-    middleSpaceLabel=tk.Label(partsWind, text="")
-    middleSpaceLabel.grid(column=middleColumn,row=0, padx=30)
-    #conveyor belt settings and add parts
-    conveyorBeltLabel=tk.Label(partsWind, text="Conveyor Belt Settings")
-    conveyorBeltLabel.grid(column=rightColumn, row=0)
-    convActive=tk.StringVar()
-    convActive.set('0')
-    activeCheck=tk.Checkbutton(partsWind, text="Active", variable=convActive, onvalue="1", offvalue="0", height=3, width=20)
-    activeCheck.grid(column=rightColumn, row=1)
-    spawnRate=tk.StringVar()
-    spawnRate.set('0')
-    spawnRateEntryLabel=tk.Label(partsWind, text="Enter the spawn rate for the conveyor belt")
-    spawnRateEntryLabel.grid(column=rightColumn, row=2)
-    spawnRateEntry=tk.Entry(partsWind, textvariable=spawnRate)
-    spawnRateEntry.grid(column=rightColumn, row=3)
-    convOrder=tk.StringVar()
-    convOrder.set(convOrders[0])
-    convOrderLabel=tk.Label(partsWind, text="Order of the conveyor belt")
-    convOrderLabel.grid(column=rightColumn, row=4)
-    convOrderMenu=tk.OptionMenu(partsWind, convOrder, *convOrders)
-    convOrderMenu.grid(column=rightColumn, row=5)
-    add_conv_part=partial(addPartConv, convParts)
-    addPartConvButton=tk.Button(partsWind, text="Add conveyor belt part", command=add_conv_part)
-    addPartConvButton.grid(column=rightColumn, row=6)
-    validate_spawn_rate=partial(require_num, spawnRate)
-    spawnRate.trace('w', validate_spawn_rate)
-    rightSpaceLabel=tk.Label(partsWind, text="")
-    rightSpaceLabel.grid(column=rightColumn, row=8, pady=30)
-    savePartsButton=tk.Button(partsWind, text="Save and Continue", command=partsWind.destroy)
-    savePartsButton.grid(column=rightColumn, row=10, pady=20)
-    cancel_parts_command=partial(cancel_wind, partsWind, cancelFlag)
-    cancelPartsButton=tk.Button(partsWind, text="Cancel and Exit", command=cancel_parts_command)
-    cancelPartsButton.grid(column=rightColumn,row=11, pady=20)
-    partsWind.mainloop()
-    check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
+    #parts variables
+    while(saveFlag.get()=="0"):
+        addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts, agv3Parts, agv4Parts, 
+        agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,
+        bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, 
+        spawnRate,convActive,convParts, cancelFlag, pathIncrement,fileName,createdDir, convOrder,saveFlag)
     # END OF CONVEYOR BELT
     # ----------------------------------------------------------------------------------------------
     # START OF ORDERS
