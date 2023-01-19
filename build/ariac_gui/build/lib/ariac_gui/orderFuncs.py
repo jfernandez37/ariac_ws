@@ -310,6 +310,7 @@ def showAnnIDMenu(annIDShow, annIDShowCB, annIDLabel, annIDMenu, annID, tempIDs,
 
 def addNewOrder(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKittingParts,orderAssembParts, usedIDs):
     '''Window for adding a new order'''
+    taskPresentFlag.clear()
     orderCounter.append(0)
     tempIDs=[]
     for id in usedIDs:
