@@ -148,7 +148,7 @@ def newRobotMalfunction(robotMalfunctions, usedIds):
     robotMalfCancel.pack()
     validate_duration=partial(validateTime, duration)
     duration.trace('w', validate_duration)
-    updateConditionMenu=partial(showCorrectMenu,condition, conditionMenu, time, timeLabel, timeEntry, agv, agvLabel, agvMenu, partType, partTypeLabel, partTypeMenu, partColor, partColorLabel, partColorMenu, annID, annIDLabel, annIDMenu,tempIDs)
+    updateConditionMenu=partial(showCorrectMenu,condition, conditionMenu, time, timeLabel, timeEntry, agv, agvLabel, agvMenu, partType, partTypeLabel, partTypeMenu, partColor, partColorLabel, partColorMenu, annID, annIDLabel, annIDMenu,usedIds)
     condition.trace('w', updateConditionMenu)
     robotMalfunctionWind.mainloop()
     if robotMalfCancelFlag.get()=="0":
@@ -161,11 +161,11 @@ def newRobotMalfunction(robotMalfunctions, usedIds):
             bothRobots.ceiling_robot=True
         else:
             bothRobots.ceiling_robot=False
-        newRobotMalf=RobotMalfunction()
+        newRobotMalf=RobotMalfunctionChallenge()
         newRobotMalf.robots_to_disable=bothRobots
         newRobotMalf.duration=float(duration.get())
         newRobotMalfCondition=Condition()
-        newRobotMalfCondition.type=condition.get()
+        newRobotMalfCondition.type=conditionTypes.index(condition.get())-1
         if condition.get()==conditionTypes[1]:
             newRobotMalfCondition.time_condition.seconds=float(time.get())
         elif condition.get()==conditionTypes[2]:
@@ -249,16 +249,7 @@ def newFaultyPart(faultyParts, usedIds):
             faultyPartMSG.quadrant4 = True
         else:
             faultyPartMSG.quadrant4 = False
-        quadrants=[]
-        if q1.get()=="1":
-            quadrants.append("1")
-        if q2.get()=="1":
-            quadrants.append("2")
-        if q3.get()=="1":
-            quadrants.append("3")
-        if q4.get()=="1":
-            quadrants.append("4")
-        faultyParts.append(FaultyPart(currentOrderID.get(),", ".join(quadrants)))
+        faultyParts.append(faultyPartMSG)
 
 def newDroppedPart(droppedParts):
     dropPartWind=tk.Toplevel()
@@ -395,7 +386,7 @@ def showPartMenu(partShow, partShowCB, partTypeLabel, partTypeMenu, partColorLab
         partType.set("")
         partColor.set("")
 
-def newSensorBlackout(sensorBlackouts):
+def newSensorBlackout(sensorBlackouts, usedIds):
     selectedSensors=[]
     sensBOWind=tk.Toplevel()
     #category
@@ -438,56 +429,25 @@ def newSensorBlackout(sensorBlackouts):
     sensor6CB=tk.Checkbutton(sensBOWind, text="logical camera", variable=sensor6, onvalue="1", offvalue="0", height=1, width=20)
     sensor6CB.pack()
     #optional items
-    optionalLabel=tk.Label(sensBOWind, text="Please choose the type of challenge")
-    optionalLabel.pack()
-    challengeType=tk.StringVar()
-    challengeType.set(challengeTypes[0])
-    challengeTypeMenu=tk.OptionMenu(sensBOWind, challengeType, *challengeTypes)
-    challengeTypeMenu.pack()
-    timeShow=tk.StringVar()
-    timeShow.set('0')
-    timeShowCB=tk.Checkbutton(sensBOWind, text="Time", variable=timeShow, onvalue="1", offvalue='0', height=1, width=20)
-    timeShowCB.pack()
+    #condition
+    condition=tk.StringVar()
+    condition.set(conditionTypes[0])
+    conditionLabel=tk.Label(sensBOWind, text="Select a condition for the order")
+    conditionLabel.pack()
+    conditionMenu=tk.OptionMenu(sensBOWind, condition, *conditionTypes)
+    conditionMenu.pack()
     time=tk.StringVar()
     time.set('')
     timeLabel=tk.Label(sensBOWind, text="Enter the time")
     timeLabel.pack_forget()
     timeEntry=tk.Entry(sensBOWind, textvariable=time)
     timeEntry.pack_forget()
-    agvShow=tk.StringVar()
-    agvShow.set('0')
-    agvShowCB=tk.Checkbutton(sensBOWind, text="AGV", variable=agvShow, onvalue="1", offvalue='0', height=1, width=20)
-    agvShowCB.pack()
     agv=tk.StringVar()
     agv.set("")
     agvLabel=tk.Label(sensBOWind, text="Choose the agv")
     agvLabel.pack_forget()
     agvMenu=tk.OptionMenu(sensBOWind, agv, *agvOptions)
     agvMenu.pack_forget()
-    destShow=tk.StringVar()
-    destShow.set('0')
-    destShowCB=tk.Checkbutton(sensBOWind, text="Destination", variable=destShow, onvalue="1", offvalue='0', height=1, width=20)
-    destShowCB.pack()
-    destination=tk.StringVar()
-    destination.set(destinations[0])
-    destLabel=tk.Label(sensBOWind, text="Choose the destination")
-    destLabel.pack_forget()
-    destMenu=tk.OptionMenu(sensBOWind, destination, *destinations)
-    destMenu.pack_forget()
-    statShow=tk.StringVar()
-    statShow.set('0')
-    statShowCB=tk.Checkbutton(sensBOWind, text="Station", variable=statShow, onvalue="1", offvalue='0', height=1, width=20)
-    statShowCB.pack()
-    station=tk.StringVar()
-    station.set(stations[0])
-    stationLabel=tk.Label(sensBOWind, text="Choose the station")
-    stationLabel.pack_forget()
-    stationMenu=tk.OptionMenu(sensBOWind, station, *stations)
-    stationMenu.pack_forget()
-    partShow=tk.StringVar()
-    partShow.set('0')
-    partShowCB=tk.Checkbutton(sensBOWind, text="Part", variable=partShow, onvalue="1", offvalue='0', height=1, width=20)
-    partShowCB.pack()
     partType=tk.StringVar()
     partType.set("")
     partTypeLabel=tk.Label(sensBOWind, text="Select the type of part")
@@ -500,6 +460,12 @@ def newSensorBlackout(sensorBlackouts):
     partColorLabel.pack_forget()
     partColorMenu=tk.OptionMenu(sensBOWind, partColor, *allPartColors)
     partColorMenu.pack_forget()
+    annID=tk.StringVar()
+    annID.set("")
+    annIDLabel=tk.Label(sensBOWind, text="Select the order ID")
+    annIDLabel.pack_forget()
+    annIDMenu=tk.OptionMenu(sensBOWind, annID, *usedIds)
+    annIDMenu.pack_forget()
     #save and cancel buttons
     sensBOSave=tk.Button(sensBOWind, text="Save", command=sensBOWind.destroy)
     sensBOSave.pack(pady=20)
@@ -509,18 +475,8 @@ def newSensorBlackout(sensorBlackouts):
     sensBOCancel=tk.Button(sensBOWind, text="Cancel", command=cancel_sens_bo_challenge)
     sensBOCancel.pack()
     #variable tracing
-    show_time_menu=partial(showTimeMenu, timeShow, timeShowCB, timeEntry, timeLabel, time)
-    timeShow.trace('w', show_time_menu)
-    validate_time=partial(validateTime, time)
-    time.trace('w', validate_time)
-    show_agv_menu=partial(showAGVMenu, agvShow,agvShowCB, agvMenu, agvLabel, agv)
-    agvShow.trace('w', show_agv_menu)
-    show_dest_menu=partial(showDestMenu,destShow, destShowCB, destMenu, destLabel, destination)
-    destShow.trace('w', show_dest_menu)
-    show_stat_menu=partial(showStatMenu,statShow, statShowCB, stationMenu, stationLabel, station)
-    statShow.trace('w', show_stat_menu)
-    show_part_menu=partial(showPartMenu, partShow, partShowCB, partTypeLabel, partTypeMenu, partColorLabel, partColorMenu,partType, partColor)
-    partShow.trace('w', show_part_menu)
+    updateConditionMenu=partial(showCorrectMenu,condition, conditionMenu, time, timeLabel, timeEntry, agv, agvLabel, agvMenu, partType, partTypeLabel, partTypeMenu, partColor, partColorLabel, partColorMenu, annID, annIDLabel, annIDMenu, usedIds)
+    condition.trace('w', updateConditionMenu)
     validate_duration=partial(validateTime, duration)
     duration.trace('w', validate_duration)
     sensBOWind.mainloop()
@@ -554,19 +510,32 @@ def newSensorBlackout(sensorBlackouts):
             sensorsToDisable.logical_camera=False
         newSensorBO.sensors_to_disable=sensorsToDisable
         newSensorBOCond=Condition()
+        newSensorBOCond.type=conditionTypes.index(condition.get())-1
+        if condition.get()==conditionTypes[1]:
+            newSensorBOCond.time_condition.seconds=float(time.get())
+        elif condition.get()==conditionTypes[2]:
+            newPart=Part()
+            if partType.get()=="sensor":
+                newPart.type=newPart.SENSOR
+            elif partType.get()=="pump":
+                newPart.type=newPart.PUMP
+            elif partType.get()=="battery":
+                newPart.type=newPart.BATTERY
+            else:
+                newPart.type=newPart.REGULATOR
+            if partColor.get()=="red":
+                newPart.color=newPart.RED
+            elif partColor.get()=="green":
+                newPart.color=newPart.GREEN
+            elif partColor.get()=="blue":
+                newPart.color=newPart.BLUE
+            elif partColor.get()=="orange":
+                newPart.color=newPart.ORANGE
+            else:
+                newPart.color=newPart.PURPLE
+            newSensorBOCond.part_place_condition.part=newPart
+            newSensorBOCond.part_place_condition.agv="agv"+str(agv.get())
+        elif condition.get()==conditionTypes[2]:
+            newSensorBOCond.submission_condition.order_id=annID.get()
         newSensorBO.condition=newSensorBOCond
-        if sensor1.get()=="1":
-            selectedSensors.append("break_beam")
-        if sensor2.get()=="1":
-            selectedSensors.append("proximity")
-        if sensor3.get()=="1":
-            selectedSensors.append("laser_profiler")
-        if sensor4.get()=="1":
-            selectedSensors.append("lidar")
-        if sensor5.get()=="1":
-            selectedSensors.append("camera")
-        if sensor6.get()=="1":
-            selectedSensors.append("logical camera")
-        sensorBlackouts.append(SensorBlackout(str(sensBOCategories.index(category.get())), time.get(),duration.get(),", ".join(selectedSensors), agv.get(), destination.get(), station.get(), partType.get(), partColor.get()))
-        
-            
+        sensorBlackouts.append(newSensorBO)

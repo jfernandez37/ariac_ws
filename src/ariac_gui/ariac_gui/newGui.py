@@ -411,7 +411,7 @@ def runGUI():
     new_dropped_part=partial(newDroppedPart, droppedParts)
     droppedPartButton=tk.Button(challengeWind, text="Add dropped part", command=new_dropped_part)
     droppedPartButton.pack(pady=10)
-    new_sensor_blackout=partial(newSensorBlackout, sensorBlackouts)
+    new_sensor_blackout=partial(newSensorBlackout, sensorBlackouts, usedIDs)
     sensorBlackoutButton=tk.Button(challengeWind, text="Add sensor blackout", command=new_sensor_blackout)
     sensorBlackoutButton.pack(pady=10)
     saveChallengeButton=tk.Button(challengeWind, text="Save and Continue", command=challengeWind.destroy)
