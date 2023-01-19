@@ -63,7 +63,7 @@ def addPart(agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Quadra
     agvSelection.trace('w', agv_update_menu)
     newPartWind.mainloop()
     if newPartCancelFlag.get()=="0":
-        newPart=Part()
+        '''newPart=Part()
         if partType.get()=="sensor":
             newPart.type=newPart.SENSOR
         elif partType.get()=="pump":
@@ -81,9 +81,8 @@ def addPart(agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Quadra
         elif partColor.get()=="orange":
             newPart.color=newPart.ORANGE
         else:
-            newPart.color=newPart.PURPLE
-        print(newPart.type)
-        '''add_quotes(partType)
+            newPart.color=newPart.PURPLE'''
+        add_quotes(partType)
         add_quotes(partColor)
         if 'pi' in partRotation.get():
             add_quotes(partRotation)
@@ -95,7 +94,7 @@ def addPart(agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Quadra
             agv3Parts.append(Parts(partType.get(), partColor.get(), partQuadrant.get(), partRotation.get()))
         else:
             agv4Parts.append(Parts(partType.get(), partColor.get(), partQuadrant.get(), partRotation.get()))
-        newThing=Parts()'''
+        newThing=Parts()
         
 
 
