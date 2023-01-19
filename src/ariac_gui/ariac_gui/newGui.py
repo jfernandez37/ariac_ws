@@ -74,6 +74,8 @@ def runGUI():
     faultyParts=[] # holds all faulty parts
     droppedParts=[] # holds all dropped parts
     sensorBlackouts=[] # holds all sensor blackouts
+    robotsToDisable=[] # holds robots to be disabled
+    faultyPartQuadrants=[] # holds quadrants for dropped parts
     # END OF DEFINITIONS
     # ----------------------------------------------------------------------------------------------
     # START OF GUI
@@ -446,8 +448,8 @@ def runGUI():
     with open(saveFileName, "a") as o:
         o.write("# Trial Name: "+saveFileName+"\n")
         o.write("# ARIAC2023\n")
-        o.write("# "+datetime.now().strftime("%Y-%m-%d %H:%M:%S")+"\n\n")
-        o.write("# ENVIRONMENT SETUP\n")
+        o.write("# "+datetime.now().strftime("%Y-%m-%d %H:%M:%S")+"\n\n") #writes the time and date
+        o.write("# ENVIRONMENT SETUP\n") #writes the time limit
         if noTimeVal.get()=="1":
             o.write("time_limit: -1")
         else:
@@ -553,19 +555,42 @@ def runGUI():
                     o.write("          assembly_direction: ["+str(combinedPart.install_direction.x)+", "+str(combinedPart.install_direction.y)+", "+str(combinedPart.install_direction.z)+"]\n")
         #end of order writing to file
         
+        #writes orders to file
         o.write("\n# GLOBAL CHALLENGES\n")
         o.write("challenges:\n")
+        #robot malfunctions
         for malf in robotMalfunctions:
             o.write("  - robot_malfunction:\n")
-            o.write("      duration: "+malf.duration+"\n")
-            o.write("      robots_to_disable: "+malf.robot+"\n")
-            o.write("      part_type: \'"+malf.type+"\'\n")
-            o.write("      part_color: \'"+malf.color+"\'\n")
-            o.write("      agv: "+malf.agv+"\n")
+            o.write("      duration: "+str(malf.duration)+"\n")
+            robotsToDisable=[]
+            if malf.robots_to_disable.floor_robot:
+                robotsToDisable.append("\'floor_robot\'")
+            if malf.robots_to_disable.ceiling_robot:
+                robotsToDisable.append("\'ceiling_robot\'")
+            o.write("      robots_to_disable: ["+", ".join(robotsToDisable)+"]\n")
+            if malf.condition.type==0:
+                o.write("      time: "+str(malf.condition.time_condition.seconds)+"\n")
+            elif malf.condition.type==1:
+                o.write("      part_type: \'"+getPartName(malf.condition.part_place_condition.part.type)+"\'\n")
+                o.write("      part_color: \'"+getPartColor(malf.condition.part_place_condition.part.color)+"\'\n")
+                o.write("      agv: "+malf.condition.part_place.condition.agv)
+            elif malf.condition.type==2:
+                o.write("      order_id: \'"+malf.condition.submission_condition.order_id+"\'\n")
+        #faulty parts
         for part in faultyParts:
             o.write("  - faulty_part:\n")
-            o.write("      order_id: \'"+part.orderID+"\'\n")
-            o.write("      quadrant: ["+part.quadrant+"]\n")
+            o.write("      order_id: \'"+part.order_id+"\'\n")
+            faultyPartQuadrants=[]
+            if part.quadrant1:
+                faultyPartQuadrants.append("1")
+            if part.quadrant2:
+                faultyPartQuadrants.append("2")
+            if part.quadrant3:
+                faultyPartQuadrants.append("3")
+            if part.quadrant4:
+                faultyPartQuadrants.append("4")
+            o.write("      quadrant: ["+", ".join(faultyPartQuadrants)+"]\n")
+        #dropped parts
         for part in droppedParts:
             o.write("  - dropped_part:\n")
             o.write("      robot: \'"+part.robot+"\'\n")
@@ -573,6 +598,7 @@ def runGUI():
             o.write("      color: \'"+part.color+"\'\n")
             o.write("      drop_after: "+part.dropAfter+" # first part the robot successfully picks\n")
             o.write("      delay: "+part.delay+" # secons\n")
+        #sensor blackouts
         for blackout in sensorBlackouts:
             o.write("  - sensor_blackout_category: "+blackout.category+"\n")
             if blackout.time!="":
