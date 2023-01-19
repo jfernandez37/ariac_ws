@@ -113,7 +113,7 @@ def savePart(wind, saveFlag):
     wind.destroy()
 
 def addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, spawnRate,convActive,convParts, cancelFlag, pathIncrement,fileName,createdDir, convOrder,saveFlag):
-    partsWind=tk.Toplevel()
+    partsWind=tk.Tk()
     #partsWind.geometry("850x600")
     partsWind.attributes('-fullscreen', True)
     agv1TrayLabel=tk.Label(partsWind, text="Select the tray Id for agv1")
