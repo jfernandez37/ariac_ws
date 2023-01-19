@@ -21,7 +21,6 @@ farRightColumn=5
 convOrders=["random", "sequential"]
 
 def addAGVPart(agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Quadrants,agv3Quadrants,agv4Quadrants, mainWind):
-    print(len(agv1Parts))
     '''Adds a part to the agv'''
     newPartWind=tk.Toplevel(mainWind)
     #newPartWind.geometry("850x600")
@@ -114,7 +113,7 @@ def savePart(wind, saveFlag):
     wind.destroy()
 
 def addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, spawnRate,convActive,convParts, cancelFlag, pathIncrement,fileName,createdDir, convOrder,saveFlag):
-    partsWind=tk.Tk()
+    partsWind=tk.Toplevel()
     #partsWind.geometry("850x600")
     partsWind.attributes('-fullscreen', True)
     agv1TrayLabel=tk.Label(partsWind, text="Select the tray Id for agv1")
@@ -144,7 +143,7 @@ def addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts
     agv3TrayId.trace('w', update_agv_ids)
     agv4TrayId.trace('w', update_agv_ids)
     #bin part button
-    add_bin_func=partial(addBin,bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots)
+    add_bin_func=partial(addBin,bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots,partsWind)
     addBinsButton=tk.Button(partsWind, text="Add Bin", command=add_bin_func)
     addBinsButton.grid(column=leftColumn, pady=20)
     #middle buffer to split the window
@@ -163,25 +162,57 @@ def addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts
     convOrderLabel.grid(column=rightColumn, row=4)
     convOrderMenu=tk.OptionMenu(partsWind, convOrder, *convOrders)
     convOrderMenu.grid(column=rightColumn, row=5)
-    add_conv_part=partial(addPartConv, convParts)
+    add_conv_part=partial(addPartConv, convParts, partsWind)
     addPartConvButton=tk.Button(partsWind, text="Add conveyor belt part", command=add_conv_part)
     addPartConvButton.grid(column=rightColumn, row=6)
     validate_spawn_rate=partial(require_num, spawnRate)
     spawnRate.trace('w', validate_spawn_rate)
     rightSpaceLabel=tk.Label(partsWind, text="")
     rightSpaceLabel.grid(column=rightColumn, row=8, pady=30)
-    save_part=partial(savePart, partsWind, saveFlag)
+    #save and cancel button
+    save_part=partial(savePart, partsWind, saveFlag)#needs to change the save flag to exit the window and not refresh
     savePartsButton=tk.Button(partsWind, text="Save and Continue", command=save_part)
     savePartsButton.grid(column=rightColumn, row=10, pady=20)
     cancel_parts_command=partial(cancel_wind, partsWind, cancelFlag)
     cancelPartsButton=tk.Button(partsWind, text="Cancel and Exit", command=cancel_parts_command)
     cancelPartsButton.grid(column=rightColumn,row=11, pady=20)
     #part labels
+    #Label for parts currently selected for agv1
     currentAGV1Parts="Current AGV1 Parts:\n"
     for part in agv1Parts:
         currentAGV1Parts+=part.color+" "+part.pType+"\n"
     currentAGV1Label=tk.Label(partsWind, text=currentAGV1Parts)
-    currentAGV1Label.grid(column=farRightColumn,row=0)
+    currentAGV1Label.grid(column=rightMiddleColumn,row=0,padx=40)
+    #Label for parts currently selected for agv2
+    currentAGV2Parts="Current AGV2 Parts:\n"
+    for part in agv2Parts:
+        currentAGV2Parts+=part.color+" "+part.pType+"\n"
+    currentAGV2Label=tk.Label(partsWind, text=currentAGV2Parts)
+    currentAGV2Label.grid(column=rightMiddleColumn,row=2,padx=40)
+    #Label for parts currently selected for agv3
+    currentAGV3Parts="Current AGV3 Parts:\n"
+    for part in agv3Parts:
+        currentAGV3Parts+=part.color+" "+part.pType+"\n"
+    currentAGV3Label=tk.Label(partsWind, text=currentAGV3Parts)
+    currentAGV3Label.grid(column=rightMiddleColumn,row=4,padx=40)
+    #Label for parts currently selected for agv4
+    currentAGV4Parts="Current AGV4 Parts:\n"
+    for part in agv4Parts:
+        currentAGV4Parts+=part.color+" "+part.pType+"\n"
+    currentAGV4Label=tk.Label(partsWind, text=currentAGV4Parts)
+    currentAGV4Label.grid(column=rightMiddleColumn,row=6,padx=40)
+    #Label for parts currently selected for bins
+    currentBins="Current Bins:\n"
+    for bin in bins:
+        currentBins+=bin.binName+" "+bin.type+" "+bin.color+"\n"
+    currentBinLabel=tk.Label(partsWind, text=currentBins)
+    currentBinLabel.grid(column=farRightColumn, row=0,padx=40)
+    #Label for parts currently selected for the conveyor belt
+    currentConv="Current Conveyor Belt Parts:\n"
+    for convPart in convParts:
+        currentConv+=convPart.color+" "+convPart.type+"\n"
+    currentConLabel=tk.Label(partsWind, text=currentConv)
+    currentConLabel.grid(column=farRightColumn, row=2, padx=40)
     partsWind.mainloop()
     check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
 

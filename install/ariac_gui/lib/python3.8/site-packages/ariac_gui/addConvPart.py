@@ -38,7 +38,7 @@ def validateOffset(offsetVal, a,b,c):
             tempStr="-1"
     offsetVal.set(tempStr)
 
-def addPartConv(convParts):
+def addPartConv(convParts, mainWind):
     '''Window to add parts to the conveyor belt'''
     partConvWind=tk.Toplevel()
     partConvWind.attributes('-fullscreen', True)
@@ -78,7 +78,7 @@ def addPartConv(convParts):
     partRotationEntry=tk.Entry(partConvWind, textvariable=partRotation)
     partRotationEntry.pack()
     #save and cancel buttons
-    saveConvButton=tk.Button(partConvWind, text="Save and Exit", command=partConvWind.destroy)
+    saveConvButton=tk.Button(partConvWind, text="Save and Exit", command=mainWind.destroy)
     saveConvButton.pack()
     convPartCancelFlag=tk.StringVar()
     convPartCancelFlag.set('0')

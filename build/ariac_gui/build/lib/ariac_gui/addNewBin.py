@@ -34,8 +34,6 @@ def runSlotChecks(addBinWind, currentBin,slot1,slot2,slot3,slot4,slot5,slot6,slo
 def slotChecks(arr, addBinWind, slot1,slot2,slot3,slot4,slot5,slot6,slot7,slot8,slot9, presentChecks,saveNewBinButton):
     '''puts the correct checkboxes in the window. This guarantees that slots are not repeated for bins'''
     firstFlag=0
-    for i in presentChecks:
-        i.destroy()
     slot1.set("0")
     slot2.set("0")
     slot3.set("0")
@@ -115,7 +113,7 @@ def slotChecks(arr, addBinWind, slot1,slot2,slot3,slot4,slot5,slot6,slot7,slot8,
             firstFlag=1
         presentChecks.append(slot9Check)
 
-def updateAvailableSlots(currentBin, bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, slot1,slot2,slot3,slot4,slot5,slot6,slot7,slot8,slot9,window):
+def updateAvailableSlots(currentBin, bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, slot1,slot2,slot3,slot4,slot5,slot6,slot7,slot8,slot9,window, mainWind):
     '''Removes slots that have been selected by the user'''
     allSlots=[slot1.get(),slot2.get(),slot3.get(),slot4.get(),slot5.get(),slot6.get(),slot7.get(),slot8.get(),slot9.get()]
     counter=1
@@ -161,9 +159,9 @@ def updateAvailableSlots(currentBin, bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin
             counter+=1
     else:
         print("Error")
-    window.destroy()
+    mainWind.destroy()
 
-def addBin(bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots):
+def addBin(bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, mainWind):
     '''Adds a bin'''
     addBinWind=tk.Toplevel()
     addBinWind.attributes('-fullscreen', True)
@@ -220,7 +218,7 @@ def addBin(bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7
     flippedCheck=tk.Checkbutton(addBinWind, text="Flipped", variable=flippedFlag, onvalue="1", offvalue="0", height=5, width=20)
     flippedCheck.pack()
     #save and cancel buttons
-    save_new_bin=partial(updateAvailableSlots, binID, bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, slot1,slot2,slot3,slot4,slot5,slot6,slot7,slot8,slot9,addBinWind)
+    save_new_bin=partial(updateAvailableSlots, binID, bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, slot1,slot2,slot3,slot4,slot5,slot6,slot7,slot8,slot9,addBinWind, mainWind)
     saveNewBinButton=tk.Button(addBinWind, text="Save", command=save_new_bin)
     saveNewBinButton.pack(pady=20)
     newBinCancelFlag=tk.StringVar()
