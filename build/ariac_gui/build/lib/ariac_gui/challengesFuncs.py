@@ -101,6 +101,7 @@ def newRobotMalfunction(robotMalfunctions, usedIds):
     floorRobotCB.pack()
     ceilRobotCB=tk.Checkbutton(robotMalfunctionWind, text="Ceiling robot", variable=ceilRobot, onvalue="1", offvalue="0", height=1, width=20)
     ceilRobotCB.pack()
+    #condition
     condition=tk.StringVar()
     condition.set(conditionTypes[0])
     conditionLabel=tk.Label(robotMalfunctionWind, text="Select a condition for the order")

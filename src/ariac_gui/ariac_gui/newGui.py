@@ -402,7 +402,7 @@ def runGUI():
     challengeWind=tk.Tk()
     challengeWind.title("Challenges")
     challengeWind.geometry("850x600")
-    new_robot_malfunction=partial(newRobotMalfunction, robotMalfunctions)
+    new_robot_malfunction=partial(newRobotMalfunction, robotMalfunctions, usedIDs)
     robotMalfunctionButton=tk.Button(challengeWind, text="Add robot malfunction", command=new_robot_malfunction)
     robotMalfunctionButton.pack(pady=10)
     new_faulty_part=partial(newFaultyPart, faultyParts, usedIDs)
