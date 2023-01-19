@@ -17,18 +17,17 @@ kittingTrayIDs=[]
 for i in range(10):
     kittingTrayIDs.append(str(i))
 currentQuadMenu=[]
-challengeList=['flipped_part', 'faulty_part', 'dropped_part', 'sensor_blackout', 'robot_malfunction']
 orderCategories=["time-based","during kitting", "during assembly","after kitting", "after assembly"]
 taskPresentFlag=[]
 allProdTypes=["sensor", "pump", "regulator", "battery"]
 allProdColors=['green', 'red', 'purple','blue','orange']
 
-def typeOfProdSelect(orderType,orderKittingParts, orderAssembParts, currentOrderID):
+def typeOfProdSelect(kittingParts, assemblyParts, orderType,orderKittingParts, orderAssembParts, currentOrderID):
     '''Runs the correct function based on the order type'''
     if orderType.get()=="kitting":
-        addKittingProduct(orderKittingParts, currentOrderID)
+        addKittingProduct(kittingParts,orderKittingParts, currentOrderID)
     else:
-        addAssembProduct(orderAssembParts, currentOrderID)
+        addAssembProduct(assemblyParts, orderAssembParts, currentOrderID)
     
 
 def updateTaskOptions(orderType, kitTrayId, taskAgvMenu,kitTrayIdLabel, kitTrayIdMenu, kittingDestination, kittingDestinationLabel, kittingDestinationMenu, assemblyStation, assemblyStationLabel, assemblyStationMenu,a,b,c):
@@ -65,32 +64,7 @@ def generateOrderId(usedId):
     usedId.append(newId)
     return newId
 
-def addOrderChallenge(allOrderChallenges, orderCounter):
-    orderChallengeWind=tk.Toplevel()
-    orderChallengeType=tk.StringVar()
-    orderChallengeType.set(challengeList[0])
-    orderChallengeTypeLabel=tk.Label(orderChallengeWind,text="Select the type of challenge")
-    orderChallengeTypeLabel.pack()
-    orderChallengeTypeMenu=tk.OptionMenu(orderChallengeWind, orderChallengeType, *challengeList)
-    orderChallengeTypeMenu.pack()
-    orderChallengeQuadrant=tk.StringVar()
-    orderChallengeQuadrant.set(quadrants[0])
-    orderChallengeQuadLabel=tk.Label(orderChallengeWind, text="Select the quadrant for the challenge")
-    orderChallengeQuadLabel.pack()
-    orderChallengeQuadMenu=tk.OptionMenu(orderChallengeWind, orderChallengeQuadrant, *quadrants)
-    orderChallengeQuadMenu.pack()
-    orderChallengeSave=tk.Button(orderChallengeWind, text="Save", command=orderChallengeWind.destroy)
-    orderChallengeSave.pack(pady=20)
-    orderChallengeCancelFlag=tk.StringVar()
-    orderChallengeCancelFlag.set('0')
-    cancel_order_challenge=partial(exitAndFlag, orderChallengeWind, orderChallengeCancelFlag)
-    orderChallengeCancel=tk.Button(orderChallengeWind, text="Cancel", command=cancel_order_challenge)
-    orderChallengeCancel.pack()
-    orderChallengeWind.mainloop()
-    if orderChallengeCancelFlag.get()=="0":
-        allOrderChallenges.append(OrderChallenge(str(len(orderCounter)),orderChallengeType.get(),orderChallengeQuadrant.get()))
-
-def addKittingProduct(orderKittingParts, currentOrderID):
+def addKittingProduct(kittingParts, orderKittingParts, currentOrderID):
     '''Adds a product to a kitting order'''
     kitProdWind=tk.Toplevel()
     #type of product
@@ -124,7 +98,7 @@ def addKittingProduct(orderKittingParts, currentOrderID):
     cancelNewKitProdButton.pack(pady=20)
     kitProdWind.mainloop()
     if kitProdCancelFlag.get()=="0":
-        '''newKittingPart=KittingPart()
+        newKittingPart=KittingPart()
         newPart=Part()
         if prodType.get()=="sensor":
             newPart.type=newPart.SENSOR
@@ -145,10 +119,11 @@ def addKittingProduct(orderKittingParts, currentOrderID):
         else:
             newPart.color=newPart.PURPLE
         newKittingPart.part=newPart
-        newKittingPart.quadrant=int(prodQuad.get())'''
+        newKittingPart.quadrant=int(prodQuad.get())
+        kittingParts.append(newKittingPart)
         orderKittingParts.append(KittingProds(currentOrderID,prodType.get(),prodColor.get(), prodQuad.get()))
 
-def addAssembProduct(orderAssembParts, currentOrderID):
+def addAssembProduct(assemblyParts, orderAssembParts, currentOrderID):
     '''Adds a product to an assembly or combined order'''
     assembProdWind=tk.Toplevel()
     #product type
@@ -233,7 +208,7 @@ def addAssembProduct(orderAssembParts, currentOrderID):
     cancelNewAssembProdButton.pack(pady=20)
     assembProdWind.mainloop()
     if assembProdCancelFlag.get()=="0":
-        '''newAssembPart=KittingPart()
+        newAssembPart=KittingPart()
         newPart=Part()
         if prodType.get()=="sensor":
             newPart.type=newPart.SENSOR
@@ -262,8 +237,8 @@ def addAssembProduct(orderAssembParts, currentOrderID):
         newPoint=Point()
         newPoint.x=float(x_val.get())
         newPoint.y=float(y_val.get())
-        newPoint.z=float(z_val.get())'''
-
+        newPoint.z=float(z_val.get())
+        assemblyParts.append(newAssembPart)
         orderAssembParts.append(AssemblyProds(currentOrderID, prodType.get(), prodColor.get(), str("["+x_val.get()+", "+y_val.get()+", "+z_val.get()+"]"),
                                     str("["+r_val.get()+", "+p_val.get()+", "+y_rpy_val.get()+"]"), str("["+x_dir.get()+", "+y_dir.get()+", "+z_dir.get()+"]")))
 
@@ -340,6 +315,8 @@ def addNewOrder(allOrders, orderCounter, allOrderChallenges, orderKittingParts,o
     for id in usedIDs:
         tempIDs.append(id)
     orderID=generateOrderId(usedIDs)
+    kittingParts=[]
+    assemblyParts=[]
     newOrderWind=tk.Toplevel()
     newOrderWind.geometry("850x800")
     #orderCategory
@@ -451,7 +428,7 @@ def addNewOrder(allOrders, orderCounter, allOrderChallenges, orderKittingParts,o
     assemblyStationMenu=tk.OptionMenu(newOrderWind, assemblyStation, *assemblyStations)
     assemblyStationMenu.pack_forget()
     #add product button
-    type_of_prod_select=partial(typeOfProdSelect, orderType,orderKittingParts, orderAssembParts, orderID)
+    type_of_prod_select=partial(typeOfProdSelect, kittingParts, assemblyParts, orderType,orderKittingParts, orderAssembParts, orderID)
     addProdButton=tk.Button(newOrderWind, text="Add product", command=type_of_prod_select)
     addProdButton.pack()
     #save and cancel buttons
@@ -480,7 +457,7 @@ def addNewOrder(allOrders, orderCounter, allOrderChallenges, orderKittingParts,o
     if ordCancelFlag.get()=="1":
         orderCounter.remove(0)
     else:
-        '''newOrder=Order()
+        newOrder=Order()
         newOrder.id=orderID
         newOrder.type=orderTypes.index(orderType.get())
         if orderPriority.get()=="0":
@@ -495,22 +472,28 @@ def addNewOrder(allOrders, orderCounter, allOrderChallenges, orderKittingParts,o
                 newKittingTask.destination=newKittingTask.WAREHOUSE
             elif kittingDestination.get()=="kitting":
                 newKittingTask.destination=newKittingTask.KITTING
-            elif kittingDesination.get()=="assembly_front":
+            elif kittingDestination.get()=="assembly_front":
                 newKittingTask.destination=newKittingTask.ASSEMBLY_FRONT
             else:
                 newKittingTask.destination=newKittingTask.ASSENBLY_BACK
+            newKittingTask.parts=kittingParts
+            newOrder.kitting_task=newKittingTask
         elif orderType.get()=="assembly":
             agvNumList=[]
             agvNumList.append(int(taskAGV))
             newAssemblyTask=AssemblyTask()
             newAssemblyTask.agv_number=agvNumList
             newAssemblyTask.station=assemblyStations.index(assemblyStation.get())+1
+            newAssemblyTask.parts=assemblyParts
+            newOrder.assembly_task=newAssemblyTask
         else:
             agvNumList=[]
             agvNumList.append(int(taskAGV))
             newCombinedTask=CombinedTask()
             newCombinedTask.agv_number=agvNumList
-            newCombinedTask.station=assemblyStations.index(assemblyStation.get())+1'''
+            newCombinedTask.station=assemblyStations.index(assemblyStation.get())+1
+            newCombinedTask.parts=assemblyParts
+            newOrder.combined_task=newCombinedTask
         if len(tempIDs)>0:
             announcementID=annID.get()
         else:
