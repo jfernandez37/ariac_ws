@@ -34,6 +34,8 @@ def runSlotChecks(addBinWind, currentBin,slot1,slot2,slot3,slot4,slot5,slot6,slo
 def slotChecks(arr, addBinWind, slot1,slot2,slot3,slot4,slot5,slot6,slot7,slot8,slot9, presentChecks,saveNewBinButton):
     '''puts the correct checkboxes in the window. This guarantees that slots are not repeated for bins'''
     firstFlag=0
+    for i in presentChecks:
+        i.pack_forget()
     slot1.set("0")
     slot2.set("0")
     slot3.set("0")
@@ -116,6 +118,7 @@ def slotChecks(arr, addBinWind, slot1,slot2,slot3,slot4,slot5,slot6,slot7,slot8,
 def updateAvailableSlots(currentBin, bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, slot1,slot2,slot3,slot4,slot5,slot6,slot7,slot8,slot9,window, mainWind):
     '''Removes slots that have been selected by the user'''
     allSlots=[slot1.get(),slot2.get(),slot3.get(),slot4.get(),slot5.get(),slot6.get(),slot7.get(),slot8.get(),slot9.get()]
+    checkBoxes.clear()
     counter=1
     if currentBin.get()=="bin1":
         for i in allSlots:

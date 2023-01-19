@@ -34,6 +34,8 @@ def runSlotChecks(addBinWind, currentBin,slot1,slot2,slot3,slot4,slot5,slot6,slo
 def slotChecks(arr, addBinWind, slot1,slot2,slot3,slot4,slot5,slot6,slot7,slot8,slot9, presentChecks,saveNewBinButton):
     '''puts the correct checkboxes in the window. This guarantees that slots are not repeated for bins'''
     firstFlag=0
+    for i in presentChecks:
+        i.pack_forget()
     slot1.set("0")
     slot2.set("0")
     slot3.set("0")

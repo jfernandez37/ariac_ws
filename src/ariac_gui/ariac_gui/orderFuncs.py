@@ -122,7 +122,6 @@ def addKittingProduct(kittingParts, orderKittingParts, currentOrderID):
         newKittingPart.part=newPart
         newKittingPart.quadrant=int(prodQuad.get())
         kittingParts.append(newKittingPart)
-        orderKittingParts.append(KittingProds(currentOrderID,prodType.get(),prodColor.get(), prodQuad.get()))
 
 def addAssembProduct(assemblyParts, orderAssembParts, currentOrderID):
     '''Adds a product to an assembly or combined order'''
@@ -241,8 +240,6 @@ def addAssembProduct(assemblyParts, orderAssembParts, currentOrderID):
         newPoint.y=float(y_val.get())
         newPoint.z=float(z_val.get())
         assemblyParts.append(newAssembPart)
-        orderAssembParts.append(AssemblyProds(currentOrderID, prodType.get(), prodColor.get(), str("["+x_val.get()+", "+y_val.get()+", "+z_val.get()+"]"),
-                                    str("["+r_val.get()+", "+p_val.get()+", "+y_rpy_val.get()+"]"), str("["+x_dir.get()+", "+y_dir.get()+", "+z_dir.get()+"]")))
 
 def updateQuadMenu(orderNum, orderQuadrant, orderQuadMenu, orderPriorityCheckBox, orderQuadLabel, a,b,c):
     '''Updates the quadrant menu'''
