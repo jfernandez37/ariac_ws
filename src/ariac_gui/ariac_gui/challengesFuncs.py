@@ -14,7 +14,75 @@ destinations=["warehouse", "as1", "as2","as3","as4","kitting"]
 stations=["as1","as2","as3","as4"]
 sensBOCategories=["time-based","during kitting", "during assembly","after kitting", "after assembly"]
 challengeTypes=["time", "part_place", "condition"]
-def newRobotMalfunction(robotMalfunctions):
+conditionTypes=['','time','partPlace','submission']
+
+def showCorrectMenu(condition, conditionMenu, time, timeLabel, timeEntry, agv, agvLabel, agvMenu, partType, partTypeLabel, partTypeMenu, partColor, partColorLabel, partColorMenu, annID, annIDLabel, annIDMenu,tempIDs,a,b,c):
+    if condition.get()=="":
+        time.set('')
+        agv.set('')
+        partType.set('')
+        partColor.set('')
+        annID.set('')
+        timeLabel.pack_forget()
+        timeEntry.pack_forget()
+        agvLabel.pack_forget()
+        agvMenu.pack_forget()
+        partTypeLabel.pack_forget()
+        partTypeMenu.pack_forget()
+        partColorLabel.pack_forget()
+        partColorMenu.pack_forget()
+        annIDLabel.pack_forget()
+        annIDMenu.pack_forget()
+    elif condition.get()==conditionTypes[1]:
+        timeLabel.pack(after=conditionMenu)
+        timeEntry.pack(after=timeLabel)
+        time.set('0')
+        agv.set('')
+        partType.set('')
+        partColor.set('')
+        annID.set('')
+        agvLabel.pack_forget()
+        agvMenu.pack_forget()
+        partTypeLabel.pack_forget()
+        partTypeMenu.pack_forget()
+        partColorLabel.pack_forget()
+        partColorMenu.pack_forget()
+        annIDLabel.pack_forget()
+        annIDMenu.pack_forget()
+    elif condition.get()==conditionTypes[2]:
+        agvLabel.pack(after=conditionMenu)
+        agvMenu.pack(after=agvLabel)
+        agv.set(agvOptions[0])
+        partTypeLabel.pack(after=agvMenu)
+        partTypeMenu.pack(after=partTypeLabel)
+        partColorLabel.pack(after=partTypeMenu)
+        partColorMenu.pack(after=partColorLabel)
+        partType.set(allPartTypes[0])
+        partColor.set(allPartColors[0])
+        time.set('')
+        timeLabel.pack_forget()
+        timeEntry.pack_forget()
+        annID.set('')
+        annIDLabel.pack_forget()
+        annIDMenu.pack_forget()
+    else:
+        annIDLabel.pack(after=conditionMenu)
+        annIDMenu.pack(after=annIDLabel)
+        annID.set(tempIDs[0])
+        time.set('')
+        agv.set('')
+        partType.set('')
+        partColor.set('')
+        timeLabel.pack_forget()
+        timeEntry.pack_forget()
+        agvLabel.pack_forget()
+        agvMenu.pack_forget()
+        partTypeLabel.pack_forget()
+        partTypeMenu.pack_forget()
+        partColorLabel.pack_forget()
+        partColorMenu.pack_forget()
+
+def newRobotMalfunction(robotMalfunctions, usedIds):
     robotMalfunctionWind=tk.Toplevel()
     robotMalfunctionWind.geometry("850x600")
     #duration
@@ -33,27 +101,42 @@ def newRobotMalfunction(robotMalfunctions):
     floorRobotCB.pack()
     ceilRobotCB=tk.Checkbutton(robotMalfunctionWind, text="Ceiling robot", variable=ceilRobot, onvalue="1", offvalue="0", height=1, width=20)
     ceilRobotCB.pack()
-    #part type
+    condition=tk.StringVar()
+    condition.set(conditionTypes[0])
+    conditionLabel=tk.Label(robotMalfunctionWind, text="Select a condition for the order")
+    conditionLabel.pack()
+    conditionMenu=tk.OptionMenu(robotMalfunctionWind, condition, *conditionTypes)
+    conditionMenu.pack()
+    time=tk.StringVar()
+    time.set('')
+    timeLabel=tk.Label(robotMalfunctionWind, text="Enter the time")
+    timeLabel.pack_forget()
+    timeEntry=tk.Entry(robotMalfunctionWind, textvariable=time)
+    timeEntry.pack_forget()
+    agv=tk.StringVar()
+    agv.set("")
+    agvLabel=tk.Label(robotMalfunctionWind, text="Choose the agv")
+    agvLabel.pack_forget()
+    agvMenu=tk.OptionMenu(robotMalfunctionWind, agv, *agvOptions)
+    agvMenu.pack_forget()
     partType=tk.StringVar()
-    partType.set(allPartTypes[0])
+    partType.set("")
     partTypeLabel=tk.Label(robotMalfunctionWind, text="Select the type of part")
-    partTypeLabel.pack()
+    partTypeLabel.pack_forget()
     partTypeMenu=tk.OptionMenu(robotMalfunctionWind, partType, *allPartTypes)
-    partTypeMenu.pack()
-    #part color
+    partTypeMenu.pack_forget()
     partColor=tk.StringVar()
-    partColor.set(allPartColors[0])
+    partColor.set("")
     partColorLabel=tk.Label(robotMalfunctionWind, text="Select the color of the part")
-    partColorLabel.pack()
+    partColorLabel.pack_forget()
     partColorMenu=tk.OptionMenu(robotMalfunctionWind, partColor, *allPartColors)
-    partColorMenu.pack()
-    #agv
-    agvSelection=tk.StringVar()
-    agvSelection.set(agvOptions[0])
-    agvLabel=tk.Label(robotMalfunctionWind, text="Select an agv for the robot malfunciton")
-    agvLabel.pack()
-    agvMenu=tk.OptionMenu(robotMalfunctionWind, agvSelection, *agvOptions)
-    agvMenu.pack()
+    partColorMenu.pack_forget()
+    annID=tk.StringVar()
+    annID.set("")
+    annIDLabel=tk.Label(robotMalfunctionWind, text="Select the order ID")
+    annIDLabel.pack_forget()
+    annIDMenu=tk.OptionMenu(robotMalfunctionWind, annID, *usedIds)
+    annIDMenu.pack_forget()
     #save and cancel buttons
     robotMalfSave=tk.Button(robotMalfunctionWind, text="Save", command=robotMalfunctionWind.destroy)
     robotMalfSave.pack(pady=20)
@@ -64,6 +147,8 @@ def newRobotMalfunction(robotMalfunctions):
     robotMalfCancel.pack()
     validate_duration=partial(validateTime, duration)
     duration.trace('w', validate_duration)
+    updateConditionMenu=partial(showCorrectMenu,condition, conditionMenu, time, timeLabel, timeEntry, agv, agvLabel, agvMenu, partType, partTypeLabel, partTypeMenu, partColor, partColorLabel, partColorMenu, annID, annIDLabel, annIDMenu,tempIDs)
+    condition.trace('w', updateConditionMenu)
     robotMalfunctionWind.mainloop()
     if robotMalfCancelFlag.get()=="0":
         bothRobots=Robots()
@@ -79,15 +164,35 @@ def newRobotMalfunction(robotMalfunctions):
         newRobotMalf.robots_to_disable=bothRobots
         newRobotMalf.duration=float(duration.get())
         newRobotMalfCondition=Condition()
+        newRobotMalfCondition.type=condition.get()
+        if condition.get()==conditionTypes[1]:
+            newRobotMalfCondition.time_condition.seconds=float(time.get())
+        elif condition.get()==conditionTypes[2]:
+            newPart=Part()
+            if partType.get()=="sensor":
+                newPart.type=newPart.SENSOR
+            elif partType.get()=="pump":
+                newPart.type=newPart.PUMP
+            elif partType.get()=="battery":
+                newPart.type=newPart.BATTERY
+            else:
+                newPart.type=newPart.REGULATOR
+            if partColor.get()=="red":
+                newPart.color=newPart.RED
+            elif partColor.get()=="green":
+                newPart.color=newPart.GREEN
+            elif partColor.get()=="blue":
+                newPart.color=newPart.BLUE
+            elif partColor.get()=="orange":
+                newPart.color=newPart.ORANGE
+            else:
+                newPart.color=newPart.PURPLE
+            newRobotMalfCondition.part_place_condition.part=newPart
+            newRobotMalfCondition.part_place_condition.agv="agv"+str(agv.get())
+        elif condition.get()==conditionTypes[2]:
+            newRobotMalfCondition.submission_condition.order_id=annID.get()
         newRobotMalf.condition=newRobotMalfCondition
-        robotsString=""
-        if floorRobot.get()=="1" and ceilRobot.get()=="1":
-            robotsString="[\'floor_robot\', \'ceiling_robot\']"
-        elif floorRobot.get()=="1":
-            robotsString="[\'floor_robot\']"
-        elif ceilRobot.get()=="1":
-            robotsString="[\'ceiling_robot\']"
-        robotMalfunctions.append(robotMalfunctions(duration.get(), robotsString, partType.get(), partColor.get(), agvSelection.get()))
+        robotMalfunctions.append(newRobotMalf)
     
 def newFaultyPart(faultyParts, usedIds):
     faultyPartWind=tk.Toplevel()
@@ -178,19 +283,19 @@ def newDroppedPart(droppedParts):
     partColorMenu=tk.OptionMenu(dropPartWind, partColor, *allPartColors)
     partColorMenu.pack()
     #drop after
-    dropAfter=tk.StringVar()
-    dropAfter.set("0")
-    dropAfterLabel=tk.Label(dropPartWind, text="Set the amount of time to drop the part after")
-    dropAfterLabel.pack()
-    dropAfterEntry=tk.Entry(dropPartWind, textvariable=dropAfter)
-    dropAfterEntry.pack()
+    dropAfterNum=tk.StringVar()
+    dropAfterNum.set("0")
+    dropAfterNumLabel=tk.Label(dropPartWind, text="Set the number to drop the part after")
+    dropAfterNumLabel.pack()
+    dropAfterNumEntry=tk.Entry(dropPartWind, textvariable=dropAfterNum)
+    dropAfterNumEntry.pack()
     #delay
-    delayVal=tk.StringVar()
-    delayVal.set('0')
-    delayLabel=tk.Label(dropPartWind,text="Set the delay for the dropped part")
-    delayLabel.pack()
-    delayEntry=tk.Entry(dropPartWind, textvariable=delayVal)
-    delayEntry.pack()
+    dropAfterTime=tk.StringVar()
+    dropAfterTime.set('0')
+    dropAfterTimeLabel=tk.Label(dropPartWind,text="Set the time to drop the part after")
+    dropAfterTimeLabel.pack()
+    dropAfterTimeEntry=tk.Entry(dropPartWind, textvariable=dropAfterTime)
+    dropAfterTimeEntry.pack()
     #save and cancel buttons
     dropPartSave=tk.Button(dropPartWind, text="Save", command=dropPartWind.destroy)
     dropPartSave.pack(pady=20)
@@ -200,10 +305,10 @@ def newDroppedPart(droppedParts):
     dropPartCancel=tk.Button(dropPartWind, text="Cancel", command=cancel_drop_part_challenge)
     dropPartCancel.pack()
     #validation
-    validate_drop_after=partial(require_num,dropAfter)
-    dropAfter.trace('w',validate_drop_after)
-    validate_delay=partial(require_num, delayVal)
-    delayVal.trace('w', validate_delay)
+    validate_drop_after=partial(require_num,dropAfterNum)
+    dropAfterNum.trace('w',validate_drop_after)
+    validate_delay=partial(require_num, dropAfterTime)
+    dropAfterTime.trace('w', validate_delay)
     dropPartWind.mainloop()
     if dropPartCancelFlag.get()=="0":
         droppedPartMSG=DroppedPartChallenge()
@@ -228,9 +333,10 @@ def newDroppedPart(droppedParts):
         else:
             partToDrop.color=partToDrop.PURPLE
         droppedPartMSG.part_to_drop=partToDrop
-        droppedPartMSG.drop_after_num=int(dropAfter.get())
-        droppedPartMSG.drop_after_time=float(delayVal.get())
-        droppedParts.append(DroppedPart(robotType.get(), partType.get(), partColor.get(), dropAfter.get(), delayVal.get()))
+        droppedPartMSG.drop_after_num=int(dropAfterNum.get())
+        droppedPartMSG.drop_after_time=float(dropAfterTime.get())
+        droppedParts.append(droppedPartMSG)
+        #droppedParts.append(DroppedPart(robotType.get(), partType.get(), partColor.get(), dropAfter.get(), delayVal.get()))
 
 def showAGVMenu(agvShow,agvShowCB, agvMenu, agvLabel, agv, a,b,c):
     if agvShow.get()=="1":
