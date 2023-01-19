@@ -19,7 +19,7 @@ from ariac_gui.orderFuncs import *
 from ariac_gui.challengesFuncs import *
 from ariac_msgs.msg import *
 
-def randOrSeq():  
+def randOrSeq(changeOrder, convOrder):  
     """Cycles through the options for the conveyor belt order"""
     if changeOrder.config('text')[-1] == 'random':
         changeOrder.config(text='sequential')
@@ -58,6 +58,7 @@ def runGUI():
     bin7Slots=[] # holds the available slots for bin7
     bin8Slots=[] # holds the available slots for bin8
     convParts=[] # holds conveyor belt parts
+    convOrders=["random", "sequential"]
     for i in range(9):
         bin1Slots.append(str(i+1))
         bin2Slots.append(str(i+1))
@@ -82,6 +83,9 @@ def runGUI():
     faultyParts=[] # holds all faulty parts
     droppedParts=[] # holds all dropped parts
     sensorBlackouts=[] # holds all sensor blackouts
+    # END OF DEFINITIONS
+    # ----------------------------------------------------------------------------------------------
+    # START OF GUI
     getFileName = tk.Tk() #window to create and get the file
     fileNameVar = tk.StringVar()
     faultySkipFlag = tk.StringVar()
@@ -362,9 +366,13 @@ def runGUI():
     spawnRateEntry=tk.Entry(convWind, textvariable=spawnRate)
     spawnRateEntry.pack()
     convOrder=tk.StringVar()
-    convOrder.set("random")
-    changeOrder = tk.Button(text="random", command=randOrSeq)
-    changeOrder.pack(pady=10)
+    convOrder.set(convOrders[0])
+    convOrderLabel=tk.Label(convWind, text="Order of the conveyor belt")
+    convOrderLabel.pack()
+    convOrderMenu=tk.OptionMenu(convWind, convOrder, *convOrders)
+    convOrderMenu.pack()
+    '''changeOrder = tk.Button(text="random", command=partial(randOrSeq, changeOrder, convOrder))
+    changeOrder.pack(pady=10)'''
     add_conv_part=partial(addPartConv, convParts)
     addPartConvButton=tk.Button(convWind, text="Add part", command=add_conv_part)
     addPartConvButton.pack(pady=20)
