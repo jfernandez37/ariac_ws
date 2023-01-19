@@ -208,7 +208,7 @@ def addAssembProduct(assemblyParts, orderAssembParts, currentOrderID):
     cancelNewAssembProdButton.pack(pady=20)
     assembProdWind.mainloop()
     if assembProdCancelFlag.get()=="0":
-        newAssembPart=KittingPart()
+        newAssembPart=AssemblyPart()
         newPart=Part()
         if prodType.get()=="sensor":
             newPart.type=newPart.SENSOR
@@ -308,7 +308,7 @@ def showAnnIDMenu(annIDShow, annIDShowCB, annIDLabel, annIDMenu, annID, tempIDs,
         annIDMenu.pack_forget()
         annID.set("")
 
-def addNewOrder(allOrders, orderCounter, allOrderChallenges, orderKittingParts,orderAssembParts, usedIDs):
+def addNewOrder(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKittingParts,orderAssembParts, usedIDs):
     '''Window for adding a new order'''
     orderCounter.append(0)
     tempIDs=[]
@@ -480,20 +480,20 @@ def addNewOrder(allOrders, orderCounter, allOrderChallenges, orderKittingParts,o
             newOrder.kitting_task=newKittingTask
         elif orderType.get()=="assembly":
             agvNumList=[]
-            agvNumList.append(int(taskAGV))
+            agvNumList.append(int(taskAGV.get()))
             newAssemblyTask=AssemblyTask()
-            newAssemblyTask.agv_number=agvNumList
+            newAssemblyTask.agv_numbers=agvNumList
             newAssemblyTask.station=assemblyStations.index(assemblyStation.get())+1
             newAssemblyTask.parts=assemblyParts
             newOrder.assembly_task=newAssemblyTask
         else:
             agvNumList=[]
-            agvNumList.append(int(taskAGV))
+            agvNumList.append(int(taskAGV.get()))
             newCombinedTask=CombinedTask()
-            newCombinedTask.agv_number=agvNumList
             newCombinedTask.station=assemblyStations.index(assemblyStation.get())+1
             newCombinedTask.parts=assemblyParts
             newOrder.combined_task=newCombinedTask
+        orderMSGS.append(newOrder)
         if len(tempIDs)>0:
             announcementID=annID.get()
         else:

@@ -70,6 +70,7 @@ def runGUI():
         bin8Slots.append(str(i+1))
     allOrders=[] # holds all orders
     orderCounter=[] # for counting the number of orders
+    orderMSGS=[] # holds all order ros2 messages
     allOrderChallenges=[] # for holding challenges in the orders section
     kittingTrayIds=[] # holds the selected kitting tray ids
     kittingTraySlots=[] # holds the selected kitting tray slots
@@ -391,7 +392,7 @@ def runGUI():
     ordersWind=tk.Tk()
     ordersWind.title("Orders")
     ordersWind.geometry("850x600")
-    new_order_func=partial(addNewOrder, allOrders, orderCounter, allOrderChallenges,orderKittingParts,orderAssembParts, usedIDs)
+    new_order_func=partial(addNewOrder, orderMSGS, allOrders, orderCounter, allOrderChallenges,orderKittingParts,orderAssembParts, usedIDs)
     newOrderButton=tk.Button(ordersWind, text="New Order", command=new_order_func)
     newOrderButton.pack()
     saveOrdersButton=tk.Button(ordersWind, text="Save and Continue", command=ordersWind.destroy)
@@ -404,6 +405,7 @@ def runGUI():
     allOrders.reverse()
     orderKittingParts.reverse()
     orderAssembParts.reverse()
+    orderMSGS.reverse()
     # END OF ORDERS
     # ----------------------------------------------------------------------------------------------
     #START OF CHALLENGES
