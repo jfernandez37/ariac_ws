@@ -567,7 +567,29 @@ def runGUI():
                     o.write("        - type: \'"+getPartName(kittingPart.part.type)+"\'\n")
                     o.write("          color: \'"+getPartColor(kittingPart.part.color)+"\'\n")
                     o.write("          quadrant: "+str(kittingPart.quadrant)+"\n")
-            
+            elif order.type==1:
+                o.write("    assembly_task:\n")
+                o.write("      agv: ["+", ".join(str(agvNum) for agvNum in order.assembly_task.agv_numbers)+"]\n")
+                o.write("      station: \'as"+str(order.assembly_task.station)+"\'\n")
+                o.write("      products:\n")
+                for assemblyPart in order.assembly_task.parts:
+                    o.write("        - type: \'"+getPartName(assemblyPart.part.type)+"\'\n")
+                    o.write("          color: \'"+getPartColor(assemblyPart.part.color)+"\'\n")
+                    '''o.write("          assembled_pose: # relative to briefcase frame\n")
+                    o.write("            xyz: "+prod.xyz+"\n")
+                    o.write("            rpy: "+prod.rpy+"\n")'''
+                    o.write("          assembly_direction: ["+str(assemblyPart.install_direction.x)+", "+str(assemblyPart.install_direction.y)+", "+str(assemblyPart.install_direction.z)+"]\n")
+            else:
+                o.write("    combined_task:\n")
+                o.write("      station: \'as"+str(order.combined_task.station)+"\'\n")
+                o.write('      products:\n')
+                for combinedPart in order.combined_task.parts:
+                    o.write("        - type: \'"+getPartName(combinedPart.part.type)+"\'\n")
+                    o.write("          color: \'"+getPartColor(combinedPart.part.color)+"\'\n")
+                    '''o.write("          assembled_pose: # relative to briefcase frame\n")
+                    o.write("            xyz: "+prod.xyz+"\n")
+                    o.write("            rpy: "+prod.rpy+"\n")'''
+                    o.write("          assembly_direction: ["+str(combinedPart.install_direction.x)+", "+str(combinedPart.install_direction.y)+", "+str(combinedPart.install_direction.z)+"]\n")
         o.write("\n# GLOBAL CHALLENGES\n")
         o.write("challenges:\n")
         for malf in robotMalfunctions:

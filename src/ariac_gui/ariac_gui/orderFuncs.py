@@ -32,7 +32,7 @@ def typeOfProdSelect(kittingParts, assemblyParts, orderType,orderKittingParts, o
 
 def updateTaskOptions(orderType, kitTrayId, taskAgvMenu,kitTrayIdLabel, kitTrayIdMenu, kittingDestination, kittingDestinationLabel, kittingDestinationMenu, assemblyStation, assemblyStationLabel, assemblyStationMenu,a,b,c):
     '''Shows the correct options for different types of orders'''
-    if orderType.get()=="kitting" and len(taskPresentFlag)==1:
+    if orderType.get()=="kitting" and len(taskPresentFlag)>0:
         taskPresentFlag.clear()
         kitTrayId.set(kittingTrayIDs[0])
         kittingDestination.set(kittingDestinations[0])
@@ -310,6 +310,7 @@ def showAnnIDMenu(annIDShow, annIDShowCB, annIDLabel, annIDMenu, annID, tempIDs,
 
 def addNewOrder(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKittingParts,orderAssembParts, usedIDs):
     '''Window for adding a new order'''
+    taskPresentFlag.clear()
     orderCounter.append(0)
     tempIDs=[]
     for id in usedIDs:
@@ -333,12 +334,6 @@ def addNewOrder(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKit
     orderTypeSelectionLabel.pack()
     orderTypeSelectionMenu=tk.OptionMenu(newOrderWind, orderType, *orderTypes)
     orderTypeSelectionMenu.pack()
-    #order condition
-    orderNum=tk.StringVar()
-    orderNum.set(" ")
-    orderNums=[" "]
-    orderQuadrant=tk.StringVar()
-    orderQuadrant.set(" ")
     #Priority
     orderPriority=tk.StringVar()
     orderPriority.set('0')
