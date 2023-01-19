@@ -76,6 +76,7 @@ def runGUI():
     sensorBlackouts=[] # holds all sensor blackouts
     robotsToDisable=[] # holds robots to be disabled
     faultyPartQuadrants=[] # holds quadrants for dropped parts
+    sensorsToDisable=[] # holds sensors for sensor blackout
     # END OF DEFINITIONS
     # ----------------------------------------------------------------------------------------------
     # START OF GUI
@@ -573,7 +574,7 @@ def runGUI():
             elif malf.condition.type==1:
                 o.write("      part_type: \'"+getPartName(malf.condition.part_place_condition.part.type)+"\'\n")
                 o.write("      part_color: \'"+getPartColor(malf.condition.part_place_condition.part.color)+"\'\n")
-                o.write("      agv: "+malf.condition.part_place.condition.agv)
+                o.write("      agv: "+malf.condition.part_place_condition.agv)
             elif malf.condition.type==2:
                 o.write("      order_id: \'"+malf.condition.submission_condition.order_id+"\'\n")
         #faulty parts
@@ -594,23 +595,32 @@ def runGUI():
         for part in droppedParts:
             o.write("  - dropped_part:\n")
             o.write("      robot: \'"+part.robot+"\'\n")
-            o.write("      type: \'"+part.type+"\'\n")
-            o.write("      color: \'"+part.color+"\'\n")
-            o.write("      drop_after: "+part.dropAfter+" # first part the robot successfully picks\n")
-            o.write("      delay: "+part.delay+" # secons\n")
+            o.write("      type: \'"+getPartName(part.part_to_drop.type)+"\'\n")
+            o.write("      color: \'"+getPartColor(part.part_to_drop.color)+"\'\n")
+            o.write("      drop_after_num: "+str(part.drop_after_num)+" # first part the robot successfully picks\n")
+            o.write("      drop_after_time: "+str(part.drop_after_time)+" # secons\n")
         #sensor blackouts
         for blackout in sensorBlackouts:
-            o.write("  - sensor_blackout_category: "+blackout.category+"\n")
-            if blackout.time!="":
-                o.write("    time: "+blackout.time+"\n")
-            o.write("    duration: "+blackout.duration+"\n")
-            if blackout.type!="" and blackout.color!="":
-                o.write("    part_type: \'"+blackout.type+"\'\n")
-                o.write("    part_color: \'"+blackout.color+"\'\n")
-            if blackout.agv!="":
-                o.write("    agv: "+blackout.agv+"\n")
-            if blackout.station!="":
-                o.write("    station: "+blackout.station+"\n")
-            if blackout.destination!="":
-                o.write("    destination: "+blackout.destination+"\n")
-            o.write("    sensors_to_disable: ["+blackout.sensors+"]\n")
+            o.write("  - sensor_blackout:\n")
+            o.write("    duration: "+str(blackout.duration)+"\n")
+            if blackout.sensors_to_disable.break_beam:
+                sensorsToDisable.append("break_beam")
+            if blackout.sensors_to_disable.proximity:
+                sensorsToDisable.append("proximity")
+            if blackout.sensors_to_disable.laser_profiler:
+                sensorsToDisable.append("laser_profiler")
+            if blackout.sensors_to_disable.lidar:
+                sensorsToDisable.append("lidar")
+            if blackout.sensors_to_disable.camera:
+                sensorsToDisable.append("camera")
+            if blackout.sensors_to_disable.logical_camera:
+                sensorsToDisable.append("logical_camera")
+            o.write("    sensors_to_disable: ["+", ".join(sensorsToDisable)+"]\n")
+            if blackout.condition.type==0:
+                o.write("      time: "+str(blackout.condition.time_condition.seconds)+"\n")
+            elif blackout.condition.type==1:
+                o.write("      part_type: \'"+getPartName(blackout.condition.part_place_condition.part.type)+"\'\n")
+                o.write("      part_color: \'"+getPartColor(blackout.condition.part_place_condition.part.color)+"\'\n")
+                o.write("      agv: "+blackout.condition.part_place_condition.agv)
+            elif blackout.condition.type==2:
+                o.write("      order_id: \'"+blackout.condition.submission_condition.order_id+"\'\n")

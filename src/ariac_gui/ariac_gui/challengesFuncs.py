@@ -13,7 +13,6 @@ robotTypes=["ceiling_robot","floor_robot"]
 destinations=["warehouse", "as1", "as2","as3","as4","kitting"]
 stations=["as1","as2","as3","as4"]
 sensBOCategories=["time-based","during kitting", "during assembly","after kitting", "after assembly"]
-challengeTypes=["time", "part_place", "condition"]
 conditionTypes=['','time','partPlace','submission']
 
 def showCorrectMenu(condition, conditionMenu, time, timeLabel, timeEntry, agv, agvLabel, agvMenu, partType, partTypeLabel, partTypeMenu, partColor, partColorLabel, partColorMenu, annID, annIDLabel, annIDMenu,tempIDs,a,b,c):
@@ -510,32 +509,33 @@ def newSensorBlackout(sensorBlackouts, usedIds):
             sensorsToDisable.logical_camera=False
         newSensorBO.sensors_to_disable=sensorsToDisable
         newSensorBOCond=Condition()
-        newSensorBOCond.type=conditionTypes.index(condition.get())-1
-        if condition.get()==conditionTypes[1]:
-            newSensorBOCond.time_condition.seconds=float(time.get())
-        elif condition.get()==conditionTypes[2]:
-            newPart=Part()
-            if partType.get()=="sensor":
-                newPart.type=newPart.SENSOR
-            elif partType.get()=="pump":
-                newPart.type=newPart.PUMP
-            elif partType.get()=="battery":
-                newPart.type=newPart.BATTERY
-            else:
-                newPart.type=newPart.REGULATOR
-            if partColor.get()=="red":
-                newPart.color=newPart.RED
-            elif partColor.get()=="green":
-                newPart.color=newPart.GREEN
-            elif partColor.get()=="blue":
-                newPart.color=newPart.BLUE
-            elif partColor.get()=="orange":
-                newPart.color=newPart.ORANGE
-            else:
-                newPart.color=newPart.PURPLE
-            newSensorBOCond.part_place_condition.part=newPart
-            newSensorBOCond.part_place_condition.agv="agv"+str(agv.get())
-        elif condition.get()==conditionTypes[2]:
-            newSensorBOCond.submission_condition.order_id=annID.get()
+        if condition.get()!="":
+            newSensorBOCond.type=conditionTypes.index(condition.get())-1
+            if condition.get()==conditionTypes[1]:
+                newSensorBOCond.time_condition.seconds=float(time.get())
+            elif condition.get()==conditionTypes[2]:
+                newPart=Part()
+                if partType.get()=="sensor":
+                    newPart.type=newPart.SENSOR
+                elif partType.get()=="pump":
+                    newPart.type=newPart.PUMP
+                elif partType.get()=="battery":
+                    newPart.type=newPart.BATTERY
+                else:
+                    newPart.type=newPart.REGULATOR
+                if partColor.get()=="red":
+                    newPart.color=newPart.RED
+                elif partColor.get()=="green":
+                    newPart.color=newPart.GREEN
+                elif partColor.get()=="blue":
+                    newPart.color=newPart.BLUE
+                elif partColor.get()=="orange":
+                    newPart.color=newPart.ORANGE
+                else:
+                    newPart.color=newPart.PURPLE
+                newSensorBOCond.part_place_condition.part=newPart
+                newSensorBOCond.part_place_condition.agv=int(agv.get())
+            elif condition.get()==conditionTypes[2]:
+                newSensorBOCond.submission_condition.order_id=annID.get()
         newSensorBO.condition=newSensorBOCond
         sensorBlackouts.append(newSensorBO)
