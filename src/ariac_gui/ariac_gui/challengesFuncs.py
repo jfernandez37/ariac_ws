@@ -13,6 +13,7 @@ robotTypes=["ceiling_robot","floor_robot"]
 destinations=["warehouse", "as1", "as2","as3","as4","kitting"]
 stations=["as1","as2","as3","as4"]
 sensBOCategories=["time-based","during kitting", "during assembly","after kitting", "after assembly"]
+challengeTypes=["time", "part_place", "condition"]
 def newRobotMalfunction(robotMalfunctions):
     robotMalfunctionWind=tk.Toplevel()
     robotMalfunctionWind.geometry("850x600")
@@ -330,8 +331,12 @@ def newSensorBlackout(sensorBlackouts):
     sensor6CB=tk.Checkbutton(sensBOWind, text="logical camera", variable=sensor6, onvalue="1", offvalue="0", height=1, width=20)
     sensor6CB.pack()
     #optional items
-    optionalLabel=tk.Label(sensBOWind, text="The following are optional. To add them, click the associated checkbox")
+    optionalLabel=tk.Label(sensBOWind, text="Please choose the type of challenge")
     optionalLabel.pack()
+    challengeType=tk.StringVar()
+    challengeType.set(challengeTypes[0])
+    challengeTypeMenu=tk.OptionMenu(sensBOWind, challengeType, *challengeTypes)
+    challengeTypeMenu.pack()
     timeShow=tk.StringVar()
     timeShow.set('0')
     timeShowCB=tk.Checkbutton(sensBOWind, text="Time", variable=timeShow, onvalue="1", offvalue='0', height=1, width=20)
@@ -415,6 +420,34 @@ def newSensorBlackout(sensorBlackouts):
     if sensBOCancelFlag.get()=="0": # name of sensor
         newSensorBO=SensorBlackoutChallenge()
         newSensorBO.duration=float(duration.get())
+        sensorsToDisable=Sensors()
+        if sensor1.get()=="1":
+            sensorsToDisable.break_beam=True
+        else:
+            sensorsToDisable.break_beam=False
+        if sensor2.get()=="1":
+            sensorsToDisable.proximity=True
+        else:
+            sensorsToDisable.proximity=False
+        if sensor3.get()=="1":
+            sensorsToDisable.laser_profiler=True
+        else:
+            sensorsToDisable.laser_profiler=False
+        if sensor4.get()=="1":
+            sensorsToDisable.lidar=True
+        else:
+            sensorsToDisable.lidar=False
+        if sensor5.get()=="1":
+            sensorsToDisable.camera=True
+        else:
+            sensorsToDisable.camera=False
+        if sensor6.get()=="1":
+            sensorsToDisable.logical_camera=True
+        else:
+            sensorsToDisable.logical_camera=False
+        newSensorBO.sensors_to_disable=sensorsToDisable
+        newSensorBOCond=Condition()
+        newSensorBO.condition=newSensorBOCond
         if sensor1.get()=="1":
             selectedSensors.append("break_beam")
         if sensor2.get()=="1":

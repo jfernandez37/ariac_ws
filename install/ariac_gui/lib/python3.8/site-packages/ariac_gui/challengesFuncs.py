@@ -13,6 +13,7 @@ robotTypes=["ceiling_robot","floor_robot"]
 destinations=["warehouse", "as1", "as2","as3","as4","kitting"]
 stations=["as1","as2","as3","as4"]
 sensBOCategories=["time-based","during kitting", "during assembly","after kitting", "after assembly"]
+challengeTypes=["time", "part_place", "condition"]
 def newRobotMalfunction(robotMalfunctions):
     robotMalfunctionWind=tk.Toplevel()
     robotMalfunctionWind.geometry("850x600")
@@ -79,7 +80,6 @@ def newRobotMalfunction(robotMalfunctions):
         newRobotMalf.duration=float(duration.get())
         newRobotMalfCondition=Condition()
         newRobotMalf.condition=newRobotMalfCondition
-        #newRobotMalf.condition=
         robotsString=""
         if floorRobot.get()=="1" and ceilRobot.get()=="1":
             robotsString="[\'floor_robot\', \'ceiling_robot\']"
@@ -305,20 +305,6 @@ def newSensorBlackout(sensorBlackouts):
     durationLabel.pack()
     durationEntry=tk.Entry(sensBOWind, textvariable=duration)
     durationEntry.pack()
-    #part type
-    partType=tk.StringVar()
-    partType.set(allPartTypes[0])
-    partTypeLabel=tk.Label(sensBOWind, text="Select the type of part")
-    partTypeLabel.pack()
-    partTypeMenu=tk.OptionMenu(sensBOWind, partType, *allPartTypes)
-    partTypeMenu.pack()
-    #part color
-    partColor=tk.StringVar()
-    partColor.set(allPartColors[0])
-    partColorLabel=tk.Label(sensBOWind, text="Select the color of the part")
-    partColorLabel.pack()
-    partColorMenu=tk.OptionMenu(sensBOWind, partColor, *allPartColors)
-    partColorMenu.pack()
     #sensors to disable
     sensor1=tk.StringVar()
     sensor2=tk.StringVar()
@@ -345,8 +331,12 @@ def newSensorBlackout(sensorBlackouts):
     sensor6CB=tk.Checkbutton(sensBOWind, text="logical camera", variable=sensor6, onvalue="1", offvalue="0", height=1, width=20)
     sensor6CB.pack()
     #optional items
-    optionalLabel=tk.Label(sensBOWind, text="The following are optional. To add them, click the associated checkbox")
+    optionalLabel=tk.Label(sensBOWind, text="Please choose the type of challenge")
     optionalLabel.pack()
+    challengeType=tk.StringVar()
+    challengeType.set(challengeTypes[0])
+    challengeTypeMenu=tk.OptionMenu(sensBOWind, challengeType, *challengeTypes)
+    challengeTypeMenu.pack()
     timeShow=tk.StringVar()
     timeShow.set('0')
     timeShowCB=tk.Checkbutton(sensBOWind, text="Time", variable=timeShow, onvalue="1", offvalue='0', height=1, width=20)
@@ -428,6 +418,36 @@ def newSensorBlackout(sensorBlackouts):
     duration.trace('w', validate_duration)
     sensBOWind.mainloop()
     if sensBOCancelFlag.get()=="0": # name of sensor
+        newSensorBO=SensorBlackoutChallenge()
+        newSensorBO.duration=float(duration.get())
+        sensorsToDisable=Sensors()
+        if sensor1.get()=="1":
+            sensorsToDisable.break_beam=True
+        else:
+            sensorsToDisable.break_beam=False
+        if sensor2.get()=="1":
+            sensorsToDisable.proximity=True
+        else:
+            sensorsToDisable.proximity=False
+        if sensor3.get()=="1":
+            sensorsToDisable.laser_profiler=True
+        else:
+            sensorsToDisable.laser_profiler=False
+        if sensor4.get()=="1":
+            sensorsToDisable.lidar=True
+        else:
+            sensorsToDisable.lidar=False
+        if sensor5.get()=="1":
+            sensorsToDisable.camera=True
+        else:
+            sensorsToDisable.camera=False
+        if sensor6.get()=="1":
+            sensorsToDisable.logical_camera=True
+        else:
+            sensorsToDisable.logical_camera=False
+        newSensorBO.sensors_to_disable=sensorsToDisable
+        newSensorBOCond=Condition()
+        newSensorBO.condition=newSensorBOCond
         if sensor1.get()=="1":
             selectedSensors.append("break_beam")
         if sensor2.get()=="1":
