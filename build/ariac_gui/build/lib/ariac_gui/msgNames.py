@@ -23,3 +23,25 @@ def getPartColor(val):
     else:
         partColor="purple"
     return partColor
+
+def getOrderType(val):
+    '''returns the name of the order type from the given id. ids are from ariac ros2 msgs'''
+    if val==0:
+        orderType="kitting"
+    elif val==1:
+        orderType="assembly"
+    else:
+        orderType="combined"
+    return orderType
+
+def getKittingDestName(val):
+    '''returns the name of the kitting destination from the given id. ids are from ariac ros2 msgs'''
+    if val==0:
+        destination="kitting"
+    elif val==1:
+        destination="assembly_front"
+    elif val==2:
+        destination="assembly_back"
+    else:
+        destination="warehouse"
+    return destination

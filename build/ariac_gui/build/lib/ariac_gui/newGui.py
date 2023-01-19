@@ -17,17 +17,8 @@ from ariac_gui.addNewBin import *
 from ariac_gui.addConvPart import addPartConv
 from ariac_gui.orderFuncs import *
 from ariac_gui.challengesFuncs import *
+from ariac_gui.msgNames import *
 from ariac_msgs.msg import *
-
-def randOrSeq(changeOrder, convOrder):  
-    """Cycles through the options for the conveyor belt order"""
-    if changeOrder.config('text')[-1] == 'random':
-        changeOrder.config(text='sequential')
-        convOrder.set("sequential")
-    elif changeOrder.config('text')[-1] == 'sequential':
-        changeOrder.config(text='random')
-        convOrder.set("random")
-
 
 def runGUI():
     CHECKBOXHEIGHT=1
@@ -522,7 +513,7 @@ def runGUI():
                 o.write("\n        # time_before_next_part: 2 # seconds\n")
         o.write("\n# ORDER SETUP\n")
         o.write("orders:\n")
-        for order in allOrders:
+        '''for order in allOrders:
             o.write("  - order_category: "+order.category)
             o.write("\n    id: \'"+order.id+"\'\n")
             o.write("    type: \'"+order.type+"\'\n")
@@ -561,7 +552,21 @@ def runGUI():
                         o.write("          assembled_pose: # relative to briefcase frame\n")
                         o.write("            xyz: "+prod.xyz+"\n")
                         o.write("            rpy: "+prod.rpy+"\n")
-                        o.write("          assembly_direction: "+prod.direction+"\n")
+                        o.write("          assembly_direction: "+prod.direction+"\n")'''
+        for order in orderMSGS:
+            o.write("    id: \'"+order.id+"\'\n")
+            o.write("    type: \'"+getOrderType(order.type)+"\'\n")
+            o.write("    priority: " + str(order.priority).lower()+"\n")
+            if order.type==0:
+                o.write("    kitting_task:\n")
+                o.write("      agv: "+str(order.kitting_task.agv_number)+"\n")
+                o.write("      tray_id: "+str(order.kitting_task.tray_id)+"\n")
+                o.write("      destination: \'"+getKittingDestName(order.kitting_task.destination)+"\'\n")
+                o.write("      products:\n")
+                for kittingPart in order.kitting_task.parts:
+                    o.write("        - type: \'"+getPartName(kittingPart.part.type)+"\'\n")
+                    o.write("          color: \'"+getPartColor(kittingPart.part.color)+"\'\n")
+                    o.write("          quadrant: "+str(kittingPart.quadrant)+"\n")
         o.write("\n# GLOBAL CHALLENGES\n")
         o.write("challenges:\n")
         for malf in robotMalfunctions:

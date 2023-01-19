@@ -17,6 +17,7 @@ ariac_gui/challengesFuncs.py
 ariac_gui/checkCancel.py
 ariac_gui/fileFunc.py
 ariac_gui/gui_node.py
+ariac_gui/msgNames.py
 ariac_gui/newClasses.py
 ariac_gui/newGui.py
 ariac_gui/orderFuncs.py

@@ -3,6 +3,7 @@ from functools import partial
 from ariac_gui.checkCancel import *
 from ariac_gui.validationFunctions import *
 from ariac_gui.updateAGVFuncs import *
+from ariac_gui.newClasses import *
 from ariac_msgs.msg import *
 
 agvList=["agv1", "agv2", "agv3", "agv4"]
@@ -63,7 +64,7 @@ def addPart(agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Quadra
     agvSelection.trace('w', agv_update_menu)
     newPartWind.mainloop()
     if newPartCancelFlag.get()=="0":
-        newPart=Part()
+        '''newPart=Part()
         if partType.get()=="sensor":
             newPart.type=newPart.SENSOR
         elif partType.get()=="pump":
@@ -81,22 +82,19 @@ def addPart(agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Quadra
         elif partColor.get()=="orange":
             newPart.color=newPart.ORANGE
         else:
-            newPart.color=newPart.PURPLE
-        print(newPart.type)
-        '''add_quotes(partType)
+            newPart.color=newPart.PURPLE'''
+        add_quotes(partType)
         add_quotes(partColor)
         if 'pi' in partRotation.get():
             add_quotes(partRotation)
         if agvSelection.get()=='agv1':
-            agv1Parts.append(Parts(partType.get(), partColor.get(), partQuadrant.get(), partRotation.get()))
+            agv1Parts.append(PartsClass(partType.get(), partColor.get(), partQuadrant.get(), partRotation.get()))
         elif agvSelection.get()=='agv2':
-            agv2Parts.append(Parts(partType.get(), partColor.get(), partQuadrant.get(), partRotation.get()))
+            agv2Parts.append(PartsClass(partType.get(), partColor.get(), partQuadrant.get(), partRotation.get()))
         elif agvSelection.get()=='agv3':
-            agv3Parts.append(Parts(partType.get(), partColor.get(), partQuadrant.get(), partRotation.get()))
+            agv3Parts.append(PartsClass(partType.get(), partColor.get(), partQuadrant.get(), partRotation.get()))
         else:
-            agv4Parts.append(Parts(partType.get(), partColor.get(), partQuadrant.get(), partRotation.get()))
-        newThing=Parts()'''
-        
+            agv4Parts.append(PartsClass(partType.get(), partColor.get(), partQuadrant.get(), partRotation.get()))      
 
 
 def writePartsToFile(name, id, partsList, saveFileName):

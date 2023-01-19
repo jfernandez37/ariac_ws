@@ -11,6 +11,7 @@
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/validationFunctions.py
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/challengesFuncs.py
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/checkCancel.py
+/home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/msgNames.py
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/orderFuncs.py
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/updateRanges.py
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/fileFunc.py
@@ -28,6 +29,7 @@
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/__pycache__/validationFunctions.cpython-38.pyc
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/__pycache__/challengesFuncs.cpython-38.pyc
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/__pycache__/checkCancel.cpython-38.pyc
+/home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/__pycache__/msgNames.cpython-38.pyc
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/__pycache__/orderFuncs.cpython-38.pyc
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/__pycache__/updateRanges.cpython-38.pyc
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/__pycache__/fileFunc.cpython-38.pyc
