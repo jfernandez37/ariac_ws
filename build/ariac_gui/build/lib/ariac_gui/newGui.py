@@ -552,6 +552,6 @@ def runGUI():
             elif blackout.condition.type==1:
                 o.write("      part_type: \'"+getPartName(blackout.condition.part_place_condition.part.type)+"\'\n")
                 o.write("      part_color: \'"+getPartColor(blackout.condition.part_place_condition.part.color)+"\'\n")
-                o.write("      agv: "+blackout.condition.part_place_condition.agv)
+                o.write("      agv: "+str(blackout.condition.part_place_condition.agv))
             elif blackout.condition.type==2:
                 o.write("      order_id: \'"+blackout.condition.submission_condition.order_id+"\'\n")

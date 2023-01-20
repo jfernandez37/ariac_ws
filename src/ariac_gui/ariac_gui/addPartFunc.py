@@ -189,7 +189,7 @@ def addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts
     #Label for parts currently selected for bins
     currentBins="Current Bins:\n"
     for bin in bins:
-        currentBins+=bin.binName+" "+bin.type+" "+bin.color+"\n"
+        currentBins+=bin.binName+" "+bin.color+" "+bin.type+"\n"
     currentBinLabel=tk.Label(partsWind, text=currentBins)
     currentBinLabel.grid(column=farRightColumn, row=0,padx=40)
     #Label for parts currently selected for the conveyor belt
