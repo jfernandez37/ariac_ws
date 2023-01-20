@@ -108,14 +108,14 @@ def addPart(agv1TrayIdVal, agv2TrayIdVal, agv3TrayIdVal, agv4TrayIdVal, agv1Part
     agv4TrayId=tk.StringVar()
     agv4TrayId.set(agv4TrayIdVal)
     convActive=tk.StringVar()
-    convActive.set(convActiveVal)
     spawnRate=tk.StringVar()
     spawnRate.set(spawnRateVal)
     convOrder=tk.StringVar()
+    convOrder.set(convOrderVal)
     if len(convParts)==1:#changes to active if a part is placed
         convActive.set('1')
     else:
-        convActive.set(convOrderVal)
+        convActive.set(convActiveVal)
     #agv settings
     partsWind.attributes('-fullscreen', True)
     agv1TrayLabel=tk.Label(partsWind, text="Select the tray Id for agv1")
