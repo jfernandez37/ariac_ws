@@ -189,7 +189,7 @@ def newRobotMalfunction(robotMalfunctions, usedIds):
             else:
                 newPart.color=newPart.PURPLE
             newRobotMalfCondition.part_place_condition.part=newPart
-            newRobotMalfCondition.part_place_condition.agv="agv"+str(agv.get())
+            newRobotMalfCondition.part_place_condition.agv=int(agv.get())
         elif condition.get()==conditionTypes[2]:
             newRobotMalfCondition.submission_condition.order_id=annID.get()
         newRobotMalf.condition=newRobotMalfCondition
