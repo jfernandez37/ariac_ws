@@ -257,21 +257,6 @@ def runGUI():
     cancel_tray_command=partial(cancel_wind, trayWind, cancelFlag)
     cancelTrayButton=tk.Button(trayWind, text="Cancel and Exit", command=cancel_tray_command)
     cancelTrayButton.grid(column=middleColumn,pady=20)
-    #variables for parts
-    agv1TrayId=tk.StringVar()
-    agv1TrayId.set(agvTrayIds[0])
-    agv2TrayId=tk.StringVar()
-    agv2TrayId.set(agvTrayIds[0])
-    agv3TrayId=tk.StringVar()
-    agv3TrayId.set(agvTrayIds[0])
-    agv4TrayId=tk.StringVar()
-    agv4TrayId.set(agvTrayIds[0])
-    convActive=tk.StringVar()
-    convActive.set('0')
-    spawnRate=tk.StringVar()
-    spawnRate.set('0')
-    convOrder=tk.StringVar()
-    convOrder.set(convOrders[0])
     saveFlag=tk.StringVar()
     saveFlag.set('0')
     trayWind.mainloop()
@@ -296,11 +281,18 @@ def runGUI():
     # ----------------------------------------------------------------------------------------------
     # START OF PARTS
     #parts variables
+    agv1TrayIdVal=agvTrayIds[0]
+    agv2TrayIdVal=agvTrayIds[0]
+    agv3TrayIdVal=agvTrayIds[0]
+    agv4TrayIdVal=agvTrayIds[0]
+    convActiveVal='0'
+    spawnRateVal='0'
+    convOrderVal='random'
     while(saveFlag.get()=="0"): #Runs until the user saves and exits or quits
-        addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts, agv3Parts, agv4Parts, 
+        agv1TrayIdVal, agv2TrayIdVal, agv3TrayIdVal, agv4TrayIdVal, convActiveVal, spawnRateVal, convOrderVal=addPart(agv1TrayIdVal, agv2TrayIdVal, agv3TrayIdVal, agv4TrayIdVal, agv1Parts, agv2Parts, agv3Parts, agv4Parts, 
         agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,
         bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, 
-        spawnRate,convActive,convParts, cancelFlag, pathIncrement,fileName,createdDir, convOrder,saveFlag)
+        spawnRateVal,convActiveVal,convParts, cancelFlag, pathIncrement,fileName,createdDir, convOrderVal,saveFlag)
     # END OF CONVEYOR BELT
     # ----------------------------------------------------------------------------------------------
     # START OF ORDERS
@@ -401,13 +393,13 @@ def runGUI():
         o.write("\nparts:\n")
         o.write("  agvs:\n")
     if len(agv1Parts)>0:
-        writePartsToFile("agv1", agv1TrayId.get(), agv1Parts, saveFileName)
+        writePartsToFile("agv1", agv1TrayIdVal, agv1Parts, saveFileName)
     if len(agv2Parts)>0:
-        writePartsToFile("agv2", agv2TrayId.get(), agv2Parts, saveFileName)
+        writePartsToFile("agv2", agv2TrayIdVal, agv2Parts, saveFileName)
     if len(agv3Parts)>0:
-        writePartsToFile("agv3", agv3TrayId.get(), agv3Parts, saveFileName)
+        writePartsToFile("agv3", agv3TrayIdVal, agv3Parts, saveFileName)
     if len(agv4Parts)>0:
-        writePartsToFile("agv4", agv4TrayId.get(), agv4Parts, saveFileName)
+        writePartsToFile("agv4", agv4TrayIdVal, agv4Parts, saveFileName)
     with open(saveFileName, "a") as o:
         o.write("\n  bins: # bin params - 8 total bins each bin has nine total slots (1-9)\n")
     if binPresentFlags[0]==1:
@@ -428,12 +420,12 @@ def runGUI():
         writeBinsToFile("bin8", bins, saveFileName)
     with open(saveFileName, "a") as o:
         o.write("\n  conveyor_belt: #population params for conveyor belt\n")
-        if convActive.get()=="1":
+        if convActiveVal=="1":
             o.write("    active: true\n")
         else:
             o.write("    active: false\n")
-        o.write("    spawn_rate: "+spawnRate.get()+" # seconds between spawn\n")
-        o.write("    order: "+convOrder.get()+" # random or sequential\n")
+        o.write("    spawn_rate: "+spawnRateVal+" # seconds between spawn\n")
+        o.write("    order: "+convOrderVal+" # random or sequential\n")
         if len(convParts)>0:
             o.write("    parts_to_spawn:\n")
             for part in convParts:

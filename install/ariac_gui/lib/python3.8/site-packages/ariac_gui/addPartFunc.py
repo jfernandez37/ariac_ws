@@ -93,10 +93,29 @@ def savePart(wind, saveFlag): # allows the while loop in main to stop so the par
     saveFlag.set('1')
     wind.destroy()
 
-def addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, spawnRate,convActive,convParts, cancelFlag, pathIncrement,fileName,createdDir, convOrder,saveFlag):
+def addPart(agv1TrayIdVal, agv2TrayIdVal, agv3TrayIdVal, agv4TrayIdVal, agv1Parts, agv2Parts, agv3Parts, agv4Parts, 
+        agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,
+        bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, 
+        spawnRateVal,convActiveVal,convParts, cancelFlag, pathIncrement,fileName,createdDir, convOrderVal,saveFlag):
     partsWind=tk.Tk()
-    if len(convParts)>0:
+    #variables for parts
+    agv1TrayId=tk.StringVar()
+    agv1TrayId.set(agv1TrayIdVal)
+    agv2TrayId=tk.StringVar()
+    agv2TrayId.set(agv2TrayIdVal)
+    agv3TrayId=tk.StringVar()
+    agv3TrayId.set(agv3TrayIdVal)
+    agv4TrayId=tk.StringVar()
+    agv4TrayId.set(agv4TrayIdVal)
+    convActive=tk.StringVar()
+    convActive.set(convActiveVal)
+    spawnRate=tk.StringVar()
+    spawnRate.set(spawnRateVal)
+    convOrder=tk.StringVar()
+    if len(convParts)==1:#changes to active if a part is placed
         convActive.set('1')
+    else:
+        convActive.set(convOrderVal)
     #agv settings
     partsWind.attributes('-fullscreen', True)
     agv1TrayLabel=tk.Label(partsWind, text="Select the tray Id for agv1")
@@ -192,7 +211,7 @@ def addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts
         currentBins+=bin.binName+" "+bin.color+" "+bin.type+"\n"
     currentBinLabel=tk.Label(partsWind, text=currentBins)
     currentBinLabel.grid(column=farRightColumn, row=0,padx=40)
-    #Label for parts currently selected for the conveyor belt
+    #Label for parts currently selected for the conveyor belt 
     currentConv="Current Conveyor Belt Parts:\n"
     for convPart in convParts:
         currentConv+=convPart.color+" "+convPart.type+"\n"
@@ -200,6 +219,7 @@ def addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts
     currentConLabel.grid(column=farRightColumn, row=2, padx=40)
     partsWind.mainloop()
     check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
+    return agv1TrayId.get(), agv2TrayId.get(), agv3TrayId.get(), agv4TrayId.get(), convActive.get(), spawnRate.get(), convOrder.get()
 
 def writePartsToFile(name, id, partsList, saveFileName): # writes the part information to the file for a given agv
     '''Writes agv info and parts on the agv to the file'''
