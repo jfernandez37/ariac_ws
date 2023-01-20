@@ -95,6 +95,8 @@ def savePart(wind, saveFlag): # allows the while loop in main to stop so the par
 
 def addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, spawnRate,convActive,convParts, cancelFlag, pathIncrement,fileName,createdDir, convOrder,saveFlag):
     partsWind=tk.Tk()
+    if len(convParts)>0:
+        convActive.set('1')
     #agv settings
     partsWind.attributes('-fullscreen', True)
     agv1TrayLabel=tk.Label(partsWind, text="Select the tray Id for agv1")
@@ -115,7 +117,7 @@ def addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts
     agv4TrayIdSelect.grid(column=leftColumn)
     #agv parts
     add_new_part=partial(addAGVPart,agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Quadrants,agv3Quadrants,agv4Quadrants, partsWind)
-    addPartsButton=tk.Button(partsWind, text="Add part", command=add_new_part)
+    addPartsButton=tk.Button(partsWind, text="Add AGV Part", command=add_new_part)
     addPartsButton.grid(column=leftColumn)
     leftSpaceLabel=tk.Label(partsWind, text="")
     leftSpaceLabel.grid(column=leftColumn, pady=30)
@@ -127,7 +129,7 @@ def addPart(agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1Parts, agv2Parts
     agv4TrayId.trace('w', update_agv_ids)
     #bin part button
     add_bin_func=partial(addBin,bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots,partsWind)
-    addBinsButton=tk.Button(partsWind, text="Add Bin", command=add_bin_func)
+    addBinsButton=tk.Button(partsWind, text="Add Bin Part", command=add_bin_func)
     addBinsButton.grid(column=leftColumn, pady=20)
     #middle buffer to split the window
     middleSpaceLabel=tk.Label(partsWind, text="", justify=tk.CENTER)
