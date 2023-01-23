@@ -4,6 +4,7 @@
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/validationFunc.py
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/addConvPart.py
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/updateAGVFuncs.py
+/home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/kittingTrayFunctions.py
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/buttonFuncs.py
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/newGui.py
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/newClasses.py
@@ -22,6 +23,7 @@
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/__pycache__/validationFunc.cpython-38.pyc
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/__pycache__/addConvPart.cpython-38.pyc
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/__pycache__/updateAGVFuncs.cpython-38.pyc
+/home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/__pycache__/kittingTrayFunctions.cpython-38.pyc
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/__pycache__/buttonFuncs.cpython-38.pyc
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/__pycache__/newGui.cpython-38.pyc
 /home/ubuntu/ariac_ws/install/ariac_gui/lib/python3.8/site-packages/ariac_gui/__pycache__/newClasses.cpython-38.pyc

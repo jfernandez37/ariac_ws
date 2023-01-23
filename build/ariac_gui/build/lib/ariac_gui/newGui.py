@@ -12,9 +12,6 @@ from ariac_gui.buttonFuncs import *
 from ariac_gui.timeFunctions import *
 from ariac_gui.addPartFunc import *
 from ariac_gui.newClasses import *
-from ariac_gui.updateAGVFuncs import updateTrayIds
-from ariac_gui.addNewBin import *
-from ariac_gui.addConvPart import addPartConv
 from ariac_gui.orderFuncs import *
 from ariac_gui.challengesFuncs import *
 from ariac_gui.msgNames import *
