@@ -1,4 +1,5 @@
-trays=["Tray 1","Tray 2","Tray 3","Tray 4","Tray 5","Tray 6"]
+trays=["Tray 0","Tray 1","Tray 2","Tray 3","Tray 4","Tray 5","Tray 6","Tray 7","Tray 8","Tray 9"]
+slots=["Slot 1", "Slot 2", "Slot 3", "Slot 4", "Slot 5", "Slot 6"]
 def addNewKTray(topLabel, tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, counter, availableTrays, availableSlots):
     if len(counter)==0:
         tray1.set(availableTrays[0])
@@ -120,4 +121,33 @@ def updateKTrayMenus(tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4
             menu5.add_command(label=id, command=lambda id=id: tray5.set(id))
         if (tray not in currentTrayVals) or tray==tray6.get():
             menu6.add_command(label=id, command=lambda id=id: tray6.set(id))
+
+def updateKSlotMenus(slot1, slot1Menu, slot2, slot2Menu, slot3, slot3Menu, slot4, slot4Menu, slot5, slot5Menu, slot6, slot6Menu,a,b,c):
+    '''Updates the available slots for kitting slots'''
+    menu1=slot1Menu['menu']
+    menu1.delete(0, 'end')
+    menu2=slot2Menu['menu']
+    menu2.delete(0, 'end')
+    menu3=slot3Menu['menu']
+    menu3.delete(0, 'end')
+    menu4=slot4Menu['menu']
+    menu4.delete(0, 'end')
+    menu5=slot5Menu['menu']
+    menu5.delete(0, 'end')
+    menu6=slot6Menu['menu']
+    menu6.delete(0, 'end')
+    currentSlotVals=[slot1.get(), slot2.get(), slot3.get(), slot4.get(), slot5.get(), slot6.get()]
+    for slot in slots:
+        if (slot not in currentSlotVals) or slot==slot1.get():
+            menu1.add_command(label=id, command=lambda id=id: slot1.set(id))
+        if (slot not in currentSlotVals) or slot==slot2.get():
+            menu2.add_command(label=id, command=lambda id=id: slot2.set(id))
+        if (slot not in currentSlotVals) or slot==slot3.get():
+            menu3.add_command(label=id, command=lambda id=id: slot3.set(id))
+        if (slot not in currentSlotVals) or slot==slot4.get():
+            menu4.add_command(label=id, command=lambda id=id: slot4.set(id))
+        if (slot not in currentSlotVals) or slot==slot5.get():
+            menu5.add_command(label=id, command=lambda id=id: slot5.set(id))
+        if (slot not in currentSlotVals) or slot==slot6.get():
+            menu6.add_command(label=id, command=lambda id=id: slot6.set(id))
     
