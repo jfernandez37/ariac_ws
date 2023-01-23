@@ -1,3 +1,4 @@
+trays=["Tray 1","Tray 2","Tray 3","Tray 4","Tray 5","Tray 6"]
 def addNewKTray(topLabel, tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, counter, availableTrays, availableSlots):
     if len(counter)==0:
         tray1.set(availableTrays[0])
@@ -90,4 +91,33 @@ def removeKTray(topLabel, tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2
         slot6Menu.pack_forget()
     availableSlots.sort()
     counter.remove(0)
+
+def updateKTrayMenus(tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4, tray4Menu, tray5, tray5Menu, tray6, tray6Menu,a,b,c):
+    '''Updates the available trays for kitting trays'''
+    menu1=tray1Menu['menu']
+    menu1.delete(0, 'end')
+    menu2=tray2Menu['menu']
+    menu2.delete(0, 'end')
+    menu3=tray3Menu['menu']
+    menu3.delete(0, 'end')
+    menu4=tray4Menu['menu']
+    menu4.delete(0, 'end')
+    menu5=tray5Menu['menu']
+    menu5.delete(0, 'end')
+    menu6=tray6Menu['menu']
+    menu6.delete(0, 'end')
+    currentTrayVals=[tray1.get(), tray2.get(), tray3.get(), tray4.get(), tray5.get(), tray6.get()]
+    for tray in trays:
+        if (tray not in currentTrayVals) or tray==tray1.get():
+            menu1.add_command(label=id, command=lambda id=id: tray1.set(id))
+        if (tray not in currentTrayVals) or tray==tray2.get():
+            menu2.add_command(label=id, command=lambda id=id: tray2.set(id))
+        if (tray not in currentTrayVals) or tray==tray3.get():
+            menu3.add_command(label=id, command=lambda id=id: tray3.set(id))
+        if (tray not in currentTrayVals) or tray==tray4.get():
+            menu4.add_command(label=id, command=lambda id=id: tray4.set(id))
+        if (tray not in currentTrayVals) or tray==tray5.get():
+            menu5.add_command(label=id, command=lambda id=id: tray5.set(id))
+        if (tray not in currentTrayVals) or tray==tray6.get():
+            menu6.add_command(label=id, command=lambda id=id: tray6.set(id))
     
