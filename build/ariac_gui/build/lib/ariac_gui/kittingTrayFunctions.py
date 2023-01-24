@@ -1,48 +1,51 @@
 trays=["Tray 0","Tray 1","Tray 2","Tray 3","Tray 4","Tray 5","Tray 6","Tray 7","Tray 8","Tray 9"]
 slots=["Slot 1", "Slot 2", "Slot 3", "Slot 4", "Slot 5", "Slot 6"]
+LEFTCOLUMN=1
+MIDDLECOLUMN=2
+RIGHTCOLUMN=3
 def addNewKTray(topLabel, tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, counter, availableTrays, availableSlots):
     if len(counter)==0:
         tray1.set(availableTrays[0])
         slot1.set(availableSlots[0])
         availableTrays.remove(tray1.get())
         availableSlots.remove(slot1.get())
-        tray1Menu.pack(after=topLabel)
-        slot1Menu.pack(after=tray1Menu)
+        tray1Menu.grid(column=LEFTCOLUMN, row=2)
+        slot1Menu.grid(column=RIGHTCOLUMN, row=2)
     elif len(counter)==1:
         tray2.set(availableTrays[0])
         slot2.set(availableSlots[0])
         availableTrays.remove(tray2.get())
         availableSlots.remove(slot2.get())
-        tray2Menu.pack(after=slot1Menu)
-        slot2Menu.pack(after=tray2Menu)
+        tray2Menu.grid(column=LEFTCOLUMN, row=3)
+        slot2Menu.grid(column=RIGHTCOLUMN, row=3)
     elif len(counter)==2:
         tray3.set(availableTrays[0])
         slot3.set(availableSlots[0])
         availableTrays.remove(tray3.get())
         availableSlots.remove(slot3.get())
-        tray3Menu.pack(after=slot2Menu)
-        slot3Menu.pack(after=tray3Menu)
+        tray3Menu.grid(column=LEFTCOLUMN, row=4)
+        slot3Menu.grid(column=RIGHTCOLUMN, row=4)
     elif len(counter)==3:
         tray4.set(availableTrays[0])
         slot4.set(availableSlots[0])
         availableTrays.remove(tray4.get())
         availableSlots.remove(slot4.get())
-        tray4Menu.pack(after=slot3Menu)
-        slot4Menu.pack(after=tray4Menu)
+        tray4Menu.grid(column=LEFTCOLUMN, row=5)
+        slot4Menu.grid(column=RIGHTCOLUMN, row=5)
     elif len(counter)==4:
         tray5.set(availableTrays[0])
         slot5.set(availableSlots[0])
         availableTrays.remove(tray5.get())
         availableSlots.remove(slot5.get())
-        tray5Menu.pack(after=slot4Menu)
-        slot5Menu.pack(after=tray5Menu)
+        tray5Menu.grid(column=LEFTCOLUMN, row=6)
+        slot5Menu.grid(column=RIGHTCOLUMN, row=6)
     elif len(counter)==5:
         tray6.set(availableTrays[0])
         slot6.set(availableSlots[0])
         availableTrays.remove(tray6.get())
         availableSlots.remove(slot6.get())
-        tray6Menu.pack(after=slot5Menu)
-        slot6Menu.pack(after=tray6Menu)
+        tray6Menu.grid(column=LEFTCOLUMN, row=7)
+        slot6Menu.grid(column=RIGHTCOLUMN, row=7)
     counter.append(0)
 
 def removeKTray(tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, counter, availableTrays, availableSlots):
@@ -51,43 +54,43 @@ def removeKTray(tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot
         availableSlots.append(slot1.get())
         tray1.set("")
         slot1.set("")
-        tray1Menu.pack_forget()
-        slot1Menu.pack_forget()
+        tray1Menu.grid_forget()
+        slot1Menu.grid_forget()
     elif len(counter)==2:
         availableTrays.append(tray2.get())
         availableSlots.append(slot2.get())
         tray2.set("")
         slot2.set("")
-        tray2Menu.pack_forget()
-        slot2Menu.pack_forget()
+        tray2Menu.grid_forget()
+        slot2Menu.grid_forget()
     elif len(counter)==3:
         availableTrays.append(tray3.get())
         availableSlots.append(slot3.get())
         tray3.set("")
         slot3.set("")
-        tray3Menu.pack_forget()
-        slot3Menu.pack_forget()
+        tray3Menu.grid_forget()
+        slot3Menu.grid_forget()
     elif len(counter)==4:
         availableTrays.append(tray4.get())
         availableSlots.append(slot4.get())
         tray4.set("")
         slot4.set("")
-        tray4Menu.pack_forget()
-        slot4Menu.pack_forget()
+        tray4Menu.grid_forget()
+        slot4Menu.grid_forget()
     elif len(counter)==5:
         availableTrays.append(tray5.get())
         availableSlots.append(slot5.get())
         tray5.set("")
         slot5.set("")
-        tray5Menu.pack_forget()
-        slot5Menu.pack_forget()
+        tray5Menu.grid_forget()
+        slot5Menu.grid_forget()
     elif len(counter)==6:
         availableTrays.append(tray6.get())
         availableSlots.append(slot6.get())
         tray6.set("")
         slot6.set("")
-        tray6Menu.pack_forget()
-        slot6Menu.pack_forget()
+        tray6Menu.grid_forget()
+        slot6Menu.grid_forget()
     availableSlots.sort()
     counter.remove(0)
 
@@ -123,20 +126,23 @@ def updateKTrayMenus(tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4
     if len(counter)==5 and counter[0]==0:
         print("remove add Button")
         counter[0]=1
-        addButton.pack_forget()
+        addButton.grid_forget()
     else:
         print("show add button")
-        addButton.pack_forget()
-        addButton.pack(before=saveButton)
+        addButton.grid_forget()
+        addButton.grid(column=MIDDLECOLUMN, row=8)
         if len(counter)==5:
             counter[0]=0
-    if len(counter)==0:
+    if len(counter)==1 and counter[0]==0:
         print("remove remove button")
-        removeButton.pack_forget()
+        counter[0]=1
+        removeButton.grid_forget()
     else:
         print("Show remove button")
-        removeButton.pack_forget()
-        removeButton.pack(before=saveButton)
+        removeButton.grid_forget()
+        removeButton.grid(column=MIDDLECOLUMN, row=9)
+        if len(counter)==1:
+            counter[0]=0
     
 
 def updateKSlotMenus(slot1, slot1Menu, slot2, slot2Menu, slot3, slot3Menu, slot4, slot4Menu, slot5, slot5Menu, slot6, slot6Menu,a,b,c):
