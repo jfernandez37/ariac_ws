@@ -182,7 +182,7 @@ def runGUI():
     # ----------------------------------------------------------------------------------------------
     # START OF GETTING KITTING TRAYS
     kittingTrayWind=tk.Tk()
-    kittingTrayWind.attributes('-fullscreen', True)
+    #kittingTrayWind.attributes('-fullscreen', True)
     kittingTrayLabel=tk.Label(kittingTrayWind, text="Kitting Trays")
     kittingTrayLabel.pack()
     tray1=tk.StringVar()
@@ -226,7 +226,7 @@ def runGUI():
     cancelTrayButton.pack(pady=20)
     #cancelTrayButton.grid(column=middleColumn,pady=20)
     #trace functions
-    update_all_tray_menus=partial(updateKTrayMenus,tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4, tray4Menu, tray5, tray5Menu, tray6, tray6Menu,kittingTrayCounter,removeTrayButton, addTrayButton)
+    update_all_tray_menus=partial(updateKTrayMenus,tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4, tray4Menu, tray5, tray5Menu, tray6, tray6Menu,kittingTrayCounter,removeTrayButton, addTrayButton, saveTrayButton)
     update_all_slot_menus=partial(updateKSlotMenus, slot1, slot1Menu, slot2, slot2Menu, slot3, slot3Menu, slot4, slot4Menu, slot5, slot5Menu, slot6, slot6Menu)
     tray1.trace('w', update_all_tray_menus)
     tray2.trace('w', update_all_tray_menus)

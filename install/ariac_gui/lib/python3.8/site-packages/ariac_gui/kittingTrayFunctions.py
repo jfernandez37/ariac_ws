@@ -41,7 +41,7 @@ def addNewKTray(topLabel, tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2
         slot6.set(availableSlots[0])
         availableTrays.remove(tray6.get())
         availableSlots.remove(slot6.get())
-        tray6Menu.pack(after=slot6Menu)
+        tray6Menu.pack(after=slot5Menu)
         slot6Menu.pack(after=tray6Menu)
     counter.append(0)
 
@@ -91,7 +91,7 @@ def removeKTray(tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot
     availableSlots.sort()
     counter.remove(0)
 
-def updateKTrayMenus(tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4, tray4Menu, tray5, tray5Menu, tray6, tray6Menu,counter,removeButton, addButton, a,b,c):
+def updateKTrayMenus(tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4, tray4Menu, tray5, tray5Menu, tray6, tray6Menu,counter,removeButton, addButton, saveButton, a,b,c):
     '''Updates the available trays for kitting trays'''
     menu1=tray1Menu['menu']
     menu1.delete(0, 'end')
@@ -119,20 +119,28 @@ def updateKTrayMenus(tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4
             menu5.add_command(label=tray, command=lambda tray=tray: tray5.set(tray))
         if (tray not in currentTrayVals) or tray==tray6.get():
             menu6.add_command(label=tray, command=lambda tray=tray: tray6.set(tray))
+    print("counter "+str(len(counter)))
+    if len(counter)==5 and counter[0]==0:
+        print("remove add Button")
+        counter[0]=1
+        addButton.pack_forget()
+    else:
+        print("show add button")
+        addButton.pack_forget()
+        addButton.pack(before=saveButton)
+        if len(counter)==5:
+            counter[0]=0
     if len(counter)==0:
+        print("remove remove button")
         removeButton.pack_forget()
     else:
+        print("Show remove button")
         removeButton.pack_forget()
-        removeButton.pack(after=addButton)
-    if len(counter)>5:
-        addButton.pack_forget()
-    else:
-        addButton.pack_forget()
-        addButton.pack(before=removeButton)
+        removeButton.pack(before=saveButton)
+    
 
 def updateKSlotMenus(slot1, slot1Menu, slot2, slot2Menu, slot3, slot3Menu, slot4, slot4Menu, slot5, slot5Menu, slot6, slot6Menu,a,b,c):
     '''Updates the available slots for kitting slots'''
-    print("test")
     menu1=slot1Menu['menu']
     menu1.delete(0, 'end')
     menu2=slot2Menu['menu']
