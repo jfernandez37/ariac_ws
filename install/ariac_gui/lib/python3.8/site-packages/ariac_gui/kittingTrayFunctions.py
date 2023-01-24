@@ -122,23 +122,18 @@ def updateKTrayMenus(tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4
             menu5.add_command(label=tray, command=lambda tray=tray: tray5.set(tray))
         if (tray not in currentTrayVals) or tray==tray6.get():
             menu6.add_command(label=tray, command=lambda tray=tray: tray6.set(tray))
-    print("counter "+str(len(counter)))
     if len(counter)==5 and counter[0]==0:
-        print("remove add Button")
         counter[0]=1
         addButton.grid_forget()
     else:
-        print("show add button")
         addButton.grid_forget()
         addButton.grid(column=MIDDLECOLUMN, row=8)
         if len(counter)==5:
             counter[0]=0
     if len(counter)==1 and counter[0]==0:
-        print("remove remove button")
         counter[0]=1
         removeButton.grid_forget()
     else:
-        print("Show remove button")
         removeButton.grid_forget()
         removeButton.grid(column=MIDDLECOLUMN, row=9)
         if len(counter)==1:
