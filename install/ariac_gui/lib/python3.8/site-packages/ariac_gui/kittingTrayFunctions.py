@@ -122,7 +122,7 @@ def updateKTrayMenus(tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4
             menu5.add_command(label=tray, command=lambda tray=tray: tray5.set(tray))
         if (tray not in currentTrayVals) or tray==tray6.get():
             menu6.add_command(label=tray, command=lambda tray=tray: tray6.set(tray))
-    if len(counter)==5 and counter[0]==0:
+    if tray6.get()!="":
         counter[0]=1
         addButton.grid_forget()
     else:
