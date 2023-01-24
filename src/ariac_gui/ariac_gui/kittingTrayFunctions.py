@@ -44,46 +44,44 @@ def addNewKTray(topLabel, tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2
         tray6Menu.pack(after=slot6Menu)
         slot6Menu.pack(after=tray6Menu)
     counter.append(0)
-    availableTrays.remove(availableTrays[0])
-    availableSlots.remove(availableSlots[0])
 
-def removeKTray(topLabel, tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, counter, availableTrays, availableSlots):
-    if len(counter)==0:
+def removeKTray(tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, counter, availableTrays, availableSlots):
+    if len(counter)==1:
         availableTrays.append(tray1.get())
         availableSlots.append(slot1.get())
         tray1.set("")
         slot1.set("")
         tray1Menu.pack_forget()
         slot1Menu.pack_forget()
-    elif len(counter)==1:
+    elif len(counter)==2:
         availableTrays.append(tray2.get())
         availableSlots.append(slot2.get())
         tray2.set("")
         slot2.set("")
         tray2Menu.pack_forget()
         slot2Menu.pack_forget()
-    elif len(counter)==2:
+    elif len(counter)==3:
         availableTrays.append(tray3.get())
         availableSlots.append(slot3.get())
         tray3.set("")
         slot3.set("")
         tray3Menu.pack_forget()
         slot3Menu.pack_forget()
-    elif len(counter)==3:
+    elif len(counter)==4:
         availableTrays.append(tray4.get())
         availableSlots.append(slot4.get())
         tray4.set("")
         slot4.set("")
         tray4Menu.pack_forget()
         slot4Menu.pack_forget()
-    elif len(counter)==4:
+    elif len(counter)==5:
         availableTrays.append(tray5.get())
         availableSlots.append(slot5.get())
         tray5.set("")
         slot5.set("")
         tray5Menu.pack_forget()
         slot5Menu.pack_forget()
-    elif len(counter)==5:
+    elif len(counter)==6:
         availableTrays.append(tray6.get())
         availableSlots.append(slot6.get())
         tray6.set("")
@@ -93,7 +91,7 @@ def removeKTray(topLabel, tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2
     availableSlots.sort()
     counter.remove(0)
 
-def updateKTrayMenus(tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4, tray4Menu, tray5, tray5Menu, tray6, tray6Menu,a,b,c):
+def updateKTrayMenus(tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4, tray4Menu, tray5, tray5Menu, tray6, tray6Menu,counter,removeButton, addButton, a,b,c):
     '''Updates the available trays for kitting trays'''
     menu1=tray1Menu['menu']
     menu1.delete(0, 'end')
@@ -110,17 +108,27 @@ def updateKTrayMenus(tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4
     currentTrayVals=[tray1.get(), tray2.get(), tray3.get(), tray4.get(), tray5.get(), tray6.get()]
     for tray in trays:
         if (tray not in currentTrayVals) or tray==tray1.get():
-            menu1.add_command(label=id, command=lambda id=id: tray1.set(id))
+            menu1.add_command(label=tray, command=lambda tray=tray: tray1.set(tray))
         if (tray not in currentTrayVals) or tray==tray2.get():
-            menu2.add_command(label=id, command=lambda id=id: tray2.set(id))
+            menu2.add_command(label=tray, command=lambda tray=tray: tray2.set(tray))
         if (tray not in currentTrayVals) or tray==tray3.get():
-            menu3.add_command(label=id, command=lambda id=id: tray3.set(id))
+            menu3.add_command(label=tray, command=lambda tray=tray: tray3.set(tray))
         if (tray not in currentTrayVals) or tray==tray4.get():
-            menu4.add_command(label=id, command=lambda id=id: tray4.set(id))
+            menu4.add_command(label=tray, command=lambda tray=tray: tray4.set(tray))
         if (tray not in currentTrayVals) or tray==tray5.get():
-            menu5.add_command(label=id, command=lambda id=id: tray5.set(id))
+            menu5.add_command(label=tray, command=lambda tray=tray: tray5.set(tray))
         if (tray not in currentTrayVals) or tray==tray6.get():
-            menu6.add_command(label=id, command=lambda id=id: tray6.set(id))
+            menu6.add_command(label=tray, command=lambda tray=tray: tray6.set(tray))
+    if len(counter)==0:
+        removeButton.pack_forget()
+    else:
+        removeButton.pack_forget()
+        removeButton.pack(after=addButton)
+    if len(counter)>5:
+        addButton.pack_forget()
+    else:
+        addButton.pack_forget()
+        addButton.pack(before=removeButton)
 
 def updateKSlotMenus(slot1, slot1Menu, slot2, slot2Menu, slot3, slot3Menu, slot4, slot4Menu, slot5, slot5Menu, slot6, slot6Menu,a,b,c):
     '''Updates the available slots for kitting slots'''
@@ -139,15 +147,15 @@ def updateKSlotMenus(slot1, slot1Menu, slot2, slot2Menu, slot3, slot3Menu, slot4
     currentSlotVals=[slot1.get(), slot2.get(), slot3.get(), slot4.get(), slot5.get(), slot6.get()]
     for slot in slots:
         if (slot not in currentSlotVals) or slot==slot1.get():
-            menu1.add_command(label=id, command=lambda id=id: slot1.set(id))
+            menu1.add_command(label=slot, command=lambda slot=slot: slot1.set(slot))
         if (slot not in currentSlotVals) or slot==slot2.get():
-            menu2.add_command(label=id, command=lambda id=id: slot2.set(id))
+            menu2.add_command(label=slot, command=lambda slot=slot: slot2.set(slot))
         if (slot not in currentSlotVals) or slot==slot3.get():
-            menu3.add_command(label=id, command=lambda id=id: slot3.set(id))
+            menu3.add_command(label=slot, command=lambda slot=slot: slot3.set(slot))
         if (slot not in currentSlotVals) or slot==slot4.get():
-            menu4.add_command(label=id, command=lambda id=id: slot4.set(id))
+            menu4.add_command(label=slot, command=lambda slot=slot: slot4.set(slot))
         if (slot not in currentSlotVals) or slot==slot5.get():
-            menu5.add_command(label=id, command=lambda id=id: slot5.set(id))
+            menu5.add_command(label=slot, command=lambda slot=slot: slot5.set(slot))
         if (slot not in currentSlotVals) or slot==slot6.get():
-            menu6.add_command(label=id, command=lambda id=id: slot6.set(id))
+            menu6.add_command(label=slot, command=lambda slot=slot: slot6.set(slot))
     

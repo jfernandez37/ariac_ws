@@ -15,6 +15,7 @@ from ariac_gui.newClasses import *
 from ariac_gui.orderFuncs import *
 from ariac_gui.challengesFuncs import *
 from ariac_gui.msgNames import *
+from ariac_gui.kittingTrayFunctions import *
 from ariac_msgs.msg import *
 
 def runGUI():
@@ -73,6 +74,9 @@ def runGUI():
     robotsToDisable=[] # holds robots to be disabled
     faultyPartQuadrants=[] # holds quadrants for dropped parts
     sensorsToDisable=[] # holds sensors for sensor blackout
+    availableTrays=["Tray 0","Tray 1","Tray 2","Tray 3","Tray 4","Tray 5","Tray 6","Tray 7","Tray 8","Tray 9"]
+    availableSlots=["Slot 1", "Slot 2", "Slot 3", "Slot 4", "Slot 5", "Slot 6"]
+    kittingTrayCounter=[]
     # END OF DEFINITIONS
     # ----------------------------------------------------------------------------------------------
     # START OF GUI
@@ -177,7 +181,70 @@ def runGUI():
     # END OF TIME LIMIT
     # ----------------------------------------------------------------------------------------------
     # START OF GETTING KITTING TRAYS
-    trayWind=tk.Tk()
+    kittingTrayWind=tk.Tk()
+    kittingTrayWind.attributes('-fullscreen', True)
+    kittingTrayLabel=tk.Label(kittingTrayWind, text="Kitting Trays")
+    kittingTrayLabel.pack()
+    tray1=tk.StringVar()
+    tray2=tk.StringVar()
+    tray3=tk.StringVar()
+    tray4=tk.StringVar()
+    tray5=tk.StringVar()
+    tray6=tk.StringVar()
+    slot1=tk.StringVar()
+    slot2=tk.StringVar()
+    slot3=tk.StringVar()
+    slot4=tk.StringVar()
+    slot5=tk.StringVar()
+    slot6=tk.StringVar()
+    tray1Menu=tk.OptionMenu(kittingTrayWind, tray1, *availableTrays)
+    tray2Menu=tk.OptionMenu(kittingTrayWind, tray2, *availableTrays)
+    tray3Menu=tk.OptionMenu(kittingTrayWind, tray3, *availableTrays)
+    tray4Menu=tk.OptionMenu(kittingTrayWind, tray4, *availableTrays)
+    tray5Menu=tk.OptionMenu(kittingTrayWind, tray5, *availableTrays)
+    tray6Menu=tk.OptionMenu(kittingTrayWind, tray6, *availableTrays)
+    slot1Menu=tk.OptionMenu(kittingTrayWind, slot1, *availableSlots)
+    slot2Menu=tk.OptionMenu(kittingTrayWind, slot2, *availableSlots)
+    slot3Menu=tk.OptionMenu(kittingTrayWind, slot3, *availableSlots)
+    slot4Menu=tk.OptionMenu(kittingTrayWind, slot4, *availableSlots)
+    slot5Menu=tk.OptionMenu(kittingTrayWind, slot5, *availableSlots)
+    slot6Menu=tk.OptionMenu(kittingTrayWind, slot6, *availableSlots)
+    #add new and remove buttons
+    addNewKTray(kittingTrayLabel, tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, kittingTrayCounter, availableTrays, availableSlots)
+    add_new_tray=partial(addNewKTray,kittingTrayLabel, tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, kittingTrayCounter, availableTrays, availableSlots)
+    addTrayButton=tk.Button(kittingTrayWind, text="Add New Tray", command=add_new_tray)
+    addTrayButton.pack()
+    remove_tray=partial(removeKTray,tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, kittingTrayCounter, availableTrays, availableSlots)
+    removeTrayButton=tk.Button(kittingTrayWind, text="Remove Tray", command=remove_tray)
+    removeTrayButton.pack()
+    #save and cancel buttons
+    saveTrayButton=tk.Button(kittingTrayWind, text="Save and Continue", command=kittingTrayWind.destroy)
+    saveTrayButton.pack(pady=20)
+    #saveTrayButton.grid(column=middleColumn,pady=20)
+    cancel_tray_command=partial(cancel_wind, kittingTrayWind, cancelFlag)
+    cancelTrayButton=tk.Button(kittingTrayWind, text="Cancel and Exit", command=cancel_tray_command)
+    cancelTrayButton.pack(pady=20)
+    #cancelTrayButton.grid(column=middleColumn,pady=20)
+    #trace functions
+    update_all_tray_menus=partial(updateKTrayMenus,tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4, tray4Menu, tray5, tray5Menu, tray6, tray6Menu,kittingTrayCounter,removeTrayButton, addTrayButton)
+    update_all_slot_menus=partial(updateKSlotMenus, tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4, tray4Menu, tray5, tray5Menu, tray6, tray6Menu)
+    tray1.trace('w', update_all_tray_menus)
+    tray2.trace('w', update_all_tray_menus)
+    tray3.trace('w', update_all_tray_menus)
+    tray4.trace('w', update_all_tray_menus)
+    tray5.trace('w', update_all_tray_menus)
+    tray6.trace('w', update_all_tray_menus)
+    slot1.trace('w', update_all_slot_menus)
+    slot2.trace('w', update_all_slot_menus)
+    slot3.trace('w', update_all_slot_menus)
+    slot4.trace('w', update_all_slot_menus)
+    slot5.trace('w', update_all_slot_menus)
+    slot6.trace('w', update_all_slot_menus)
+    saveFlag=tk.StringVar()
+    saveFlag.set('0')
+    kittingTrayWind.mainloop()
+    check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
+    '''trayWind=tk.Tk()
     trayWind.title("Kitting trays")
     #trayWind.geometry("850x600")
     trayWind.attributes('-fullscreen', True)
@@ -273,7 +340,7 @@ def runGUI():
     kittingTraySlots.append(slot3.get())
     kittingTraySlots.append(slot4.get())
     kittingTraySlots.append(slot5.get())
-    kittingTraySlots.append(slot6.get())
+    kittingTraySlots.append(slot6.get())'''
     # END OF GETTING KITTING TRAYS
     # ----------------------------------------------------------------------------------------------
     # START OF PARTS
