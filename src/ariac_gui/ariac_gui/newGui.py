@@ -183,7 +183,7 @@ def runGUI():
     # ----------------------------------------------------------------------------------------------
     # START OF GETTING KITTING TRAYS
     kittingTrayWind=tk.Tk()
-    #kittingTrayWind.attributes('-fullscreen', True)
+    kittingTrayWind.attributes('-fullscreen', True)
     kittingTrayLabel=tk.Label(kittingTrayWind, text="Kitting Trays")
     kittingTrayLabel.grid(column=2, row=1)
     tray1=tk.StringVar()
@@ -330,8 +330,16 @@ def runGUI():
             binPresentFlags[6]=1
         if i.binName=="bin8":
             binPresentFlags[7]=1    
-    chosenKTrays=[""]
-    
+    KTraysSTR=tray1.get()+tray2.get()+tray3.get()+tray4.get()+tray5.get()+tray6.get()
+    chosenKTrays=[]
+    for i in KTraysSTR:
+        if i.isnumeric():
+            chosenKTrays.append(i)
+    KSlotsSTR=slot1.get()+slot2.get()+slot3.get()+slot4.get()+slot5.get()+slot6.get()
+    chosenKSlots=[]
+    for i in KSlotsSTR:
+        if i.isnumeric():
+            chosenKSlots.append(i)
     #  WRITE TO FILE
     tempStr=''
     with open(saveFileName, "a") as o:
@@ -345,17 +353,8 @@ def runGUI():
             o.write("time_limit: "+timeVal.get())
         o.write(" # options: -1 (no time limit) or number of seconds\n")
         o.write("\nkitting_trays: # Which kitting trays will be spawned\n")
-        o.write("  tray_ids: [")
-        for i in range(len(kittingTrayIds)):
-            if kittingTrayIds[i]=="1":
-                tempStr+=str(i)+", "
-        o.write(tempStr[:-2]+"]\n")
-        o.write("  slots: [")
-        tempStr=''
-        for i in range(len(kittingTraySlots)):
-            if kittingTraySlots[i]=="1":
-                tempStr+=str(i+1)+", "
-        o.write(tempStr[:-2]+"]\n")
+        o.write("  tray_ids: ["+", ".join(chosenKTrays)+"]\n")
+        o.write("  slots: ["+", ".join(chosenKSlots)+"]\n")
         o.write("\nparts:\n")
         o.write("  agvs:\n")
     if len(agv1Parts)>0:
