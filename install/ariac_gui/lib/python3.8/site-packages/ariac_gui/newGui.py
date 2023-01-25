@@ -23,10 +23,6 @@ def runGUI():
     CHECKBOXHEIGHT=1
     pathIncrement = []  # gives the full path for recursive deletion
     createdDir = []  # to deleted directories made if canceled
-    leftColumn=1
-    middleColumn=2 
-    middleColumnWidth=62  # width of middle margin for live yaml windows
-    rightColumn=3
     nameLabels = []  # holds temporary flags to be deleted
     agv1Parts=[]
     agv2Parts=[]
@@ -56,17 +52,11 @@ def runGUI():
         bin6Slots.append(str(i+1))
         bin7Slots.append(str(i+1))
         bin8Slots.append(str(i+1))
-    allOrders=[] # holds all orders
     orderCounter=[] # for counting the number of orders
     orderMSGS=[] # holds all order ros2 messages
-    allOrderChallenges=[] # for holding challenges in the orders section
-    kittingTrayIds=[] # holds the selected kitting tray ids
-    kittingTraySlots=[] # holds the selected kitting tray slots
     binPresentFlags=[] # to hold which bins are present 
     for i in range(8):
         binPresentFlags.append(0)
-    orderKittingParts=[]# holds all kitting parts
-    orderAssembParts=[] # holds all assembly parts
     usedIDs=[] # holds the ids that have already been used to avoid repeated ids
     robotMalfunctions=[] # holds all robot malfunctions
     faultyParts=[] # holds all faulty parts
