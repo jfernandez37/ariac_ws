@@ -23,12 +23,12 @@ taskPresentFlag=[]
 allProdTypes=["sensor", "pump", "regulator", "battery"]
 allProdColors=['green', 'red', 'purple','blue','orange']
 conditionTypes=['','time','partPlace','submission']
-def typeOfProdSelect(kittingParts, assemblyParts, orderType,orderKittingParts, orderAssembParts, currentOrderID):
+def typeOfProdSelect(kittingParts, assemblyParts, orderType):
     '''Runs the correct function based on the order type'''
     if orderType.get()=="kitting":
-        addKittingProduct(kittingParts,orderKittingParts, currentOrderID)
+        addKittingProduct(kittingParts)
     else:
-        addAssembProduct(assemblyParts, orderAssembParts, currentOrderID)
+        addAssembProduct(assemblyParts)
     
 
 def updateTaskOptions(orderType, kitTrayId, taskAgvMenu,kitTrayIdLabel, kitTrayIdMenu, kittingDestination, kittingDestinationLabel, kittingDestinationMenu, assemblyStation, assemblyStationLabel, assemblyStationMenu,a,b,c):
@@ -65,7 +65,7 @@ def generateOrderId(usedId):
     usedId.append(newId)
     return newId
 
-def addKittingProduct(kittingParts, orderKittingParts, currentOrderID):
+def addKittingProduct(kittingParts):
     '''Adds a product to a kitting order'''
     kitProdWind=tk.Toplevel()
     kitProdWind.attributes('-fullscreen', True)
@@ -124,7 +124,7 @@ def addKittingProduct(kittingParts, orderKittingParts, currentOrderID):
         newKittingPart.quadrant=int(prodQuad.get())
         kittingParts.append(newKittingPart)
 
-def addAssembProduct(assemblyParts, orderAssembParts, currentOrderID):
+def addAssembProduct(assemblyParts):
     '''Adds a product to an assembly or combined order'''
     assembProdWind=tk.Toplevel()
     assembProdWind.attributes('-fullscreen', True)
@@ -374,7 +374,7 @@ def showCorrectMenu(condition, conditionMenu, time, timeLabel, timeEntry, agv, a
         partColorLabel.pack_forget()
         partColorMenu.pack_forget()
 
-def addNewOrder(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKittingParts,orderAssembParts, usedIDs, mainWind):
+def addNewOrder(orderMSGS,orderCounter, usedIDs, mainWind):
     '''Window for adding a new order'''
     taskPresentFlag.clear()
     orderCounter.append(0)
@@ -482,7 +482,7 @@ def addNewOrder(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKit
     assemblyStationMenu=tk.OptionMenu(newOrderWind, assemblyStation, *assemblyStations)
     assemblyStationMenu.pack_forget()
     #add product button
-    type_of_prod_select=partial(typeOfProdSelect, kittingParts, assemblyParts, orderType,orderKittingParts, orderAssembParts, orderID)
+    type_of_prod_select=partial(typeOfProdSelect, kittingParts, assemblyParts, orderType)
     addProdButton=tk.Button(newOrderWind, text="Add product", command=type_of_prod_select)
     addProdButton.pack()
     #save and cancel buttons
@@ -544,12 +544,12 @@ def saveOrders(wind, saveFlag): # allows the while loop in main to stop so the p
     saveFlag.set('1')
     wind.destroy()
 
-def runOrdersWind(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKittingParts, orderAssembParts, usedIDs, cancelFlag, pathIncrement, fileName, createdDir, saveOrdersFlag):
+def runOrdersWind(orderMSGS,  orderCounter, usedIDs, cancelFlag, pathIncrement, fileName, createdDir, saveOrdersFlag):
     ordersWind=tk.Tk()
     ordersWind.title("Orders")
     #ordersWind.geometry("850x600")
     ordersWind.attributes('-fullscreen', True)
-    new_order_func=partial(addNewOrder, orderMSGS, allOrders, orderCounter, allOrderChallenges,orderKittingParts,orderAssembParts, usedIDs, ordersWind)
+    new_order_func=partial(addNewOrder, orderMSGS, orderCounter, usedIDs, ordersWind)
     newOrderButton=tk.Button(ordersWind, text="New Order", command=new_order_func)
     newOrderButton.pack()
     currentOrdersVal="Current Orders:\n"

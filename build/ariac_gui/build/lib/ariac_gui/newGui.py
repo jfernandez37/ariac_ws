@@ -265,7 +265,7 @@ def runGUI():
     # ----------------------------------------------------------------------------------------------
     # START OF ORDERS
     while (saveOrdersFlag.get()=="0"):
-        runOrdersWind(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKittingParts, orderAssembParts, usedIDs, cancelFlag, pathIncrement, fileName, createdDir, saveOrdersFlag)
+        runOrdersWind(orderMSGS,  orderCounter, usedIDs, cancelFlag, pathIncrement, fileName, createdDir, saveOrdersFlag)
     # END OF ORDERS
     # ----------------------------------------------------------------------------------------------
     #START OF CHALLENGES
