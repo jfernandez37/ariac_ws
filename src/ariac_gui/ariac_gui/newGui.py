@@ -109,7 +109,7 @@ def runGUI():
     frame.pack()
     nistLogo = ImageTk.PhotoImage(Image.open("src/ariac_gui/ariac_gui/GUI_Images/new_NIST_logo.png"))
     logoImgLabel = tk.Label(frame, image=nistLogo)
-    logoImgLabel.pack()
+    logoImgLabel.pack(pady=40)
     cancelFlag = tk.StringVar()
     cancelFlag.set('0')
     getFileName.title("NIST ARIAC CONFIG GUI")
@@ -241,6 +241,8 @@ def runGUI():
     slot6.trace('w', update_all_slot_menus)
     saveFlag=tk.StringVar()
     saveFlag.set('0')
+    saveOrdersFlag=tk.StringVar()
+    saveOrdersFlag.set('0')
     kittingTrayWind.mainloop()
     check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
     # END OF GETTING KITTING TRAYS
@@ -262,25 +264,8 @@ def runGUI():
     # END OF CONVEYOR BELT
     # ----------------------------------------------------------------------------------------------
     # START OF ORDERS
-    ordersWind=tk.Tk()
-    ordersWind.title("Orders")
-    #ordersWind.geometry("850x600")
-    ordersWind.attributes('-fullscreen', True)
-    new_order_func=partial(addNewOrder, orderMSGS, allOrders, orderCounter, allOrderChallenges,orderKittingParts,orderAssembParts, usedIDs)
-    newOrderButton=tk.Button(ordersWind, text="New Order", command=new_order_func)
-    newOrderButton.pack()
-    #save and cancel buttons
-    saveOrdersButton=tk.Button(ordersWind, text="Save and Continue", command=ordersWind.destroy)
-    saveOrdersButton.pack(pady=20)
-    cancel_orders_command=partial(cancel_wind, ordersWind, cancelFlag)
-    cancelOrdersButton=tk.Button(ordersWind, text="Cancel and Exit", command=cancel_orders_command)
-    cancelOrdersButton.pack(pady=20)
-    ordersWind.mainloop()
-    check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
-    allOrders.reverse()
-    orderKittingParts.reverse()
-    orderAssembParts.reverse()
-    orderMSGS.reverse()
+    while (saveOrdersFlag.get()=="0"):
+        runOrdersWind(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKittingParts, orderAssembParts, usedIDs, cancelFlag, pathIncrement, fileName, createdDir, saveOrdersFlag)
     # END OF ORDERS
     # ----------------------------------------------------------------------------------------------
     #START OF CHALLENGES

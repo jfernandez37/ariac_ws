@@ -6,6 +6,7 @@ from functools import partial
 from ariac_gui.validationFunctions import *
 from ariac_gui.newClasses import *
 from ariac_gui.timeFunctions import *
+from ariac_gui.msgNames import *
 from ariac_msgs.msg import *
 from geometry_msgs.msg import *
 orderTypes=["kitting", "assembly", "combined"]
@@ -373,7 +374,7 @@ def showCorrectMenu(condition, conditionMenu, time, timeLabel, timeEntry, agv, a
         partColorLabel.pack_forget()
         partColorMenu.pack_forget()
 
-def addNewOrder(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKittingParts,orderAssembParts, usedIDs):
+def addNewOrder(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKittingParts,orderAssembParts, usedIDs, mainWind):
     '''Window for adding a new order'''
     taskPresentFlag.clear()
     orderCounter.append(0)
@@ -485,7 +486,7 @@ def addNewOrder(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKit
     addProdButton=tk.Button(newOrderWind, text="Add product", command=type_of_prod_select)
     addProdButton.pack()
     #save and cancel buttons
-    saveOrdButton=tk.Button(newOrderWind, text="Save and Exit", command=newOrderWind.destroy)
+    saveOrdButton=tk.Button(newOrderWind, text="Save and Exit", command=mainWind.destroy)
     saveOrdButton.pack()
     ordCancelFlag=tk.StringVar()
     ordCancelFlag.set('0')
@@ -538,3 +539,44 @@ def addNewOrder(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKit
             newCombinedTask.parts=assemblyParts
             newOrder.combined_task=newCombinedTask
         orderMSGS.append(newOrder)
+
+def saveOrders(wind, saveFlag): # allows the while loop in main to stop so the parts window stops when the user saves
+    saveFlag.set('1')
+    wind.destroy()
+
+def runOrdersWind(orderMSGS, allOrders, orderCounter, allOrderChallenges, orderKittingParts, orderAssembParts, usedIDs, cancelFlag, pathIncrement, fileName, createdDir, saveOrdersFlag):
+    ordersWind=tk.Tk()
+    ordersWind.title("Orders")
+    #ordersWind.geometry("850x600")
+    ordersWind.attributes('-fullscreen', True)
+    new_order_func=partial(addNewOrder, orderMSGS, allOrders, orderCounter, allOrderChallenges,orderKittingParts,orderAssembParts, usedIDs, ordersWind)
+    newOrderButton=tk.Button(ordersWind, text="New Order", command=new_order_func)
+    newOrderButton.pack()
+    currentOrdersVal="Current Orders:\n"
+    if len(orderMSGS)==0:
+        currentOrdersVal+="NONE"
+    else:
+        c=0
+        for order in orderMSGS:
+            currentOrdersVal+="\nOrder "+str(c)+":\n"
+            currentOrdersVal+="ID: "+order.id+"  Type: "+getOrderType(order.type)+"\n"
+            currentOrdersVal+="Number of parts: "
+            if order.type==0:
+                currentOrdersVal+=str(len(order.kitting_task.parts))
+            elif order.type==1:
+                currentOrdersVal+=str(len(order.assembly_task.parts))
+            else:
+                currentOrdersVal+=str(len(order.combined_task.parts))
+            currentOrdersVal+="\n"
+            c+=1
+    currentOrdersLabel=tk.Label(ordersWind, text=currentOrdersVal)
+    currentOrdersLabel.pack()
+    #save and cancel buttons
+    save_orders=partial(saveOrders, ordersWind, saveOrdersFlag)
+    saveOrdersButton=tk.Button(ordersWind, text="Save and Continue", command=save_orders)
+    saveOrdersButton.pack(pady=20)
+    cancel_orders_command=partial(cancel_wind, ordersWind, cancelFlag)
+    cancelOrdersButton=tk.Button(ordersWind, text="Cancel and Exit", command=cancel_orders_command)
+    cancelOrdersButton.pack(pady=20)
+    ordersWind.mainloop()
+    check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
