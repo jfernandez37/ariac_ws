@@ -126,20 +126,12 @@ def runGUI():
     if cancelFlag.get()=='1':
         quit()
     tempFilePath=''
-    if platform.system()=="Windows": # gets the file name of the file just created
-        brokenPath=fileNameVar.get().split("\\")
-        for i in brokenPath[:-1]:
-            tempFilePath+=i+"\\"
-        fileNameStr=brokenPath[len(brokenPath)-1]
-        chdir(tempFilePath)
-        saveFileName=fileNameStr
-    else:
-        brokenPath=fileNameVar.get().split("/")
-        for i in brokenPath[:-1]:
-            tempFilePath+=i+"/"
-        fileNameStr=brokenPath[len(brokenPath)-1]
-        chdir(tempFilePath)
-        saveFileName=fileNameStr
+    brokenPath=fileNameVar.get().split("/")
+    for i in brokenPath[:-1]:
+        tempFilePath+=i+"/"
+    fileNameStr=brokenPath[len(brokenPath)-1]
+    chdir(tempFilePath)
+    saveFileName=fileNameStr
     fileName.set(saveFileName)
     # END OF GETTING THE NAME OF THE FILE
     # ----------------------------------------------------------------------------------------------
@@ -254,7 +246,7 @@ def runGUI():
     # END OF CONVEYOR BELT
     # ----------------------------------------------------------------------------------------------
     # START OF ORDERS
-    while (saveOrdersFlag.get()=="0"):
+    while (saveOrdersFlag.get()=="0"): #Runs until the user save and exits or quits
         runOrdersWind(orderMSGS,  orderCounter, usedIDs, cancelFlag, pathIncrement, fileName, createdDir, saveOrdersFlag)
     # END OF ORDERS
     # ----------------------------------------------------------------------------------------------
