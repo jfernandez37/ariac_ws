@@ -23,9 +23,6 @@ def saveMainWind(window, flag):
     flag.set('1')
     window.destroy()
 
-def runTimeLimit(cancelFlag, pathIncrement, fileName, createdDir, timeList, mainWind):
-    guiTimeWindow(cancelFlag, pathIncrement, fileName, createdDir, timeList, mainWind)
-
 def runGUI():
     pathIncrement = []  # gives the full path for recursive deletion
     createdDir = []  # to deleted directories made if canceled
@@ -77,6 +74,11 @@ def runGUI():
     timeVal="0"
     noTimeVal="0"
     timeList=[timeVal, noTimeVal]
+    trayVals=[]
+    slotVals=[]
+    for i in range(6):
+        trayVals.append("")
+        slotVals.append("")
     # END OF DEFINITIONS
     # ----------------------------------------------------------------------------------------------
     # START OF GUI
@@ -154,9 +156,12 @@ def runGUI():
     while (saveMainFlag.get()=="0"):
         mainWind=tk.Tk()
         mainWind.attributes('-fullscreen', True)
-        get_time_limit=partial(runTimeLimit,cancelFlag, pathIncrement, fileName, createdDir, timeList, mainWind)
+        get_time_limit=partial(guiTimeWindow,cancelFlag, pathIncrement, fileName, createdDir, timeList, mainWind)
         mainTimeButton=tk.Button(mainWind, text="Time Limit", command=get_time_limit)
         mainTimeButton.pack()
+        get_kitting_trays=partial(runKittingTrayWind,kittingTrayCounter, availableTrays, availableSlots, cancelFlag,pathIncrement, fileName, createdDir,trayVals, slotVals, mainWind)
+        mainKittingTraysButton=tk.Button(mainWind, text="Kitting Trays", command=get_kitting_trays)
+        mainKittingTraysButton.pack()
         save_main_wind=partial(saveMainWind, mainWind, saveMainFlag)
         saveMainButton=tk.Button(mainWind, text="Save and Continue", command=save_main_wind)
         saveMainButton.pack()
@@ -167,12 +172,7 @@ def runGUI():
         check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
     # END OF MAIN WIND
     # ----------------------------------------------------------------------------------------------
-    # START OF GETTING TIME LIMIT
-    # END OF TIME LIMIT
-    # ----------------------------------------------------------------------------------------------
     # START OF GETTING KITTING TRAYS
-    tray1=tray2=tray3=tray4=tray5=tray6=slot1=slot2=slot3=slot4=slot5=slot6=""
-    tray1,tray2,tray3,tray4,tray5,tray6,slot1,slot2,slot3,slot4,slot5,slot6=runKittingTrayWind(kittingTrayCounter, availableTrays, availableSlots, cancelFlag,pathIncrement, fileName, createdDir,tray1,tray2,tray3,tray4,tray5,tray6,slot1,slot2,slot3,slot4,slot5,slot6)
     # END OF GETTING KITTING TRAYS
     # ----------------------------------------------------------------------------------------------
     # START OF PARTS
@@ -216,13 +216,17 @@ def runGUI():
         if i.binName=="bin7":
             binPresentFlags[6]=1
         if i.binName=="bin8":
-            binPresentFlags[7]=1    
-    KTraysSTR=tray1+tray2+tray3+tray4+tray5+tray6
+            binPresentFlags[7]=1
+    KTraysSTR=""
+    for i in trayVals:
+        KTraysSTR+=i
     chosenKTrays=[]
     for i in KTraysSTR:
         if i.isnumeric():
             chosenKTrays.append(i)
-    KSlotsSTR=slot1+slot2+slot3+slot4+slot5+slot6
+    KSlotsSTR=""
+    for i in slotVals:
+        KSlotsSTR+=i
     chosenKSlots=[]
     for i in KSlotsSTR:
         if i.isnumeric():
