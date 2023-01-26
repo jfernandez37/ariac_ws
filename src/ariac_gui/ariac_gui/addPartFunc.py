@@ -98,6 +98,8 @@ def addPart(agv1TrayIdVal, agv2TrayIdVal, agv3TrayIdVal, agv4TrayIdVal, agv1Part
         bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, 
         spawnRateVal,convActiveVal,convParts, cancelFlag, pathIncrement,fileName,createdDir, convOrderVal,saveFlag):
     partsWind=tk.Tk()
+    partsWind.grid_columnconfigure(0, weight=1)
+    partsWind.grid_columnconfigure(6, weight=1)
     #variables for parts
     agv1TrayId=tk.StringVar()
     agv1TrayId.set(agv1TrayIdVal)
