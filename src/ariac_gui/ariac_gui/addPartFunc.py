@@ -1,4 +1,5 @@
 import tkinter as tk
+from time import sleep
 from functools import partial
 from ariac_gui.addNewBin import addBin
 from ariac_gui.addConvPart import addPartConv
@@ -89,35 +90,36 @@ def addAGVPart(agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Qua
         else:
             agv4Parts.append(PartsClass(partType.get(), partColor.get(), partQuadrant.get(), partRotation.get()))      
 
-def savePart(wind, saveFlag): # allows the while loop in main to stop so the parts window stops when the user saves
-    saveFlag.set('1')
+def savePart(wind, partFlag): # allows the while loop in main to stop so the parts window stops when the user saves
+    partFlag.set('0')
     wind.destroy()
 
-def addPart(agv1TrayIdVal, agv2TrayIdVal, agv3TrayIdVal, agv4TrayIdVal, agv1Parts, agv2Parts, agv3Parts, agv4Parts, 
+def addPart(partVals,agv1Parts, agv2Parts, agv3Parts, agv4Parts, 
         agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,
         bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, 
-        spawnRateVal,convActiveVal,convParts, cancelFlag, pathIncrement,fileName,createdDir, convOrderVal,saveFlag):
-    partsWind=tk.Tk()
+        convParts, cancelFlag, pathIncrement,fileName,createdDir, partFlag, mainWind):
+    partsWind=tk.Toplevel(mainWind)
+    partFlag.set('1')
     partsWind.grid_columnconfigure(0, weight=1)
     partsWind.grid_columnconfigure(6, weight=1)
     #variables for parts
     agv1TrayId=tk.StringVar()
-    agv1TrayId.set(agv1TrayIdVal)
+    agv1TrayId.set(partVals[0])
     agv2TrayId=tk.StringVar()
-    agv2TrayId.set(agv2TrayIdVal)
+    agv2TrayId.set(partVals[1])
     agv3TrayId=tk.StringVar()
-    agv3TrayId.set(agv3TrayIdVal)
+    agv3TrayId.set(partVals[2])
     agv4TrayId=tk.StringVar()
-    agv4TrayId.set(agv4TrayIdVal)
-    convActive=tk.StringVar()
+    agv4TrayId.set(partVals[3])
     spawnRate=tk.StringVar()
-    spawnRate.set(spawnRateVal)
+    spawnRate.set(partVals[5])
     convOrder=tk.StringVar()
-    convOrder.set(convOrderVal)
+    convOrder.set(partVals[6])
+    convActive=tk.StringVar()
     if len(convParts)==1:#changes to active if a part is placed
         convActive.set('1')
     else:
-        convActive.set(convActiveVal)
+        convActive.set(partVals[4])
     #agv settings
     partsWind.attributes('-fullscreen', True)
     agv1TrayLabel=tk.Label(partsWind, text="Select the tray Id for agv1")
@@ -137,7 +139,7 @@ def addPart(agv1TrayIdVal, agv2TrayIdVal, agv3TrayIdVal, agv4TrayIdVal, agv1Part
     agv4TrayIdSelect=tk.OptionMenu(partsWind, agv4TrayId, *agvTrayIds)
     agv4TrayIdSelect.grid(column=leftColumn)
     #agv parts
-    add_new_part=partial(addAGVPart,agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Quadrants,agv3Quadrants,agv4Quadrants, partsWind)
+    add_new_part=partial(addAGVPart,agv1Parts, agv2Parts, agv3Parts, agv4Parts, agv1Quadrants,agv2Quadrants,agv3Quadrants,agv4Quadrants, mainWind)
     addPartsButton=tk.Button(partsWind, text="Add AGV Part", command=add_new_part)
     addPartsButton.grid(column=leftColumn)
     leftSpaceLabel=tk.Label(partsWind, text="")
@@ -149,7 +151,7 @@ def addPart(agv1TrayIdVal, agv2TrayIdVal, agv3TrayIdVal, agv4TrayIdVal, agv1Part
     agv3TrayId.trace('w', update_agv_ids)
     agv4TrayId.trace('w', update_agv_ids)
     #bin part button
-    add_bin_func=partial(addBin,bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots,partsWind)
+    add_bin_func=partial(addBin,bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots,mainWind)
     addBinsButton=tk.Button(partsWind, text="Add Bin Part", command=add_bin_func)
     addBinsButton.grid(column=leftColumn, pady=20)
     #middle buffer to split the window
@@ -168,7 +170,7 @@ def addPart(agv1TrayIdVal, agv2TrayIdVal, agv3TrayIdVal, agv4TrayIdVal, agv1Part
     convOrderLabel.grid(column=rightColumn, row=4)
     convOrderMenu=tk.OptionMenu(partsWind, convOrder, *convOrders)
     convOrderMenu.grid(column=rightColumn, row=5)
-    add_conv_part=partial(addPartConv, convParts, partsWind)
+    add_conv_part=partial(addPartConv, convParts, mainWind)
     addPartConvButton=tk.Button(partsWind, text="Add conveyor belt part", command=add_conv_part)
     addPartConvButton.grid(column=rightColumn, row=6)
     validate_spawn_rate=partial(require_num, spawnRate)
@@ -176,7 +178,7 @@ def addPart(agv1TrayIdVal, agv2TrayIdVal, agv3TrayIdVal, agv4TrayIdVal, agv1Part
     rightSpaceLabel=tk.Label(partsWind, text="")
     rightSpaceLabel.grid(column=rightColumn, row=8, pady=30)
     #save and cancel button
-    save_part=partial(savePart, partsWind, saveFlag)#needs to change the save flag to exit the window and not refresh
+    save_part=partial(savePart, mainWind, partFlag)#needs to change the save flag to exit the window and not refresh
     savePartsButton=tk.Button(partsWind, text="Save and Continue", command=save_part)
     savePartsButton.grid(column=rightColumn, row=10, pady=20)
     cancel_parts_command=partial(cancel_wind, partsWind, cancelFlag)
@@ -221,7 +223,14 @@ def addPart(agv1TrayIdVal, agv2TrayIdVal, agv3TrayIdVal, agv4TrayIdVal, agv1Part
     currentConLabel.grid(column=farRightColumn, row=2, padx=40)
     partsWind.mainloop()
     check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
-    return agv1TrayId.get(), agv2TrayId.get(), agv3TrayId.get(), agv4TrayId.get(), convActive.get(), spawnRate.get(), convOrder.get()
+    partVals.clear()
+    partVals.append(agv1TrayId.get())
+    partVals.append(agv2TrayId.get())
+    partVals.append(agv3TrayId.get())
+    partVals.append(agv4TrayId.get())
+    partVals.append(convActive.get())
+    partVals.append(spawnRate.get())
+    partVals.append(convOrder.get())
 
 def writePartsToFile(name, id, partsList, saveFileName): # writes the part information to the file for a given agv
     '''Writes agv info and parts on the agv to the file'''

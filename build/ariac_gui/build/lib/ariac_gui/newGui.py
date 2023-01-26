@@ -79,6 +79,14 @@ def runGUI():
     for i in range(6):
         trayVals.append("")
         slotVals.append("")
+    agv1TrayIdVal=agvTrayIds[0]
+    agv2TrayIdVal=agvTrayIds[0]
+    agv3TrayIdVal=agvTrayIds[0]
+    agv4TrayIdVal=agvTrayIds[0]
+    convActiveVal='0'
+    spawnRateVal='0'
+    convOrderVal='random'
+    partVals=[agv1TrayIdVal, agv2TrayIdVal, agv3TrayIdVal, agv4TrayIdVal, convActiveVal, spawnRateVal, convOrderVal]
     # END OF DEFINITIONS
     # ----------------------------------------------------------------------------------------------
     # START OF GUI
@@ -119,6 +127,8 @@ def runGUI():
     saveOrdersFlag.set('0')
     saveMainFlag=tk.StringVar()
     saveMainFlag.set('0')
+    partFlag=tk.StringVar()
+    partFlag.set('0')
     getFileName.title("NIST ARIAC CONFIG GUI")
     fileName = tk.StringVar()
     fileName.set("")
@@ -162,12 +172,23 @@ def runGUI():
         get_kitting_trays=partial(runKittingTrayWind,kittingTrayCounter, availableTrays, availableSlots, cancelFlag,pathIncrement, fileName, createdDir,trayVals, slotVals, mainWind)
         mainKittingTraysButton=tk.Button(mainWind, text="Kitting Trays", command=get_kitting_trays)
         mainKittingTraysButton.pack()
+        get_parts=partial(addPart,partVals,agv1Parts, agv2Parts, agv3Parts, agv4Parts, 
+        agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,
+        bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, 
+        convParts, cancelFlag, pathIncrement,fileName,createdDir, partFlag, mainWind)
+        mainPartButton=tk.Button(mainWind, text="Parts", command=get_parts)
+        mainPartButton.pack()
         save_main_wind=partial(saveMainWind, mainWind, saveMainFlag)
         saveMainButton=tk.Button(mainWind, text="Save and Continue", command=save_main_wind)
         saveMainButton.pack()
         cancel_main_command=partial(cancel_wind, mainWind, cancelFlag)
         cancelMainButton=tk.Button(mainWind, text="Cancel and Exit", command=cancel_main_command)
         cancelMainButton.pack()
+        if partFlag.get()=="1":
+            addPart(partVals,agv1Parts, agv2Parts, agv3Parts, agv4Parts, 
+            agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,
+            bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, 
+            convParts, cancelFlag, pathIncrement,fileName,createdDir, partFlag, mainWind)
         mainWind.mainloop()
         check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
     # END OF MAIN WIND
@@ -177,18 +198,6 @@ def runGUI():
     # ----------------------------------------------------------------------------------------------
     # START OF PARTS
     #parts variables
-    agv1TrayIdVal=agvTrayIds[0]
-    agv2TrayIdVal=agvTrayIds[0]
-    agv3TrayIdVal=agvTrayIds[0]
-    agv4TrayIdVal=agvTrayIds[0]
-    convActiveVal='0'
-    spawnRateVal='0'
-    convOrderVal='random'
-    while(saveFlag.get()=="0"): #Runs until the user saves and exits or quits
-        agv1TrayIdVal, agv2TrayIdVal, agv3TrayIdVal, agv4TrayIdVal, convActiveVal, spawnRateVal, convOrderVal=addPart(agv1TrayIdVal, agv2TrayIdVal, agv3TrayIdVal, agv4TrayIdVal, agv1Parts, agv2Parts, agv3Parts, agv4Parts, 
-        agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,
-        bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, 
-        spawnRateVal,convActiveVal,convParts, cancelFlag, pathIncrement,fileName,createdDir, convOrderVal,saveFlag)
     # END OF CONVEYOR BELT
     # ----------------------------------------------------------------------------------------------
     # START OF ORDERS
