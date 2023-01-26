@@ -121,8 +121,8 @@ def runGUI():
     logoImgLabel.pack(pady=40)
     cancelFlag = tk.StringVar()
     cancelFlag.set('0')
-    saveFlag=tk.StringVar()
-    saveFlag.set('0')
+    ordersFlag=tk.StringVar()
+    ordersFlag.set('0')
     saveOrdersFlag=tk.StringVar()
     saveOrdersFlag.set('0')
     saveMainFlag=tk.StringVar()
@@ -166,44 +166,47 @@ def runGUI():
     while (saveMainFlag.get()=="0"):
         mainWind=tk.Tk()
         mainWind.attributes('-fullscreen', True)
+        #Time limit
         get_time_limit=partial(guiTimeWindow,cancelFlag, pathIncrement, fileName, createdDir, timeList, mainWind)
         mainTimeButton=tk.Button(mainWind, text="Time Limit", command=get_time_limit)
         mainTimeButton.pack()
+        #Kitting trays and slots
         get_kitting_trays=partial(runKittingTrayWind,kittingTrayCounter, availableTrays, availableSlots, cancelFlag,pathIncrement, fileName, createdDir,trayVals, slotVals, mainWind)
         mainKittingTraysButton=tk.Button(mainWind, text="Kitting Trays", command=get_kitting_trays)
         mainKittingTraysButton.pack()
+        #Parts
         get_parts=partial(addPart,partVals,agv1Parts, agv2Parts, agv3Parts, agv4Parts, 
         agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,
         bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, 
         convParts, cancelFlag, pathIncrement,fileName,createdDir, partFlag, mainWind)
         mainPartButton=tk.Button(mainWind, text="Parts", command=get_parts)
         mainPartButton.pack()
+        #Orders
+        get_order=partial(runOrdersWind, orderMSGS,  orderCounter, usedIDs, ordersFlag, mainWind)
+        mainOrderButton=tk.Button(mainWind, text="Orders", command=get_order)
+        mainOrderButton.pack()
+        #save button
         save_main_wind=partial(saveMainWind, mainWind, saveMainFlag)
         saveMainButton=tk.Button(mainWind, text="Save and Continue", command=save_main_wind)
         saveMainButton.pack()
+        #cancel button
         cancel_main_command=partial(cancel_wind, mainWind, cancelFlag)
         cancelMainButton=tk.Button(mainWind, text="Cancel and Exit", command=cancel_main_command)
         cancelMainButton.pack()
-        if partFlag.get()=="1":
+        if partFlag.get()=="1": # checks if parts still needs to run
             mainWind.withdraw()
             addPart(partVals,agv1Parts, agv2Parts, agv3Parts, agv4Parts, 
             agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,
             bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, 
             convParts, cancelFlag, pathIncrement,fileName,createdDir, partFlag, mainWind)
+        if ordersFlag.get()=="1": # checks if orders still needs to run
+            mainWind.withdraw()
+            runOrdersWind(orderMSGS,  orderCounter, usedIDs, ordersFlag, mainWind)
         mainWind.mainloop()
         check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
     # END OF MAIN WIND
     # ----------------------------------------------------------------------------------------------
-    # START OF GETTING KITTING TRAYS
-    # END OF GETTING KITTING TRAYS
-    # ----------------------------------------------------------------------------------------------
-    # START OF PARTS
-    #parts variables
-    # END OF CONVEYOR BELT
-    # ----------------------------------------------------------------------------------------------
     # START OF ORDERS
-    while (saveOrdersFlag.get()=="0"): #Runs until the user save and exits or quits
-        runOrdersWind(orderMSGS,  orderCounter, usedIDs, cancelFlag, pathIncrement, fileName, createdDir, saveOrdersFlag)
     # END OF ORDERS
     # ----------------------------------------------------------------------------------------------
     #START OF CHALLENGES

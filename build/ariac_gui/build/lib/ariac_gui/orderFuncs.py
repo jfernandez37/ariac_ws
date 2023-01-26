@@ -540,16 +540,17 @@ def addNewOrder(orderMSGS,orderCounter, usedIDs, mainWind):
             newOrder.combined_task=newCombinedTask
         orderMSGS.append(newOrder)
 
-def saveOrders(wind, saveFlag): # allows the while loop in main to stop so the parts window stops when the user saves
-    saveFlag.set('1')
+def saveOrders(wind, ordersFlag): # allows the while loop in main to stop so the parts window stops when the user saves
+    ordersFlag.set('0')
     wind.destroy()
 
-def runOrdersWind(orderMSGS,  orderCounter, usedIDs, cancelFlag, pathIncrement, fileName, createdDir, saveOrdersFlag):
-    ordersWind=tk.Tk()
+def runOrdersWind(orderMSGS,  orderCounter, usedIDs, ordersFlag, mainWind):
+    ordersWind=tk.Toplevel()
+    ordersFlag.set('1')
     ordersWind.title("Orders")
     #ordersWind.geometry("850x600")
     ordersWind.attributes('-fullscreen', True)
-    new_order_func=partial(addNewOrder, orderMSGS, orderCounter, usedIDs, ordersWind)
+    new_order_func=partial(addNewOrder, orderMSGS, orderCounter, usedIDs, mainWind)
     newOrderButton=tk.Button(ordersWind, text="New Order", command=new_order_func)
     newOrderButton.pack()
     currentOrdersVal="Current Orders:\n"
@@ -572,11 +573,7 @@ def runOrdersWind(orderMSGS,  orderCounter, usedIDs, cancelFlag, pathIncrement, 
     currentOrdersLabel=tk.Label(ordersWind, text=currentOrdersVal)
     currentOrdersLabel.pack()
     #save and cancel buttons
-    save_orders=partial(saveOrders, ordersWind, saveOrdersFlag)
-    saveOrdersButton=tk.Button(ordersWind, text="Save and Continue", command=save_orders)
+    save_orders=partial(saveOrders, mainWind, ordersFlag)
+    saveOrdersButton=tk.Button(ordersWind, text="Save and return to main menu", command=save_orders)
     saveOrdersButton.pack(pady=20)
-    cancel_orders_command=partial(cancel_wind, ordersWind, cancelFlag)
-    cancelOrdersButton=tk.Button(ordersWind, text="Cancel and Exit", command=cancel_orders_command)
-    cancelOrdersButton.pack(pady=20)
     ordersWind.mainloop()
-    check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
