@@ -111,15 +111,15 @@ def addPart(partVals,agv1Parts, agv2Parts, agv3Parts, agv4Parts,
     agv3TrayId.set(partVals[2])
     agv4TrayId=tk.StringVar()
     agv4TrayId.set(partVals[3])
-    convActive=tk.StringVar()
     spawnRate=tk.StringVar()
-    spawnRate.set(partVals[4])
+    spawnRate.set(partVals[5])
     convOrder=tk.StringVar()
-    convOrder.set(partVals[5])
+    convOrder.set(partVals[6])
+    convActive=tk.StringVar()
     if len(convParts)==1:#changes to active if a part is placed
         convActive.set('1')
     else:
-        convActive.set(partVals[6])
+        convActive.set(partVals[4])
     #agv settings
     partsWind.attributes('-fullscreen', True)
     agv1TrayLabel=tk.Label(partsWind, text="Select the tray Id for agv1")
@@ -181,8 +181,7 @@ def addPart(partVals,agv1Parts, agv2Parts, agv3Parts, agv4Parts,
     save_part=partial(savePart, mainWind, partFlag)#needs to change the save flag to exit the window and not refresh
     savePartsButton=tk.Button(partsWind, text="Save and Continue", command=save_part)
     savePartsButton.grid(column=rightColumn, row=10, pady=20)
-    cancel_parts_command=partial(cancel_wind, partsWind, cancelFlag)
-    cancelPartsButton=tk.Button(partsWind, text="Cancel and Exit", command=cancel_parts_command)
+    cancelPartsButton=tk.Button(partsWind, text="Back to main", command=partsWind.destroy)
     cancelPartsButton.grid(column=rightColumn,row=11, pady=20)
     #part labels
     #Label for parts currently selected for agv1
@@ -222,7 +221,6 @@ def addPart(partVals,agv1Parts, agv2Parts, agv3Parts, agv4Parts,
     currentConLabel=tk.Label(partsWind, text=currentConv)
     currentConLabel.grid(column=farRightColumn, row=2, padx=40)
     partsWind.mainloop()
-    check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
     partVals.clear()
     partVals.append(agv1TrayId.get())
     partVals.append(agv2TrayId.get())

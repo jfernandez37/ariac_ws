@@ -181,9 +181,6 @@ def addPart(partVals,agv1Parts, agv2Parts, agv3Parts, agv4Parts,
     save_part=partial(savePart, mainWind, partFlag)#needs to change the save flag to exit the window and not refresh
     savePartsButton=tk.Button(partsWind, text="Save and Continue", command=save_part)
     savePartsButton.grid(column=rightColumn, row=10, pady=20)
-    cancel_parts_command=partial(cancel_wind, partsWind, cancelFlag)
-    cancelPartsButton=tk.Button(partsWind, text="Cancel and Exit", command=cancel_parts_command)
-    cancelPartsButton.grid(column=rightColumn,row=11, pady=20)
     #part labels
     #Label for parts currently selected for agv1
     currentAGV1Parts="Current AGV1 Parts:\n"
@@ -222,7 +219,6 @@ def addPart(partVals,agv1Parts, agv2Parts, agv3Parts, agv4Parts,
     currentConLabel=tk.Label(partsWind, text=currentConv)
     currentConLabel.grid(column=farRightColumn, row=2, padx=40)
     partsWind.mainloop()
-    check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
     partVals.clear()
     partVals.append(agv1TrayId.get())
     partVals.append(agv2TrayId.get())
