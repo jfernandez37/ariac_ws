@@ -22,22 +22,25 @@ def validateTime(val,a,b,c):
             tempStr="0"
     val.set(tempStr)
 
-def guiTimeWindow(cancelFlag, pathIncrement, fileName, createdDir):
-    timeWind=tk.Tk()
+def guiTimeWindow(cancelFlag, pathIncrement, fileName, createdDir, timeList, mainWind):
+    timeWind=tk.Toplevel()
     timeWind.title("Time limit")
     #timeWind.geometry("850x600")
     timeWind.attributes('-fullscreen', True)
     timeInstructions=tk.Label(timeWind, text="Enter the time limit you would like for the simulation")
     timeInstructions.pack(pady=100)
     timeVal=tk.StringVar()
-    timeVal.set("0")
+    timeVal.set(timeList[0])
     noTimeVal=tk.StringVar()
-    noTimeVal.set("0")
+    noTimeVal.set(timeList[1])
     noTimeLim=tk.Checkbutton(timeWind, text="No time limit", variable=noTimeVal, onvalue="1", offvalue="0", height=CHECKBOXHEIGHT, width=20)
     noTimeLim.pack()
-    getTime=tk.Entry(timeWind, textvariable=timeVal)
+    if noTimeVal.get()=="1":
+        getTime=tk.Entry(timeWind, textvariable=timeVal, state="disabled")
+    else:
+        getTime=tk.Entry(timeWind, textvariable=timeVal, state="normal")
     getTime.pack()
-    saveTimeButton=tk.Button(timeWind, text="Save and Continue", command=timeWind.destroy)
+    saveTimeButton=tk.Button(timeWind, text="Save and Continue", command=mainWind.destroy)
     saveTimeButton.pack(pady=20)
     cancel_time_command=partial(cancel_wind, timeWind, cancelFlag)
     cancelTimeButton=tk.Button(timeWind, text="Cancel and Exit", command=cancel_time_command)
@@ -48,4 +51,6 @@ def guiTimeWindow(cancelFlag, pathIncrement, fileName, createdDir):
     timeVal.trace('w', validateTimeInput)
     timeWind.mainloop()
     check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
-    return timeVal.get(), noTimeVal.get()
+    timeList.clear()
+    timeList.append(timeVal.get())
+    timeList.append(noTimeVal.get())

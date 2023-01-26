@@ -19,6 +19,13 @@ from ariac_gui.msgNames import *
 from ariac_gui.kittingTrayFunctions import *
 from ariac_msgs.msg import *
 
+def saveMainWind(window, flag):
+    flag.set('1')
+    window.destroy()
+
+def runTimeLimit(cancelFlag, pathIncrement, fileName, createdDir, timeList, mainWind):
+    guiTimeWindow(cancelFlag, pathIncrement, fileName, createdDir, timeList, mainWind)
+
 def runGUI():
     pathIncrement = []  # gives the full path for recursive deletion
     createdDir = []  # to deleted directories made if canceled
@@ -66,6 +73,10 @@ def runGUI():
     availableTrays=["Tray 0","Tray 1","Tray 2","Tray 3","Tray 4","Tray 5","Tray 6","Tray 7","Tray 8","Tray 9"]
     availableSlots=["Slot 1", "Slot 2", "Slot 3", "Slot 4", "Slot 5", "Slot 6"]
     kittingTrayCounter=[]
+    # window outputs
+    timeVal="0"
+    noTimeVal="0"
+    timeList=[timeVal, noTimeVal]
     # END OF DEFINITIONS
     # ----------------------------------------------------------------------------------------------
     # START OF GUI
@@ -104,6 +115,8 @@ def runGUI():
     saveFlag.set('0')
     saveOrdersFlag=tk.StringVar()
     saveOrdersFlag.set('0')
+    saveMainFlag=tk.StringVar()
+    saveMainFlag.set('0')
     getFileName.title("NIST ARIAC CONFIG GUI")
     fileName = tk.StringVar()
     fileName.set("")
@@ -138,12 +151,23 @@ def runGUI():
     # END OF GETTING THE NAME OF THE FILE
     # ----------------------------------------------------------------------------------------------
     # START OF MAINWIND
-    '''mainWind=tk.Tk()
-    mainWind.MainLoop()'''
+    while (saveMainFlag.get()=="0"):
+        mainWind=tk.Tk()
+        mainWind.attributes('-fullscreen', True)
+        get_time_limit=partial(runTimeLimit,cancelFlag, pathIncrement, fileName, createdDir, timeList, mainWind)
+        mainTimeButton=tk.Button(mainWind, text="Time Limit", command=get_time_limit)
+        mainTimeButton.pack()
+        save_main_wind=partial(saveMainWind, mainWind, saveMainFlag)
+        saveMainButton=tk.Button(mainWind, text="Save and Continue", command=save_main_wind)
+        saveMainButton.pack()
+        cancel_main_command=partial(cancel_wind, mainWind, cancelFlag)
+        cancelMainButton=tk.Button(mainWind, text="Cancel and Exit", command=cancel_main_command)
+        cancelMainButton.pack()
+        mainWind.mainloop()
+        check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
     # END OF MAIN WIND
     # ----------------------------------------------------------------------------------------------
     # START OF GETTING TIME LIMIT
-    timeVal, noTimeVal=guiTimeWindow(cancelFlag, pathIncrement, fileName, createdDir)
     # END OF TIME LIMIT
     # ----------------------------------------------------------------------------------------------
     # START OF GETTING KITTING TRAYS
