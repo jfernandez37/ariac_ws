@@ -20,7 +20,6 @@ from ariac_gui.kittingTrayFunctions import *
 from ariac_msgs.msg import *
 
 def runGUI():
-    CHECKBOXHEIGHT=1
     pathIncrement = []  # gives the full path for recursive deletion
     createdDir = []  # to deleted directories made if canceled
     nameLabels = []  # holds temporary flags to be deleted
@@ -136,31 +135,7 @@ def runGUI():
     # END OF GETTING THE NAME OF THE FILE
     # ----------------------------------------------------------------------------------------------
     # START OF GETTING TIME LIMIT
-    timeWind=tk.Tk()
-    timeWind.title("Time limit")
-    #timeWind.geometry("850x600")
-    timeWind.attributes('-fullscreen', True)
-    timeInstructions=tk.Label(timeWind, text="Enter the time limit you would like for the simulation")
-    timeInstructions.pack(pady=100)
-    timeVal=tk.StringVar()
-    timeVal.set("0")
-    noTimeVal=tk.StringVar()
-    noTimeVal.set("0")
-    noTimeLim=tk.Checkbutton(timeWind, text="No time limit", variable=noTimeVal, onvalue="1", offvalue="0", height=CHECKBOXHEIGHT, width=20)
-    noTimeLim.pack()
-    getTime=tk.Entry(timeWind, textvariable=timeVal)
-    getTime.pack()
-    saveTimeButton=tk.Button(timeWind, text="Save and Continue", command=timeWind.destroy)
-    saveTimeButton.pack(pady=20)
-    cancel_time_command=partial(cancel_wind, timeWind, cancelFlag)
-    cancelTimeButton=tk.Button(timeWind, text="Cancel and Exit", command=cancel_time_command)
-    cancelTimeButton.pack(pady=20)
-    updateGetTime=partial(updateTimeInputBox, noTimeVal, getTime)
-    validateTimeInput=partial(validateTime, timeVal)
-    noTimeVal.trace('w', updateGetTime)
-    timeVal.trace('w', validateTimeInput)
-    timeWind.mainloop()
-    check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
+    timeVal, noTimeVal=guiTimeWindow(cancelFlag, pathIncrement, fileName, createdDir)
     # END OF TIME LIMIT
     # ----------------------------------------------------------------------------------------------
     # START OF GETTING KITTING TRAYS
@@ -317,10 +292,10 @@ def runGUI():
         o.write("# ARIAC2023\n")
         o.write("# "+datetime.now().strftime("%Y-%m-%d %H:%M:%S")+"\n\n") #writes the time and date
         o.write("# ENVIRONMENT SETUP\n") 
-        if noTimeVal.get()=="1": # runs if the user selects no time limit
+        if noTimeVal=="1": # runs if the user selects no time limit
             o.write("time_limit: -1")
         else: #writes the time limit
-            o.write("time_limit: "+timeVal.get())
+            o.write("time_limit: "+timeVal)
         o.write(" # options: -1 (no time limit) or number of seconds\n")
         o.write("\nkitting_trays: # Which kitting trays will be spawned\n")
         o.write("  tray_ids: ["+", ".join(chosenKTrays)+"]\n")
