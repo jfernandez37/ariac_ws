@@ -167,7 +167,7 @@ def runGUI():
         mainWind=tk.Tk()
         mainWind.attributes('-fullscreen', True)
         #Time limit
-        get_time_limit=partial(guiTimeWindow,cancelFlag, pathIncrement, fileName, createdDir, timeList, mainWind)
+        get_time_limit=partial(guiTimeWindow, timeList, mainWind)
         mainTimeButton=tk.Button(mainWind, text="Time Limit", command=get_time_limit)
         mainTimeButton.pack()
         #Kitting trays and slots

@@ -22,7 +22,7 @@ def validateTime(val,a,b,c):
             tempStr="0"
     val.set(tempStr)
 
-def guiTimeWindow(cancelFlag, pathIncrement, fileName, createdDir, timeList, mainWind):
+def guiTimeWindow(timeList, mainWind):
     timeWind=tk.Toplevel()
     timeWind.title("Time limit")
     #timeWind.geometry("850x600")
