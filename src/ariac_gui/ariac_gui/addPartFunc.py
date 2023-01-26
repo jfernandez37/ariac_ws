@@ -179,7 +179,7 @@ def addPart(partVals,agv1Parts, agv2Parts, agv3Parts, agv4Parts,
     rightSpaceLabel.grid(column=rightColumn, row=8, pady=30)
     #save and cancel button
     save_part=partial(savePart, mainWind, partFlag)#needs to change the save flag to exit the window and not refresh
-    savePartsButton=tk.Button(partsWind, text="Save and Continue", command=save_part)
+    savePartsButton=tk.Button(partsWind, text="Save and return to main menu", command=save_part)
     savePartsButton.grid(column=rightColumn, row=10, pady=20)
     #part labels
     #Label for parts currently selected for agv1
