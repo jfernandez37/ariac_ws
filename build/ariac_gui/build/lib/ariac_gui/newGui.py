@@ -166,8 +166,11 @@ def runGUI():
     # START OF GETTING KITTING TRAYS
     kittingTrayWind=tk.Tk()
     kittingTrayWind.attributes('-fullscreen', True)
+    kittingTrayWind.grid_columnconfigure(0, weight=1)
+    kittingTrayWind.grid_columnconfigure(4, weight=1)
     kittingTrayLabel=tk.Label(kittingTrayWind, text="Kitting Trays")
     kittingTrayLabel.grid(column=2, row=1)
+    #variables and menus for the trays and slots
     tray1=tk.StringVar()
     tray2=tk.StringVar()
     tray3=tk.StringVar()
