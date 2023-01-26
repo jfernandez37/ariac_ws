@@ -540,7 +540,7 @@ def addNewOrder(orderMSGS,orderCounter, usedIDs, mainWind):
             newOrder.combined_task=newCombinedTask
         orderMSGS.append(newOrder)
 
-def saveOrders(wind, ordersFlag): # allows the while loop in main to stop so the parts window stops when the user saves
+def saveOrders(wind, ordersFlag): # allows the while loop in main to stop so the orders window stops when the user saves
     ordersFlag.set('0')
     wind.destroy()
 

@@ -543,32 +543,36 @@ def newSensorBlackout(sensorBlackouts, usedIds):
         newSensorBO.condition=newSensorBOCond
         sensorBlackouts.append(newSensorBO)
 
-def runChallengeWind(robotMalfunctions, usedIDs, faultyParts, droppedParts, sensorBlackouts,cancelFlag, pathIncrement,fileName, createdDir):
-    challengeWind=tk.Tk()
+def saveOrders(wind, challengesFlag): # allows the while loop in main to stop so the challenges window stops when the user saves
+    challengesFlag.set('0')
+    wind.destroy()
+
+def runChallengeWind(robotMalfunctions, usedIDs, faultyParts, droppedParts, sensorBlackouts,cancelFlag, pathIncrement,fileName, createdDir, challengesFlag, mainWind):
+    challengeWind=tk.Toplevel()
+    challengesFlag.set('1')
     challengeWind.title("Challenges")
     #challengeWind.geometry("850x600")
     challengeWind.attributes('-fullscreen', True)
     #robot malfunciton
-    new_robot_malfunction=partial(newRobotMalfunction, robotMalfunctions, usedIDs)
-    robotMalfunctionButton=tk.Button(challengeWind, text="Add robot malfunction", command=new_robot_malfunction)
-    robotMalfunctionButton.pack(pady=10)
-    #faluty part
-    new_faulty_part=partial(newFaultyPart, faultyParts, usedIDs)
-    faultyPartButton=tk.Button(challengeWind, text="Add faulty part", command=new_faulty_part)
-    faultyPartButton.pack(pady=10)
+    if len(usedIDs)>0:
+        new_robot_malfunction=partial(newRobotMalfunction, robotMalfunctions, usedIDs)
+        robotMalfunctionButton=tk.Button(challengeWind, text="Add robot malfunction", command=new_robot_malfunction)
+        robotMalfunctionButton.pack(pady=10)
+        #faluty part
+        new_faulty_part=partial(newFaultyPart, faultyParts, usedIDs)
+        faultyPartButton=tk.Button(challengeWind, text="Add faulty part", command=new_faulty_part)
+        faultyPartButton.pack(pady=10)
     #dropped part
     new_dropped_part=partial(newDroppedPart, droppedParts)
     droppedPartButton=tk.Button(challengeWind, text="Add dropped part", command=new_dropped_part)
     droppedPartButton.pack(pady=10)
     #sensor blackout
-    new_sensor_blackout=partial(newSensorBlackout, sensorBlackouts, usedIDs)
-    sensorBlackoutButton=tk.Button(challengeWind, text="Add sensor blackout", command=new_sensor_blackout)
-    sensorBlackoutButton.pack(pady=10)
+    if len(usedIDs)>0:
+        new_sensor_blackout=partial(newSensorBlackout, sensorBlackouts, usedIDs)
+        sensorBlackoutButton=tk.Button(challengeWind, text="Add sensor blackout", command=new_sensor_blackout)
+        sensorBlackoutButton.pack(pady=10)
     #save and cancel buttons
-    saveChallengeButton=tk.Button(challengeWind, text="Save and Continue", command=challengeWind.destroy)
+    save_challenges=partial(saveOrders, mainWind, challengesFlag)
+    saveChallengeButton=tk.Button(challengeWind, text="Save and return to menu", command=save_challenges)
     saveChallengeButton.pack(pady=20)
-    cancel_challenge_command=partial(cancel_wind, challengeWind, cancelFlag)
-    cancelChallengeButton=tk.Button(challengeWind, text="Cancel and Exit", command=cancel_challenge_command)
-    cancelChallengeButton.pack(pady=20)
     challengeWind.mainloop()
-    check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)

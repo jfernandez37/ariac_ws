@@ -123,6 +123,8 @@ def runGUI():
     cancelFlag.set('0')
     ordersFlag=tk.StringVar()
     ordersFlag.set('0')
+    challengesFlag=tk.StringVar()
+    challengesFlag.set('0')
     saveOrdersFlag=tk.StringVar()
     saveOrdersFlag.set('0')
     saveMainFlag=tk.StringVar()
@@ -185,6 +187,10 @@ def runGUI():
         get_order=partial(runOrdersWind, orderMSGS,  orderCounter, usedIDs, ordersFlag, mainWind)
         mainOrderButton=tk.Button(mainWind, text="Orders", command=get_order)
         mainOrderButton.pack()
+        #Challenges
+        get_challenge=partial(runChallengeWind,robotMalfunctions, usedIDs, faultyParts, droppedParts, sensorBlackouts,cancelFlag, pathIncrement,fileName, createdDir, challengesFlag, mainWind)
+        mainChallengeButton=tk.Button(mainWind, text="Challenges", command=get_challenge)
+        mainChallengeButton.pack()
         #save button
         save_main_wind=partial(saveMainWind, mainWind, saveMainFlag)
         saveMainButton=tk.Button(mainWind, text="Save and Continue", command=save_main_wind)
@@ -202,6 +208,9 @@ def runGUI():
         if ordersFlag.get()=="1": # checks if orders still needs to run
             mainWind.withdraw()
             runOrdersWind(orderMSGS,  orderCounter, usedIDs, ordersFlag, mainWind)
+        if challengesFlag.get()=="1":
+            mainWind.withdraw()
+            runChallengeWind(robotMalfunctions, usedIDs, faultyParts, droppedParts, sensorBlackouts,cancelFlag, pathIncrement,fileName, createdDir, challengesFlag, mainWind)
         mainWind.mainloop()
         check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
     # END OF MAIN WIND
