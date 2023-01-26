@@ -1,3 +1,6 @@
+import tkinter as tk
+from functools import partial
+from ariac_gui.checkCancel import *
 trays=["Tray 0","Tray 1","Tray 2","Tray 3","Tray 4","Tray 5","Tray 6","Tray 7","Tray 8","Tray 9"]
 slots=["Slot 1", "Slot 2", "Slot 3", "Slot 4", "Slot 5", "Slot 6"]
 LEFTCOLUMN=1
@@ -163,3 +166,98 @@ def updateKSlotMenus(slot1, slot1Menu, slot2, slot2Menu, slot3, slot3Menu, slot4
         if (slot not in currentSlotVals) or slot==slot6.get():
             menu6.add_command(label=slot, command=lambda slot=slot: slot6.set(slot))
     
+def runKittingTrayWind(kittingTrayCounter, availableTrays, availableSlots, cancelFlag,pathIncrement, fileName, createdDir,tray1Var,tray2Var,tray3Var,tray4Var,tray5Var,tray6Var,slot1Var,slot2Var,slot3Var,slot4Var,slot5Var,slot6Var):
+    kittingTrayWind=tk.Tk()
+    kittingTrayWind.attributes('-fullscreen', True)
+    kittingTrayWind.grid_columnconfigure(0, weight=1)
+    kittingTrayWind.grid_columnconfigure(4, weight=1)
+    kittingTrayLabel=tk.Label(kittingTrayWind, text="Kitting Trays")
+    kittingTrayLabel.grid(column=2, row=1)
+    #variables and menus for the trays and slots
+    tray1=tk.StringVar()
+    tray2=tk.StringVar()
+    tray3=tk.StringVar()
+    tray4=tk.StringVar()
+    tray5=tk.StringVar()
+    tray6=tk.StringVar()
+    slot1=tk.StringVar()
+    slot2=tk.StringVar()
+    slot3=tk.StringVar()
+    slot4=tk.StringVar()
+    slot5=tk.StringVar()
+    slot6=tk.StringVar()
+    tray1Menu=tk.OptionMenu(kittingTrayWind, tray1, *availableTrays)
+    tray2Menu=tk.OptionMenu(kittingTrayWind, tray2, *availableTrays)
+    tray3Menu=tk.OptionMenu(kittingTrayWind, tray3, *availableTrays)
+    tray4Menu=tk.OptionMenu(kittingTrayWind, tray4, *availableTrays)
+    tray5Menu=tk.OptionMenu(kittingTrayWind, tray5, *availableTrays)
+    tray6Menu=tk.OptionMenu(kittingTrayWind, tray6, *availableTrays)
+    slot1Menu=tk.OptionMenu(kittingTrayWind, slot1, *availableSlots)
+    slot2Menu=tk.OptionMenu(kittingTrayWind, slot2, *availableSlots)
+    slot3Menu=tk.OptionMenu(kittingTrayWind, slot3, *availableSlots)
+    slot4Menu=tk.OptionMenu(kittingTrayWind, slot4, *availableSlots)
+    slot5Menu=tk.OptionMenu(kittingTrayWind, slot5, *availableSlots)
+    slot6Menu=tk.OptionMenu(kittingTrayWind, slot6, *availableSlots)
+    if tray1Var!="":
+        tray1.set(tray1Var)
+        slot1.set(slot1Var)
+        tray1Menu.grid(column=LEFTCOLUMN, row=2)
+        slot1Menu.grid(column=RIGHTCOLUMN, row=2)
+    if tray2Var!="":
+        tray2.set(tray2Var)
+        slot2.set(slot2Var)
+        tray2Menu.grid(column=LEFTCOLUMN, row=3)
+        slot2Menu.grid(column=RIGHTCOLUMN, row=3)
+    if tray3Var!="":
+        tray3.set(tray3Var)
+        slot3.set(slot3Var)
+        tray3Menu.grid(column=LEFTCOLUMN, row=4)
+        slot3Menu.grid(column=RIGHTCOLUMN, row=4)
+    if tray4Var!="":
+        tray4.set(tray4Var)
+        slot4.set(slot4Var)
+        tray4Menu.grid(column=LEFTCOLUMN, row=5)
+        slot4Menu.grid(column=RIGHTCOLUMN, row=5)
+    if tray5Var!="":
+        tray5.set(tray5Var)
+        slot5.set(slot5Var)
+        tray5Menu.grid(column=LEFTCOLUMN, row=6)
+        slot5Menu.grid(column=RIGHTCOLUMN, row=6)
+    if tray6Var!="":
+        tray6.set(tray6Var)
+        slot6.set(slot6Var)
+        tray6Menu.grid(column=LEFTCOLUMN, row=7)
+        slot6Menu.grid(column=RIGHTCOLUMN, row=7)
+    #add new and remove buttons
+    if len(kittingTrayCounter)==0:
+        addNewKTray(kittingTrayLabel, tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, kittingTrayCounter, availableTrays, availableSlots)
+    add_new_tray=partial(addNewKTray,kittingTrayLabel, tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, kittingTrayCounter, availableTrays, availableSlots)
+    addTrayButton=tk.Button(kittingTrayWind, text="Add New Tray", command=add_new_tray)
+    addTrayButton.grid(column=MIDDLECOLUMN, row=8)
+    remove_tray=partial(removeKTray,tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, kittingTrayCounter, availableTrays, availableSlots)
+    removeTrayButton=tk.Button(kittingTrayWind, text="Remove Tray", command=remove_tray)
+    removeTrayButton.grid(column=MIDDLECOLUMN, row=9)
+    #save and cancel buttons
+    saveTrayButton=tk.Button(kittingTrayWind, text="Save and Continue", command=kittingTrayWind.destroy)
+    saveTrayButton.grid(column=MIDDLECOLUMN, row=10)
+    cancel_tray_command=partial(cancel_wind, kittingTrayWind, cancelFlag)
+    cancelTrayButton=tk.Button(kittingTrayWind, text="Cancel and Exit", command=cancel_tray_command)
+    cancelTrayButton.grid(column=MIDDLECOLUMN, row=11)
+    #trace functions
+    update_all_tray_menus=partial(updateKTrayMenus,tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4, tray4Menu, tray5, tray5Menu, tray6, tray6Menu,kittingTrayCounter,removeTrayButton, addTrayButton, saveTrayButton)
+    update_all_slot_menus=partial(updateKSlotMenus, slot1, slot1Menu, slot2, slot2Menu, slot3, slot3Menu, slot4, slot4Menu, slot5, slot5Menu, slot6, slot6Menu)
+    tray1.trace('w', update_all_tray_menus)
+    tray2.trace('w', update_all_tray_menus)
+    tray3.trace('w', update_all_tray_menus)
+    tray4.trace('w', update_all_tray_menus)
+    tray5.trace('w', update_all_tray_menus)
+    tray6.trace('w', update_all_tray_menus)
+    slot1.trace('w', update_all_slot_menus)
+    slot2.trace('w', update_all_slot_menus)
+    slot3.trace('w', update_all_slot_menus)
+    slot4.trace('w', update_all_slot_menus)
+    slot5.trace('w', update_all_slot_menus)
+    slot6.trace('w', update_all_slot_menus)
+    kittingTrayWind.mainloop()
+    check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
+    return tray1.get(),tray2.get(),tray3.get(),tray4.get(),tray5.get(),tray6.get(),slot1.get(),slot2.get(),slot3.get(),slot4.get(),slot5.get(),slot6.get()

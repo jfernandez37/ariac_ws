@@ -41,7 +41,6 @@ def runGUI():
     bin7Slots=[] # holds the available slots for bin7
     bin8Slots=[] # holds the available slots for bin8
     convParts=[] # holds conveyor belt parts
-    convOrders=["random", "sequential"]
     for i in range(9):
         bin1Slots.append(str(i+1))
         bin2Slots.append(str(i+1))
@@ -101,6 +100,10 @@ def runGUI():
     logoImgLabel.pack(pady=40)
     cancelFlag = tk.StringVar()
     cancelFlag.set('0')
+    saveFlag=tk.StringVar()
+    saveFlag.set('0')
+    saveOrdersFlag=tk.StringVar()
+    saveOrdersFlag.set('0')
     getFileName.title("NIST ARIAC CONFIG GUI")
     fileName = tk.StringVar()
     fileName.set("")
@@ -134,77 +137,18 @@ def runGUI():
     fileName.set(saveFileName)
     # END OF GETTING THE NAME OF THE FILE
     # ----------------------------------------------------------------------------------------------
+    # START OF MAINWIND
+    '''mainWind=tk.Tk()
+    mainWind.MainLoop()'''
+    # END OF MAIN WIND
+    # ----------------------------------------------------------------------------------------------
     # START OF GETTING TIME LIMIT
     timeVal, noTimeVal=guiTimeWindow(cancelFlag, pathIncrement, fileName, createdDir)
     # END OF TIME LIMIT
     # ----------------------------------------------------------------------------------------------
     # START OF GETTING KITTING TRAYS
-    kittingTrayWind=tk.Tk()
-    kittingTrayWind.attributes('-fullscreen', True)
-    kittingTrayWind.grid_columnconfigure(0, weight=1)
-    kittingTrayWind.grid_columnconfigure(4, weight=1)
-    kittingTrayLabel=tk.Label(kittingTrayWind, text="Kitting Trays")
-    kittingTrayLabel.grid(column=2, row=1)
-    #variables and menus for the trays and slots
-    tray1=tk.StringVar()
-    tray2=tk.StringVar()
-    tray3=tk.StringVar()
-    tray4=tk.StringVar()
-    tray5=tk.StringVar()
-    tray6=tk.StringVar()
-    slot1=tk.StringVar()
-    slot2=tk.StringVar()
-    slot3=tk.StringVar()
-    slot4=tk.StringVar()
-    slot5=tk.StringVar()
-    slot6=tk.StringVar()
-    tray1Menu=tk.OptionMenu(kittingTrayWind, tray1, *availableTrays)
-    tray2Menu=tk.OptionMenu(kittingTrayWind, tray2, *availableTrays)
-    tray3Menu=tk.OptionMenu(kittingTrayWind, tray3, *availableTrays)
-    tray4Menu=tk.OptionMenu(kittingTrayWind, tray4, *availableTrays)
-    tray5Menu=tk.OptionMenu(kittingTrayWind, tray5, *availableTrays)
-    tray6Menu=tk.OptionMenu(kittingTrayWind, tray6, *availableTrays)
-    slot1Menu=tk.OptionMenu(kittingTrayWind, slot1, *availableSlots)
-    slot2Menu=tk.OptionMenu(kittingTrayWind, slot2, *availableSlots)
-    slot3Menu=tk.OptionMenu(kittingTrayWind, slot3, *availableSlots)
-    slot4Menu=tk.OptionMenu(kittingTrayWind, slot4, *availableSlots)
-    slot5Menu=tk.OptionMenu(kittingTrayWind, slot5, *availableSlots)
-    slot6Menu=tk.OptionMenu(kittingTrayWind, slot6, *availableSlots)
-    #add new and remove buttons
-    addNewKTray(kittingTrayLabel, tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, kittingTrayCounter, availableTrays, availableSlots)
-    add_new_tray=partial(addNewKTray,kittingTrayLabel, tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, kittingTrayCounter, availableTrays, availableSlots)
-    addTrayButton=tk.Button(kittingTrayWind, text="Add New Tray", command=add_new_tray)
-    addTrayButton.grid(column=MIDDLECOLUMN, row=8)
-    remove_tray=partial(removeKTray,tray1, slot1, tray1Menu, slot1Menu,tray2, slot2, tray2Menu, slot2Menu,tray3, slot3, tray3Menu, slot3Menu,tray4, slot4, tray4Menu, slot4Menu,tray5, slot5, tray5Menu, slot5Menu,tray6, slot6, tray6Menu, slot6Menu, kittingTrayCounter, availableTrays, availableSlots)
-    removeTrayButton=tk.Button(kittingTrayWind, text="Remove Tray", command=remove_tray)
-    removeTrayButton.grid(column=MIDDLECOLUMN, row=9)
-    #save and cancel buttons
-    saveTrayButton=tk.Button(kittingTrayWind, text="Save and Continue", command=kittingTrayWind.destroy)
-    saveTrayButton.grid(column=MIDDLECOLUMN, row=10)
-    cancel_tray_command=partial(cancel_wind, kittingTrayWind, cancelFlag)
-    cancelTrayButton=tk.Button(kittingTrayWind, text="Cancel and Exit", command=cancel_tray_command)
-    cancelTrayButton.grid(column=MIDDLECOLUMN, row=11)
-    #trace functions
-    update_all_tray_menus=partial(updateKTrayMenus,tray1, tray1Menu, tray2, tray2Menu, tray3, tray3Menu, tray4, tray4Menu, tray5, tray5Menu, tray6, tray6Menu,kittingTrayCounter,removeTrayButton, addTrayButton, saveTrayButton)
-    update_all_slot_menus=partial(updateKSlotMenus, slot1, slot1Menu, slot2, slot2Menu, slot3, slot3Menu, slot4, slot4Menu, slot5, slot5Menu, slot6, slot6Menu)
-    tray1.trace('w', update_all_tray_menus)
-    tray2.trace('w', update_all_tray_menus)
-    tray3.trace('w', update_all_tray_menus)
-    tray4.trace('w', update_all_tray_menus)
-    tray5.trace('w', update_all_tray_menus)
-    tray6.trace('w', update_all_tray_menus)
-    slot1.trace('w', update_all_slot_menus)
-    slot2.trace('w', update_all_slot_menus)
-    slot3.trace('w', update_all_slot_menus)
-    slot4.trace('w', update_all_slot_menus)
-    slot5.trace('w', update_all_slot_menus)
-    slot6.trace('w', update_all_slot_menus)
-    saveFlag=tk.StringVar()
-    saveFlag.set('0')
-    saveOrdersFlag=tk.StringVar()
-    saveOrdersFlag.set('0')
-    kittingTrayWind.mainloop()
-    check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
+    tray1=tray2=tray3=tray4=tray5=tray6=slot1=slot2=slot3=slot4=slot5=slot6=""
+    tray1,tray2,tray3,tray4,tray5,tray6,slot1,slot2,slot3,slot4,slot5,slot6=runKittingTrayWind(kittingTrayCounter, availableTrays, availableSlots, cancelFlag,pathIncrement, fileName, createdDir,tray1,tray2,tray3,tray4,tray5,tray6,slot1,slot2,slot3,slot4,slot5,slot6)
     # END OF GETTING KITTING TRAYS
     # ----------------------------------------------------------------------------------------------
     # START OF PARTS
@@ -229,34 +173,8 @@ def runGUI():
     # END OF ORDERS
     # ----------------------------------------------------------------------------------------------
     #START OF CHALLENGES
-    challengeWind=tk.Tk()
-    challengeWind.title("Challenges")
-    #challengeWind.geometry("850x600")
-    challengeWind.attributes('-fullscreen', True)
-    #robot malfunciton
-    new_robot_malfunction=partial(newRobotMalfunction, robotMalfunctions, usedIDs)
-    robotMalfunctionButton=tk.Button(challengeWind, text="Add robot malfunction", command=new_robot_malfunction)
-    robotMalfunctionButton.pack(pady=10)
-    #faluty part
-    new_faulty_part=partial(newFaultyPart, faultyParts, usedIDs)
-    faultyPartButton=tk.Button(challengeWind, text="Add faulty part", command=new_faulty_part)
-    faultyPartButton.pack(pady=10)
-    #dropped part
-    new_dropped_part=partial(newDroppedPart, droppedParts)
-    droppedPartButton=tk.Button(challengeWind, text="Add dropped part", command=new_dropped_part)
-    droppedPartButton.pack(pady=10)
-    #sensor blackout
-    new_sensor_blackout=partial(newSensorBlackout, sensorBlackouts, usedIDs)
-    sensorBlackoutButton=tk.Button(challengeWind, text="Add sensor blackout", command=new_sensor_blackout)
-    sensorBlackoutButton.pack(pady=10)
-    #save and cancel buttons
-    saveChallengeButton=tk.Button(challengeWind, text="Save and Continue", command=challengeWind.destroy)
-    saveChallengeButton.pack(pady=20)
-    cancel_challenge_command=partial(cancel_wind, challengeWind, cancelFlag)
-    cancelChallengeButton=tk.Button(challengeWind, text="Cancel and Exit", command=cancel_challenge_command)
-    cancelChallengeButton.pack(pady=20)
-    challengeWind.mainloop()
-    check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
+    runChallengeWind(robotMalfunctions, usedIDs, faultyParts, droppedParts, sensorBlackouts,cancelFlag, pathIncrement,fileName, createdDir)
+    #END OF CHALLENGES
     #Finds which bins are present
     for i in bins:
         if i.binName=="bin1":
@@ -275,18 +193,17 @@ def runGUI():
             binPresentFlags[6]=1
         if i.binName=="bin8":
             binPresentFlags[7]=1    
-    KTraysSTR=tray1.get()+tray2.get()+tray3.get()+tray4.get()+tray5.get()+tray6.get()
+    KTraysSTR=tray1+tray2+tray3+tray4+tray5+tray6
     chosenKTrays=[]
     for i in KTraysSTR:
         if i.isnumeric():
             chosenKTrays.append(i)
-    KSlotsSTR=slot1.get()+slot2.get()+slot3.get()+slot4.get()+slot5.get()+slot6.get()
+    KSlotsSTR=slot1+slot2+slot3+slot4+slot5+slot6
     chosenKSlots=[]
     for i in KSlotsSTR:
         if i.isnumeric():
             chosenKSlots.append(i)
     #  WRITE TO FILE
-    tempStr=''
     with open(saveFileName, "a") as o:
         o.write("# Trial Name: "+saveFileName+"\n")
         o.write("# ARIAC2023\n")
