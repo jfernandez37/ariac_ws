@@ -215,12 +215,6 @@ def runGUI():
         check_cancel(cancelFlag.get(), pathIncrement, fileName, createdDir)
     # END OF MAIN WIND
     # ----------------------------------------------------------------------------------------------
-    # START OF ORDERS
-    # END OF ORDERS
-    # ----------------------------------------------------------------------------------------------
-    #START OF CHALLENGES
-    runChallengeWind(robotMalfunctions, usedIDs, faultyParts, droppedParts, sensorBlackouts,cancelFlag, pathIncrement,fileName, createdDir)
-    #END OF CHALLENGES
     #Finds which bins are present
     for i in bins:
         if i.binName=="bin1":
