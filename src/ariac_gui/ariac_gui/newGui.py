@@ -56,6 +56,7 @@ def runGUI():
         bin8Slots.append(str(i+1))
     orderCounter=[] # for counting the number of orders
     orderMSGS=[] # holds all order ros2 messages
+    orderConditions=[] #holds all order condition ros2 messages
     binPresentFlags=[] # to hold which bins are present 
     for i in range(8):
         binPresentFlags.append(0)
@@ -116,7 +117,7 @@ def runGUI():
     #getFileName.geometry("850x600")
     getFileName.attributes('-fullscreen', True)
     frame.pack()
-    nistLogo = ImageTk.PhotoImage(Image.open("src/ariac_gui/ariac_gui/GUI_Images/new_NIST_logo.png"))
+    nistLogo = ImageTk.PhotoImage(Image.open("src/ARIAC/ariac_gui/ariac_gui/GUI_Images/new_NIST_logo.png"))
     logoImgLabel = tk.Label(frame, image=nistLogo)
     logoImgLabel.pack(pady=40)
     cancelFlag = tk.StringVar()
@@ -184,7 +185,7 @@ def runGUI():
         mainPartButton=tk.Button(mainWind, text="Parts", command=get_parts)
         mainPartButton.pack()
         #Orders
-        get_order=partial(runOrdersWind, orderMSGS,  orderCounter, usedIDs, ordersFlag, mainWind)
+        get_order=partial(runOrdersWind, orderMSGS,  orderConditions, orderCounter, usedIDs, ordersFlag, mainWind)
         mainOrderButton=tk.Button(mainWind, text="Orders", command=get_order)
         mainOrderButton.pack()
         #Challenges
@@ -199,16 +200,16 @@ def runGUI():
         cancel_main_command=partial(cancel_wind, mainWind, cancelFlag)
         cancelMainButton=tk.Button(mainWind, text="Cancel and Exit", command=cancel_main_command)
         cancelMainButton.pack()
-        if partFlag.get()=="1": # checks if parts still needs to run
+        if partFlag.get()=="1": # checks if the user is still in parts
             mainWind.withdraw()
             addPart(partVals,agv1Parts, agv2Parts, agv3Parts, agv4Parts, 
             agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,
             bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, 
             convParts, cancelFlag, pathIncrement,fileName,createdDir, partFlag, mainWind)
-        if ordersFlag.get()=="1": # checks if orders still needs to run
+        if ordersFlag.get()=="1": # checks if the user is still in orders
             mainWind.withdraw()
-            runOrdersWind(orderMSGS,  orderCounter, usedIDs, ordersFlag, mainWind)
-        if challengesFlag.get()=="1":
+            runOrdersWind(orderMSGS, orderConditions, orderCounter, usedIDs, ordersFlag, mainWind)
+        if challengesFlag.get()=="1":# checks if the user is still in challenges
             mainWind.withdraw()
             runChallengeWind(robotMalfunctions, usedIDs, faultyParts, droppedParts, sensorBlackouts,cancelFlag, pathIncrement,fileName, createdDir, challengesFlag, mainWind)
         mainWind.mainloop()
@@ -258,9 +259,10 @@ def runGUI():
         else: #writes the time limit
             o.write("time_limit: "+timeVal)
         o.write(" # options: -1 (no time limit) or number of seconds\n")
-        o.write("\nkitting_trays: # Which kitting trays will be spawned\n")
-        o.write("  tray_ids: ["+", ".join(chosenKTrays)+"]\n")
-        o.write("  slots: ["+", ".join(chosenKSlots)+"]\n")
+        if len(chosenKTrays)>0:
+            o.write("\nkitting_trays: # Which kitting trays will be spawned\n")
+            o.write("  tray_ids: ["+", ".join(chosenKTrays)+"]\n")
+            o.write("  slots: ["+", ".join(chosenKSlots)+"]\n")
         o.write("\nparts:\n")
         o.write("  agvs:\n")
     if len(agv1Parts)>0:
@@ -300,23 +302,35 @@ def runGUI():
         if len(convParts)>0:
             o.write("    parts_to_spawn:\n")
             for part in convParts:
-                o.write("      - type: "+part.type)
-                o.write("\n        color: "+part.color)
+                o.write("      - type: \'"+part.type+"\'")
+                o.write("\n        color: \'"+part.color+"\'")
                 o.write("\n        number: "+part.number)
                 o.write("\n        offset: "+part.offset+" # between -1 and 1")
                 o.write("\n        rotation: "+ part.rotation)
                 o.write("\n        # time_before_next_part: 2 # seconds\n")
         
         #Beginning of order writing to file
+        counter=0
         o.write("\n# ORDER SETUP\n")
         o.write("orders:\n")
         for order in orderMSGS:
-            o.write("    id: \'"+order.id+"\'\n")
+            o.write("  - id: \'"+order.id+"\'\n")
             o.write("    type: \'"+getOrderType(order.type)+"\'\n")
+            o.write("    announcement:\n")
+            if orderConditions[counter].type==0:
+                o.write("      time_condition: "+str(orderConditions[counter].time_condition.seconds)+"\n")
+            elif malf.condition.type==1:
+                o.write("      part_type: \'"+getPartName(orderConditions[counter].condition.part_place_condition.part.type)+"\'\n")
+                o.write("      part_color: \'"+getPartColor(orderConditions[counter].condition.part_place_condition.part.color)+"\'\n")
+                o.write("      agv: "+str(orderConditions[counter].condition.part_place_condition.agv))
+            elif malf.condition.type==2:
+                o.write("      submission_condition:\n")
+                o.write("        order_id: \'"+orderConditions[counter].condition.submission_condition.order_id+"\'\n")
+            counter+=1
             o.write("    priority: " + str(order.priority).lower()+"\n")
             if order.type==0:
                 o.write("    kitting_task:\n")
-                o.write("      agv: "+str(order.kitting_task.agv_number)+"\n")
+                o.write("      agv_number: "+str(order.kitting_task.agv_number)+"\n")
                 o.write("      tray_id: "+str(order.kitting_task.tray_id)+"\n")
                 o.write("      destination: \'"+getKittingDestName(order.kitting_task.destination)+"\'\n")
                 o.write("      products:\n")
@@ -326,7 +340,7 @@ def runGUI():
                     o.write("          quadrant: "+str(kittingPart.quadrant)+"\n")
             elif order.type==1:
                 o.write("    assembly_task:\n")
-                o.write("      agv: ["+", ".join(str(agvNum) for agvNum in order.assembly_task.agv_numbers)+"]\n")
+                o.write("      agv_number: ["+", ".join(str(agvNum) for agvNum in order.assembly_task.agv_numbers)+"]\n")
                 o.write("      station: \'as"+str(order.assembly_task.station)+"\'\n")
                 o.write("      products:\n")
                 for assemblyPart in order.assembly_task.parts:
@@ -350,71 +364,72 @@ def runGUI():
         #end of order writing to file
         
         #writes orders to file
-        o.write("\n# GLOBAL CHALLENGES\n")
-        o.write("challenges:\n")
-        #robot malfunctions
-        for malf in robotMalfunctions:
-            o.write("  - robot_malfunction:\n")
-            o.write("      duration: "+str(malf.duration)+"\n")
-            robotsToDisable=[]
-            if malf.robots_to_disable.floor_robot:
-                robotsToDisable.append("\'floor_robot\'")
-            if malf.robots_to_disable.ceiling_robot:
-                robotsToDisable.append("\'ceiling_robot\'")
-            o.write("      robots_to_disable: ["+", ".join(robotsToDisable)+"]\n")
-            if malf.condition.type==0:
-                o.write("      time: "+str(malf.condition.time_condition.seconds)+"\n")
-            elif malf.condition.type==1:
-                o.write("      part_type: \'"+getPartName(malf.condition.part_place_condition.part.type)+"\'\n")
-                o.write("      part_color: \'"+getPartColor(malf.condition.part_place_condition.part.color)+"\'\n")
-                o.write("      agv: "+str(malf.condition.part_place_condition.agv))
-            elif malf.condition.type==2:
-                o.write("      order_id: \'"+malf.condition.submission_condition.order_id+"\'\n")
-        #faulty parts
-        for part in faultyParts:
-            o.write("  - faulty_part:\n")
-            o.write("      order_id: \'"+part.order_id+"\'\n")
-            faultyPartQuadrants=[]
-            if part.quadrant1:
-                faultyPartQuadrants.append("1")
-            if part.quadrant2:
-                faultyPartQuadrants.append("2")
-            if part.quadrant3:
-                faultyPartQuadrants.append("3")
-            if part.quadrant4:
-                faultyPartQuadrants.append("4")
-            o.write("      quadrant: ["+", ".join(faultyPartQuadrants)+"]\n")
-        #dropped parts
-        for part in droppedParts:
-            o.write("  - dropped_part:\n")
-            o.write("      robot: \'"+part.robot+"\'\n")
-            o.write("      type: \'"+getPartName(part.part_to_drop.type)+"\'\n")
-            o.write("      color: \'"+getPartColor(part.part_to_drop.color)+"\'\n")
-            o.write("      drop_after_num: "+str(part.drop_after_num)+" # first part the robot successfully picks\n")
-            o.write("      drop_after_time: "+str(part.drop_after_time)+" # secons\n")
-        #sensor blackouts
-        for blackout in sensorBlackouts:
-            o.write("  - sensor_blackout:\n")
-            o.write("    duration: "+str(blackout.duration)+"\n")
-            #gets the list of sensors to disable
-            if blackout.sensors_to_disable.break_beam:
-                sensorsToDisable.append("break_beam")
-            if blackout.sensors_to_disable.proximity:
-                sensorsToDisable.append("proximity")
-            if blackout.sensors_to_disable.laser_profiler:
-                sensorsToDisable.append("laser_profiler")
-            if blackout.sensors_to_disable.lidar:
-                sensorsToDisable.append("lidar")
-            if blackout.sensors_to_disable.camera:
-                sensorsToDisable.append("camera")
-            if blackout.sensors_to_disable.logical_camera:
-                sensorsToDisable.append("logical_camera")
-            o.write("    sensors_to_disable: ["+", ".join(sensorsToDisable)+"]\n")
-            if blackout.condition.type==0:
-                o.write("      time: "+str(blackout.condition.time_condition.seconds)+"\n")
-            elif blackout.condition.type==1:
-                o.write("      part_type: \'"+getPartName(blackout.condition.part_place_condition.part.type)+"\'\n")
-                o.write("      part_color: \'"+getPartColor(blackout.condition.part_place_condition.part.color)+"\'\n")
-                o.write("      agv: "+str(blackout.condition.part_place_condition.agv))
-            elif blackout.condition.type==2:
-                o.write("      order_id: \'"+blackout.condition.submission_condition.order_id+"\'\n")
+        if len(robotMalfunctions)+len(faultyParts)+len(droppedParts)+len(sensorBlackouts)>0:
+            o.write("\n# GLOBAL CHALLENGES\n")
+            o.write("challenges:\n")
+            #robot malfunctions
+            for malf in robotMalfunctions:
+                o.write("  - robot_malfunction:\n")
+                o.write("      duration: "+str(malf.duration)+"\n")
+                robotsToDisable=[]
+                if malf.robots_to_disable.floor_robot:
+                    robotsToDisable.append("\'floor_robot\'")
+                if malf.robots_to_disable.ceiling_robot:
+                    robotsToDisable.append("\'ceiling_robot\'")
+                o.write("      robots_to_disable: ["+", ".join(robotsToDisable)+"]\n")
+                if malf.condition.type==0:
+                    o.write("      time: "+str(malf.condition.time_condition.seconds)+"\n")
+                elif malf.condition.type==1:
+                    o.write("      part_type: \'"+getPartName(malf.condition.part_place_condition.part.type)+"\'\n")
+                    o.write("      part_color: \'"+getPartColor(malf.condition.part_place_condition.part.color)+"\'\n")
+                    o.write("      agv: "+str(malf.condition.part_place_condition.agv))
+                elif malf.condition.type==2:
+                    o.write("      order_id: \'"+malf.condition.submission_condition.order_id+"\'\n")
+            #faulty parts
+            for part in faultyParts:
+                o.write("  - faulty_part:\n")
+                o.write("      order_id: \'"+part.order_id+"\'\n")
+                faultyPartQuadrants=[]
+                if part.quadrant1:
+                    faultyPartQuadrants.append("1")
+                if part.quadrant2:
+                    faultyPartQuadrants.append("2")
+                if part.quadrant3:
+                    faultyPartQuadrants.append("3")
+                if part.quadrant4:
+                    faultyPartQuadrants.append("4")
+                o.write("      quadrant: ["+", ".join(faultyPartQuadrants)+"]\n")
+            #dropped parts
+            for part in droppedParts:
+                o.write("  - dropped_part:\n")
+                o.write("      robot: \'"+part.robot+"\'\n")
+                o.write("      type: \'"+getPartName(part.part_to_drop.type)+"\'\n")
+                o.write("      color: \'"+getPartColor(part.part_to_drop.color)+"\'\n")
+                o.write("      drop_after_num: "+str(part.drop_after_num)+" # first part the robot successfully picks\n")
+                o.write("      drop_after_time: "+str(part.drop_after_time)+" # secons\n")
+            #sensor blackouts
+            for blackout in sensorBlackouts:
+                o.write("  - sensor_blackout:\n")
+                o.write("    duration: "+str(blackout.duration)+"\n")
+                #gets the list of sensors to disable
+                if blackout.sensors_to_disable.break_beam:
+                    sensorsToDisable.append("break_beam")
+                if blackout.sensors_to_disable.proximity:
+                    sensorsToDisable.append("proximity")
+                if blackout.sensors_to_disable.laser_profiler:
+                    sensorsToDisable.append("laser_profiler")
+                if blackout.sensors_to_disable.lidar:
+                    sensorsToDisable.append("lidar")
+                if blackout.sensors_to_disable.camera:
+                    sensorsToDisable.append("camera")
+                if blackout.sensors_to_disable.logical_camera:
+                    sensorsToDisable.append("logical_camera")
+                o.write("    sensors_to_disable: ["+", ".join(sensorsToDisable)+"]\n")
+                if blackout.condition.type==0:
+                    o.write("      time: "+str(blackout.condition.time_condition.seconds)+"\n")
+                elif blackout.condition.type==1:
+                    o.write("      part_type: \'"+getPartName(blackout.condition.part_place_condition.part.type)+"\'\n")
+                    o.write("      part_color: \'"+getPartColor(blackout.condition.part_place_condition.part.color)+"\'\n")
+                    o.write("      agv: "+str(blackout.condition.part_place_condition.agv))
+                elif blackout.condition.type==2:
+                    o.write("      order_id: \'"+blackout.condition.submission_condition.order_id+"\'\n")

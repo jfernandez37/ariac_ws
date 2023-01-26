@@ -22,7 +22,7 @@ orderCategories=["time-based","during kitting", "during assembly","after kitting
 taskPresentFlag=[]
 allProdTypes=["sensor", "pump", "regulator", "battery"]
 allProdColors=['green', 'red', 'purple','blue','orange']
-conditionTypes=['','time','partPlace','submission']
+conditionTypes=['time','partPlace','submission']
 def typeOfProdSelect(kittingParts, assemblyParts, orderType):
     '''Runs the correct function based on the order type'''
     if orderType.get()=="kitting":
@@ -374,7 +374,7 @@ def showCorrectMenu(condition, conditionMenu, time, timeLabel, timeEntry, agv, a
         partColorLabel.pack_forget()
         partColorMenu.pack_forget()
 
-def addNewOrder(orderMSGS,orderCounter, usedIDs, mainWind):
+def addNewOrder(orderMSGS,orderConditions, orderCounter, usedIDs, mainWind):
     '''Window for adding a new order'''
     taskPresentFlag.clear()
     orderCounter.append(0)
@@ -417,11 +417,11 @@ def addNewOrder(orderMSGS,orderCounter, usedIDs, mainWind):
         conditionMenu=tk.OptionMenu(newOrderWind, condition, *conditionTypes[:-1])
     conditionMenu.pack()
     time=tk.StringVar()
-    time.set('')
+    time.set('0')
     timeLabel=tk.Label(newOrderWind, text="Enter the time")
-    timeLabel.pack_forget()
+    timeLabel.pack()
     timeEntry=tk.Entry(newOrderWind, textvariable=time)
-    timeEntry.pack_forget()
+    timeEntry.pack()
     agv=tk.StringVar()
     agv.set("")
     agvLabel=tk.Label(newOrderWind, text="Choose the agv")
@@ -539,18 +539,47 @@ def addNewOrder(orderMSGS,orderCounter, usedIDs, mainWind):
             newCombinedTask.parts=assemblyParts
             newOrder.combined_task=newCombinedTask
         orderMSGS.append(newOrder)
+        orderCondition=Condition()
+        orderCondition.type=conditionTypes.index(condition.get())
+        if condition.get()==conditionTypes[0]:
+            orderCondition.time_condition.seconds=float(time.get())
+        elif condition.get()==conditionTypes[1]:
+            newPart=Part()
+            if partType.get()=="sensor":
+                newPart.type=newPart.SENSOR
+            elif partType.get()=="pump":
+                newPart.type=newPart.PUMP
+            elif partType.get()=="battery":
+                newPart.type=newPart.BATTERY
+            else:
+                newPart.type=newPart.REGULATOR
+            if partColor.get()=="red":
+                newPart.color=newPart.RED
+            elif partColor.get()=="green":
+                newPart.color=newPart.GREEN
+            elif partColor.get()=="blue":
+                newPart.color=newPart.BLUE
+            elif partColor.get()=="orange":
+                newPart.color=newPart.ORANGE
+            else:
+                newPart.color=newPart.PURPLE
+            orderCondition.part_place_condition.part=newPart
+            orderCondition.part_place_condition.agv=int(agv.get())
+        elif condition.get()==conditionTypes[2]:
+            orderCondition.submission_condition.order_id=annID.get()
+        orderConditions.append(orderCondition)
 
 def saveOrders(wind, ordersFlag): # allows the while loop in main to stop so the orders window stops when the user saves
     ordersFlag.set('0')
     wind.destroy()
 
-def runOrdersWind(orderMSGS,  orderCounter, usedIDs, ordersFlag, mainWind):
+def runOrdersWind(orderMSGS, orderConditions, orderCounter, usedIDs, ordersFlag, mainWind):
     ordersWind=tk.Toplevel()
     ordersFlag.set('1')
     ordersWind.title("Orders")
     #ordersWind.geometry("850x600")
     ordersWind.attributes('-fullscreen', True)
-    new_order_func=partial(addNewOrder, orderMSGS, orderCounter, usedIDs, mainWind)
+    new_order_func=partial(addNewOrder, orderMSGS, orderConditions, orderCounter, usedIDs, mainWind)
     newOrderButton=tk.Button(ordersWind, text="New Order", command=new_order_func)
     newOrderButton.pack()
     currentOrdersVal="Current Orders:\n"

@@ -199,16 +199,16 @@ def runGUI():
         cancel_main_command=partial(cancel_wind, mainWind, cancelFlag)
         cancelMainButton=tk.Button(mainWind, text="Cancel and Exit", command=cancel_main_command)
         cancelMainButton.pack()
-        if partFlag.get()=="1": # checks if parts still needs to run
+        if partFlag.get()=="1": # checks if the user is still in parts
             mainWind.withdraw()
             addPart(partVals,agv1Parts, agv2Parts, agv3Parts, agv4Parts, 
             agv1Quadrants, agv2Quadrants, agv3Quadrants, agv4Quadrants,bins,
             bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots, 
             convParts, cancelFlag, pathIncrement,fileName,createdDir, partFlag, mainWind)
-        if ordersFlag.get()=="1": # checks if orders still needs to run
+        if ordersFlag.get()=="1": # checks if the user is still in orders
             mainWind.withdraw()
             runOrdersWind(orderMSGS,  orderCounter, usedIDs, ordersFlag, mainWind)
-        if challengesFlag.get()=="1":
+        if challengesFlag.get()=="1":# checks if the user is still in challenges
             mainWind.withdraw()
             runChallengeWind(robotMalfunctions, usedIDs, faultyParts, droppedParts, sensorBlackouts,cancelFlag, pathIncrement,fileName, createdDir, challengesFlag, mainWind)
         mainWind.mainloop()

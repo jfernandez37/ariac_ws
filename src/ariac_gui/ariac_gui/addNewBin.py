@@ -253,8 +253,8 @@ def writeBinsToFile(name, binsList, saveFileName):
         o.write("    "+name+":\n")
         for i in binsList:
             if i.binName==name:
-                o.write("      - type: "+i.type+"\n")
-                o.write("        color: "+i.color+"\n")
+                o.write("      - type: \'"+i.type+"\'\n")
+                o.write("        color: \'"+i.color+"\'\n")
                 o.write("        slots: "+i.slots+"\n")
                 o.write("        rotation: "+i.rotation+"\n")
                 if i.flipped=="1":

@@ -9,7 +9,7 @@ from ariac_gui.updateAGVFuncs import *
 from ariac_gui.newClasses import *
 from ariac_msgs.msg import *
 
-agvTrayIds=["","0","1","2","3","4","5","6"] # all options for tray ids for agvs
+agvTrayIds=["0","1","2","3","4","5","6"] # all options for tray ids for agvs
 agvList=["agv1", "agv2", "agv3", "agv4"]
 partTypes=["sensor", "pump", "regulator", "battery"]
 partColors=['green', 'red', 'purple','blue','orange']
@@ -144,12 +144,6 @@ def addPart(partVals,agv1Parts, agv2Parts, agv3Parts, agv4Parts,
     addPartsButton.grid(column=leftColumn)
     leftSpaceLabel=tk.Label(partsWind, text="")
     leftSpaceLabel.grid(column=leftColumn, pady=30)
-    update_agv_ids=partial(updateTrayIds,agv1TrayId, agv2TrayId, agv3TrayId, agv4TrayId, agv1TrayIdSelect, agv2TrayIdSelect, agv3TrayIdSelect, agv4TrayIdSelect,agvTrayIds)
-    #ensures that agvs can not hav ethe same tray ids
-    agv1TrayId.trace('w', update_agv_ids)
-    agv2TrayId.trace('w', update_agv_ids)
-    agv3TrayId.trace('w', update_agv_ids)
-    agv4TrayId.trace('w', update_agv_ids)
     #bin part button
     add_bin_func=partial(addBin,bins,bin1Slots,bin2Slots,bin3Slots,bin4Slots,bin5Slots,bin6Slots,bin7Slots,bin8Slots,mainWind)
     addBinsButton=tk.Button(partsWind, text="Add Bin Part", command=add_bin_func)
@@ -235,7 +229,7 @@ def writePartsToFile(name, id, partsList, saveFileName): # writes the part infor
         o.write("      tray_id: "+ id+"\n")
         o.write("      parts:\n")
         for i in partsList:
-            o.write("      - type: "+i.pType+"\n")
-            o.write("        color: "+i.color+"\n")
+            o.write("      - type: \'"+i.pType+"\'\n")
+            o.write("        color: \'"+i.color+"\'\n")
             o.write("        quadrant: "+i.quadrant+"\n")
             o.write("        rotation: "+i.rotation+"\n")
